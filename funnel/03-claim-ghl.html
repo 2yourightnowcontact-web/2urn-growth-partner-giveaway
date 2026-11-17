@@ -1,0 +1,169 @@
+<title>Claim the Second-Place Stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap">
+<script>
+  window.GW_CLAIM = {
+    /* GHL calendar widget for the 20-minute "Growth Partner Interview". Calendars → the calendar → Share → widget link. */
+    bookingUrl: "https://link.2urnmarketing.com/widget/booking/REPLACE_ME",
+    /* Fallback claim window if the link has no ?until= timestamp: hours from first visit. */
+    fallbackHours: 72
+  };
+</script>
+<style>
+html, body { width:100% !important; max-width:100% !important; margin:0 !important; padding:0 !important; overflow-x:hidden; }
+.band { position:relative; width:100vw; left:50%; right:50%; margin-left:-50vw !important; margin-right:-50vw !important; max-width:none !important; }
+:root{--ink:#0B0B0C;--ink-2:#16161A;--paper:#FFFFFF;--paper-2:#F7F6F3;--paper-3:#EFEDE8;--muted:#6E6E75;--muted-2:#93939B;--line:rgba(11,11,12,.11);--line-soft:rgba(11,11,12,.06);--red:#FF2D2D;--red-deep:#D91B1B;--green:#12A45C;--r:16px;--pad:clamp(20px,5vw,56px);
+--body:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif}
+.cl *{box-sizing:border-box}.cl{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px;min-height:100vh;letter-spacing:-.011em;-webkit-font-smoothing:antialiased}
+.cl h1,.cl h2,.cl h3{font-family:var(--body);font-weight:900;letter-spacing:-.04em;margin:0;line-height:1;text-wrap:balance}.cl p{margin:0}
+.in{max-width:1000px;margin:0 auto;padding-left:max(var(--pad),env(safe-area-inset-left,0px));padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
+.top{background:var(--paper);color:var(--ink);padding-block:clamp(40px,7vw,80px) clamp(32px,5vw,56px)}
+.pill{display:inline-block;border:1px solid var(--line);color:var(--muted);font-size:12px;font-weight:700;line-height:1.4;letter-spacing:.12em;text-transform:uppercase;padding:8px 14px;border-radius:var(--r);margin-bottom:20px}
+.top h1{font-size:clamp(2.3rem,5.6vw,4.1rem)}.top h1 em{color:var(--red);font-style:normal}
+.top .sub{color:var(--muted);margin-top:16px;max-width:56ch;font-size:1.08rem}
+.count{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap;align-items:flex-end}
+.count .lbl{width:100%;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cu{background:var(--ink);border-radius:12px;padding:10px 12px;min-width:68px;text-align:center}
+.cu b{display:block;font-size:2rem;font-weight:900;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums;color:var(--red)}
+.cu span{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2)}
+.sec{padding-block:clamp(36px,6vw,72px);background:var(--paper-2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.two>*{min-width:0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,3vw,28px);min-width:0}
+.card.hi{border:1.5px solid var(--ink)}
+.card h2{font-size:1.7rem}.card h2 em{color:var(--muted);font-style:normal}
+.card p,.card li{color:var(--muted);font-size:.95rem}.card ul{margin:12px 0 0;padding-left:1.1em;display:grid;gap:6px}
+.card li::marker{color:var(--ink)}
+.price{display:grid;grid-template-columns:1fr auto;gap:8px;padding:12px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.price:last-of-type{border-bottom:0}.price b{font-weight:900;letter-spacing:-.03em;font-size:1.2rem}
+.price .was{text-decoration:line-through;color:var(--muted)}.price .now{color:var(--ink)}
+.booking{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:16px;min-height:560px}
+.booking iframe{width:100%;height:640px;border:0;display:block}
+.btn{font-family:var(--body);font-weight:700;font-size:1.05rem;letter-spacing:-.01em;background:var(--red);color:#fff;border:0;padding:16px 22px;cursor:pointer;border-radius:var(--r);text-decoration:none;display:block;text-align:center;margin-top:14px;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:background .2s,transform .2s}
+.btn:hover{background:var(--red-deep);transform:translateY(-1px)}
+.expired{display:none;background:var(--paper);border:1px solid var(--line);border-left:2px solid var(--red-deep);border-radius:var(--r);padding:18px 20px;margin-top:16px}
+.expired.show{display:block}
+.expired p{color:var(--muted);margin-top:4px}
+.dv{padding:14px 0;border-bottom:1px solid var(--line)}
+.dv .t{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.dv .t b{font-weight:900;letter-spacing:-.02em;font-size:1.05rem;color:var(--ink)}
+.dv .t b.val{white-space:nowrap;font-variant-numeric:tabular-nums}
+.dv p{margin-top:4px}
+.dv .when{display:inline-block;margin-top:8px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+.tot{padding-top:16px}
+.tot .big{font-size:clamp(2.4rem,6vw,3.4rem);font-weight:900;letter-spacing:-.04em;line-height:1;color:var(--ink)}
+.tot .big small{font-size:1rem;font-weight:600;letter-spacing:-.01em;color:var(--muted)}
+.top .go{max-width:420px}
+.foot{font-size:12px;color:var(--muted);padding-block:22px 40px;background:var(--paper);line-height:1.55}
+.foot a{color:var(--ink);text-decoration:underline}
+@media(max-width:760px){.two{grid-template-columns:1fr}.cu{min-width:60px;padding:8px 10px}.cu b{font-size:1.7rem}}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+
+<div class="cl">
+<div class="band top"><div class="in">
+  <span class="pill">Second place · Growth Partner Giveaway</span>
+  <h1><span id="name">You</span> won the Second-Place Stack: <em>$9,750 of value.</em></h1>
+  <p class="sub">The grand prize went to one company. You're a second-place winner. $5,250 in deliverables, free, plus $4,500 off Growth Partner: $9,750 of value for second place. It's yours until the timer ends. To claim it, book your interview.</p>
+  <div class="count" id="count">
+    <span class="lbl">Time left to claim</span>
+    <div class="cu"><b id="h">00</b><span>hrs</span></div>
+    <div class="cu"><b id="m">00</b><span>min</span></div>
+    <div class="cu"><b id="s">00</b><span>sec</span></div>
+  </div>
+  <a class="btn go" href="#book">Book your interview to claim it</a>
+</div></div>
+
+<div class="band sec"><div class="in">
+  <div class="two">
+    <div>
+      <div class="card hi">
+        <h2>The Second-Place Stack: <em>$5,250 in deliverables, free</em></h2>
+        <div class="dv">
+          <div class="t"><b>One-Month Content Package</b><b class="val">$2,500</b></div>
+          <p>A 45-minute interview with Camron. We write 5 ad scripts and 5 content scripts in your words. You shoot them on a phone with our shot list. We edit 10 finished pieces for your brand.</p>
+          <span class="when">Delivered in month 1 of your Growth Partner engagement</span>
+        </div>
+        <div class="dv">
+          <div class="t"><b>Competitor Analysis</b><b class="val">$1,500</b></div>
+          <p>Who your current competitors are, what they are running, their offers, their hooks, their review counts, and where the gaps are. A written report.</p>
+          <span class="when">Delivered within 7 days of booking your interview, whether or not you sign</span>
+        </div>
+        <div class="dv" style="border-bottom:0">
+          <div class="t"><b>Five Advertising Campaigns, scripted</b><b class="val">$1,250</b></div>
+          <p>Five campaigns, each with 10 hooks and a full video script, ready for you to shoot. For roofing: Retail Pricing, Quote Beating, Storm Damage Insurance, Post-Storm Urgency and General Inspection. HVAC and windows get the trade's equivalent five.</p>
+          <span class="when">Delivered in month 1 of your Growth Partner engagement</span>
+        </div>
+        <div class="tot" style="border-top:1.5px solid var(--ink)">
+          <p style="margin:0;color:var(--ink);font-weight:700">$5,250 in deliverables, free, plus $4,500 off Growth Partner</p>
+          <div class="big" style="margin-top:8px">$9,750 <small>of value for second place</small></div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h2>Your <em>pricing</em></h2>
+        <div class="price"><span>Growth Partner, standard</span><b>$3,000 / mo</b></div>
+        <div class="price"><span>Second place, months 1 to 3 (50% off, $4,500 saved)</span><b class="now">$1,500 / mo</b></div>
+        <div class="price"><span>Month 4 on</span><b>$3,000 / mo</b></div>
+        <div class="price"><span>Ad spend (paid to Meta, not us)</span><span>From $150 / day (recommended $150 to $300)</span></div>
+        <p style="margin-top:10px;font-size:.85rem">We'll go over your real numbers on the interview.</p>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h2>The <em>guarantee</em></h2>
+        <p style="font-size:.92rem">If you do everything on the list and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. The list:</p>
+        <ul>
+          <li>On camera within 14 days</li>
+          <li>Ad spend funded from $150/day</li>
+          <li>The follow-up sequence live</li>
+          <li>Weekly scorecard call</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card hi" id="book">
+        <h2>Claim it: book your <em>Growth Partner Interview</em></h2>
+        <p>Booking the 20-minute interview locks your Second-Place Stack and your half-off price. It is an interview, not a sales call. We look at your business and the commitment list, and tell you plainly if it is a fit. If it isn't, we'll say so.</p>
+        <div class="booking" id="booking"><iframe id="cal" title="Book your Growth Partner Interview" src="about:blank" loading="lazy"></iframe></div>
+        <div class="expired" id="expired"><b>This claim window has closed.</b><p>Spots may still be open at the standard $3,000 a month. Book an interview and ask.</p><a class="btn" id="expired-btn" href="#">Book an interview anyway</a></div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h2>What <em>Growth Partner</em> is</h2>
+        <ul>
+          <li>We come into your business and structure and script your offers</li>
+          <li>You shoot them. The owner or a lead rep is on camera</li>
+          <li>We edit every video</li>
+          <li>We manage your advertising</li>
+          <li>We automate the nurture on the back end</li>
+          <li>90-day minimum. Everything stays in your accounts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<div class="band foot"><div class="in">2URN Marketing · The Second-Place Stack has no cash value, is non-transferable and must be claimed by booking an interview call before the deadline shown. It includes a Competitor Analysis (ARV $1,500), delivered within 7 days of booking the interview call whether or not you sign; and, included with the discounted Growth Partner engagement and delivered in its first month, a One-Month Content Package (ARV $2,500) and five scripted advertising campaigns (ARV $1,250). The second-place price ($1,500 per month for months 1 to 3, then $3,000 per month) applies to the 2URN Growth Partner program only. The ROI guarantee applies only if the winner's commitment list is completed: on camera within 14 days, ad spend funded from $150/day, the follow-up sequence live, and a weekly scorecard call. If so and Growth Partner has not paid for itself in closed jobs by day 90, 2URN keeps working at no charge until it has. Ad spend is paid by you directly to Meta. <a href="/rules" style="color:var(--ink)">Official Rules</a></div></div>
+</div>
+
+<script>
+(function(){
+  var C=window.GW_CLAIM, until, first='';
+  try{
+    var p=new URLSearchParams(location.search);
+    first=p.get('first')||'';
+    var u=p.get('until');            /* GHL sends ?until=<ISO> built from a custom field */
+    if(u) until=new Date(u);
+    if(!until||isNaN(until)){ var k='gw_claim_until'; var saved=localStorage.getItem(k); if(saved) until=new Date(saved); else { until=new Date(Date.now()+C.fallbackHours*3600000); localStorage.setItem(k,until.toISOString()); } }
+    var q=['first_name='+encodeURIComponent(first),'last_name='+encodeURIComponent(p.get('last')||''),'email='+encodeURIComponent(p.get('email')||''),'phone='+encodeURIComponent(p.get('phone')||'')].join('&');
+    var sep=C.bookingUrl.indexOf('?')>-1?'&':'?';
+    document.getElementById('cal').src=C.bookingUrl+sep+q;
+    document.getElementById('expired-btn').href=C.bookingUrl;
+  }catch(e){ until=new Date(Date.now()+C.fallbackHours*3600000); }
+  if(first) document.getElementById('name').textContent=first+', you';
+  var pad=function(n){return (n<10?'0':'')+n};
+  function tick(){
+    var ms=until-new Date();
+    if(ms<=0){ document.getElementById('count').innerHTML='<span class="lbl">Claim window closed</span>'; document.getElementById('booking').style.display='none'; document.getElementById('expired').classList.add('show'); return; }
+    var s=Math.floor(ms/1000);
+    document.getElementById('h').textContent=pad(Math.floor(s/3600)); document.getElementById('m').textContent=pad(Math.floor(s%3600/60)); document.getElementById('s').textContent=pad(s%60);
+  }
+  tick(); setInterval(tick,1000);
+})();
+</script>

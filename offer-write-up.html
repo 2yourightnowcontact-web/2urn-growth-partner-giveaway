@@ -1,0 +1,318 @@
+<title>2URN In-House Lead Engine</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: single reading column, generous air, hairline-bordered rounded cards, one red accent. 2URN Marketing brand tokens. */
+:root{
+  --bg:#FFFFFF; --paper:#F7F6F3; --paper-3:#EFEDE8; --ink:#0B0B0C; --ink-2:#6E6E75; --rule:rgba(11,11,12,.11); --rule-soft:rgba(11,11,12,.06);
+  --accent:#FF2D2D; --accent-ink:#D91B1B; --accent-soft:rgba(255,45,45,.08);
+  --good:#12A45C; --warn:#D91B1B; --r:16px;
+  --display:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B0B0C; --paper:#16161A; --paper-3:#1F1F24; --ink:#FFFFFF; --ink-2:#93939B; --rule:rgba(255,255,255,.12); --rule-soft:rgba(255,255,255,.06);
+  --accent:#FF2D2D; --accent-ink:#FF2D2D; --accent-soft:rgba(255,45,45,.14); --good:#12A45C; --warn:#FF2D2D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B0B0C; --paper:#16161A; --paper-3:#1F1F24; --ink:#FFFFFF; --ink-2:#93939B; --rule:rgba(255,255,255,.12); --rule-soft:rgba(255,255,255,.06);
+  --accent:#FF2D2D; --accent-ink:#FF2D2D; --accent-soft:rgba(255,45,45,.14); --good:#12A45C; --warn:#FF2D2D; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;letter-spacing:-.011em;margin:0;-webkit-font-smoothing:antialiased;
+  padding-block:0 clamp(48px,8vw,96px);padding-left:max(clamp(20px,5vw,56px),env(safe-area-inset-left,0px));padding-right:max(clamp(20px,5vw,56px),env(safe-area-inset-right,0px))}
+.wrap{max-width:880px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);font-weight:900;letter-spacing:-.04em;line-height:1;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.5rem,7vw,4.4rem);line-height:.99}
+h2{font-size:clamp(1.7rem,4vw,2.5rem)}
+h3{font-size:1.25rem;font-weight:800;letter-spacing:-.03em;line-height:1.15;color:var(--ink)}
+p{margin:0;max-width:66ch}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+header{padding-block:clamp(48px,8vw,88px) 36px;border-bottom:1px solid var(--rule);display:grid;gap:16px}
+header .meta{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--ink-2);font-size:.9rem}
+.lede{font-size:1.15rem;color:var(--ink-2);max-width:60ch}
+section{padding-block:clamp(40px,6vw,64px) 0;display:grid;gap:20px}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:end;border-bottom:1px solid var(--rule);padding-bottom:12px}
+.sec-head .num{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--ink-2);padding-bottom:6px;font-variant-numeric:tabular-nums}
+ul,ol{margin:0;padding-left:1.2em;display:grid;gap:8px;max-width:66ch}
+li::marker{color:var(--accent)}
+strong{font-weight:700}
+.callout{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:var(--r);padding:20px 22px;display:grid;gap:8px}
+.callout .eyebrow{color:var(--ink-2)}
+.quote{font-size:1.4rem;font-weight:700;letter-spacing:-.03em;line-height:1.25;color:var(--ink);max-width:40ch}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r);padding:22px;display:grid;gap:10px;align-content:start;min-width:0}
+.card h3{font-size:1.1rem}
+.card p,.card li{font-size:.95rem}
+.flow{display:grid;gap:0;border:1px solid var(--rule);background:var(--paper);border-radius:var(--r);overflow:hidden}
+.step{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:18px 20px;border-bottom:1px solid var(--rule);min-width:0}
+.step:last-child{border-bottom:0}
+.step>*{min-width:0}
+.step .day{font-size:1.25rem;font-weight:900;letter-spacing:-.04em;color:var(--ink);line-height:1.1}
+.step .day small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:700;margin-top:2px}
+.step b{display:block;font-weight:700;margin-bottom:2px}
+.step p{font-size:.95rem;color:var(--ink-2)}
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--r);background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:700}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;font-weight:600;font-size:.93rem;white-space:nowrap}
+.tier{display:grid;gap:10px;background:var(--paper);border:1px solid var(--rule);border-radius:var(--r);padding:22px;min-width:0}
+.tier.hi{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.tier .price{font-size:2.1rem;font-weight:900;letter-spacing:-.04em;line-height:1}
+.tier .price small{font-size:.95rem;font-weight:500;letter-spacing:-.01em;color:var(--ink-2)}
+.tier ul{font-size:.93rem}
+.tag{display:inline-block;justify-self:start;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;background:var(--accent-soft);color:var(--accent-ink);border-radius:999px}
+.warnbox{border-left-color:var(--warn)}
+.warnbox .eyebrow{color:var(--warn)}
+/* calculator */
+.calc{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r);padding:clamp(18px,3vw,26px);display:grid;gap:20px}
+.calc .inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.field{display:grid;gap:6px;min-width:0}
+.field label{font-size:.85rem;font-weight:500;color:var(--ink-2);display:flex;justify-content:space-between;gap:8px}
+.field output{font-size:.85rem;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.res{border-top:2px solid var(--rule);padding-top:10px;display:grid;gap:4px}
+.res .v{font-size:1.9rem;font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1}
+.res .l{font-size:.8rem;color:var(--ink-2)}
+.res.key{border-top-color:var(--accent)}
+.res.key .v{color:var(--ink)}
+.fine{font-size:.85rem;color:var(--ink-2)}
+footer{margin-top:clamp(40px,6vw,64px);padding-top:16px;border-top:1px solid var(--rule);font-size:.82rem;color:var(--ink-2);display:grid;gap:4px}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){.tier.hi{transition:transform .2s}.tier.hi:hover{transform:translateY(-2px)}}
+@media (max-width:520px){.step{grid-template-columns:1fr;gap:4px}.sec-head{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">2URN Marketing · Fractional CMO · Roofing</span>
+  <h1>The In-House Lead Engine Install</h1>
+  <p class="lede">What Alex Hormozi actually did for Boulder Adventure Park, why it worked, and how 2URN turns the same money model into a fractional-CMO offer that builds a roofer's lead generation inside their own four walls.</p>
+  <div class="meta">
+    <span>Source: "Can I Save This Failing Theme Park in 90 Days?" · Alex Hormozi · 28:52 · published Sep 11, 2026</span>
+    <span>Prepared Nov 12, 2026</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head"><span class="num">01</span><h2>What the video is</h2></div>
+  <p>Paul Fontinelli runs Boulder Adventure Park, a $22M indoor family entertainment center in Grand Prairie, Texas. He is doing $4.8M a year, needs $550K a month to break even, is at $400K, and carries $180K a month in debt service. He has 14 days of cash and is about to put his entire 401(k) in. Hormozi has one session to hand him a play that generates cash in 90 days.</p>
+  <p>Hormozi's diagnosis in one line: Paul tracks outputs (revenue, admissions) and not inputs (leads, cost per lead, show rate, close rate). The park is demand constrained at 50% of peak capacity, so the fix is a demand play, not an operations play.</p>
+  <div class="callout">
+    <span class="eyebrow">The one bet</span>
+    <p class="quote">"You don't have the luxury of time, so we make one bet." He skipped the season pass and went all-in on summer camp, because that is the product parents were already deciding on right then.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="num">02</span><h2>The offer, piece by piece</h2></div>
+  <div class="flow">
+    <div class="step"><div class="day">Anchor<small>value</small></div><div><b>$500/week × 10 weeks = $5,000 "value"</b><p>Everything is priced against the full retail stack so the real ticket ($2,000 for the whole summer) feels like a discount. "Buy 4 weeks, get 6 free" and "buy one month, get the whole summer" are the same price said three ways. One of them clicks.</p></div></div>
+    <div class="step"><div class="day">Reason<small>why</small></div><div><b>Early bird</b><p>Every offer needs a stated reason it exists, or people assume it is always available. Early bird is the reason here; in roofing it is the storm, the season, the insurance deadline.</p></div></div>
+    <div class="step"><div class="day">Hook<small>front end</small></div><div><b>The giveaway</b><p>First prize: a $5,000 private full-summer camp, free. Second prize: $3,000 off (which is the core $2,000 offer). Multiple second-place winners, legally disclosed. Lead with the biggest free thing; it anchors the price for the phone call later so nobody has to be "sold up."</p></div></div>
+    <div class="step"><div class="day">7 days<small>countdown</small></div><div><b>Launch window with timer</b><p>Countdown timer at the top of the page, daily email and text with days left. A third to a half of all leads arrive in the last 48 hours; the middle feels dead and you keep spending anyway.</p></div></div>
+    <div class="step"><div class="day">Page<small>VSL</small></div><div><b>Landing page rules</b><p>One banner, not four. Headline, video, button. Trust sits next to the action (parent rating beside the button). Answer the real fear with a hard stat ("zero falls last year"). Day-one money back. The VSL became the best converting ad they ever ran.</p></div></div>
+    <div class="step"><div class="day">Thank-you<small>viral loop</small></div><div><b>Referral entries</b><p>Copyable link on the thank-you page. Every friend who opts in is one more entry. If the person you referred wins, you win too. Parents want their kids to go with friends; homeowners want the neighbor to use the same roofer.</p></div></div>
+    <div class="step"><div class="day">72 hrs<small>claim</small></div><div><b>Second-prize claim window</b><p>After the drawing, everyone else "won" second prize with a 72-hour claim timer. No deadline, no claim.</p></div></div>
+    <div class="step"><div class="day">Phones<small>bottleneck</small></div><div><b>Call every lead, sell the core offer</b><p>The giveaway produces the list; the sales team produces the cash. Hormozi flagged the three-person sales team as the risk before they even launched.</p></div></div>
+    <div class="step"><div class="day">After<small>evergreen</small></div><div><b>Flip to the evergreen "buy X get Y" campaign</b><p>Run it "until the cows come home," then re-run the whole giveaway on the next product (birthdays), year-round, at a tenth of the spend.</p></div></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>What happened in 90 days</h3>
+      <ul>
+        <li>3,700 leads in a local market, about 120 a day.</li>
+        <li>Summer camp revenue up 325% over the prior year.</li>
+        <li>Cheapest cost per lead the business had ever seen.</li>
+        <li>Admissions doubled in 4 to 6 weeks once licensed creator video ran as ads.</li>
+      </ul></div>
+    <div class="card"><h3>What capped it</h3>
+      <ul>
+        <li>"We didn't have the manpower to close the leads." No SDR layer, no call sequence.</li>
+        <li>Hormozi's fix: hire salespeople as growth spend. With lead flow they always out-earn their cost.</li>
+        <li>This gap is the whole 2URN opportunity. The play is public. Executing it inside a contractor's business is not.</li>
+      </ul></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="num">03</span><h2>Why it maps to roofing almost perfectly</h2></div>
+  <p>Hormozi says businesses behave in patterns. A roofer and a theme park share the same economic shape: high-ticket, local, seasonal, demand constrained, owner tracks revenue not inputs, sales capacity is the real ceiling. The differences work in roofing's favor.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Element</th><th>Boulder Adventure Park</th><th>Roofing contractor</th></tr></thead>
+    <tbody>
+      <tr><td>Core ticket</td><td class="num">$2,000</td><td class="num">$12,000 to $25,000</td></tr>
+      <tr><td>Anchor product</td><td>Full summer camp, $5,000 value</td><td>Full roof replacement, $20,000+ value</td></tr>
+      <tr><td>Giveaway hard cost</td><td>Near zero (empty capacity)</td><td>Materials and crew, roughly $8,000 to $12,000 at cost. One extra sale pays for it.</td></tr>
+      <tr><td>Second prize</td><td>$3,000 off = core offer</td><td>$2,500 off any replacement, or free upgrade (ridge vent, class 4 shingle, gutters)</td></tr>
+      <tr><td>Reason why</td><td>Early bird</td><td>Storm season, pre-winter, year-end deductible, anniversary, new crew capacity</td></tr>
+      <tr><td>Seasonal "birthdays"</td><td>Birthday parties year-round</td><td>Spring hail, fall pre-winter, post-storm canvass, repair-to-replace</td></tr>
+      <tr><td>Fear to answer on the page</td><td>"Will my kid fall?"</td><td>"Will you disappear after the deposit?" Show years in business, license, workmanship warranty, zero unresolved complaints.</td></tr>
+      <tr><td>Follow-up step</td><td>Phone call to sell camp</td><td>Phone call to book a free inspection, then an in-home close. Two steps, so setting matters more.</td></tr>
+      <tr><td>Bottleneck</td><td>3-person sales team</td><td>Owner answers the phone from the roof. Same bottleneck, worse.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout warnbox">
+    <span class="eyebrow">Compliance to build in, not bolt on</span>
+    <ul>
+      <li><strong>Sweepstakes law.</strong> No purchase necessary, official rules, alternate method of entry, state registration above thresholds (New York and Florida register at $5,000). Hormozi said it twice; we write it into the SOP once.</li>
+      <li><strong>Insurance restoration.</strong> Never advertise a waived or paid deductible. Second prize must be a discount on retail or a free upgrade, framed so it does not touch the insured amount. Texas and many states treat deductible-eating as a crime.</li>
+      <li><strong>Referral loop.</strong> Extra entries for referrals are fine in most states. Check the ones that treat it as consideration.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="num">04</span><h2>Layer one: the play we install inside the roofer</h2></div>
+  <p>This is the product. 2URN comes in as the fractional CMO and leaves behind a lead engine the roofer's own people run. The giveaway is the launch; the evergreen offer, the setter seat and the dashboard are what stays.</p>
+  <div class="flow">
+    <div class="step"><div class="day">Days 1–14<small>install</small></div><div><b>Inputs, offer, page, setter</b><p>Audit the inputs Hormozi asked Paul for: leads, cost per lead, set rate, show rate, close rate, average ticket. Build the core evergreen offer and the "buy X get Y" variants. One-banner landing page with owner VSL, trust beside the button, warranty stat. Hire or assign one setter; install the call sequence (speed-to-lead under 5 minutes, 7 touches in 72 hours).</p></div></div>
+    <div class="step"><div class="day">Days 15–24<small>launch</small></div><div><b>Free Roof Giveaway, 7-day countdown</b><p>First prize: full replacement. Second prize: $2,500 off or a named upgrade, multiple winners. Giveaway ads built from the owner's own footage and the 2URN hook library. Daily SMS and email countdown. Referral link on the thank-you page. Model the 48-hour spike so the owner does not panic on day 4.</p></div></div>
+    <div class="step"><div class="day">Days 25–30<small>convert</small></div><div><b>Drawing, 72-hour claim, phones</b><p>Announce the winner publicly (this is the content and the PR). Everyone else gets second prize with a 72-hour claim window. Setter calls every lead to book a free inspection. Owner or closer runs the in-home visit with the anchored price already in the homeowner's head.</p></div></div>
+    <div class="step"><div class="day">Days 31–90<small>evergreen</small></div><div><b>Flip to the core campaign, scale the seat</b><p>Run the evergreen offer on paid. Reinvest campaign cash into ad spend. Add a second setter when the first one is at capacity. Weekly input scorecard with the owner. Prep the next seasonal giveaway (storm, pre-winter, spring).</p></div></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>What they own at day 90</h3>
+      <ul><li>Evergreen offer and a giveaway playbook they can re-run</li><li>Landing page and VSL, in their GHL account</li><li>A trained setter and a written call sequence</li><li>An input dashboard (leads, CPL, set, show, close, ticket)</li><li>Ad account with pixel, audiences and a winning creative library</li></ul></div>
+    <div class="card"><h3>What 2URN already has for this</h3>
+      <ul><li>Roofer landing-page builder and survey-funnel skill (GHL)</li><li>Creative engine: 5 campaigns, hooks, call-out standard</li><li>Proposal sites and the sales-call-to-proposal pipeline</li><li>Platform data on which zones and offers convert (HSH)</li><li>Hormozi's missing piece is the piece we are good at: the call sequence and the setter.</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="num">05</span><h2>Run the numbers for one roofer</h2></div>
+  <p>Modeled, not measured. Defaults are conservative for a single-metro roofer running the giveaway for the first time. Move the sliders to the client's real inputs on the call.</p>
+  <div class="calc">
+    <div class="inputs">
+      <div class="field"><label for="c_leads">Giveaway leads <output id="o_leads">1,200</output></label><input type="range" id="c_leads" min="300" max="4000" step="50" value="1200"></div>
+      <div class="field"><label for="c_cpl">Cost per lead <output id="o_cpl">$12</output></label><input type="range" id="c_cpl" min="4" max="40" step="1" value="12"></div>
+      <div class="field"><label for="c_set">Set rate (lead → inspection booked) <output id="o_set">25%</output></label><input type="range" id="c_set" min="5" max="60" step="1" value="25"></div>
+      <div class="field"><label for="c_show">Show rate <output id="o_show">65%</output></label><input type="range" id="c_show" min="30" max="95" step="1" value="65"></div>
+      <div class="field"><label for="c_close">Close rate (inspection → sold) <output id="o_close">30%</output></label><input type="range" id="c_close" min="10" max="60" step="1" value="30"></div>
+      <div class="field"><label for="c_ticket">Average ticket <output id="o_ticket">$14,000</output></label><input type="range" id="c_ticket" min="6000" max="30000" step="500" value="14000"></div>
+      <div class="field"><label for="c_gp">Gross margin <output id="o_gp">35%</output></label><input type="range" id="c_gp" min="20" max="50" step="1" value="35"></div>
+      <div class="field"><label for="c_prize">Prize hard cost <output id="o_prize">$10,000</output></label><input type="range" id="c_prize" min="4000" max="20000" step="500" value="10000"></div>
+    </div>
+    <div class="results">
+      <div class="res"><div class="v" id="r_spend">—</div><div class="l">Ad spend</div></div>
+      <div class="res"><div class="v" id="r_insp">—</div><div class="l">Inspections run</div></div>
+      <div class="res key"><div class="v" id="r_roofs">—</div><div class="l">Roofs sold</div></div>
+      <div class="res key"><div class="v" id="r_rev">—</div><div class="l">Revenue</div></div>
+      <div class="res"><div class="v" id="r_gp">—</div><div class="l">Gross profit after ads and prize</div></div>
+      <div class="res"><div class="v" id="r_cac">—</div><div class="l">Cost per sold roof</div></div>
+    </div>
+    <p class="fine">Second-prize discounts are not subtracted; set the average ticket net of them. Setter wage and the Growth Partner fee are not included here. The point of the slide is the one Hormozi made to Paul: if the play returns ten to one, run it a whole lot of times.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="num">06</span><h2>Layer two: how 2URN sells Growth Partner</h2></div>
+  <p>Use the same money model on ourselves. Anchor against a real CMO, give a reason why the door is only open for a few roofers, lead with a giveaway, and let the phone call sell the core offer that is already anchored.</p>
+  <div class="grid2">
+    <div class="tier">
+      <span class="tag">Anchor</span>
+      <div class="price">$330K<small> / year</small></div>
+      <p>A full-time CMO at $180K plus a setter, an ads buyer and a creative person. That is what "building it in house" costs a roofer who tries to hire it. Say this number first on every call.</p>
+    </div>
+    <div class="tier hi">
+      <span class="tag">Core offer</span>
+      <div class="price">$3,000<small> / month</small></div>
+      <div class="price" style="font-size:1.5rem">90-day<small> minimum</small></div>
+      <ul>
+        <li>2URN Growth Partner: we structure and script the offers, the owner or a lead rep shoots them, we edit every video, manage the ads and automate the follow-up</li>
+        <li>Client funds ad spend from $150 a day (recommended $150 to $300), paid to Meta</li>
+        <li>Creative engine: one giveaway launch plus the evergreen campaign</li>
+        <li>Everything built in the roofer's own accounts; they keep it</li>
+      </ul>
+      <p class="fine">Two sold roofs at a $14K ticket and a 35% margin cover the full 90-day fee. Say that out loud too.</p>
+    </div>
+    <div class="tier">
+      <span class="tag">Guarantee</span>
+      <div class="price">1<small> month free</small></div>
+      <p>One month free if the client's first giveaway launch does not reach 500 leads. Conditioned on the roofer funding the agreed ad budget and the prize. Keeps the risk on the input we control.</p>
+    </div>
+    <div class="tier hi" style="grid-column:1/-1">
+      <span class="tag">Prize tier · second place</span>
+      <div class="price">The Second-Place Stack<small> / $9,750 of value</small></div>
+      <ul>
+        <li>One-month Content Package, $2,500 value: a 45-minute interview with Camron; 5 ad scripts and 5 content scripts in the owner's words; the owner shoots on a phone with our shot list; we edit 10 finished pieces</li>
+        <li>Competitor Analysis, $1,500 value: who their competitors are, what they run, offers, hooks, review counts and the gaps</li>
+        <li>Five advertising campaigns, scripted, $1,250 value: 10 hooks and a full video script each, ready to shoot</li>
+        <li>Plus 50% off the first 3 months of Growth Partner ($1,500 a month instead of $3,000, a $4,500 saving) and the ROI guarantee</li>
+      </ul>
+      <p>$5,250 in deliverables, free, plus $4,500 off: $9,750 of value for second place. The Competitor Analysis is delivered within 7 days of booking the interview; the Content Package and the scripted campaigns in month 1 of the engagement.</p>
+    </div>
+    <div class="tier">
+      <span class="tag">Reason why</span>
+      <div class="price">5<small> roofers per quarter</small></div>
+      <p>We are on site for the install. Five seats a quarter, one per metro, so we never build the same engine for two competitors. That is the early bird.</p>
+    </div>
+  </div>
+  <h3>The 2URN launch play, mirrored</h3>
+  <div class="flow">
+    <div class="step"><div class="day">Prize<small>1st</small></div><div><b>One company wins 90 days of Growth Partner, free ($10,000 value)</b><p>The giveaway for our own list and ads. The person who referred the winner wins too. Hard cost is our labor for one client, and that client becomes the documented case study with before and after inputs.</p></div></div>
+    <div class="step"><div class="day">Prize<small>2nd</small></div><div><b>Second place wins the Second-Place Stack: $5,250 in deliverables, free, plus $4,500 off = $9,750 of value. 72 hours to claim</b><p>A one-month Content Package ($2,500), a Competitor Analysis ($1,500) and five scripted campaigns ($1,250), plus 50% off the first 3 months of Growth Partner ($1,500 a month instead of $3,000) with a guaranteed ROI. The claim timer forces the booking call, and the stack is how second place becomes a Growth Partner client. The guarantee, said once and written the same everywhere: "If you do everything on the list (on camera within 14 days, ad spend funded from $150/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has." [CHECK with attorney]</p></div></div>
+    <div class="step"><div class="day">14 days<small>run</small></div><div><b>14-day run with interviews</b><p>A 14-day test at $200 a day on Meta, with the VSL shot Nov 17. Camron on camera, one banner, trust beside the button (client results from Valor, HPH, Redwood). Daily email and SMS. Every applicant gets a 20-minute interview. "If the company you refer wins, you win too." Roofers know roofers in other metros, which is exactly who we want.</p></div></div>
+    <div class="step"><div class="day">Dec 4<small>winner</small></div><div><b>Winner chosen by interview, announced Dec 4, 2026</b><p>Judged against six published criteria: $1M or more in the last 12 months; the owner or a lead rep on camera, with no AI avatars or stock footage; ad spend funded from $150 a day; a team that can take appointments; agreement to be a documented case study; and a commitment through the slow season. Cap at five per quarter and say so.</p></div></div>
+    <div class="step"><div class="day">After<small>evergreen</small></div><div><b>Flip to the always-on offer at $3,000 a month</b><p>Growth Partner at $3,000 a month with a 90-day minimum, and one month free if the first giveaway launch does not reach 500 leads. Run the giveaway again each quarter as the seasonal launch.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="num">07</span><h2>Objections the play already answers</h2></div>
+  <div class="grid2">
+    <div class="card"><h3>"I don't want to give away a roof"</h3><p>You are already discounting to win jobs. One roof at cost, announced publicly, buys a list of every homeowner in your metro thinking about a roof this season. The calculator shows it is paid back by the second sale.</p></div>
+    <div class="card"><h3>"Giveaway leads are tire-kickers"</h3><p>True if nobody calls them. The anchor and the second prize filter for people who want a roof; the setter and the 72-hour claim convert them. Paul's problem was not lead quality, it was manpower.</p></div>
+    <div class="card"><h3>"Why not just buy leads from you?"</h3><p>You can (HSH does that). This is for the roofer who wants the asset. Pay-per-lead rents demand; the install owns it. Offer both and let the price difference do the sorting.</p></div>
+    <div class="card"><h3>"We tried Facebook, it didn't work"</h3><p>Ask for the inputs. Almost every time it is no pixel, no offer, no follow-up and a budget that never left learning phase. Same thing we found on the HSH HVAC account audit.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="num">08</span><h2>What to do next</h2></div>
+  <ol>
+    <li><strong>Pick the pilot roofer.</strong> One existing client with a strong owner on camera and a setter or office person we can train. Run the Free Roof Giveaway as the case study before we sell the install to strangers.</li>
+    <li><strong>Write the SOP from section 04</strong> into the 2URN skills: giveaway rules template, second-prize claim sequence, setter script, input scorecard. Most of the page and creative pieces already exist.</li>
+    <li><strong>Get the sweepstakes rules and the insurance-discount language reviewed</strong> once, then reuse them in every state we work.</li>
+    <li><strong>Build the 2URN giveaway funnel</strong> (section 06) in GHL with the countdown, referral link and claim timer. VSL shoots Nov 17; winner announced Dec 4, 2026.</li>
+    <li><strong>Decide the price.</strong> The 2URN Growth Partner at $3,000 a month with a 90-day minimum is the recommendation, with the grand prize at 90 days of Growth Partner, free ($10,000 value), and second place as the Second-Place Stack ($5,250 in deliverables, free, plus 50% off the first 3 months, $1,500 a month instead of $3,000: $9,750 of value) with the ROI guarantee above. The floor is the pay-per-lead math we already sell at; the ceiling is the $330K anchor.</li>
+  </ol>
+</section>
+
+<footer>
+  <span>Transcript pulled from the video's English captions on Nov 12, 2026. Figures quoted from the video are Paul Fontinelli's and Alex Hormozi's own statements. Roofing figures are 2URN model assumptions, not measurements.</span>
+  <span>2URN Marketing internal working document.</span>
+</footer>
+</div>
+
+<script>
+(function(){
+  var ids=['leads','cpl','set','show','close','ticket','gp','prize'];
+  var fmt$=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
+  var fmtN=function(n){return Math.round(n).toLocaleString('en-US')};
+  function g(id){return parseFloat(document.getElementById('c_'+id).value)}
+  function run(){
+    var leads=g('leads'),cpl=g('cpl'),set=g('set')/100,show=g('show')/100,close=g('close')/100,ticket=g('ticket'),gp=g('gp')/100,prize=g('prize');
+    document.getElementById('o_leads').textContent=fmtN(leads);
+    document.getElementById('o_cpl').textContent=fmt$(cpl);
+    document.getElementById('o_set').textContent=Math.round(set*100)+'%';
+    document.getElementById('o_show').textContent=Math.round(show*100)+'%';
+    document.getElementById('o_close').textContent=Math.round(close*100)+'%';
+    document.getElementById('o_ticket').textContent=fmt$(ticket);
+    document.getElementById('o_gp').textContent=Math.round(gp*100)+'%';
+    document.getElementById('o_prize').textContent=fmt$(prize);
+    var spend=leads*cpl, insp=leads*set*show, roofs=insp*close, rev=roofs*ticket;
+    var profit=rev*gp-spend-prize, cac=roofs>0?(spend+prize)/roofs:0;
+    document.getElementById('r_spend').textContent=fmt$(spend);
+    document.getElementById('r_insp').textContent=fmtN(insp);
+    document.getElementById('r_roofs').textContent=fmtN(roofs);
+    document.getElementById('r_rev').textContent=fmt$(rev);
+    document.getElementById('r_gp').textContent=fmt$(profit);
+    document.getElementById('r_cac').textContent=fmt$(cac);
+  }
+  ids.forEach(function(id){document.getElementById('c_'+id).addEventListener('input',run)});
+  run();
+})();
+</script>
