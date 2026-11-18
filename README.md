@@ -10,6 +10,7 @@ Growth Partner is $3,000/month, 90-day minimum. 2URN comes into the business, st
 ## Folders
 | Path | What it is |
 |---|---|
+| `context/2URN-COMPANY-CONTEXT.md` | Start here. Who 2URN Marketing is, what we sell, who we sell to, voice, brand, team, stack, delivery standards. |
 | `offer-doc/OFFER-DOC.md` | The offer document: decisions from the Nov 13 call, offer on one page, fit by trade, deliverables, pricing, unit economics, sales process, team, compliance, scorecard, 30-day checklist. Exported from the live Claude doc; the 90-day roadmap diagram did not export. |
 | `offer-write-up.html` | Standalone page: breakdown of the Hormozi theme-park giveaway the offer is modeled on, plus a per-client ROI calculator. Open in a browser. |
 | `funnel/01-giveaway-ghl.html` | Giveaway landing page. GoHighLevel Custom Code paste file. Seven-field form, countdown, VSL slot. `window.GHL_CONFIG` at the top holds form id, webhook, announcement date. |
