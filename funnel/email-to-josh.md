@@ -1,30 +1,35 @@
 **To:** Josh Johnston (Hydra)
-**Subject:** Giveaway scripts + rules draft for your feedback before I shoot Monday
+**Subject:** Giveaway update: roofing only, Dec 5, new prize ladder. Need your eyes on the rules
 
 Josh,
 
-Here's everything from yesterday's call, built out. Tear it apart before I shoot on the 17th.
+The offer moved since we talked, so here is the current version. Three questions for you at the bottom. The rules are the part I most need you to read.
 
 **What's attached**
-1. VSL script, v2. Fun open, the six rules in the first 60 seconds, then the prizes. 15/30/60 ad cuts marked. Four hook variants at the bottom, including the Santa-on-the-roof bit.
-2. Official rules draft. We wrote it as a judged contest, not a sweepstakes, since we're picking the winner from interviews against published criteria. Still has NO PURCHASE NECESSARY and a free mail-in entry. Merge it with whatever you're drafting and tell me where it's wrong.
-3. Landing page (HTML, open it in a browser). Six-field form, no gate, built as a lead magnet. The winner's commitments sit under the prizes so nobody can say they didn't know.
-4. Email/SMS sequence and the setter script, in case you want to see the full path.
+1. VSL script, v3. Fun open, the commitments in the first 60 seconds, then the prizes. 15/30/60 ad cuts marked, plus hook variants.
+2. Official rules draft. It is now a hybrid: the grand prize is judged, second place is a random drawing. It has NO PURCHASE NECESSARY and a free mail-in entry. Every spot I am unsure about is marked [CHECK]. Merge it with whatever you are drafting and tell me where it's wrong.
+3. Landing page (HTML, open it in a browser). Headline, VSL and the apply form on the first screen, no scrolling (on a phone the form opens with two fields), then the three prize cards. No gate.
+4. Referral page (HTML). What a referred owner lands on: "[Name] nominated you", their referrer's code carried in from the link and shown on the page, the same six-field form. Without a valid code in the link it is a plain entry page.
+5. Email/SMS sequence and the setter script, so you can see the full path.
+6. Thank-you page with the nominate-a-roofer form, and the second-place and third-place claim pages (HTML).
 
-**Where we landed, so we're on the same page**
-- Roofing only. Decided Nov 23, 2026.
-- Growth Partner at $3K/mo, 90-day minimum, they fund their own ads from $150/day.
-- Grand prize: 90 days free, $10K value. Referrer wins too.
-- Second place: 90 days at 50% off ($1,500/mo, then $3K) plus, free, a one-month Content Package ($2,500), a Competitor Analysis of what their competitors are running ($1,500) and five scripted ad campaigns ($1,250). $5,250 of work free plus $4,500 off, $9,750 of value. ROI guarantee if they do the commitment list. 72 hours to claim. Internally it goes to every qualified applicant who doesn't win; publicly we only ever say "second place".
-- Every applicant gets a 20-minute interview. Not a pitch. We pick the winner Dec 4.
-- Winner commitments: $1M+ last 12 months, owner or lead rep on camera (no AI slop), ad spend from $150/day, a team, agrees to be the case study, in for the winter. We qualify on the call, not on the page.
-- Test: 14 days, $200/day. Goal is volume: 250 applications at $12 or under. Kill line at day 7: cost per application over $25 or under 10 interviews held, we stop.
+**Where it landed**
+- Roofing only. No other trades.
+- Growth Partner is $3K a month, 90-day minimum. The client funds ad spend of $200 to $1,000 a day, paid to Meta.
+- Grand prize: 90 days of Growth Partner, free, $10K value. Judged by our panel after a 20-minute interview. If the winner was referred by another entrant in a different market, the referrer wins it too. After day 90 the winner may continue at $3,000 a month. No obligation.
+- Second place: drawn at random from eligible applicants. They get the Second-Place Stack, included free with second place: a One-Month Content Package ($2,500), a Competitor Analysis ($1,500), five scripted ad campaigns ($1,250) and a website buildout if they don't have one. Plus 50% off the 90-day program, $1,500 a month instead of $3,000, a $4,500 saving. That is $5,250 in deliverables plus a website if they need one, free, plus $4,500 off. The Competitor Analysis is theirs when they book the claim call; the rest is delivered inside the 90-day program once they sign. It comes with a revenue ROI guarantee: "If you do these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has." 72 hours to claim by booking a 20-minute claim call.
+- Third place: a free audit and a website built for them. No build fee. Hosting and maintenance is $189 a month. 72 hours to claim.
+- Winners notified Saturday, Dec 5, 7:00 PM CT. The public announcement goes up once the grand prize winner signs the publicity and case-study release.
+- Five commitments, no revenue requirement: fund $200 to $1,000 a day in ad spend, put the owner or a lead rep on camera, produce case studies for their own business, let us build a public case study on the process, record a testimonial for us. We judge the grand prize on those plus capacity, on the call, not on the page.
+- Referral: the thank-you page gives each entrant a link to the referral page, and a short form to nominate a roofer they know. Nominated roofers get one manual call from our setter and no automated texts or emails. They still have to enter themselves. Once they do, the nomination counts as a referral: if they win the grand prize, the person who nominated them wins it too.
+- Test: $200 a day on Meta. Goal is volume. Kill line, any one of three and we stop: cost per application over $25 at day 7, fewer than 10 interviews held by day 7, or no second-place claim by day 10 after the announcement. The launch date is not locked: launching Nov 26 gives a 10-day run before Dec 5.
 
-**Two things I want your take on**
-1. Second place goes to every qualified applicant internally, but the page only says "second place". Does the rules draft give that away anywhere you'd tighten?
-2. The rules say the winner is announced when entries close, but interviews will still be running. We put a cutoff for grand-prize judging and later interviews count for second place only. Does that read fair to you, or should the announcement slide a few days after entries close?
+**Three things I want your take on**
+1. We now mix a judged grand prize with a random drawing for second place. What does that do to the rules? And how many second places would you draw?
+2. The announcement and the interview cutoff land the same evening, Dec 5, and a Nov 26 launch only gives a 10-day run. Keep Dec 5, or slide the announcement a few days?
+3. Does the third place (free audit and website, $189 a month hosting) help the ladder, or cheapen it?
 
-Shoot on Monday, edit with Shabi right after. Ads from me and Zoe, plus a couple of graphic ones. Send me anything you've got by Sunday night and it goes in.
+Send me anything you've got and it goes in.
 
 Cam
 
@@ -33,5 +38,9 @@ Attachments to include:
 - funnel/VSL-script.md
 - funnel/official-rules-DRAFT.md
 - funnel/01-giveaway-ghl.html
+- funnel/04-referral-ghl.html
 - funnel/sequence-email-sms.md
 - funnel/setter-script.md
+- funnel/02-thankyou-ghl.html
+- funnel/03-claim-ghl.html
+- funnel/05-claim-third-ghl.html

@@ -2,7 +2,7 @@
 
 Read this before anything else in the repo. It is the background a collaborator (human or AI) needs to write, edit or judge work for 2URN Marketing. The offer-specific detail lives in `offer-doc/` and `funnel/`; this file is about the company itself.
 
-Last updated: Nov 17, 2026. Public repository: no financials, account identifiers or client contact data belong here.
+Last updated: Nov 23, 2026. Public repository: no financials, account identifiers or client contact data belong here.
 
 ## Who we are
 
@@ -14,21 +14,23 @@ We work inside a contractor's business, not outside it. Agencies that only send 
 
 | Product | What it is | Price |
 | --- | --- | --- |
-| **Growth Partner** (fractional CMO retainer) | We structure and script the offers, the owner shoots, we edit, run the advertising, automate the follow-up, script and coach the setter, and report a weekly input scorecard. Client funds ad spend from $150/day. | $3,000/mo, 90-day minimum |
-| **Content Package** | 45-minute interview with Camron, 5 ad scripts + 5 content scripts in the owner's words, they shoot, we edit 10 finished pieces. | $2,500/month |
+| **Growth Partner** (fractional CMO retainer) | We structure and script the offers, the owner shoots, we edit, run the advertising, automate the follow-up, script and coach the setter, and report a weekly input scorecard. Client funds ad spend of $200 to $1,000 a day, paid to Meta. | $3,000/mo, 90-day minimum |
+| **One-Month Content Package** | 45-minute interview with Camron, 5 ad scripts + 5 content scripts in the owner's words, they shoot, we edit 10 finished pieces. | $2,500 |
 | **Competitor Analysis** | Who the client's competitors are, what they are running, where the gaps are. | $1,500 |
 | **Scripted ad campaigns** | 5 campaigns, 10 hooks + a full video script each, ready to shoot. | $1,250 for 5 |
+| **Website buildout, with hosting and maintenance** | 2URN builds the company's website and hosts and maintains it. Free build for giveaway winners (second place if they need one, third place). | $189/mo hosting and maintenance; standard build price `[DECIDE: standard build price]` |
+| **Marketing audit** | Your website, your Google Business Profile, your ads and your follow-up, with what to fix first `[DECIDE: confirm audit scope]`. | Free in the giveaway (third place); standard price `[DECIDE: standard audit price]` |
 | **Home Service Heroes** | Separate pay-per-lead brand run by the same team: exclusive roofing leads by ZIP/zone, sold per lead or as monthly recurring. Pay-per-lead rents demand; Growth Partner builds the asset. Sell both and let price sort the buyer. | Per lead / monthly |
 
-Current acquisition play (winter 2026): the **Growth Partner Giveaway**, a judged contest that gives one contractor 90 days free and offers every other qualified applicant the Second-Place Stack. Full detail in `offer-doc/OFFER-DOC.md`.
+Current acquisition play (winter 2026): the **Growth Partner Giveaway**, three prizes: a judged grand prize (90 days of Growth Partner, free), a second place drawn at random (the Second-Place Stack), and a third place (a free audit and website). Full detail in `offer-doc/OFFER-DOC.md`.
 
 ## Who we sell to
 
-Owner-operators of roofing companies doing **$1M to $10M** a year in one metro. High ticket ($8K to $25K jobs), local, seasonal, burned by at least one agency, tired of the "are you a roofer doing a million a year" hook.
+Owner-operators of roofing companies. The sweet spot is **$1M to $10M** a year in one metro, with no revenue minimum to enter the giveaway. High ticket ($12K to $25K jobs), local, seasonal, burned by at least one agency, tired of the "are you a roofer doing a million a year" hook.
 
-Must-haves: owner or lead rep willing to be on camera (no AI avatars, no stock footage); ad budget from $150/day; a team that can take appointments; someone on the phone within five minutes of a lead.
+Must-haves: owner or lead rep willing to be on camera (no AI avatars, no stock footage); ad budget of $200 to $1,000 a day; someone on the phone within five minutes of a lead.
 
-Not a fit: under $1M, owner is the only closer, storm chasers with no fixed metro, anyone who wants to frame a discount as an insurance deductible.
+Weak fits (sales notes, not the `not-a-fit` tag): owner is the only closer, storm chasers with no fixed metro, nobody on the phone, anyone who wants to frame a discount as an insurance deductible. The `not-a-fit` tag means only: will not be on camera, or cannot fund $200 a day in ad spend.
 
 ## How we think about marketing
 
@@ -43,7 +45,7 @@ Not a fit: under $1M, owner is the only closer, storm chasers with no fixed metr
 
 Plain, direct, a little blunt. Short sentences. Numbers said out loud. Agree with the skeptic before you pitch. Fun is allowed in hooks and closes (winter, Christmas, owner-on-the-roof bits); the qualification block is always dead serious.
 
-Never say: "random," "drawing," "odds," "guaranteed results," "everyone wins," any client revenue number we cannot screenshot, anything about list size. Never frame a discount as covering an insurance deductible.
+Never say: "guaranteed results," "everyone wins," "everybody gets," "all applicants," "multiple winners," or anything that tells a reader how many people win a tier; any client revenue number we cannot screenshot; anything about list size. Never describe the grand prize as random, a drawing or as having odds. Second place is drawn at random and we say so. The only guarantee wording is the revenue ROI guarantee. Never frame a discount as covering an insurance deductible. No em dashes or en dashes in customer-facing copy.
 
 ## Brand
 
@@ -85,8 +87,12 @@ Never say: "random," "drawing," "odds," "guaranteed results," "everyone wins," a
 
 ## Compliance habits
 
-Giveaways are run as judged contests (winner chosen by 2URN against published criteria), with NO PURCHASE NECESSARY and a free alternate entry. Official rules go through an attorney. State registration thresholds (NY, FL) are checked per launch. We do not advise on insurance claims and never tie a discount to a deductible.
+The giveaway is a hybrid. The grand prize is a judged contest (winner chosen by 2URN's panel against six published criteria); second place is a random drawing from eligible applicants; third place goes to multiple entrants `[DECIDE: how third-prize winners are chosen and how many]`. NO PURCHASE NECESSARY and a free alternate entry stay on every page. Official rules go through an attorney, and the chance-based tier adds questions for counsel `[CHECK]`: the interview as a condition of the drawing, New York and Florida registration and bonding for prizes over $5,000 (normally before the promotion starts), the odds and prize-count statements, and changing rules after entries open. Legal text may say a prize is awarded to multiple entrants; customer-facing copy may not.
+
+Nominated roofers have given no consent. They get one manual call from the setter, and a voicemail naming the referrer if there is no answer, then nothing. No automated texts, no automated emails, no auto-dialer. If they say no, they are tagged and never contacted again. A nomination is not an entry and never changes judging or the drawing. Once the nominated company enters itself, the nomination counts as a referral: if that company wins the grand prize, the nominator wins it too.
+
+We do not advise on insurance claims and never tie a discount to a deductible.
 
 ## Working with this repo
 
-Edit any file and open a pull request, or commit to `main` if you have access. Keep public copy consistent with the rule that second place is described as "second place," never "everyone wins." `[CHECK]` marks open items awaiting a human decision.
+Edit any file and open a pull request, or commit to `main` if you have access. Keep public copy consistent with the copy rules above: second place is "second place" and is drawn at random, the grand prize is never random, and no copy says how many people win a tier. `[DECIDE: ...]` marks a business decision only Camron can make, and `[CHECK: ...]` marks an item awaiting the attorney. Search for both before you finish any edit, and never replace one with a guess.

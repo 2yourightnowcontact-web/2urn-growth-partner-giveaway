@@ -1,14 +1,29 @@
-# Setter Script: Interview Calls for Giveaway Applicants
+# Setter Script: Interview Calls, Results Calls and Nominee Calls
 
-The call has two jobs:
+The call has three jobs:
 - **(a) Before the announcement:** book the 20-minute Growth Partner Interview for every applicant, and run it if you are the interviewer.
-- **(b) After the announcement:** deliver the result (grand prize or second place), and book the interview if it has not been held yet.
+- **(b) After the announcement:** deliver the result (grand prize, second place or third place) and book the right call.
+- **(c) Call nominated roofers once.** A nominee is a roofer an entrant put forward on the thank-you page. See Part D.
 
-The interview is an interview, not a sales call. The winner is chosen by 2URN's panel from interviewed applicants against the published criteria. Do not promise anyone they will win. Do not pitch.
+The interview is an interview, not a sales call. Do not pitch on it.
 
-**Everyone who enters gets the call.** There is no disqualification on the form. Qualification happens here, on the setter call and the interview: revenue, on camera, ad budget, team. Under $1M, or will not be on camera, is still Not a Fit after the call, politely, and they are never pitched. Only after you tag a contact `not-a-fit` do the calls stop.
+**How each prize is chosen. Say it this way and no other way.**
+- **Grand prize:** picked by 2URN's panel from interviewed applicants, against the published criteria. It is judged. People choose, not chance.
+- **Second place:** drawn at random from eligible applicants.
+- **Third place:** a free audit and a website buildout.
+- **Never promise anyone a prize.** Never say or hint that they will win. Never tell an applicant how many people win a tier. Say "second place" and "third place", not "everyone gets" or "multiple winners".
 
-Cadence: call within 2 business days of entry. 3 attempts day 1, 2 on day 2, 1 on day 3, then weekly x3 for second-place winners. Text after every unanswered call. Log outcome in the GHL opportunity stage: Attempted / Contacted / Interview Booked / Interviewed / Not a Fit / Not Interested.
+**Everyone who enters gets the call.** There is no disqualification on the form. There is **no revenue minimum**. The form asks revenue to prepare the call, and it never disqualifies anyone. Qualification happens here, on the setter call and the interview.
+
+**Not a fit for Growth Partner means one of two things:** they will not be on camera, or they cannot fund $200 a day in ad spend. That is the whole definition. Low revenue alone is never a reason. When a contact is not a fit, they are out of the grand prize and the second-place drawing, interview reminders stop, and they stay entered for third place. Do not set Do Not Disturb. Do not promise third place.
+
+**Interview cutoff:** an interview counts for the grand prize and the second-place drawing only if it is held by the cutoff in the Official Rules (proposed Dec 5, 2026, 5:00 PM CT [CHECK: confirm cutoff with counsel]). An interview held after the cutoff does not count for either. Book every interview before it.
+
+Cadence: call within 2 business days of entry. Before the announcement: 3 attempts on day 1, 2 on day 2, 1 on day 3. After the announcement: second-place winners first, then third-place winners who have not booked: 3 attempts on day 1, 2 on day 2, 1 on day 3, all inside the 72-hour claim window. After the window the prize is gone. Any later call (weekly, up to 3 weeks) is about the standard program only and never mentions the prize as available.
+
+Texts: one SMS a day at most per contact, counting workflow texts and setter texts together. Text once, after the last unanswered call of the day, and only if no workflow SMS went to that contact that day. Entrants only, never nominees.
+
+Log outcome in the GHL opportunity stage: Entered / Attempted / Contacted / Interview Booked / Interviewed / Second Place Notified / Second Place Booked / Third Place Notified / Third Place Booked / Nominated / Not a Fit / Not Interested.
 
 Before dialing, read the lead note: company, self-reported revenue, referred-by. The form does not ask about camera, ad budget or team, so ask them on the call.
 
@@ -22,75 +37,172 @@ Before dialing, read the lead note: company, self-reported revenue, referred-by.
 If busy: "Totally get it. When's better, later today or tomorrow morning?" Book the callback. Don't pitch a busy person.
 
 ### Set expectations
-> Quick note on how this works. It's a judged contest. Our team picks the winner from the people we interview. The interview is 20 minutes. It's not a sales call. We ask about your business and see if it fits.
+> Quick note on how this works. The grand prize is judged. Our panel picks that winner from the people we interview, against published criteria. The interview is 20 minutes. It's not a sales call. We ask about your business and see if it fits. Winners are announced December fifth.
+
+Do not say anything about how many prizes there are or what anyone's chances are.
 
 ### Book
 > I've got [day] at [time] or [day] at [time]. Which one?
 
 Book on the Growth Partner Interview calendar while on the phone. Confirm number and email. Send the confirmation text before hanging up.
 
+Book before the interview cutoff (see the header notes). If the only slot the applicant can take is after the cutoff, say this before you book:
+> That slot is after the judging cutoff, so the interview won't count for the grand prize or the second-place drawing. Can we find an earlier time?
+
+If no earlier time works, book it and add "after cutoff" to the opportunity note.
+
 ---
 
 ## The interview (20 minutes, 2URN interviewer)
 
-Score each answer against the criteria in the Official Rules. Take notes in the opportunity.
+**Score each answer and note it** in the opportunity, against the six criteria in the Official Rules. Score the answer as given. Do not coach it up. Every answer goes in the note, including the ones that are a no.
 
-1. **Revenue.** "What did the company do in revenue over the last 12 months?" (Need $1M or more.)
-2. **Who's on camera.** "Who would be on camera in the ads? The owner or a lead rep?" Then: "We don't use AI avatars or stock footage. It has to be a real face homeowners can recognize. Are you comfortable with that?"
-3. **Ad budget.** "Ad spend starts at $150 a day, paid by you to Meta, and we recommend $150 to $300. Can you fund at least $150?"
-4. **Team size.** "How many people are on the team? Who answers the phone and who runs the appointments? If we doubled your appointments next month, what happens?"
-5. **The last agency.** "What happened with the last agency or marketer you used?" (Listen for no follow-up, no creative, a budget that never left learning phase. Reflect it back.)
-6. **Why they want to win.** "Why do you want this, and why now?"
+One question per criterion, in this order:
 
-Then two quick checks:
-- **Case study.** "If you win, the 90 days become a public case study. We film it and tell the story. Are you good with that?"
-- **Winter.** "The program runs through winter. Are you in for the slow season?"
+1. **On camera and producing content (criterion 1).** "Who would be on camera in the ads and the content? The owner or a lead rep?" Then: "We don't use AI avatars or stock footage. It has to be a real face homeowners can recognize. Are you comfortable with that, and will you shoot content on your phone?"
+2. **Ad budget (criterion 2).** "Ad spend runs $200 to $1,000 a day, paid by you directly to Meta. Can you fund at least $200 a day?"
+3. **Case studies for their own business (criterion 3).** "We'll help you turn the results into case studies for your own company, your own jobs and your own numbers. Will you produce those with us?"
+4. **Public case study (criterion 4).** "We also document the steps and the process publicly, as a case study on how it was done. Are you good with 2URN telling that story?"
+5. **Testimonial for 2URN (criterion 5).** "If it goes well, will you record a testimonial for 2URN Marketing?"
+6. **Team capacity and the slow season (criterion 6).** "How many people are on the team? Who answers the phone and who runs the appointments? If we doubled your appointments next month, what happens? And will you run this through the slow season, winter included?"
 
-### Kill line
-If revenue is under $1M, or they will not be on camera:
-> I appreciate you being straight with me. Based on that, this one isn't a fit, and I don't want to waste your time. Thanks for entering. If anything changes, you know where to find us.
+Then three more questions, context and color, not scored:
+- **Revenue, context only.** "What did the company do in revenue over the last 12 months?" This is asked, never required. Any answer is fine. Do not react to the number.
+- **The last agency.** "What happened with the last agency or marketer you used?" (Listen for no follow-up, no creative, a budget that never left learning phase. Reflect it back.)
+- **Why they want to win.** "Why do you want this, and why now?"
 
-Thank them, tag `not-a-fit`, set stage Not a Fit, end the call. No pitch, no second place. This is the only place a contact becomes Not a Fit: the decision is made on the call, not by the form.
+### Not a fit
+Only two things make a contact not a fit: they will not be on camera, or they cannot fund $200 a day in ad spend. Revenue never does.
+> I appreciate you being straight with me. The full Growth Partner program isn't the right fit right now, based on that. You're still entered, and winners are announced December fifth. Thanks for talking with me.
 
-If they pass, close the interview:
-> Thanks, that's what I needed. Our team picks the winner on Dec 4. You'll hear from us either way. If you know another company that fits, your referral link is still live. If the company you refer wins, you win too.
+Then tag `not-a-fit`, set stage Not a Fit, and end the call. Do not promise third place. Do not set Do Not Disturb. The decision is made on the call, not by the form. Tagging stops interview reminders and removes them from the grand prize and the second-place drawing. They stay entered for third place.
+
+### Close the interview
+If they are a fit:
+> Thanks, that's what I needed. Our panel picks the grand prize winner on December fifth. You'll hear from us either way. If you know a roofer in another market that fits, your referral link is still live. If they win the grand prize, you win it too.
 
 ---
 
 ## Part B. After the announcement: deliver the result
 
 ### Open
-> Hey {{first}}, it's [Name] with 2URN. The Growth Partner winner was announced. Got a minute? Good news.
+> Hey {{first}}, it's [Name] with 2URN. The Growth Partner results are in. Got a minute? Good news.
 
-### Deliver the result
-**Second-place winner.** Internally: every qualified applicant who is not the grand-prize winner gets second place. The purpose is to bring them into Growth Partner. On the call, lead with the stack, then the price. Do not say "everyone gets" or "multiple winners" to the applicant.
-> The grand prize went to one company. You're a second-place winner, and second place is a stack. Free, when you claim it: a one-month Content Package, a forty-five minute interview with Camron, then we write five ad scripts and five content scripts in your words, you shoot them on your phone with our shot list, and we edit ten finished pieces. That's twenty-five hundred dollars. A Competitor Analysis, who your current competitors are, what they're running, their offers, hooks, review counts and where the gaps are. Fifteen hundred. And five advertising campaigns scripted for you, ten hooks and a full video script each, ready to shoot. Twelve fifty. That's five thousand two hundred fifty dollars of work, free, plus half off your first ninety days of Growth Partner: fifteen hundred a month instead of three thousand, then it goes to three thousand. Nine thousand seven hundred fifty dollars of value. It comes with a guarantee. If you do everything on the list (on camera within 14 days, ad spend funded from a hundred fifty a day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. There's a 72-hour clock to claim it. Claiming just means booking your 20-minute interview. I'm not selling anything on this call.
+### Grand prize
+Camron calls the grand prize winner within the hour. The setter does not. If the setter reaches them first, say Camron will call within the hour and hand it over. Do not give details.
 
-Say when each piece arrives: the Competitor Analysis within 7 days of booking the interview, whether or not they sign. The Content Package and the five scripted campaigns in month 1 of the engagement.
+### Second-place winner
+Delivery timing: say when each piece arrives. The Competitor Analysis within 7 days of booking the claim call, whether or not they sign. The Content Package and the five scripted campaigns in month 1 of the engagement. The website, if they need one, is built during the engagement. The Content Package, the campaigns and the website come only with a signed Growth Partner agreement [CHECK: signing deadline]. Do not give a date or a price for the website.
 
-**Interview not yet held:** book it now (see Book above). That booking is the claim.
+Say it in beats. Stop after each one and let them answer.
 
-**Interview already held:** confirm they want to move forward and tell them Camron will follow up with next steps inside 72 hours. Update the stage.
+> The grand prize went to one company, and you were drawn for second place. Second place gets you the Second-Place Stack, and it's included free with second place.
 
-**Not qualified after the call (under $1M, will not be on camera, or no interview after attempts):** thank them politely, tag `not-a-fit`, end. Do not pitch.
+> One. A one-month Content Package. A forty-five minute interview with Camron, then we write five ad scripts and five content scripts in your words. You shoot them on your phone with our shot list, and we edit ten finished pieces. That's twenty-five hundred dollars.
+
+> Two. A Competitor Analysis. Who your competitors are right now, what they're running, their offers, hooks, review counts and where the gaps are. Fifteen hundred.
+
+> Three. Five advertising campaigns, scripted for you. Ten hooks and a full video script each, ready to shoot. Twelve fifty.
+
+> Four. If you don't have a website, we build you one.
+
+> That's fifty-two fifty in deliverables plus a website if you need one, free, plus half off your first ninety days of Growth Partner: fifteen hundred a month instead of three thousand, so forty-five hundred off. After that it's three thousand a month. Ninety-seven fifty of value.
+
+> The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the ninety-day program.
+
+> It comes with a revenue ROI guarantee. Do these four things: content shot within fourteen days, ad spend funded from two hundred dollars a day, the follow-up sequence live, and the weekly scorecard call. If Growth Partner hasn't paid for itself in closed jobs by day ninety, we keep working for free until it has.
+
+> There's a seventy-two-hour clock. The deadline is real. After seventy-two hours the Stack and the half-off price are gone. Claiming just means booking a twenty-minute claim call. On the call we go over what you get, when each piece arrives, and the Growth Partner agreement at fifteen hundred a month for the first ninety days.
+
+The guarantee is its four conditions and nothing else. Do not say "guaranteed results". Do not add to it or soften it.
+
+**Book the claim call now:** on the Growth Partner Interview calendar, while on the phone, inside the 72 hours. That booking is the claim, whether or not they already had their interview. It stops the reminders and starts the seven-day Competitor Analysis clock. Confirm number and email, send the confirmation text before hanging up, and update the stage.
+
+**If they say they can't be on camera or can't fund two hundred dollars a day:** do not use the Not a fit script, do not tag `not-a-fit`, and never tell a winner they might not be a fit. Say: "That's what the claim call is for. Booking it gets you the Competitor Analysis either way, and we'll go over the program on the call." Then book the claim call.
+
+**Not reached inside the 72 hours:** do not tag `not-a-fit`. Log the outcome and stop. Workflow B closes the window and tags `evergreen`. Any later call is about the standard program only and never mentions the prize.
 
 ### Anchor (one line)
-> $5,250 of work free, plus half off, for booking a 20-minute call.
+> A Competitor Analysis free just for booking. Start Growth Partner at half price and the Content Package, the five scripted campaigns and a website if you need one are included.
 
 The longer version, if they ask for the price:
-> Standard is three thousand a month, 90-day minimum. You fund your own ads, from a hundred fifty a day (we recommend a hundred fifty to three hundred), paid to Meta. With second place you pay half for the first ninety days, and the Content Package, the Competitor Analysis and the five scripted campaigns are free. We script your offers, you shoot them, we edit them, we run your ads, and we automate the follow-up.
+> Standard is three thousand a month, ninety-day minimum. You fund your own ads, two hundred to a thousand dollars a day, paid directly to Meta. With second place you pay half for the first ninety days. The Competitor Analysis is yours when you book your claim call. The Content Package, the five scripted campaigns and a website if you don't have one are included free inside the program. We script your offers, you shoot them, we edit them, we run your ads, and we automate the follow-up.
 
 ---
 
-## Objections (one answer each, then re-ask for the time)
+## Part C. Third-place winner: Free Audit + Website Buildout
+
+### Open
+> Hey {{first}}, it's [Name] with 2URN. The Growth Partner results are in. You're a third-place winner. Got a minute? It's good news.
+
+### The offer, spoken
+> Third place is a free marketing audit and a website built for your company. No build fee. Hosting and maintenance is one eighty-nine a month. You have seventy-two hours to claim it, and claiming just means booking a twenty-minute call.
+
+If they ask what the audit covers, say only: "Your website, your Google Business Profile, your ads and your follow-up, with what to fix first." [DECIDE: confirm audit scope]
+
+### Book
+> I've got [day] at [time] or [day] at [time]. Which one?
+
+Book on the **Free Audit + Website Call** calendar (20 minutes) while on the phone. Confirm number and email. Send the confirmation text before hanging up. Stage: Third Place Booked.
+
+**Not reached inside the 72 hours:** log the outcome and stop. Workflow G closes the window and tags `evergreen`. Any later call is about the standard program only and never mentions the prize.
+
+### If they ask about terms
+> Hosting and maintenance terms are in your agreement, and we'll walk you through them on the call.
+
+Never invent a term, a minimum, a cancellation rule, a timeline or who owns the site or the domain. If you do not know, say that. [DECIDE: hosting term, cancellation, site and domain ownership, build timeline, ARV]
+
+### If they ask about the full program
+> The full program is three thousand a month with a 90-day minimum. Book your free audit call first so you don't lose your prize, and we can talk about the program on that call too, if you want.
+
+Book the Growth Partner Interview calendar if they want it. Do not pitch the full program on a third-place call.
+
+---
+
+## Part D. The nominee call
+
+A nominee is a roofer an entrant put forward on the thank-you page. They have given no consent. They have not entered. Read the call task and the contact note: they name the referrer. The referrer's code is in `first_nominated_by_code` (the first person who nominated them; `nominated_by_code` holds only the latest).
+
+**Rules, no exceptions:**
+- **One manual call.** No auto-dialer, no automated text, no automated email.
+- **No answer:** leave one voicemail that names the referrer, then stop. No text, no second call.
+- **A text only if the nominee asks for the link on the call.** Never before.
+- **If they say no:** tag `nominee-declined` and never contact them again.
+- A nomination is not an entry. It never changes judging or the drawing.
+
+### Script
+> Hey, it's [Name] with 2URN Marketing. [Referrer first name] at [referrer company] entered our Growth Partner giveaway and put you forward. I'm only calling once. The grand prize is ninety days of Growth Partner free, a ten-thousand-dollar value. The winner funds their own ads, two hundred to a thousand dollars a day, paid to Meta. It takes thirty seconds to enter. Want me to text you the link?
+
+If yes: the nominee is on SMS Do Not Disturb (workflow F). In GHL, turn SMS Do Not Disturb off for this contact, add the note "asked for the link on the call, [date], [setter]", and send the one text. Then turn SMS Do Not Disturb back on. If they enter, workflow A clears it for good.
+
+The text is the **referrer's link**, with the referrer's code from `first_nominated_by_code`, so the referral is matched to the first person who nominated them:
+
+`https://go.2urnmarketing.com/refer?ref=CODE`
+
+If they have questions: "It's for roofing company owners. Every applicant gets a 20-minute call, win or not. The entry page has the rules." Do not promise a prize.
+
+If they say no or ask not to be contacted: "No problem, you won't hear from us again." Tag `nominee-declined`. Never contact them again.
+
+### Voicemail (one only, then stop)
+> Hey, it's [Name] with 2URN Marketing. [Referrer first name] at [referrer company] entered our Growth Partner giveaway and put you forward. That's the only reason I'm calling. If you want to look at it, search 2URN Marketing, or call or text this number and I'll send you the link. Either way, I won't call again. Thanks.
+
+### When a referred or nominated roofer enters (optional)
+Workflow A notifies Camron. It cannot text the referrer. If you text the referrer, send it by hand from the referrer's own contact, never the nominee's, and only if no other SMS went to the referrer that day:
+> 2URN: {{contact.first_name}}, the roofer you referred just entered. If they win the grand prize, you win it too.
+
+---
+
+## Objections before the announcement (one answer each, then re-ask for the time)
 - **"We tried ads, didn't work."** "Yeah, that's what most of the people on this list said. Almost every time we open the account it's no follow-up and a budget that never left learning phase. In the interview we'll look at which one it was for you."
 - **"Send me info."** "The page you entered on is the info. The interview is where we look at your business. Tuesday or Thursday?"
 - **"Too expensive."** "Could be. That's what the interview is for. If the numbers don't work at your ticket, we'll tell you not to do it."
-- **"I don't want to be on camera."** "Understood. That one's required. Homeowners trust a real face, and we don't use AI avatars or stock footage. If that's a no, this isn't the right fit, and I'd rather say so now."
+- **"I don't want to be on camera."** "Understood. For the full program it's required. Homeowners trust a real face, and we don't use AI avatars or stock footage. You're still entered, and winners are announced December fifth. I'd rather tell you now that the full program isn't the right fit." Then tag `not-a-fit` and set stage Not a Fit. Do not promise third place.
 - **"We're busy enough."** "Then you're exactly who this is for in the slow season. When does your phone stop ringing, January?" Book for that conversation.
+- **"Are you sure I'll win?" / "Do I win something?"** "I can't promise anyone a prize. The grand prize is picked by our panel after the interviews, and second place is drawn at random. Winners are announced December fifth."
+- **"Do I need to hit a revenue number?"** "No. There's no revenue minimum. We ask so we can prepare for the call."
 
 ## Close the call
-> You're booked for [day/time]. You'll get a text and an email with the link. One favor: if you know a company in another market that fits, your referral link's still live. If the company you refer wins, you win too. Talk soon.
+> You're booked for [day/time]. You'll get a text and an email with the link. One favor: if you know a roofer in another market that fits, your referral link's still live. If they win the grand prize, you win it too. Talk soon.
 
 ## After the call
-Update stage. Paste one line in the note: result, revenue, who is on camera, ad budget yes/no, team can handle more appointments yes/no, next step.
+Update stage. Paste one line in the note: result, who is on camera, ad budget yes/no, case studies and testimonial yes/no, team, next step.

@@ -4,24 +4,36 @@ Nov 12, 2026 · @Camron Johsnon
 
 ## What the Nov 13 Hydra call changed
 
-Josh Johnston (Hydra), Zoe and Camron agreed to run the giveaway as 2URN's acquisition test this winter, and reset four things in this doc. The [recording is on Fathom](https://fathom.video/share/so1dg5D8o_MiADbDDWFPqaTXkYkjwynV).
+Josh Johnston (Hydra), Zoe and Camron agreed to run the giveaway as 2URN's acquisition test this winter, and reset the points in the table below. The [recording is on Fathom](https://fathom.video/share/so1dg5D8o_MiADbDDWFPqaTXkYkjwynV).
 
 | Decision | Was | Now |
 | --- | --- | --- |
-| Product and price | $15,000 install + $6,000/mo | The **Growth Partner** retainer: $3,000/mo, 90-day minimum. We structure and script the offers, the owner shoots, we edit, run the ads, automate the nurture. Client funds ad spend, from $150/day |
-| Prize ladder | 1st: install free. 2nd: $5,000 off | 1st: 90 days of Growth Partner free, $10,000 value, referrer wins too. 2nd, the Second-Place Stack (internally: every other qualified applicant, never said publicly): 90 days at 50% off ($1,500/mo, then $3,000), plus free a one-month Content Package ($2,500: Camron interview, 5 ad and 5 content scripts, they shoot, we edit 10 pieces), a Competitor Analysis ($1,500: who their competitors are and what they are running) and five scripted advertising campaigns ($1,250: 10 hooks and a full script each, ready to shoot). $5,250 of deliverables plus $4,500 off: $9,750 of value. ROI guarantee on the commitment list. 72 hours to claim. The analysis is delivered within 7 days of booking the interview; the content and campaigns in month 1 of the engagement |
-| Winner selection | Random drawing | **Chosen by 2URN** after a 20-minute interview with every applicant, against published criteria. The winner must be a case study we can show everyone. This makes it a judged contest, not a sweepstakes; rules change accordingly |
-| Test | Open-ended | 14 days, $200/day on Meta, kill line below. VSL shot Nov 17, 2026, winner announced Dec 4, 2026 |
+| Product and price | $15,000 install + $6,000/mo | The **Growth Partner** retainer: $3,000/mo, 90-day minimum. We structure and script the offers, the owner shoots, we edit, run the ads, automate the nurture. Client funds ad spend, $200 to $1,000 a day, paid directly to Meta |
+| Prize ladder | 1st: install free. 2nd: $5,000 off | Three tiers. **1st (judged):** 90 days of Growth Partner free, $10,000 value, referrer wins too. **2nd, the Second-Place Stack (drawn at random from eligible applicants):** 90 days at 50% off ($1,500/mo, then $3,000), plus free a one-month Content Package ($2,500: Camron interview, 5 ad and 5 content scripts, they shoot, we edit 10 pieces), a Competitor Analysis ($1,500: who their competitors are and what they are running), five scripted advertising campaigns ($1,250: 10 hooks and a full script each, ready to shoot) and a website buildout if they do not have a website [DECIDE: website ARV, timeline, hosting]. $5,250 in deliverables plus a website if you need one, free, plus $4,500 off: $9,750 of value. Revenue ROI guarantee with its four conditions (see Guarantee). 72 hours to claim by booking the 20-minute claim call. The Competitor Analysis is delivered within 7 days of booking the claim call, whether or not they sign; the Content Package, the five scripted campaigns and the website buildout are delivered inside the 90-day program once they sign the engagement agreement [CHECK: signing deadline]. **3rd, Free Audit + Website Buildout:** a marketing audit and a website built for the company, no build fee, hosting and maintenance $189 a month, 72 hours to claim [DECIDE: hosting term, cancellation, site and domain ownership, build timeline, ARV] |
+| Winner selection | Random drawing | **Grand prize: chosen by 2URN's panel** after a 20-minute interview with every applicant, against six published criteria. The winner must be a case study we can show everyone. **Second place: drawn at random** from eligible applicants. Third place goes to multiple entrants [DECIDE: confirm who receives it]. The promotion is now a hybrid of a judged contest and a random drawing, and the rules change accordingly (see Compliance) |
+| Test | Open-ended | 14 days planned, $200/day on Meta (2URN's own ad budget), kill line below. Nothing is live on Nov 23, so a 14-day test cannot finish before the Dec 5 announcement [DECIDE: launch date. A launch on Nov 26 gives a 10-day run; keep Dec 5 with a shorter test or move the announcement]. VSL v3 still to shoot (any Nov 17 cut predates the Nov 23 terms) [DECIDE: reshoot date]. Winner announced Dec 5, 2026 |
 | Niche | Roofing, HVAC and windows | Roofing only (Camron, Nov 23, 2026). Existing clients excluded from the audience (Meta exclusion list of current client contacts) |
 | Tone | Straight | Fun. Josh: if the creative is dry it falls flat. Winter and Christmas angles, owner-on-roof bits, graphic ads too |
 
-**Qualification, stated up front on the page and in the first 60 seconds of the VSL, not in fine print:** $1M+ revenue in the last 12 months; the owner or lead rep on camera in the ads, no AI avatars or stock footage; ad budget from $150/day; a team that can take the appointments; agrees to be documented as a case study; commits through the slow season. On the page these are shown as what the winner commits to, below the prizes, not as a gate: the form is six fields and everyone is invited to apply. The page is a lead magnet first; qualification happens on the call. Camron's reason: homeowners need a real face to recognize and trust over the months they see the brand. An operator who won't be that face is not a fit, win or lose.
+**What changed on Nov 23 (Camron).**
+
+- Roofing only.
+- The winner announcement moved to Dec 5.
+- Second place is now drawn at random, and now includes a website buildout.
+- New third place: a free marketing audit and website buildout, with $189 a month hosting and maintenance.
+- The winner's commitments are now the five in the Qualification paragraph below, and the $1M revenue requirement is gone.
+- Ad spend is $200 to $1,000 a day, paid to Meta.
+- A referral page and a nominate-a-roofer form were added.
+
+Internal note: Before Nov 23 the plan gave second place to every qualified applicant who did not win. Camron's Nov 23 direction is a random drawing. Set the number to draw before Dec 5. If the number equals the whole pool, "drawn at random" on the page is not accurate; settle the wording with the attorney first.
+
+**Qualification, now what the winner commits to, shown below the prizes on the page and in the VSL, not a gate:** (1) funds ad spend of $200 to $1,000 a day, paid to Meta; (2) produces content, the owner or a lead rep on camera, no AI avatars or stock footage; (3) produces case studies for their own business; (4) lets 2URN build a public case study on the steps and the process; (5) records a testimonial for 2URN Marketing. There is no revenue minimum to enter or to win. The six-field form still asks for revenue, self-reported, to prepare the call, never to disqualify. Everyone is invited to apply and the page ends with "Not there yet? Apply anyway. Every applicant gets a 20-minute call, win or not." The page is a lead magnet first; the fit conversation happens on the call. A team that can take the appointments and running the program through the slow season are no longer public commitments; they are judging criterion 6. Camron's reason for the camera requirement: homeowners need a real face to recognize and trust over the months they see the brand. An operator who won't be that face is not a Growth Partner client, win or lose, though they stay eligible for third place.
 
 **Why now.** Camron's acquisition cost went from $450 last year to about $4,000 this year, cost per lead tripled, set rate fell from 70%, and every agency runs the same "are you a roofer doing a million a year" hook. Back half of the year was the best acquisition window last year: door-knockers quit, referrals slow, owners look for something new. A giveaway is a different-shaped ad in a low-trust market.
 
-**Kill line for the 14-day test (proposed, confirm):** stop if after $1,400 spent (day 7) cost per application is over $25, or interviews held are under 10, or no second-place claim by day 10 after the announcement. Target: 250 applications at $12 or less per application, 60 qualified, 40 interviews held, 1 grand-prize winner, 5 second-place clients at $1,500/mo. That is a $2,800 ad test for 5 retainers and a 250-name list, an acquisition cost near $560.
+**Kill line for the ad test (proposed, confirm; still a day-7 check even if the run is shorter than 14 days):** stop if after $1,400 spent (day 7) cost per application is over $25, or interviews held are under 10, or no second-place claim by day 10 after the announcement. Target: 250 applications at about $11 or less per application ($2,800 over 250 applications is about $11 each), 60 qualified, 40 interviews held, 1 grand-prize winner, 5 second-place clients at $1,500/mo, third-place hosting clients [DECIDE: target]. That is a $2,800 ad test for 5 retainers and a 250-name list, an acquisition cost near $560.
 
-**What the winner commits to in writing:** ad spend funded from $150/day, shoots within 14 days of kickoff, follow-up sequence live, weekly scorecard call, public case study, converts to the standard $3,000/mo after day 90 if the inputs hit target. The same list is the condition of the second-place ROI guarantee.
+**What the winner commits to in writing:** the five public items: (1) funds ad spend of $200 to $1,000 a day, paid to Meta; (2) produces content, with the owner or a lead rep on camera and no AI avatars; (3) produces case studies for their own business; (4) lets 2URN build a public case study on the steps and the process; (5) records a testimonial for 2URN Marketing. After day 90 the winner may continue at $3,000 a month. No obligation. The revenue ROI guarantee and its four conditions (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) are separate from these five: they come with the paid 90-day program that second place buys at half price.
 
 Everything below is updated to these decisions. The In-House Lead Engine (setter, launch, scorecard) stays as the promise of what 90 days with us builds.
 
@@ -33,10 +45,10 @@ Everything below is updated to these decisions. The In-House Lead Engine (setter
 
 |  |  |
 | --- | --- |
-| Who | Roofing contractors doing $1M+ in the last 12 months, one metro, owner willing to be on camera, crews that can absorb 30 to 60 extra jobs in a quarter |
-| Price | $3,000/month, 90-day minimum. Ad budget paid to Meta, from $150/day |
-| Giveaway ladder | 1st: 90 days free, $10,000 value, referrer wins too. 2nd, the Second-Place Stack: 90 days at 50% off plus a one-month Content Package, a Competitor Analysis and five scripted campaigns free ($5,250), $9,750 of value with the ROI guarantee, 72 hours to claim. Public copy says "second place", never "everyone". Standard: $3,000/mo |
-| Guarantee | Second place: do everything on the commitment list and if Growth Partner has not paid for itself in closed jobs by day 90, we keep working free until it has |
+| Who | Roofing contractors in one metro with an owner willing to be on camera. Sweet spot $1M to $10M, no revenue minimum to enter; crews that can absorb 30 to 60 extra jobs in a quarter |
+| Price | $3,000/month, 90-day minimum. Ad budget $200 to $1,000 a day, paid to Meta |
+| Giveaway ladder | 1st (judged): 90 days free, $10,000 value, referrer wins too. 2nd, the Second-Place Stack (drawn at random): 90 days at 50% off plus a one-month Content Package, a Competitor Analysis, five scripted campaigns and a website buildout if needed, free ($5,250 in deliverables), $9,750 of value with the revenue ROI guarantee, 72 hours to claim. 3rd: free audit and website buildout, hosting and maintenance $189 a month. Public copy says "second place" and "third place", never "everyone". Standard: $3,000/mo |
+| Guarantee | Revenue ROI guarantee, second-place 90-day program: "If you do these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has." |
 | Reason why | Five winter seats a quarter, one per metro. We are inside the business, so that is the cap |
 | Anchor | A full-time CMO, setter, media buyer and creative person costs $330,000 a year to hire. One sold job covers a month |
 | Launch mechanic | The client's Free Roof Giveaway: 7-day countdown, one first prize, many second prizes with a 72-hour claim, then phones |
@@ -50,17 +62,19 @@ The install works for a contractor whose problem is demand and follow-up, not op
 
 |  | Roofing |
 | --- | --- |
-| Revenue band | $1M to $10M |
+| Revenue band | Sweet spot $1M to $10M. No minimum to enter |
 | Average ticket | $12,000 to $25,000 replacement |
 | Sales motion | Inspection, then in-home close |
 | Season to launch | Spring hail, fall pre-winter |
 | Must have | A closer who can run 3+ appointments a day; crews for 30+ extra roofs a quarter |
 | Owner on camera | Yes, the VSL is the owner |
-| Ad budget they can fund | $5,000+/month |
+| Ad budget they can fund | $6,000 to $30,000/month ($200 to $1,000 a day) |
 
-**Not a fit:**
+**`not-a-fit` (the GHL tag) means only:** will not be on camera, or cannot fund $200 a day in ad spend. That contact is out of the grand prize and the second-prize drawing and stays eligible for third place. Revenue under $1M alone is not `not-a-fit`, and an applicant who never completes an interview is not tagged `not-a-fit`.
 
-- Under $1M revenue, or the owner is the only closer and still on the roof or in the attic. There is nobody to hand the engine to.
+**Weak fits (sales notes, not the `not-a-fit` tag):**
+
+- The owner is the only closer and still on the roof or in the attic. There is nobody to hand the engine to.
 - Storm chasers with no fixed metro. The giveaway needs a market that can see the winner.
 - Anyone who will not put a person on the phone within five minutes of a lead. We can hire the setter, but the owner has to pay them.
 - Anyone who wants to frame a discount as an insurance deductible. See Compliance.
@@ -125,14 +139,15 @@ One price: $3,000 a month, 90-day minimum, ad budget paid to Meta. One sold roof
 | Line | Amount | Notes |
 | --- | --- | --- |
 | Growth Partner retainer | $3,000 / month, 90-day minimum | Offer structure and scripts, editing, ad management, nurture automation, setter script and coaching, weekly scorecard, one giveaway launch |
-| Second-place pricing (giveaway) | $1,500 / month for the first 90 days, then $3,000 | The Second-Place Stack: Competitor Analysis ($1,500, delivered within 7 days of booking), one-month Content Package ($2,500) and five scripted campaigns ($1,250) in month 1, plus the 50% price and the ROI guarantee below. $9,750 of value. Claim within 72 hours by booking the interview. Our cost per claimant is about 8 hours, most of it already systemized in the creative engine |
-| Grand prize | $0 for 90 days (value $10,000) | One company plus its referrer. Converts to $3,000/mo after day 90 |
-| Ad budget | From $150 / day, paid to Meta ($150 to $300 recommended) | Not ours, never passes through us |
+| Second-place pricing (giveaway) | $1,500 / month for the first 90 days, then $3,000 | The Second-Place Stack, drawn at random: Competitor Analysis ($1,500, delivered within 7 days of booking the claim call, signed or not), one-month Content Package ($2,500) and five scripted campaigns ($1,250) in month 1 of the program once they sign, a free website buildout if they have no website [DECIDE: website ARV, timeline, hosting during the engagement or $189/month], plus the 50% price and the revenue ROI guarantee below. $5,250 in deliverables plus $4,500 off: $9,750 of value. Claim within 72 hours by booking the 20-minute claim call [CHECK: signing deadline]. Our cost per claimant is about 8 hours, most of it already systemized in the creative engine |
+| Third-place pricing (giveaway) | $0 build, $189 / month hosting and maintenance | Free marketing audit and website buildout. Claim within 72 hours by booking the Free Audit + Website Call. [DECIDE: hosting term, cancellation, site and domain ownership, build timeline, ARV] |
+| Grand prize | $0 for 90 days (value $10,000) | One company plus its referrer. After day 90 the winner may continue at $3,000 a month. No obligation |
+| Ad budget | $200 to $1,000 / day, paid to Meta | $18,000 over 90 days at $200/day, $90,000 at $1,000/day. Not ours, never passes through us |
 | Client giveaway prize | Client's hard cost, $4,000 to $12,000 | Their marketing spend and their PR |
 | Setter wage | Client payroll | We script and coach; they employ |
 | Renewal after month 3 | $3,000 / month, month to month |  |
 
-**Guarantee.** Second-place winners get a guaranteed ROI: if they do everything on the commitment list (on camera within 14 days, ad spend funded from $150/day, follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. Attorney to word it; the conditions are the whole guarantee.
+**Guarantee.** The revenue ROI guarantee covers the second-place 90-day program: if the winner does these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. Attorney to word it; the four conditions are the whole guarantee. [CHECK: performance guarantee wording, and how "paid for itself in closed jobs" is measured]
 
 **Reason why.** Five winter seats a quarter, one per metro. Two roofers in the same metro cannot both be seated.
 
@@ -140,7 +155,7 @@ One price: $3,000 a month, 90-day minimum, ad budget paid to Meta. One sold roof
 
 ## Unit economics
 
-At conservative first-launch inputs, the giveaway returns between five and nine times its cost in gross profit for roofing. These are model assumptions, not measurements; the first pilot replaces them. Set rate, show rate and close rate are the numbers the setter and closer move.
+At conservative first-launch inputs, the giveaway returns between five and nine times its cost in gross profit for roofing. These are model assumptions, not measurements; the first client launch replaces them. Set rate, show rate and close rate are the numbers the setter and closer move.
 
 | Input (first launch, one metro) | Roofing |
 | --- | --- |
@@ -165,16 +180,17 @@ The number to watch is the set rate. At 10% instead of 25%, roofing drops to 23 
 
 ## How 2URN sells it
 
-We sell Growth Partner with the same money model we install for clients. Our giveaway fills the list, the interview qualifies and anchors, the second prize gives everyone a reason to claim, and the winner becomes the case study that sells the next quarter. Nobody on a call has to be sold up.
+We sell Growth Partner with the same money model we install for clients. Our giveaway fills the list, the interview scores and anchors, the second-place Stack gives the drawn winners a reason to claim, and the winner becomes the case study that sells the next quarter. Nobody on a call has to be sold up.
 
-1. **Giveaway, 14 days, $200/day on Meta.** Ads are fun and winter-themed; the page is plain about the rules. Lowest-friction page: six fields (name, company, email, phone, revenue band), no gate, everyone is invited to apply. The winner's commitments sit below the prizes as information, not as a filter. Qualification happens on the call. Existing clients are excluded from the audience.
-2. **Setter books every qualified applicant into a 20-minute interview within 2 business days.** Camron and Zoe run them. It is an interview, not a close: numbers, who's on camera, team, what happened with the last agency, why they want to win. Every interview is scored on the six criteria and the notes go in GHL. This is also the database we sell from later.
-3. **Winner chosen and announced Dec 4** from the scorecards, on video: one grand prize, and the referrer if there is one. The winner signs the commitments (ad spend, shoots in 14 days, weekly call, public case study).
-4. **Everyone else who interviewed and qualifies wins the Second-Place Stack: $5,250 of deliverables free plus half off, $9,750 of value. Publicly it is "second place", never "everyone wins". The Competitor Analysis lands within 7 days of booking whether or not they sign, which makes the claim call easy and puts a sales asset in their hands. The purpose of second place is to bring them into Growth Partner.** $1,500/mo for the first 90 days, 72 hours to claim. Camron calls each one. The close is the claim.
-5. **Document the 90 days live.** Weekly updates to every applicant, win or not. At day 90 the case study goes to every applicant who did not buy, and the giveaway runs again on the next season.
-6. **Evergreen between giveaways.** Growth Partner at $3,000/mo with the launch guarantee, plus retargeting and a newsletter to the applicant list. Test LinkedIn alongside Meta for the agency's own ads.
+1. **Giveaway, $200/day on Meta, running until entries close Dec 5 (14 days planned; see the launch-date decision in the checklist).** Ads are fun and winter-themed; the page is plain about the rules. Lowest-friction page: six fields (first name, last name, company, email, phone, revenue band), no gate, everyone is invited to apply. The winner's commitments sit below the prizes as information, not as a filter. Every entrant also gets a referral page link (/refer) and can nominate another roofer on the thank-you page; a nomination is not an entry, and the nominee gets one manual call from the setter and no automated messages. Existing clients are excluded from the audience.
+2. **Setter books every applicant into a 20-minute interview within 2 business days.** Camron and Zoe run them. It is an interview, not a close: numbers, who's on camera, team, what happened with the last agency, why they want to win. Every interview is scored on the six criteria and the notes go in GHL. This is also the database we sell from later. The six criteria and weights (proposal, [CHECK: weights]): content, owner or lead rep on camera, no AI avatars (25, minimum requirement); ad budget of $200 to $1,000 a day (20, minimum requirement); case studies for their own business (10); public case study (15); testimonial for 2URN (10); capacity and commitment, a team for more appointments and the slow season (20). Tie-break: higher score on criterion 1, then a majority vote of the panel. Minimum requirements 1 and 2 also apply to the second-prize drawing pool.
+3. **Grand prize winner chosen from the scorecards and notified Dec 5** (7:00 PM CT): one grand prize, and the referrer if there is one. The referrer is the entrant whose link the winner entered through, or who nominated the winner on the thank-you form before the winner entered: read the winner's own `referred_by`, and if it is empty the winner's own `first_nominated_by_code` (the first nomination, made before the winner entered); the referrer is the entrant whose `referral_code` equals that value. The public announcement (video, banner, socials) is posted only after the winner accepts and signs the publicity and case-study release. The panel chooses; it is never described as chance. The winner signs the five commitments (ad spend of $200 to $1,000 a day, the owner or a lead rep on camera, case studies for their own business, the public case study, a testimonial for 2URN Marketing).
+4. **Second place is drawn at random** from eligible applicants. Operating default for the pool: applicants who completed the interview by the cutoff (Dec 5, 5:00 PM CT [CHECK]) and met minimum requirements 1 and 2, excluding the grand-prize winner and any referrer who shares the grand prize [CHECK: if counsel says the interview cannot be a condition of a chance-based prize, the pool is every eligible entrant]. Number drawn: [DECIDE: number of second-place winners to draw]. Method: export the pool to a sheet, add a RAND() column, sort by it, tag the first N contacts `second-place`, and save the sheet with a timestamp next to the scorecards. The drawn winners get the Second-Place Stack: $5,250 in deliverables plus a website if they need one, free, plus half off, $9,750 of value. Publicly it is "second place", never "everyone wins". The Competitor Analysis lands within 7 days of booking whether or not they sign, which makes the claim call easy and puts a sales asset in their hands. The purpose of the Stack is to bring them into Growth Partner. $1,500/mo for the first 90 days, 72 hours to claim by booking the 20-minute claim call. On that call we go over what they get, when each piece arrives, and the Growth Partner agreement at $1,500 a month for the first 90 days. The Content Package, the campaigns and the website are delivered inside the program once they sign [CHECK: signing deadline]. The setter calls each one, starting the next morning (setter-script.md Part B). The close is the claim.
+5. **Third place is the on-ramp** for companies that are not ready for Growth Partner (will not be on camera, or cannot fund $200 a day, or simply did not win the grand prize or the drawing): a free marketing audit and a website buildout, hosting and maintenance $189 a month. Operating default: every other eligible entrant, including contacts tagged `not-a-fit` and applicants who never completed an interview, is tagged `third-place` [DECIDE: confirm who receives third place and whether it is capped]. 72 hours to claim by booking the Free Audit + Website Call; the setter dials second-place winners first, then third-place winners who have not booked [DECIDE: who runs the audit call]. Terms: [DECIDE: hosting term, cancellation, site and domain ownership, build timeline, ARV].
+6. **Document the 90 days live.** Weekly updates to every applicant, win or not. At day 90 the case study goes to every applicant who did not buy, and the giveaway runs again on the next season.
+7. **Evergreen between giveaways.** Growth Partner at $3,000/mo [DECIDE: whether the revenue ROI guarantee also applies at the standard price], plus retargeting and a newsletter to the applicant list. Test LinkedIn alongside Meta for the agency's own ads.
 
-Targets for the first run: 150 applications, 60 qualified, 40 interviews held, 1 winner, 5 second-place clients. Kill line and budget are in the call section above.
+Targets for the first run: 250 applications, 60 qualified, 40 interviews held, 1 winner, 5 second-place clients, third-place hosting clients [DECIDE: target]. Kill line and budget are in the section above.
 
 No client pilot runs first. The giveaway winner is the case study, documented from day one, and the Valor kit built on Nov 12 is shelved.
 
@@ -196,15 +212,15 @@ Capacity rule: a seat opens when a client reaches month 2 and the setter is hold
 
 ## Compliance
 
-The giveaway is a sweepstakes and the second prize is a discount. Both have rules that differ by state, and the rules are written once with an attorney and reused. None of this is legal advice; the draft rules are in the funnel folder for review.
+Our giveaway is a hybrid: a judged grand prize and a second prize drawn at random, and the second prize is a discount. The client's Free Roof Giveaway is a sweepstakes. Both have rules that differ by state, and the rules are written once with an attorney and reused. None of this is legal advice; the draft rules are in the funnel folder for review.
 
 | Topic | Applies to | What we do |
 | --- | --- | --- |
-| Sweepstakes law | All, our giveaway too | No purchase necessary, free alternate method of entry, official rules on the page, odds statement, winner list. Register and bond in New York and Florida when the prize exceeds $5,000 (it does) |
+| Sweepstakes law | All, our giveaway too | Our promotion is a hybrid: the grand prize is judged, the second prize is a random drawing. The drawing brings the sweepstakes rules into play: no purchase necessary, free alternate method of entry, official rules on the page, odds statement ("odds depend on the number of eligible entries"), the stated number of prizes, winner list. Register and bond in New York and Florida when the prize exceeds $5,000 (it does), normally filed before the promotion starts. [CHECK: whether the interview can be a condition of the drawing; NY and FL filing timing, else void the drawing there or keep second prize judged; whether rules can change after entries open] |
 | Insurance deductibles | Roofing storm work | Never advertise paying, waiving or absorbing a deductible. Second prize is a discount on retail or a free upgrade. Texas and many states treat deductible-eating as a crime |
 | Financing claims | Roofing | Financing APR and terms shown with the lender's required disclosure. Warranty and storm-damage claims use the manufacturer's wording or the client's own documented result |
-| Referral entries | All | Extra entries for referrals are consideration in a few states. Rules cap them and the attorney confirms the state list |
-| TCPA consent | All | Entry form carries express written consent for calls and texts, consent is not a condition of entry, STOP honored in GHL |
+| Referral page and nominations | All | Our giveaway gives no extra entries for referrals (rules Section 4). A referral only matters if the referred company, a roofer in another market, wins the grand prize: then the referrer wins it too. A nomination on the thank-you form counts as a referral once the nominated company enters; the nomination itself is not an entry and never changes judging or the drawing. Client Free Roof Giveaways that give extra entries need the attorney to confirm the state list, because extra entries can be consideration in a few states [CHECK: referral and nomination wording] |
+| TCPA consent | All | Entry form carries express written consent for calls and texts, consent is not a condition of entry, STOP honored in GHL. Nominated roofers have given no consent: one manual call by the setter, one voicemail naming the referrer if no answer, no automated messages, and "nominee-declined" means never contact again |
 | Licensing | All | Winner must be a homeowner of record (client giveaways) or a licensed contractor (our giveaway). Verified before the prize is awarded |
 | Publicity | All | Winner signs a release before the announcement video is posted |
 
@@ -226,37 +242,41 @@ Two outputs sit under the inputs: cost per sold job and gross profit after ads. 
 
 Escalation: any input under target two weeks running gets a named fix on the owner call, and the fix is one of three things: creative, the sequence, or the person on the phone.
 
-## 30-day setup checklist
+## Setup checklist, dated back from Dec 5
 
-Ready to sell means: a pilot running, the rules reviewed, the funnel live in GHL, the VSL shot, and the kickoff kit written. Four weeks, in this order.
+Ready to sell means: the rules reviewed, the funnel live in GHL, the VSL shot, and the kickoff kit written. Today is Nov 23, 2026 and nothing is live. The dates run backward from the Dec 5, 2026, 7:00 PM CT notification, so a 14-day test cannot finish first. [DECIDE: launch date. A launch on Nov 26 gives a 10-day run; keep Dec 5 with a shorter test or move the announcement]
 
-**Week 1, by Nov 19, 2026: decide and pilot**
+**By Nov 24, 2026: decide**
 
-- [ ] Decide: whether second place is capped or open to every qualified applicant
-- [ ] Confirm pricing in this doc or change it here: $15,000 + $6,000 / month, renewal $4,000
-- [ ] Send the draft official rules and the deductible/rebate language to the attorney, both the 2URN and the client versions
-- [ ] Open the pilot's input audit: leads, cost per lead, set, show, close, ticket for the last 90 days
+- [ ] Decide: the launch date; the number of second-place winners to draw; who receives third place and whether it is capped; third-place hosting terms; the kill line
+- [ ] Confirm pricing in this doc or change it here: $3,000 a month with a 90-day minimum; second place $1,500 a month for the first 90 days; third place $189 a month
+- [ ] Send the draft official rules and the deductible/rebate language to the attorney, both the 2URN and the client versions, flagging that New York and Florida filing normally has to happen before the promotion starts
+- [ ] Open the input audit template for the grand prize winner's kickoff
 
-**Week 2, by Nov 26, 2026: build**
+**By Nov 25, 2026: build and shoot**
 
-- [ ] Paste the three funnel pages into GHL, create the form, fields, workflows and calendar per GHL-SETUP.md
-- [ ] Run the three-step test (entry, referral, claim) and delete the test contacts
-- [ ] Write the setter job post and interview scorecard; post for the pilot client
-- [ ] Build the pilot client's giveaway pages from the same kit with their prize
-
-**Week 3, by Dec 3, 2026: shoot and launch the pilot**
-
-- [ ] Camron shoots the 2URN VSL and hook variants Nov 17 (fun; rules in the first 60 seconds); Shabi edits
-- [ ] Zoe and Camron produce the ad set: 3 owner-on-camera cuts, 2 graphic ads, 1 Santa-on-the-roof bit
-- [ ] Josh (Hydra) drafts the application and official rules; merge with our judged-contest draft; attorney review
+- [ ] Paste the five funnel pages into GHL; create both forms (Entry, Nomination), the custom fields, workflows A to H (H is "Nominee Declined") and both calendars (Growth Partner Interview, Free Audit + Website Call) per GHL-SETUP.md
+- [ ] Run the test (entry, referral page, nomination, second-place claim, third-place claim) and delete the test contacts
+- [ ] Write the setter job post and interview scorecard
 - [ ] Send Josh the VSL and ad scripts for feedback before the shoot
+- [ ] Camron shoots the 2URN VSL v3 and hook variants (any Nov 17 cut predates the Nov 23 terms) [DECIDE: reshoot date] (fun; rules in the first 60 seconds); Shabi edits
+- [ ] Zoe and Camron produce the ad set: 3 owner-on-camera cuts, 2 graphic ads, 1 Santa-on-the-roof bit
+- [ ] Josh (Hydra) drafts the application and official rules; merge with our hybrid rules draft (judged grand prize, random second-prize drawing); attorney review
 
-**Week 4, by Dec 12, 2026: 2URN's own launch**
+**Launch day (proposed Nov 26, 2026): 2URN's own launch**
 
 - [ ] Rules approved and posted at /rules; judging criteria match the page and the VSL word for word
-- [ ] Pages, sequence and interview calendar live in 2URN's GHL; Meta exclusion list of current clients loaded
-- [ ] Launch the 14-day test at $200/day; check the kill line on day 7
-- [ ] Interviews run daily; scorecards in GHL; winner picked and announced Dec 4 on video
-- [ ] Second-place calls within 24 hours of the announcement; 72-hour claim window; case-study kickoff with the winner
+- [ ] Pages, sequence, both forms and both calendars live in 2URN's GHL; Meta exclusion list of current clients loaded
+- [ ] Launch the test at $200/day and run it until entries close Dec 5 (a Nov 26 launch is a 10-day run, not 14); check the kill line on day 7 (Dec 2 for a Nov 26 launch)
 
-Open questions: confirm the kill line numbers; whether second place is capped (Zoe: everyone who qualifies) or limited to five seats a quarter.
+**Launch to Dec 5, 2026: interviews and notification**
+
+- [ ] Interviews run daily; scorecards in GHL; interview cutoff Dec 5, 5:00 PM CT [CHECK]
+- [ ] Dec 5, 7:00 PM CT: winners notified per the GHL-SETUP.md runbook (panel picks the grand prize, second place drawn at random, third place tagged); the public announcement video is posted only after the grand prize winner signs the publicity and case-study release
+
+**Dec 6 to Dec 15, 2026: claims and kickoff**
+
+- [ ] The setter calls second-place winners from the next morning, then third-place winners; 72-hour claim windows; case-study kickoff with the grand prize winner
+- [ ] Kill line, third condition: at least one second-place claim by Dec 15 (day 10 after the announcement)
+
+Open questions: [DECIDE: launch date]; [DECIDE: confirm the kill line]; [DECIDE: number of second-place winners to draw]; [DECIDE: confirm who receives third place and whether it is capped]; [DECIDE: who runs the audit call]; [DECIDE: confirm audit scope]; [DECIDE: hosting term, cancellation, site and domain ownership, build timeline, ARV]; [DECIDE: website ARV, timeline, and whether hosting is included during the engagement or billed at $189/month]; [DECIDE: reshoot date].

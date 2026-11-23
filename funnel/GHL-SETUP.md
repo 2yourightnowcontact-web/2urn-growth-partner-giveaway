@@ -1,109 +1,221 @@
 # GHL Setup: 2URN Growth Partner Giveaway
 
-Sub-account: 2URN Marketing (our own). Everything below is a paste-and-click list. Where a value lives in a file, the file and the line are named.
+Sub-account: 2URN Marketing (our own). Everything below is a paste-and-click list. Where a value lives in a file, the file and the config key are named. Roofing companies only.
 
-The offer: 2URN Growth Partner, $3,000 per month, 90-day minimum, client funds ad spend (from $150 a day, recommended $150 to $300). There are two prizes. Grand prize (1): 90 days of Growth Partner, free ($10,000 value), plus the referrer if there is one. Second place, "The Second-Place Stack": every qualified applicant who is not the grand-prize winner gets second place (stated plainly here for the team; the purpose is to bring them into Growth Partner; public pages and messages say only "second place" and "second-place winners"). When a second-place winner claims (books the interview within 72 hours and moves forward on the 50% deal) they get, free: a one-month Content Package ($2,500 value: a 45-minute interview with Camron; we write 5 ad scripts and 5 content scripts in their words; they shoot on a phone with our shot list; we edit 10 finished pieces), a Competitor Analysis ($1,500 value: who their current competitors are, what they run, offers, hooks, review counts and the gaps) and five advertising campaigns scripted for them ($1,250 value: each with 10 hooks and a full video script, ready to shoot; not edited ads, not loaded audiences), plus 50% off the first 90 days of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then $3,000, with the ROI guarantee if they do everything on the commitment list. Headline math: "$5,250 in deliverables, free, plus $4,500 off: $9,750 of value for second place." Delivery split [CHECK in rules]: the Competitor Analysis within 7 days of booking the interview (whether or not they sign); the Content Package and the five scripted campaigns in month 1 of the engagement. The guarantee, worded the same on every page: "If you do everything on the list (on camera within 14 days, ad spend funded from $150/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has." Every applicant gets a 20-minute call; there is no form-level disqualification. Qualification (revenue, on camera, ad budget, team) happens on the setter call and interview. The winner is chosen by 2URN's panel from interview scorecards against the published criteria. It is a judged contest.
+The offer: 2URN Growth Partner, $3,000 per month, 90-day minimum. The client funds ad spend of $200 to $1,000 a day, paid directly to Meta. There are three prizes.
+
+- **Grand prize (one winner, plus the referrer if there is one):** 90 days of Growth Partner, free ($10,000 value). Judged: 2URN's panel chooses after a 20-minute interview, against six published criteria. People choose, not chance.
+- **Second place, "the Second-Place Stack":** drawn at random from eligible applicants. When a second-place winner claims (books a 20-minute claim call on `/claim` within 72 hours of notification), these are included free with second place: a One-Month Content Package ($2,500: a 45-minute interview with Camron; 5 ad scripts and 5 content scripts in their words; they shoot on a phone with our shot list; we edit 10 finished pieces), a Competitor Analysis ($1,500: who their current competitors are, what they run, offers, hooks, review counts and the gaps) and Five Advertising Campaigns, scripted ($1,250: 10 hooks and a full video script each, ready to shoot; scripts only, not edited ads, not loaded audiences), plus a Website Buildout, free, if they do not have a website [DECIDE: website ARV, timeline, and whether hosting is included during the engagement or billed at $189/month]. They also get 50% off the first 90 days of Growth Partner ($1,500 a month instead of $3,000, a $4,500 saving), then $3,000 a month. Headline math: "$5,250 in deliverables, free, plus $4,500 off: $9,750 of value." Delivery split [CHECK in rules]: the Competitor Analysis within 7 days of booking the claim call (whether or not they sign); the Content Package and the Five Advertising Campaigns in month 1 of the engagement, and the Website Buildout during it. Those three are delivered inside the 90-day program and only if the winner signs the engagement agreement [CHECK: signing deadline]. Claim = booking the claim call. Nothing else.
+- **Third place, "Free Audit + Website Buildout":** a marketing audit and a website built for the company. No build fee. Hosting and maintenance is $189 a month. Claimed within 72 hours by booking a 20-minute call. [DECIDE: confirm audit scope; hosting term, cancellation, site and domain ownership, build timeline, ARV.]
+
+The revenue ROI guarantee, worded the same everywhere: "If you do these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has." The four items are the guarantee's four conditions. [CHECK: performance guarantee wording, and how "paid for itself in closed jobs" is measured.]
+
+Every applicant gets a 20-minute call; nothing is disqualified on the form. Fit is checked on the setter call and interview: on camera and ad budget decide `not-a-fit`; team capacity and the slow season are judging criterion 6. Revenue is asked for context only and never disqualifies. The promotion is a hybrid: the grand prize is judged, second place is a random drawing, third place goes to the other eligible entrants. Public pages and messages say only "second place", "second-place winners" and "third place", and never say how many people win a tier.
+
+**Internal note (do not put on any public page).** Before Nov 23 the plan gave second place to all qualified applicants who did not win. Camron's Nov 23 direction is a random drawing. Set the number to draw before Dec 5. If the number equals the whole pool, "drawn at random" on the page is not accurate; settle the wording with the attorney first.
 
 ## 1. Funnel and pages
 Sites → Funnels → + New Funnel → "Growth Partner Giveaway". Domain: go.2urnmarketing.com.
 
-| Step | Path | Paste file | Element |
+| Step | Path | Paste file | Config object |
 |---|---|---|---|
-| Giveaway | `/lead-engine` | `01-giveaway-ghl.html` | one Custom Code element, full width, no section padding |
-| Thank you | `/thank-you` | `02-thankyou-ghl.html` | same |
-| Claim | `/claim` | `03-claim-ghl.html` | same |
-| Rules | `/rules` | paste the attorney-approved rules as plain text | text element |
+| Giveaway | `/lead-engine` | `01-giveaway-ghl.html` | `window.GHL_CONFIG` {formId, webhook, announcementAt, thankYouPath, defaultAd} |
+| Thank you | `/thank-you` | `02-thankyou-ghl.html` | `window.GW_TY` {landingUrl, referUrl, announcementAt, nominateFormId, nominateWebhook} |
+| Claim, second place | `/claim` | `03-claim-ghl.html` | `window.GW_CLAIM` {bookingUrl} |
+| Referral | `/refer` | `04-referral-ghl.html` | `window.GHL_CONFIG` {formId, webhook, announcementAt, thankYouPath, defaultAd, landingPath} |
+| Claim, third place | `/claim-third` | `05-claim-third-ghl.html` | `window.GW_CLAIM3` {bookingUrl} |
+| Rules | `/rules` | attorney-approved rules as plain text | text element |
 
-The path `/lead-engine` is kept so existing links keep working. Change it to `/growth-partner` if you want, then update `landingUrl` in `02-thankyou-ghl.html`.
+Each paste file goes in one Custom Code element, full width, no section padding. The Rules page is a text element.
+
+The path `/lead-engine` is kept so existing links keep working. If you change it (for example to `/growth-partner`), update `GHL_CONFIG.landingPath` in `04-referral-ghl.html` (the "See the full giveaway page" link uses it) and `GW_TY.landingUrl` in `02-thankyou-ghl.html` (the "Enter first to get your link." button uses it) to the new path and public URL.
+
+Two more settings that must line up:
+- `GW_TY.referUrl` in `02-thankyou-ghl.html` must be the public URL of the `/refer` step: `https://go.2urnmarketing.com/refer`. The thank-you page builds each entrant's referral link from it.
+- `04-referral-ghl.html` uses the SAME `formId` and the SAME `webhook` as `01-giveaway-ghl.html`. Same form, same workflow. Only the `lead_source` differs.
 
 Open each .html in TextEdit → Cmd+A → Cmd+C → paste into the Custom Code element → Save. Set the page's section padding to 0 and width to full.
 
-Add the Meta pixel in Funnel Settings → Tracking Code (head). The pages fire `Lead` on entry and `CompleteRegistration` on the thank-you page. Neither carries a qualified or not-a-fit flag any more, because the form no longer qualifies anyone. Everyone who enters is a Lead.
+Add the Meta pixel in Funnel Settings → Tracking Code (head). The pages fire `Lead` on entry (01 and 04) and `CompleteRegistration` on the thank-you page. Nothing carries a qualified or not-a-fit flag, because the form qualifies nobody. Everyone who enters is a Lead.
 
-## 2. Form
-Sites → Forms → + New → "Growth Partner Giveaway Entry". Add these fields (the names must match exactly; they're what the page posts):
+## 2. Forms
+### Entry form
+Sites → Forms → + New → "Growth Partner Giveaway Entry". Used by BOTH `01-giveaway-ghl.html` and `04-referral-ghl.html`. Add these fields (the names must match exactly; they're what the pages post):
 
 | Field | Type | Options |
 |---|---|---|
 | first_name, last_name, email, phone | standard | |
 | company | standard Company Name | |
-| revenue_12mo | custom dropdown "Revenue Last 12 Months" | under_1m, 1m_3m, 3m_10m, over_10m (self-reported, not disqualifying; confirmed on the call) |
+| revenue_12mo | custom dropdown "Revenue Last 12 Months" | under_1m, 1m_3m, 3m_10m, over_10m (self-reported, context for the call, never disqualifying) |
 | ad_attribution | custom text | |
 | referred_by | custom text "Referred By Code" | |
 | referral_code | custom text "Referral Code" | |
-| lead_source | custom text | |
+| lead_source | custom text | "Giveaway Landing Page" from 01; "Giveaway Referral Page" from 04 |
 | lead_note | custom multi-line "Lead Note" | |
 
-The old fields `trade`, `volume`, `problem`, `city`, `city_state`, `on_camera`, `ad_budget`, `biggest_problem`, `agrees_requirements` and `disqualified` are gone from the page (6 form fields now). Delete them from the GHL form, or leave them unused. If you still want them as contact fields, the setter fills `on_camera` and `ad_budget` by hand after the call.
+`04-referral-ghl.html` posts to this same form with `lead_source` = "Giveaway Referral Page". `referral_code` is the first 3 letters of the first name plus the first 3 letters of the last name (uppercase, non-letters become X) plus the last 4 digits of the phone.
 
-Every entry submits and is treated the same. Nobody is flagged or blocked by the form. Under-$1M answers still arrive with `revenue_12mo` = under_1m so the setter can see it, but they get the same call.
+Revenue is not a requirement. There is no revenue minimum to enter or to win. The `revenue_12mo` field is self-reported and is there so the setter can prepare for the call. Every entry gets the same call.
 
-Save → Integrate → copy the **form id** → paste into `01-giveaway-ghl.html` at `window.GHL_CONFIG.formId`. Re-paste the page.
+Older fields (`trade`, `volume`, `problem`, `city`, `city_state`, `on_camera`, `ad_budget`, `biggest_problem`, `agrees_requirements`, `disqualified`) are not posted by the pages. Delete them from the GHL form or leave them unused. If you still want them as contact fields, the setter fills `on_camera` and `ad_budget` by hand after the call.
 
-## 3. Custom values and fields for the sequence
+Save → Integrate → copy the **form id** → paste into `01-giveaway-ghl.html` at `window.GHL_CONFIG.formId`, and the same id into `04-referral-ghl.html` at `window.GHL_CONFIG.formId`. Re-paste both pages.
+
+### Nomination form
+Sites → Forms → + New → "Growth Partner Giveaway Nomination". It sits on the `/thank-you` page and creates a contact FOR THE NOMINATED ROOFER. Add these fields (names must match exactly):
+
+| Field | Type | Notes |
+|---|---|---|
+| first_name | standard | nominee first name (required) |
+| last_name | standard | nominee last name (may be empty) |
+| company | standard Company Name | nominee company (required) |
+| phone | standard | nominee phone, at least 10 digits (required) |
+| nominee_market | custom text | optional "City, State" |
+| nominated_by_code | custom text | the referrer's referral code |
+| nominated_by_name | custom text | referrer first name, plus " · " and company when known |
+| lead_source | custom text | always "Giveaway Nomination" |
+| lead_note | custom multi-line "Lead Note" | |
+
+Save → Integrate → copy the **form id** → paste into `02-thankyou-ghl.html` at `window.GW_TY.nominateFormId`. Leave `window.GW_TY.nominateWebhook` empty: the form is the transport. Only if the form post fails in testing, put the workflow F inbound webhook URL there and clear `nominateFormId`, so workflow F never runs twice for one nomination. Both empty = preview mode: the page shows success and sends nothing. Re-paste the page.
+
+The page requires a ticked checkbox "I know this roofer and they're fine with a call from 2URN." and shows: "We call them once and tell them you put them forward. No automated texts. They still have to enter themselves." A nomination is not an entry and never changes judging or the drawing.
+
+## 3. Custom fields, values and tags
 Settings → Custom Fields (folder "Giveaway"):
-- `referral_link` (text): set by workflow: `https://go.2urnmarketing.com/lead-engine?ref={{contact.referral_code}}`
+- `referral_link` (text): set by workflow: `https://go.2urnmarketing.com/refer?ref={{contact.referral_code}}`. Only the code, no name or company (merge fields are not URL-encoded and a space would break the link). The thank-you page builds the longer link with the name in JavaScript.
 - `interview_link` (text): set by workflow: the Growth Partner Interview calendar widget link plus `?first_name={{contact.first_name}}&last_name={{contact.last_name}}&email={{contact.email}}&phone={{contact.phone}}`
-- `claim_deadline` (date/time): set by workflow on announcement day: now + 72 hours
-- `claim_link` (text): `https://go.2urnmarketing.com/claim?until={{contact.claim_deadline}}&first={{contact.first_name}}&last={{contact.last_name}}&email={{contact.email}}&phone={{contact.phone}}`
-- `cma_delivered` (date): the date the Competitor Analysis report was sent. Set by hand when the "Deliver Competitor Analysis" task is completed (or by a workflow step on task completion). Empty means not yet delivered.
-- `giveaway_result` (dropdown): entered, grand_prize, second_place, not_eligible
+- `claim_deadline` (date/time): set by workflow: notification time + 72 hours. Used by second AND third place.
+- `claim_until_iso` (text): set by workflows B and G right after `claim_deadline`: the same moment written as ISO 8601 with no spaces (GHL "Date/Time Formatter" action, format `YYYY-MM-DDTHH:mm:ssZ`). If the account has no such action, leave it empty: the claim pages then show no countdown and say "Claim within 72 hours of your notification."
+- `claim_link` (text): `https://go.2urnmarketing.com/claim?until={{contact.claim_until_iso}}&first={{contact.first_name}}`
+- `claim3_link` (text): `https://go.2urnmarketing.com/claim-third?until={{contact.claim_until_iso}}&first={{contact.first_name}}`
+  `until` comes first and the name last, so a space in a name can only cut the name. No last name, email or phone in either link (merge fields are not URL-encoded).
+- `cma_delivered` (date): the date the Competitor Analysis report was sent. Set by hand when the "Deliver Competitor Analysis within 7 days" task is completed (or by a workflow step on task completion). Empty means not yet delivered.
 - `interview_score` (number, 0 to 100): the panel's total from the interview scorecard (rules, Section 6)
 - `referral_count` (number)
+- `giveaway_result` (dropdown): `entered, grand_prize, second_place, third_place, not_eligible`
+- `nominated_by_code` (text), `nominated_by_name` (text), `nominee_market` (text): filled by the Nomination form. Every new nomination of the same roofer overwrites the first two.
+- `first_nominated_by_code` (text): written once by workflow F step 1, from the first nomination of a roofer who has not entered yet. Nothing overwrites it. The referral bonus check and the link the setter sends both read this field, not `nominated_by_code`.
 
-Tags used: `giveaway-entrant`, `not-a-fit`, `interview-booked`, `interviewed`, `grand-prize`, `second-place`, `evergreen`.
+Tags: `giveaway-entrant`, `not-a-fit`, `interview-booked`, `interviewed`, `grand-prize`, `second-place`, `third-place`, `nominated`, `nominee-declined`, `evergreen`.
+
+Pipeline "Giveaway" stages, in order: Entered, Attempted, Contacted, Interview Booked, Interviewed, Second Place Notified, Second Place Booked, Third Place Notified, Third Place Booked, Nominated, Not a Fit, Not Interested.
 
 ## 4. Workflows
 Automation → Workflows.
 
-**A. "Giveaway Entry"**: Trigger: Form Submitted (Growth Partner Giveaway Entry). Also add an Inbound Webhook trigger; copy its URL into `01-giveaway-ghl.html` at `window.GHL_CONFIG.webhook` (optional belt-and-braces).
-1. **Every entrant:** add tag `giveaway-entrant`. Set `giveaway_result` = entered. There is no form-level Not a Fit branch.
-2. Update fields `referral_link` and `interview_link` with the values above.
-3. Add to pipeline "Giveaway" → stage "Entered".
-4. Send the "Immediately on entry" SMS and email from `sequence-email-sms.md`.
-5. Create a task for the setter: "Call to book interview", due in 2 business days.
-6. Wait until next morning, 10 AM → send the "Book your interview" SMS (skip if the contact has the tag `interview-booked`). Then the Day 1 email.
-7. Wait 1 day → Day 2 SMS + email. Continue through Day 6 and Announcement-day morning exactly as the file lists them, including the Day 3 conditional SMS (only if no interview booked). Use "Wait until" steps pinned to calendar dates so late entrants don't get Day 1 after the announcement: anyone entering after Dec 2 only gets the entry message, the interview SMS and the 24-hour message.
-8. If `referred_by` is not empty → internal notification to Camron ("Referral entry: {{contact.first_name}} referred by {{contact.referred_by}}") and add 1 to `referral_count` on the referrer (Find Contact by `referral_code` = `referred_by` → Update field). If GHL can't do the lookup natively, export entries on announcement day and match referrers in a sheet. A referral does not add an entry or change judging. It only identifies who gets the referral bonus if the referred company wins.
+**A. "Giveaway Entry"**: Trigger: Form Submitted (Growth Partner Giveaway Entry). The GHL form is the transport. Leave `window.GHL_CONFIG.webhook` empty in `01-giveaway-ghl.html` and `04-referral-ghl.html`, so workflow A cannot run twice for one entry (two entry texts, two setter tasks, +2 on `referral_count`). Only if the form post fails in testing: add an Inbound Webhook trigger, copy its URL into both pages at `window.GHL_CONFIG.webhook`, and clear `formId` on both. The webhook JSON uses the same field names as the form, including `lead_note`.
+1. **First step, nominees:** if the contact has the tag `nominated`, remove the tag `nominated` and clear Do Not Disturb (SMS and email). They have now entered and consented themselves, so everything below applies to them as normal.
+2. **Every entrant:** add tag `giveaway-entrant`. Set `giveaway_result` = entered. There is no form-level Not a Fit branch.
+3. Update fields `referral_link` and `interview_link` with the values above.
+4. Create/Update Opportunity in pipeline "Giveaway" → stage "Entered" (duplicate opportunities off: a nominee who enters already has one at "Nominated"; move that one).
+5. Send the "Immediately on entry" SMS and email from `sequence-email-sms.md`.
+6. Create a task for the setter: "Call to book interview", due in 2 business days. Cadence per `setter-script.md`: 3 attempts on day 1, 2 on day 2, 1 on day 3. One SMS a day at most per contact, counting workflow texts and setter texts together: the setter texts once, after the last unanswered call of the day, and only if no workflow SMS went to that contact that day.
+6b. If `referred_by` is not empty (build this before any wait step, so it runs at entry even for an entrant whose step 7 check ends the workflow):
+   - Internal notification to Camron: "Referral entry: {{contact.first_name}} referred by {{contact.referred_by}}".
+   - Add 1 to `referral_count` on the referrer (Find Contact by `referral_code` = `referred_by` → Update field). If GHL can't do the lookup natively, export entries on announcement day and match referrers in a sheet.
+   - Do not send any SMS to the referrer from this workflow: it runs on the new entrant's contact, so a Send SMS step would text the new entrant. Optional: the setter finds the referrer (the contact whose `referral_code` equals `referred_by`) and sends this text by hand from the REFERRER's own contact, within the one-SMS-a-day rule: "2URN: {{contact.first_name}}, the roofer you referred just entered. If they win the grand prize, you win it too."
+   A referral does not add an entry or change judging or the drawing. It only identifies who gets the referral bonus if the referred company wins the grand prize.
+7. Wait until next morning, 10 AM. Then three checks, in this order: (a) if the current time is after Dec 5, 2026, 7:00 PM CT, end the workflow: entries are closed and nothing more is sent. (b) If today is Dec 4 or Dec 5, 2026, skip the "Entry +1 day, morning: Book your interview" SMS and the Day 1 email and go to step 8b: that day's pinned SMS goes instead, so the contact never gets two texts in one day. (c) Otherwise send the "Entry +1 day, morning: Book your interview" SMS (skip if the contact has the tag `interview-booked`), then the Day 1 email.
+8. Days 1 to 5 run relative to the entry date: Wait 1 day → Day 2 SMS + email, and so on through Day 5, including the Day 3 conditional SMS (only if no interview booked and not tagged `not-a-fit`). Before each of these steps add an If/Else: if today is Dec 4, 2026 or later, skip straight to step 8b. These messages carry no countdowns; they say "Winners are announced Dec 5."
+8b. Two sends are pinned to dates. After each "Wait until" add an If/Else on today's date (the calendar day, not the time of day): send the Dec 4 message only if today is Dec 4, 2026, and skip it if today is Dec 5 or later. The Dec 5 message always sends, because step 7(a) has already ended the workflow for anyone later. Check the calendar day, not the clock: steps 7 and 8 arrive here at 10:00 AM, the same moment as the pinned time, and the send must still go out. Do not use the contact's Date Added: a nominated roofer or an older contact keeps an earlier Date Added when they enter. Nobody gets a pinned send on the day they enter, because they are still inside the step 7 wait until the next morning. "Wait until Dec 4, 2026, 10:00 AM CT" → the "Dec 4, 10:00 AM CT (pinned): the day before" SMS + email. "Wait until Dec 5, 2026, 10:00 AM CT" → the "Dec 5, 10:00 AM CT (pinned): announcement day, morning" SMS. So someone who enters on Dec 3 gets the entry message, then the Dec 4 and Dec 5 pinned sends; someone who enters on Dec 4 gets the entry message, then the Dec 5 pinned send; someone who enters on Dec 5 gets the entry message only.
 
-**B. "Second Place"**: Trigger: tag added `second-place`.
-1. Set `giveaway_result` = second_place. Set `claim_deadline` = now + 72h. Set `claim_link`.
-2. Send the Second-Place Stack SMS + email from `sequence-email-sms.md`. Move stage to "Second Place Notified".
-3. Wait 24h → if no appointment booked → 48-hours-left SMS (it says the Competitor Analysis arrives within 7 days of booking). Wait 36h → 12-hours-left SMS (same line). Wait 12h → "The Stack is gone" email, tag `evergreen`.
-4. Trigger "Appointment booked" on the Growth Partner Interview calendar → remove from this workflow, stage "Interview Booked", and **create the task "Deliver Competitor Analysis within 7 days"** (assignee: Camron or the analyst; due = booking date + 7 days). When the task is completed, set `cma_delivered` = today. The Competitor Analysis is delivered on claim whether or not the contact signs.
-5. If the contact already has the tag `interview-booked` when this workflow starts (they booked before the announcement), create the same task at once with due = tag date + 7 days, or the second-place notification date + 7 days if later [our assumption, confirm]. The Content Package and the five scripted campaigns are not tasked here: they are delivered in month 1 of the engagement, so create those tasks when the engagement agreement is signed.
+**Mail-in entries (daily, on receipt, by hand).** A mail-in card does not fire workflow A. On the day a valid card arrives, create the contact, set `lead_source` = "Mail-in Entry", add the tag `giveaway-entrant`, set `giveaway_result` = entered, put it in pipeline "Giveaway" at stage Entered, set Do Not Disturb for SMS (they entered without agreeing to texts, so workflows B and G reach them by email only, workflow C's SMS is blocked (Camron's call is the notification, and he sends the grand prize notice by email by hand), and the setter never texts them), add the contact note "Mail-in entry: no SMS consent", and create the setter task "Call to book interview" due in 2 business days. That way a mail-in entrant is interviewed before the cutoff, judged, drawn and tagged on the same terms as an online entrant. Keep the cards with the scorecards. [CHECK: how Sponsor may contact a mail-in entrant who did not agree to calls and texts, for the interview call and for winner notification.]
 
-**C. "Grand Prize"**: Trigger: tag `grand-prize`. Set result = grand_prize, send the winner SMS, task for Camron to call within the hour. If the winner has a `referred_by`, the referrer gets the same tag by hand.
+**B. "Second Place"**: Trigger: tag added `second-place`. Winners are drawn from people who already interviewed, so they claim by booking a 20-minute claim call (not an interview) on the Growth Partner Interview calendar through `/claim`. A booking made after the notification is the claim. Nothing else is.
+1. Set `giveaway_result` = second_place. Set `claim_deadline` = now + 72h. Then a Date/Time Formatter step: format `claim_deadline` as `YYYY-MM-DDTHH:mm:ssZ` and write it into `claim_until_iso` (if the account has no such action, leave `claim_until_iso` empty). Then set `claim_link`.
+2. Send the Second-Place Stack SMS + email from `sequence-email-sms.md` (the wording says the contact was "drawn for second place"). Move stage to "Second Place Notified".
+3. Wait 24h → if no appointment booked since the notification → reminder SMS (the +24h reminder; it says the Competitor Analysis arrives within 7 days of booking). Wait 36h → same check → reminder SMS (the +60h reminder, same line). Wait 12h → same check → "The Stack is gone" email, tag `evergreen`. The check looks only for an appointment booked AFTER this workflow started (the step 4 goal). Never use the tag `interview-booked`, the tag `interviewed` or an appointment from before the announcement as the condition: most winners already have those.
+4. Goal: "Appointment booked" on the Growth Partner Interview calendar after the notification. This is the claim. Remove from this workflow, stage "Second Place Booked", and **create the task "Deliver Competitor Analysis within 7 days"** (assignee: Camron or the analyst; due = booking date + 7 days). When the task is completed, set `cma_delivered` = today. The Competitor Analysis is delivered on claim whether or not the contact signs.
+5. No Competitor Analysis task is created when this workflow starts, even if the contact booked or held an interview before the announcement. Only the claim-call booking in step 4 creates it. The One-Month Content Package, the Five Advertising Campaigns and the Website Buildout are delivered inside the 90-day program and only if the winner signs the engagement agreement [CHECK: signing deadline], so create those tasks when the agreement is signed.
+
+**C. "Grand Prize"**: Trigger: tag `grand-prize`. Set result = grand_prize, send the winner SMS, task for Camron to call within the hour. If runbook step 4 found an eligible referrer in a different market (the winner's own `referred_by`, or if that is empty the winner's own `first_nominated_by_code`), that referrer gets the same tag by hand. This is the notification. Nothing public is posted until the grand prize winner has signed the publicity and case-study release (runbook step 9).
 
 **D. "Interview Booked"**: Trigger: appointment booked on the Growth Partner Interview calendar.
-1. Add tag `interview-booked`. Stage "Interview Booked". Complete the setter's "Call to book interview" task. Stop any pending interview-reminder SMS. (If the contact has the tag `second-place`, the Competitor Analysis task is created in workflow B step 4, not here.)
+0. If the contact has the tag `second-place` and NOT the tag `evergreen`, end here: this booking is a claim call, handled by workflow B step 4. Do not add `interview-booked`, do not change the stage, do not create the scorecard task. If the contact has both `second-place` and `evergreen`, the claim window has closed: do not add `interview-booked` and do not create a Competitor Analysis task; move the stage to Contacted and create a task for Camron "Standard Growth Partner call: Stack expired, no prize terms".
+1. Add tag `interview-booked`. Stage "Interview Booked". Complete the setter's "Call to book interview" task. Stop any pending interview-reminder SMS.
 2. When the appointment status becomes Showed: add tag `interviewed`, stage "Interviewed", create a task for the interviewer: "Fill in the scorecard and `interview_score`".
 3. If No Show: send one SMS with the rebook link and set a setter task.
 
-**E. "Not a Fit"**: Trigger: tag added `not-a-fit` (the only way a contact becomes Not a Fit: the setter or interviewer tags it by hand after the call, when revenue is under $1M or they will not be on camera. Politely, and they are never pitched). Remove from workflows A, B, C2 and D. Set stage "Not a Fit". Set Do Not Disturb for calls. Cancel open setter tasks.
+**E. "Not a Fit"**: Trigger: tag added `not-a-fit`. The setter or interviewer tags it by hand after the call. "Not a fit for Growth Partner" means the owner will not be on camera, or cannot fund $200 a day in ad spend. Revenue alone is never a reason.
+1. Remove from the interview reminders in workflow A and from workflows B, C and D.
+2. Set stage "Not a Fit". Cancel open setter tasks.
+3. **Do NOT set Do Not Disturb.** The contact is out of the grand prize and out of the second-prize drawing, but stays eligible for third place, and workflow G will message them when the tag `third-place` is added. They are no longer "never pitched".
 
-## 5. Calendar
-Calendars → + New → "Growth Partner Interview", 20 min, interviewer [Camron or named team members], buffer 10 min, availability [set]. Share → copy widget link → paste into `03-claim-ghl.html` at `window.GW_CLAIM.bookingUrl`, and use the same link in `interview_link`. Leave the calendar's default confirmation page; do not redirect it to `/thank-you` (that page is for giveaway entries).
+**F. "Nomination"**: Trigger: Form Submitted (Growth Partner Giveaway Nomination). The form is the transport. Add an Inbound Webhook trigger (URL into `02-thankyou-ghl.html` at `window.GW_TY.nominateWebhook`) only if the form post fails in testing, and then clear `nominateFormId`, so this workflow never runs twice for one nomination.
+0. **Guards, before anything else.** If the contact has the tag `nominee-declined`: end the workflow (no tag, no stage move, no task). If the contact has the tag `giveaway-entrant` (they already entered): the form submission has already overwritten `nominated_by_code`, `nominated_by_name`, `lead_source` and `lead_note` on that contact, and a workflow cannot undo that. So add a contact note "Nominated AFTER entry by {{contact.nominated_by_name}} ({{contact.nominated_by_code}}): does not count for the referral bonus", do not add the tag `nominated`, do not move the stage, do not set Do Not Disturb, do not create the call task, send Camron the internal notification "{{contact.first_name}} ({{contact.company}}) was nominated by {{contact.nominated_by_name}} but has already entered", and end. If the contact already has the tag `nominated` (a second person nominated the same roofer): do not create a second call task, do not move the stage, do not change Do Not Disturb; add a contact note "Also nominated by {{contact.nominated_by_name}} ({{contact.nominated_by_code}})", notify Camron, and end. One roofer gets one call, however many people nominate them. For the referral bonus the earliest nomination counts: it is kept in `first_nominated_by_code`, which neither of these two branches touches.
+1. Add tag `nominated`. Add to pipeline "Giveaway" → stage "Nominated". Copy `nominated_by_code` into `first_nominated_by_code` (Update Contact Field with the value `{{contact.nominated_by_code}}`). Only a first nomination of a roofer who has not entered reaches this step, because step 0 ends the workflow for everyone else.
+2. Set Do Not Disturb for SMS and email. Manual calls stay allowed.
+3. Create a task for the setter: "Call nominee; nominated by {{contact.nominated_by_name}}", due in 1 business day.
+4. Send an internal notification to Camron.
+5. **Compliance, non-negotiable: a nominated roofer has given NO consent. Send NO message of any kind to the nominee: no automated SMS, no automated email, no auto-dialer.** One manual call by the setter. If there is no answer: one voicemail that names the referrer, then stop. A text only if the nominee asks for the link on that call: the nominee is on SMS Do Not Disturb, so the setter turns SMS Do Not Disturb off for that contact, adds the note "asked for the link on the call, [date], [setter]", sends the one text with `https://go.2urnmarketing.com/refer?ref={{contact.first_nominated_by_code}}`, and turns SMS Do Not Disturb back on unless the nominee then enters (workflow A clears it when they do). If the nominee says no: tag `nominee-declined` (workflow H) and never contact them again. Do not add any wait step or follow-up to this workflow.
 
-## 6. Announcement-day runbook (Dec 4, 7:00 PM CT)
-This is a judged contest. A panel picks the winner. The winner comes from the scorecards.
-1. By the interview cutoff in the rules (proposed 5:00 PM CT): every interviewer has entered `interview_score` and notes for each interviewed applicant. [CHECK: confirm cutoff with counsel, see rules Section 3.]
-2. Export all contacts tagged `giveaway-entrant` and not tagged `not-a-fit`, with `interview_score`, revenue, the on-camera answer from the interview notes and notes. Remove duplicates and anyone who fails criterion 1 or 2 after interview.
-3. Panel picks the grand prize winner from scorecards. Rank by the published criteria and weights in the rules, Section 6. Apply them exactly as published. Break ties as the rules state. Record the winner, the scores and who was on the panel. Keep the scorecards.
-4. Check the winner's `referred_by`. If set and the referrer is eligible and in a different market, the referrer also wins the grand prize.
-5. 7:00 PM: announce. Tag the winner(s) `grand-prize`. Camron calls within the hour. Workflow C fires.
-6. Bulk-tag every other qualified applicant `second-place` (no `not-a-fit` tag). Workflow B fires. Interviews not yet held are booked inside the claim window. Every booking creates the "Deliver Competitor Analysis within 7 days" task.
-7. Post the winner announcement (video) to the landing page top banner and socials. The countdown closes the form itself, no code change needed.
-8. Next morning: setter starts dialing second-place winners who haven't booked, per `setter-script.md`.
+**G. "Third Place"**: Trigger: tag added `third-place`.
+1. Set `giveaway_result` = third_place. Set `claim_deadline` = now + 72h. Then a Date/Time Formatter step: format `claim_deadline` as `YYYY-MM-DDTHH:mm:ssZ` and write it into `claim_until_iso` (if the account has no such action, leave it empty). Then set `claim3_link`.
+2. Send the third-place SMS + email from `sequence-email-sms.md`. Move stage to "Third Place Notified".
+3. Wait 24h → if no appointment booked on the "Free Audit + Website Call" calendar since the notification → reminder SMS (+24h). Wait 36h → same check → reminder SMS (+60h). Wait 12h → same check → closing email, tag `evergreen`.
+4. Goal: "Appointment booked" on the "Free Audit + Website Call" calendar after the notification. This is the claim. Remove from this workflow, stage "Third Place Booked", and **create the task "Prepare the audit before the call"** (assignee: [DECIDE: who runs the audit call]; due = before the appointment time). Build it as a goal, not as a second trigger: a trigger would restart this workflow at step 1 and send the notification again.
+5. After the window: a booking on the "Free Audit + Website Call" calendar by a contact tagged `third-place` and `evergreen` is not a claim. Add a small workflow on that calendar's "Appointment booked" trigger, filtered to those two tags: move the stage to Contacted and create the task "Post-window website call: free build expired, quote standard terms".
+
+**H. "Nominee Declined"**: Trigger: tag added `nominee-declined`. The setter adds it by hand when a nominee says no on the call.
+1. Set Do Not Disturb on every channel (calls, SMS, email and all others).
+2. Move stage to "Not Interested".
+3. Cancel every open task for this contact, including "Call nominee".
+4. Never contact them again. If they are nominated again, workflow F step 0 skips them.
+
+## 5. Calendars
+Calendars → + New. Two calendars, both 20 minutes.
+
+1. **"Growth Partner Interview"**: 20 min, interviewer [Camron or named team members], buffer 10 min, availability [set]. Share → copy widget link. Paste it into `03-claim-ghl.html` at `window.GW_CLAIM.bookingUrl`, and use the same link in the custom field `interview_link`. Second-place winners book their 20-minute claim call on this same calendar through `/claim` (workflow B step 4; workflow D skips those bookings). Leave the calendar's default confirmation page; do not redirect it to `/thank-you` (that page is for giveaway entries).
+2. **"Free Audit + Website Call"** (new): 20 min, interviewer [DECIDE: who runs the audit call], buffer 10 min, availability [set]. Share → copy widget link → paste into `05-claim-third-ghl.html` at `window.GW_CLAIM3.bookingUrl`. Same rule: leave the default confirmation page.
+
+## 6. Announcement-day runbook (Saturday, Dec 5, 7:00 PM CT)
+The grand prize is judged: a panel picks the winner from the scorecards. Second place is a random drawing. Keep the drawing records (the exported sheet and the sorted result, saved with a timestamp) in the same folder as the scorecards.
+1. **Scores in.** By the interview cutoff in the rules (proposed Dec 5, 5:00 PM CT [CHECK: confirm cutoff with counsel, see rules Section 3]), every interviewer has entered `interview_score` and notes for each interviewed applicant. An interview held after the cutoff does not count for the grand prize or the second-place drawing.
+2. **Export and clean.** Confirm every valid mail-in entry received under the Official Rules already has a contact (see "Mail-in entries" under section 4; they are entered on the day they arrive so they can be interviewed before the cutoff). Then export all contacts tagged `giveaway-entrant`, with `interview_score`, revenue, the on-camera and ad-budget answers from the interview notes, and notes. Remove duplicates (one entry per business) and ineligible entries. Do not treat tag `nominated` contacts as entrants; a nomination is not an entry.
+3. **Grand prize.** The panel picks the winner from the scorecards. Rank by the published criteria and weights in the rules, Section 6. Apply them exactly as published. Break ties as the rules state. Record the winner, the scores and who was on the panel. Keep the scorecards.
+4. **Referrer check.** Read the WINNER's own `referred_by`. If it is empty, read the WINNER's own `first_nominated_by_code` (workflow F writes it once, from the first nomination of a roofer who had not entered yet; later nominations and nominations made after entry never change it). The referrer is the entrant whose `referral_code` equals that value. Do not use `nominated_by_code` for this: every later nomination overwrites it. If a referrer is found, is eligible and is in a different market, the referrer also wins the grand prize. Record the result either way.
+5. **Second-prize random drawing.** Pool: applicants who completed the 20-minute interview by the cutoff and met minimum requirements 1 and 2 (on camera, and able to fund $200 to $1,000 a day), excluding the grand-prize winner and any referrer who shares the grand prize. [CHECK: if counsel says the interview cannot be a condition of a chance-based prize, the pool is every eligible entrant.]
+   1. Export the pool to a sheet.
+   2. Add a column with `=RAND()`.
+   3. Copy the column and paste values only, so the numbers stop changing.
+   4. Sort the sheet by that column.
+   5. The first N rows are the second-place winners. N = `[DECIDE: number of second-place winners to draw]`. If N equals the whole pool, stop and see the internal note at the top of this file.
+   6. Save the sheet with a timestamp in the file name, next to the scorecards. Do not re-run the sort.
+   7. Unclaimed second prizes: `[DECIDE: whether a prize not claimed in 72 hours passes to the next row of the saved order (rules Section 7), or lapses]`. If it passes on, tag the next row `second-place` by hand; never re-sort.
+6. **7:00 PM: notify.** Tag the grand-prize winner(s) `grand-prize`. Workflow C fires and Camron calls within the hour. This is the notification, not the public announcement (step 9).
+7. **Tag second place.** Tag the N drawn contacts `second-place`. Workflow B fires. Each winner claims by booking a 20-minute claim call through their `claim_link` within 72 hours. That booking (not an earlier interview booking) creates the "Deliver Competitor Analysis within 7 days" task.
+8. **Tag third place (bulk).** Tag every other eligible entrant `third-place` [DECIDE: confirm who receives third place and whether it is capped]. The operating default is every other eligible entrant, including contacts tagged `not-a-fit` and applicants who never completed an interview. Do not tag grand-prize or second-place contacts. Workflow G fires.
+9. **Post the announcement** (video, landing page top banner, socials) only after the grand prize winner has accepted and signed the publicity and case-study release. Until then post nothing that names the winner. The countdown closes the form itself at 7:00 PM, no code change needed.
+10. **Next morning:** the setter dials second-place winners who have not booked first, then third-place winners who have not booked, per `setter-script.md`: 3 attempts on day 1, 2 on day 2, 1 on day 3, all inside the 72-hour claim window. One SMS a day at most per contact: the setter texts once, after the last unanswered call of the day, and only if no workflow SMS went to that contact that day. After the window the prize is gone: any later call (weekly, up to 3 weeks) is about the standard program only and never mentions the prize as available.
 
 ## 7. Test before launch
-- Submit one test entry from your phone on `/lead-engine` with formId set (all 6 fields). Confirm: contact created, note attached, `referral_link` and `interview_link` populated, entry SMS received, pipeline stage Entered, setter task created, the "Book your interview" SMS arrives the next morning, and the thank-you page shows the standard "You're entered" message and referral loop.
-- Submit a second test with revenue `under_1m`. Confirm it behaves exactly like the first: same SMS and email, same setter task, same thank-you page. Nothing is flagged on entry.
-- Add tag `not-a-fit` by hand to that second contact (simulating the post-call outcome). Confirm workflow E fires: removed from A, B and D, stage Not a Fit, Do Not Disturb for calls, open setter tasks cancelled.
-- Open the referral link in a private window and enter a third test contact. Confirm `referred_by` is set.
+- Submit one test entry from your phone on `/lead-engine` with formId set (all 6 fields on the page). Confirm: contact created, note attached, `referral_link` and `interview_link` populated, entry SMS received, pipeline stage Entered, setter task created, the "Book your interview" SMS arrives the next morning, and the thank-you page shows the standard "You're entered" message and referral loop. With `window.GHL_CONFIG.webhook` empty, confirm the entry produced exactly one contact, one entry SMS and one setter task.
+- Submit a second test with revenue `under_1m`. Confirm it behaves exactly like the first: same SMS and email, same setter task, same thank-you page. Nothing is flagged on entry. Revenue changes nothing.
+- Add tag `not-a-fit` by hand to that second contact (simulating the post-call outcome). Confirm workflow E fires: interview reminders stop, stage Not a Fit, open setter tasks cancelled, and Do Not Disturb is NOT set. Then add tag `third-place` to the same contact and confirm workflow G still messages them.
+- Referral page test: open `/refer?ref=CODE&from=Test&co=Test%20Roofing` in a private window (use a real `referral_code` from the first test contact in place of CODE). Confirm the referrer's name shows on the page. Enter as a third test contact. Confirm `referred_by` = CODE and `lead_source` = "Giveaway Referral Page", and that workflow A notifies Camron and adds 1 to `referral_count`. Then open `/refer?ref=` + the third contact's own `referral_code` and enter again as that same person: confirm `referred_by` is empty and no referral notification fires. Open `/refer` with no query string and confirm it reads as a plain entry page ("Apply to win", no "nominated" wording).
 - Book the Growth Partner Interview calendar as the first test contact. Confirm tag `interview-booked`, stage Interview Booked, the setter task is complete.
-- Add tag `second-place` to the test contact. Confirm the Second-Place Stack SMS and email arrive and `/claim` shows a 72-hour timer and the calendar loads prefilled. Then book the interview and confirm the task "Deliver Competitor Analysis within 7 days" is created with a due date 7 days out, and that completing it lets you set `cma_delivered`.
+- Add tag `second-place` to the first test contact (it already booked an interview, like a real winner). Confirm the Second-Place Stack SMS and email arrive, `claim_until_iso` is filled with no spaces, and NO Competitor Analysis task exists yet. Open the claim link from the SMS on a phone and confirm the countdown matches `claim_deadline`; if the digits are hidden, the formatter is not writing `claim_until_iso`. Confirm the calendar loads. Then book the claim call on that page and confirm exactly one task "Deliver Competitor Analysis within 7 days" is created with a due date 7 days out, workflow D added no scorecard task, the +24h reminder does not send, and completing the task lets you set `cma_delivered`. Open `/claim` with no query string: the digits are hidden, it says "Claim within 72 hours of your notification." and the calendar still shows.
+- Nomination test: on `/thank-you` (with `nominateFormId` set), submit the nomination form for a test nominee. Confirm: a contact exists for the nominee, tag `nominated`, stage Nominated, Do Not Disturb on SMS and email, the setter task "Call nominee; nominated by ..." created, `nominated_by_code`, `nominated_by_name` and `first_nominated_by_code` filled, and that NO message of any kind was sent to the nominee. Then enter the giveaway as that same nominee (on `/lead-engine`, same phone; the nomination form collects no email). Confirm workflow A removes the tag `nominated` and clears Do Not Disturb, and the normal entry messages now arrive.
+- Nominate the same new test nominee twice (same phone, two different entrants). Confirm only one "Call nominee" task exists, the second nomination added the "Also nominated by" note, and `first_nominated_by_code` still holds the FIRST entrant's code.
+- Nominate an existing entrant (use the first test contact's phone). Confirm workflow F does not add `nominated`, does not move the stage, does not set Do Not Disturb, creates no call task, leaves `first_nominated_by_code` empty, and Camron gets the "already entered" notification.
+- Nominate a new test nominee, then tag it `nominee-declined`. Confirm workflow H sets Do Not Disturb on every channel, moves the stage to Not Interested and cancels the "Call nominee" task. Nominate the same phone again and confirm workflow F creates no task.
+- Third-place test: add tag `third-place` to a test contact. Confirm the third-place SMS and email arrive and `claim_until_iso` is filled. Open the claim link from the SMS on a phone and confirm the countdown matches `claim_deadline` and the "Free Audit + Website Call" calendar loads. Book it and confirm the stage moves to Third Place Booked and the task "Prepare the audit before the call" is created.
+- Add tag `grand-prize` to a test contact: confirm the winner SMS and the task for Camron to call within the hour.
+- Mark one test interview Showed: confirm tag `interviewed`, stage Interviewed and the scorecard task. Mark another No Show: confirm the one rebook SMS and the setter task.
+- On copies of workflows B and G with the waits shortened to minutes, confirm the +24h and +60h reminders and the +72h email with tag `evergreen` for a contact that books nothing, and that a booking stops them.
+- Workflow A pinned sends: on a copy with the dates moved to today, confirm a contact that entered today skips the pinned send and one that entered earlier gets it. Repeat with a contact that already existed before it entered (for example a nominated test roofer): entering the day after the first pinned date, it must get only the second pinned send. Also, on a copy with Dec 4 moved to tomorrow, enter a contact today and confirm that tomorrow at 10 AM it gets the pinned SMS and email and no "Book your interview" SMS or Day 1 email.
+- Mail-in: create a contact by hand with `lead_source` = "Mail-in Entry", tag `giveaway-entrant` and Do Not Disturb for SMS. Confirm it appears in the runbook export, and that tagging it `third-place` sends the email but no SMS.
 - Delete all test contacts.
 
 ## 8. Before shooting the VSL
-Fill the proof placeholder in `VSL-script.md` with two client results we can screenshot. Replace the video placeholder in `01-giveaway-ghl.html` (the `#video` div) with the GHL video embed. The VSL is being rewritten separately to match the Growth Partner offer.
+The VSL script is now v3 (`VSL-script.md`). Fill the proof placeholder with two client results we can screenshot. Replace the video placeholder (the `#video` div) with the GHL video embed in BOTH `01-giveaway-ghl.html` and `04-referral-ghl.html`. The video sits at the top of both pages, directly under the headline.
+
+## 9. Open decisions before launch
+These are the [DECIDE] items from the spec that touch the build. Leave the markers in place until Camron answers.
+- **Number of second-place winners to draw.** Needed before Dec 5 (runbook step 5). If it equals the whole pool, settle the "drawn at random" wording with the attorney first.
+- **Who receives third place, and whether it is capped.** Operating default: every other eligible entrant (runbook step 8).
+- **Who runs the audit call**, and confirm the audit scope (website, Google Business Profile, ads and follow-up, with what to fix first). Needed for the "Free Audit + Website Call" calendar and the audit-prep task.
+- **Hosting terms:** hosting minimum term, cancellation, site and domain ownership, build timeline and ARV for the website. Customer pages say only "Hosting and maintenance terms are in your agreement."
+- **Website Buildout for second place:** ARV, timeline, and whether hosting is included during the engagement or billed at $189/month.
+- **Launch date.** [DECIDE: launch date. A launch on Nov 26 gives a 10-day run; keep Dec 5 with a shorter test or move the announcement.] The pinned sends in workflow A step 8b stay on Dec 4 and Dec 5.
+- **Signing deadline for second place.** [CHECK: signing deadline] for the engagement agreement that releases the Content Package, the five scripted campaigns and the website (workflow B step 5).
