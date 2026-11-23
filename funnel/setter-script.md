@@ -10,7 +10,7 @@ The interview is an interview, not a sales call. The winner is chosen by 2URN's 
 
 Cadence: call within 2 business days of entry. 3 attempts day 1, 2 on day 2, 1 on day 3, then weekly x3 for second-place winners. Text after every unanswered call. Log outcome in the GHL opportunity stage: Attempted / Contacted / Interview Booked / Interviewed / Not a Fit / Not Interested.
 
-Before dialing, read the lead note: company, trade, self-reported revenue, referred-by. The form does not ask about camera, ad budget or team, so ask them on the call.
+Before dialing, read the lead note: company, self-reported revenue, referred-by. The form does not ask about camera, ad budget or team, so ask them on the call.
 
 ---
 
@@ -64,7 +64,7 @@ If they pass, close the interview:
 
 ### Deliver the result
 **Second-place winner.** Internally: every qualified applicant who is not the grand-prize winner gets second place. The purpose is to bring them into Growth Partner. On the call, lead with the stack, then the price. Do not say "everyone gets" or "multiple winners" to the applicant.
-> The grand prize went to one company. You're a second-place winner, and second place is a stack. Free, when you claim it: a one-month Content Package, a forty-five minute interview with Camron, then we write five ad scripts and five content scripts in your words, you shoot them on your phone with our shot list, and we edit ten finished pieces. That's twenty-five hundred dollars. A Competitor Analysis, who your current competitors are, what they're running, their offers, hooks, review counts and where the gaps are. Fifteen hundred. And five advertising campaigns scripted for you, ten hooks and a full video script each, ready to shoot. Twelve fifty. That's five thousand two hundred fifty dollars of work, free, plus half off your first three months of Growth Partner: fifteen hundred a month instead of three thousand, then it goes to three thousand. Nine thousand seven hundred fifty dollars of value. It comes with a guarantee. If you do everything on the list (on camera within 14 days, ad spend funded from a hundred fifty a day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. There's a 72-hour clock to claim it. Claiming just means booking your 20-minute interview. I'm not selling anything on this call.
+> The grand prize went to one company. You're a second-place winner, and second place is a stack. Free, when you claim it: a one-month Content Package, a forty-five minute interview with Camron, then we write five ad scripts and five content scripts in your words, you shoot them on your phone with our shot list, and we edit ten finished pieces. That's twenty-five hundred dollars. A Competitor Analysis, who your current competitors are, what they're running, their offers, hooks, review counts and where the gaps are. Fifteen hundred. And five advertising campaigns scripted for you, ten hooks and a full video script each, ready to shoot. Twelve fifty. That's five thousand two hundred fifty dollars of work, free, plus half off your first ninety days of Growth Partner: fifteen hundred a month instead of three thousand, then it goes to three thousand. Nine thousand seven hundred fifty dollars of value. It comes with a guarantee. If you do everything on the list (on camera within 14 days, ad spend funded from a hundred fifty a day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. There's a 72-hour clock to claim it. Claiming just means booking your 20-minute interview. I'm not selling anything on this call.
 
 Say when each piece arrives: the Competitor Analysis within 7 days of booking the interview, whether or not they sign. The Content Package and the five scripted campaigns in month 1 of the engagement.
 
@@ -78,7 +78,7 @@ Say when each piece arrives: the Competitor Analysis within 7 days of booking th
 > $5,250 of work free, plus half off, for booking a 20-minute call.
 
 The longer version, if they ask for the price:
-> Standard is three thousand a month, 90-day minimum. You fund your own ads, from a hundred fifty a day (we recommend a hundred fifty to three hundred), paid to Meta. With second place you pay half for the first three months, and the Content Package, the Competitor Analysis and the five scripted campaigns are free. We script your offers, you shoot them, we edit them, we run your ads, and we automate the follow-up.
+> Standard is three thousand a month, 90-day minimum. You fund your own ads, from a hundred fifty a day (we recommend a hundred fifty to three hundred), paid to Meta. With second place you pay half for the first ninety days, and the Content Package, the Competitor Analysis and the five scripted campaigns are free. We script your offers, you shoot them, we edit them, we run your ads, and we automate the follow-up.
 
 ---
 

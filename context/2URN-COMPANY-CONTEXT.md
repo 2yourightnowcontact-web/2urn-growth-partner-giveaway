@@ -6,7 +6,7 @@ Last updated: Nov 17, 2026. Public repository: no financials, account identifier
 
 ## Who we are
 
-2URN Marketing (say "to you right now") is a marketing agency for home-service contractors, based in Clarksville, Tennessee, serving the continental US. Core trades: roofing first, then HVAC and windows/doors. The entity is 2URN LLC.
+2URN Marketing (say "to you right now") is a marketing agency for home-service contractors, based in Clarksville, Tennessee, serving the continental US. Our core trade is roofing. We also serve HVAC and windows/doors contractors. The entity is 2URN LLC.
 
 We work inside a contractor's business, not outside it. Agencies that only send leads fail because the owner is on a roof, in an attic or at a measure when the lead arrives. 2URN fixes the ten feet between the CRM and the phone, and puts the owner's real face in every ad so homeowners recognize and trust a person, not a logo.
 
@@ -24,20 +24,20 @@ Current acquisition play (winter 2026): the **Growth Partner Giveaway**, a judge
 
 ## Who we sell to
 
-Owner-operators of roofing, HVAC and window/door companies doing **$1M to $10M** a year in one metro. High ticket ($8K to $25K jobs), local, seasonal, burned by at least one agency, tired of the "are you a roofer doing a million a year" hook.
+Owner-operators of roofing companies doing **$1M to $10M** a year in one metro. High ticket ($8K to $25K jobs), local, seasonal, burned by at least one agency, tired of the "are you a roofer doing a million a year" hook.
 
 Must-haves: owner or lead rep willing to be on camera (no AI avatars, no stock footage); ad budget from $150/day; a team that can take appointments; someone on the phone within five minutes of a lead.
 
-Not a fit: under $1M, owner is the only closer, storm chasers with no fixed metro, repair-only HVAC shops, anyone who wants to frame a discount as an insurance deductible.
+Not a fit: under $1M, owner is the only closer, storm chasers with no fixed metro, anyone who wants to frame a discount as an insurance deductible.
 
 ## How we think about marketing
 
 - **Recognition plus follow-up** beats clever ads. Homeowners go with whoever they recognize and whoever picks up first.
 - **Inputs, not revenue.** Owners who only watch revenue cannot see which part is broken. We report leads, cost per lead, set rate, show rate, close rate, average ticket every week.
 - **Setter before launch, launch before evergreen.** There is always someone to call the leads the day they arrive.
-- **Giveaways as the launch mechanic.** Free Roof / Free System / Free Windows giveaway: 7-day countdown, one first prize, many second prizes with a 72-hour claim, then phones. Modeled on Alex Hormozi's Boulder Adventure Park play (transcript in `research/`).
+- **Giveaways as the launch mechanic.** Free Roof Giveaway: 7-day countdown, one first prize, many second prizes with a 72-hour claim, then phones. Modeled on Alex Hormozi's Boulder Adventure Park play (transcript in `research/`).
 - **Belief-first copy.** Every piece of copy names the belief it has to install (outcome, identity, problem, solution, product, credibility). Agree with the prospect's cynicism, then reframe the hidden lock.
-- **Call-out standard.** Ads open by naming the viewer (trade, market, situation) in the first line.
+- **Call-out standard.** Ads open by naming the viewer (roofing, market, situation) in the first line.
 
 ## Voice and tone
 
@@ -81,7 +81,7 @@ Never say: "random," "drawing," "odds," "guaranteed results," "everyone wins," a
 - Lead called in under 5 minutes, 7 touches in 72 hours, every outcome logged by stage.
 - Weekly scorecard call with the owner.
 - Everything we build lives in the client's own accounts (GHL, domain, ad account).
-- Capacity: five Growth Partner seats per trade per quarter, one per metro. A seat opens when a client's setter holds a 25% set rate without us on the call.
+- Capacity: five Growth Partner seats per quarter, one per metro. A seat opens when a client's setter holds a 25% set rate without us on the call.
 
 ## Compliance habits
 

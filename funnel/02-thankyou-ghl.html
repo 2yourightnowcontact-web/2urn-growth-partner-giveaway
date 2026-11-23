@@ -55,7 +55,7 @@ html, body { width:100% !important; max-width:100% !important; margin:0 !importa
 <div class="band sec"><div class="in">
   <div class="card" id="ty-ref">
     <h2>Know a company that should <em>enter?</em></h2>
-    <p>Share your link with another roofing, HVAC or window company. If the company you refer wins the grand prize, <b>you win it too.</b> Separate markets, two programs.</p>
+    <p>Share your link with another roofing company. If the company you refer wins the grand prize, <b>you win it too.</b> Separate markets, two programs.</p>
     <div class="linkrow">
       <input id="link" readonly value="https://go.2urnmarketing.com/lead-engine?ref=YOURCODE" aria-label="Your referral link">
       <button class="btn" id="copy" type="button">Copy link</button>
@@ -72,7 +72,7 @@ html, body { width:100% !important; max-width:100% !important; margin:0 !importa
   <div class="steps" id="ty-steps">
     <div class="st"><div class="n">1</div><div><b>We call within 2 business days</b><p>We book your 20-minute interview. It is an interview, not a sales call. We ask about your business and the winner's commitment list. We text once a day at most.</p></div></div>
     <div class="st"><div class="n">2</div><div><b>Winner announced <span id="date2">Dec 4</span></b><p>Our panel picks the grand prize winner from interviewed applicants against the published criteria. People choose, not chance. Second-place winners are notified after the announcement.</p></div></div>
-    <div class="st"><div class="n">3</div><div><b>Second place: the Second-Place Stack, 72 hours to claim</b><p>$5,250 in deliverables, free (a Content Package, a Competitor Analysis and five scripted campaigns), plus 50% off your first 3 months of Growth Partner ($1,500 a month instead of $3,000): $9,750 of value, with a guaranteed ROI if you do everything on the winner's commitment list. Claim it by booking your interview.</p></div></div>
+    <div class="st"><div class="n">3</div><div><b>Second place: the Second-Place Stack, 72 hours to claim</b><p>$5,250 in deliverables, free (a Content Package, a Competitor Analysis and five scripted campaigns), plus 50% off your first 90 days of Growth Partner ($1,500 a month instead of $3,000): $9,750 of value, with a guaranteed ROI if you do everything on the winner's commitment list. Claim it by booking your interview.</p></div></div>
   </div>
 </div></div>
 
@@ -89,7 +89,7 @@ html, body { width:100% !important; max-width:100% !important; margin:0 !importa
   var d2=document.getElementById('date2'); if(d2) d2.textContent=d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
   var link=C.landingUrl+'?ref='+encodeURIComponent(code||'YOURCODE');
   var inp=document.getElementById('link'); inp.value=link;
-  var msg='I just entered to win 90 days of the 2URN Growth Partner program for roofing, HVAC and window companies. If the company I refer wins, I win too: '+link;
+  var msg='I just entered to win 90 days of the 2URN Growth Partner program for roofing companies. If the company I refer wins, I win too: '+link;
   document.getElementById('sms').href='sms:?&body='+encodeURIComponent(msg);
   document.getElementById('mail').href='mailto:?subject='+encodeURIComponent('Free 90 days of marketing for home service companies')+'&body='+encodeURIComponent(msg);
   document.getElementById('fb').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(link);

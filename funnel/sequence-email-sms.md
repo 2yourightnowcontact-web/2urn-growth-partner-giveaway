@@ -2,7 +2,7 @@
 
 Sender: Camron (email) / 2URN (SMS). All sends are from the GHL workflow "Giveaway Entry". `{{contact.first_name}}`, `{{contact.referral_link}}`, `{{contact.interview_link}}`, `{{contact.claim_link}}`, `{{contact.claim_deadline}}` are GHL custom fields (see GHL-SETUP.md). Winner announced Dec 4, 2026, 7:00 PM CT; change every mention if GHL_CONFIG.announcementAt changes.
 
-The program is 2URN Growth Partner: $3,000 per month, 90-day minimum, client funds ad spend (from $150 a day, recommended $150 to $300). There are two prizes. Grand prize (1, plus the referrer): 90 days of Growth Partner, free ($10,000 value). Second place: the Second-Place Stack. When a second-place winner claims (books the interview within 72 hours and moves forward on the 50% deal) they get, free: a one-month Content Package ($2,500 value: a 45-minute interview with Camron; we write 5 ad scripts and 5 content scripts in their words; they shoot on a phone with our shot list; we edit 10 finished pieces), a Competitor Analysis ($1,500 value: who their current competitors are, what they are running, their offers, hooks, review counts and the gaps) and five advertising campaigns scripted for them ($1,250 value: each with 10 hooks and a full video script, ready to shoot; not edited ads, not loaded audiences). Plus 50% off the first 3 months of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then $3,000, with the ROI guarantee if they do everything on the commitment list. Headline math, used everywhere: "$5,250 in deliverables, free, plus $4,500 off: $9,750 of value for second place." Delivery: the Competitor Analysis within 7 days of booking the interview (whether or not they sign); the Content Package and the five scripted campaigns in month 1 of the engagement.
+The program is 2URN Growth Partner: $3,000 per month, 90-day minimum, client funds ad spend (from $150 a day, recommended $150 to $300). There are two prizes. Grand prize (1, plus the referrer): 90 days of Growth Partner, free ($10,000 value). Second place: the Second-Place Stack. When a second-place winner claims (books the interview within 72 hours and moves forward on the 50% deal) they get, free: a one-month Content Package ($2,500 value: a 45-minute interview with Camron; we write 5 ad scripts and 5 content scripts in their words; they shoot on a phone with our shot list; we edit 10 finished pieces), a Competitor Analysis ($1,500 value: who their current competitors are, what they are running, their offers, hooks, review counts and the gaps) and five advertising campaigns scripted for them ($1,250 value: each with 10 hooks and a full video script, ready to shoot; not edited ads, not loaded audiences). Plus 50% off the first 90 days of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then $3,000, with the ROI guarantee if they do everything on the commitment list. Headline math, used everywhere: "$5,250 in deliverables, free, plus $4,500 off: $9,750 of value for second place." Delivery: the Competitor Analysis within 7 days of booking the interview (whether or not they sign); the Content Package and the five scripted campaigns in month 1 of the engagement.
 
 Public wording: say only "second place" and "second-place winners" in any message. Do not describe second place as open to a group of people.
 
@@ -22,7 +22,7 @@ Rules: one SMS a day max. Every SMS ends with "Reply STOP to opt out" on the fir
 **Email.** Subject: You're entered. Here's what happens next.
 > {{contact.first_name}},
 >
-> You're entered. One roofing, HVAC or window company wins 2URN Growth Partner free for 90 days, a $10,000 value. Second place is the Second-Place Stack: $5,250 in deliverables, free, plus 50% off your first 3 months of Growth Partner ($1,500 a month instead of $3,000). That's $9,750 of value, with a guaranteed ROI if you do everything on the winner's commitment list.
+> You're entered. One roofing company wins 2URN Growth Partner free for 90 days, a $10,000 value. Second place is the Second-Place Stack: $5,250 in deliverables, free, plus 50% off your first 90 days of Growth Partner ($1,500 a month instead of $3,000). That's $9,750 of value, with a guaranteed ROI if you do everything on the winner's commitment list.
 >
 > Here's what happens next:
 >
@@ -119,7 +119,7 @@ Skip if the contact already has an interview booked.
 > - A Competitor Analysis ($1,500): who you're up against, what they're running, and where the gaps are.
 > - Five advertising campaigns, scripted for you ($1,250): ten hooks and a full video script each, ready to shoot.
 >
-> That's $5,250 in deliverables, free, plus 50% off your first 3 months of Growth Partner ($1,500 a month instead of $3,000, a $4,500 saving), then $3,000, with a guaranteed ROI if you do everything on the winner's commitment list. You have 72 hours to claim after the announcement, and claiming means booking your interview.
+> That's $5,250 in deliverables, free, plus 50% off your first 90 days of Growth Partner ($1,500 a month instead of $3,000, a $4,500 saving), then $3,000, with a guaranteed ROI if you do everything on the winner's commitment list. You have 72 hours to claim after the announcement, and claiming means booking your interview.
 >
 > We do it this way because we only take on a few new companies at a time, and second place is how we fill those spots with people who already raised their hand.
 >
@@ -164,7 +164,7 @@ If the winner entered through a referral link, the referrer is also a grand priz
 Set `claim_deadline` = now + 72h in the workflow before this fires.
 
 **SMS**
-> 2URN: {{contact.first_name}}, you won second place: the Second-Place Stack, $9,750 of value (Content Package, Competitor Analysis, 5 scripted campaigns + 50% off 3 months). 72 hrs to claim: {{contact.claim_link}}
+> 2URN: {{contact.first_name}}, you won second place: the Second-Place Stack, $9,750 of value (Content Package, Competitor Analysis, 5 scripted campaigns + 50% off 90 days). 72 hrs to claim: {{contact.claim_link}}
 
 **Email.** Subject: You won the Second-Place Stack: $9,750 of value. 72 hours.
 > {{contact.first_name}},
@@ -175,7 +175,7 @@ Set `claim_deadline` = now + 72h in the workflow before this fires.
 > 2. A Competitor Analysis ($1,500 value). Who your current competitors are, what they are running, their offers, hooks and review counts, and where the gaps are. It's delivered within 7 days of booking your interview, whether or not you sign.
 > 3. Five advertising campaigns, scripted for you ($1,250 value). Each one has 10 hooks and a full video script, ready to shoot. The Content Package and the five campaigns are delivered in your first month of Growth Partner.
 >
-> That's $5,250 in deliverables, free, plus $4,500 off: 50% off your first 3 months of Growth Partner, $1,500 a month instead of $3,000, then the standard $3,000. $9,750 of value for second place. You fund your own ad spend, from $150 a day, paid to Meta. Minimum is 90 days.
+> That's $5,250 in deliverables, free, plus $4,500 off: 50% off your first 90 days of Growth Partner, $1,500 a month instead of $3,000, then the standard $3,000. $9,750 of value for second place. You fund your own ad spend, from $150 a day, paid to Meta. Minimum is 90 days.
 >
 > And it comes with a guarantee. If you do everything on the list (on camera within 14 days, ad spend funded from $150/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. The list is the guarantee's conditions, and the guarantee only applies if you do all four.
 >

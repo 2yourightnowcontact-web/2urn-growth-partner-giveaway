@@ -9,13 +9,13 @@ Josh Johnston (Hydra), Zoe and Camron agreed to run the giveaway as 2URN's acqui
 | Decision | Was | Now |
 | --- | --- | --- |
 | Product and price | $15,000 install + $6,000/mo | The **Growth Partner** retainer: $3,000/mo, 90-day minimum. We structure and script the offers, the owner shoots, we edit, run the ads, automate the nurture. Client funds ad spend, from $150/day |
-| Prize ladder | 1st: install free. 2nd: $5,000 off | 1st: 90 days of Growth Partner free, $10,000 value, referrer wins too. 2nd, the Second-Place Stack (internally: every other qualified applicant, never said publicly): 3 months at 50% off ($1,500/mo, then $3,000), plus free a one-month Content Package ($2,500: Camron interview, 5 ad and 5 content scripts, they shoot, we edit 10 pieces), a Competitor Analysis ($1,500: who their competitors are and what they are running) and five scripted advertising campaigns ($1,250: 10 hooks and a full script each, ready to shoot). $5,250 of deliverables plus $4,500 off: $9,750 of value. ROI guarantee on the commitment list. 72 hours to claim. The analysis is delivered within 7 days of booking the interview; the content and campaigns in month 1 of the engagement |
+| Prize ladder | 1st: install free. 2nd: $5,000 off | 1st: 90 days of Growth Partner free, $10,000 value, referrer wins too. 2nd, the Second-Place Stack (internally: every other qualified applicant, never said publicly): 90 days at 50% off ($1,500/mo, then $3,000), plus free a one-month Content Package ($2,500: Camron interview, 5 ad and 5 content scripts, they shoot, we edit 10 pieces), a Competitor Analysis ($1,500: who their competitors are and what they are running) and five scripted advertising campaigns ($1,250: 10 hooks and a full script each, ready to shoot). $5,250 of deliverables plus $4,500 off: $9,750 of value. ROI guarantee on the commitment list. 72 hours to claim. The analysis is delivered within 7 days of booking the interview; the content and campaigns in month 1 of the engagement |
 | Winner selection | Random drawing | **Chosen by 2URN** after a 20-minute interview with every applicant, against published criteria. The winner must be a case study we can show everyone. This makes it a judged contest, not a sweepstakes; rules change accordingly |
 | Test | Open-ended | 14 days, $200/day on Meta, kill line below. VSL shot Nov 17, 2026, winner announced Dec 4, 2026 |
-| Niche | Roofing only was floated | Roofing, HVAC and windows. Existing clients excluded from the audience (Meta exclusion list of current client contacts) |
+| Niche | Roofing, HVAC and windows | Roofing only (Camron, Nov 23, 2026). Existing clients excluded from the audience (Meta exclusion list of current client contacts) |
 | Tone | Straight | Fun. Josh: if the creative is dry it falls flat. Winter and Christmas angles, owner-on-roof bits, graphic ads too |
 
-**Qualification, stated up front on the page and in the first 60 seconds of the VSL, not in fine print:** $1M+ revenue in the last 12 months; the owner or lead rep on camera in the ads, no AI avatars or stock footage; ad budget from $150/day; a team that can take the appointments; agrees to be documented as a case study; commits through the slow season. On the page these are shown as what the winner commits to, below the prizes, not as a gate: the form is seven fields and everyone is invited to apply. The page is a lead magnet first; qualification happens on the call. Camron's reason: homeowners need a real face to recognize and trust over the months they see the brand. An operator who won't be that face is not a fit, win or lose.
+**Qualification, stated up front on the page and in the first 60 seconds of the VSL, not in fine print:** $1M+ revenue in the last 12 months; the owner or lead rep on camera in the ads, no AI avatars or stock footage; ad budget from $150/day; a team that can take the appointments; agrees to be documented as a case study; commits through the slow season. On the page these are shown as what the winner commits to, below the prizes, not as a gate: the form is six fields and everyone is invited to apply. The page is a lead magnet first; qualification happens on the call. Camron's reason: homeowners need a real face to recognize and trust over the months they see the brand. An operator who won't be that face is not a fit, win or lose.
 
 **Why now.** Camron's acquisition cost went from $450 last year to about $4,000 this year, cost per lead tripled, set rate fell from 70%, and every agency runs the same "are you a roofer doing a million a year" hook. Back half of the year was the best acquisition window last year: door-knockers quit, referrals slow, owners look for something new. A giveaway is a different-shaped ad in a low-trust market.
 
@@ -33,36 +33,35 @@ Everything below is updated to these decisions. The In-House Lead Engine (setter
 
 |  |  |
 | --- | --- |
-| Who | Roofing, HVAC and window/door contractors doing $1M+ in the last 12 months, one metro, owner willing to be on camera, crews that can absorb 30 to 60 extra jobs in a quarter |
+| Who | Roofing contractors doing $1M+ in the last 12 months, one metro, owner willing to be on camera, crews that can absorb 30 to 60 extra jobs in a quarter |
 | Price | $3,000/month, 90-day minimum. Ad budget paid to Meta, from $150/day |
-| Giveaway ladder | 1st: 90 days free, $10,000 value, referrer wins too. 2nd, the Second-Place Stack: 3 months at 50% off plus a one-month Content Package, a Competitor Analysis and five scripted campaigns free ($5,250), $9,750 of value with the ROI guarantee, 72 hours to claim. Public copy says "second place", never "everyone". Standard: $3,000/mo |
+| Giveaway ladder | 1st: 90 days free, $10,000 value, referrer wins too. 2nd, the Second-Place Stack: 90 days at 50% off plus a one-month Content Package, a Competitor Analysis and five scripted campaigns free ($5,250), $9,750 of value with the ROI guarantee, 72 hours to claim. Public copy says "second place", never "everyone". Standard: $3,000/mo |
 | Guarantee | Second place: do everything on the commitment list and if Growth Partner has not paid for itself in closed jobs by day 90, we keep working free until it has |
-| Reason why | Five winter seats per trade, one per metro. We are inside the business, so that is the cap |
+| Reason why | Five winter seats a quarter, one per metro. We are inside the business, so that is the cap |
 | Anchor | A full-time CMO, setter, media buyer and creative person costs $330,000 a year to hire. One sold job covers a month |
-| Launch mechanic | The client's Free Roof / Free System / Free Windows Giveaway: 7-day countdown, one first prize, many second prizes with a 72-hour claim, then phones |
+| Launch mechanic | The client's Free Roof Giveaway: 7-day countdown, one first prize, many second prizes with a 72-hour claim, then phones |
 | What makes it different | The owner's face in every ad, and the ten feet between the CRM and the phone fixed. Recognition plus follow-up. The ads are the fuel |
 
 This is a different product from Home Service Heroes pay-per-lead. Pay-per-lead rents demand. Growth Partner builds the asset. Sell both and let the price sort the buyer.
 
 ## Who it is for, and who it is not
 
-The install works for a contractor whose problem is demand and follow-up, not operations. Same shape in all three trades: high ticket, local, seasonal, owner tracks revenue instead of inputs, and sales capacity is the real ceiling.
+The install works for a contractor whose problem is demand and follow-up, not operations. Roofing fits that shape: high ticket, local, seasonal, owner tracks revenue instead of inputs, and sales capacity is the real ceiling.
 
-|  | Roofing | HVAC | Windows & doors |
-| --- | --- | --- | --- |
-| Revenue band | $1M to $10M | $1.0M to $10M | $1M to $8M |
-| Average ticket | $12,000 to $25,000 replacement | $8,000 to $16,000 system replacement | $10,000 to $20,000 whole-home |
-| Sales motion | Inspection, then in-home close | Tune-up or diagnostic, then in-home system quote | In-home measure and quote, one call close |
-| Season to launch | Spring hail, fall pre-winter | April to May pre-summer, September to October pre-winter | March to May, September to October |
-| Must have | A closer who can run 3+ appointments a day; crews for 30+ extra roofs a quarter | Comfort advisor or owner who sells replacements, not just repairs | A dedicated in-home rep; install crew lead time under 6 weeks |
-| Owner on camera | Yes, the VSL is the owner | Yes | Yes |
-| Ad budget they can fund | $5,000+/month | $5,000+/month | $6,000+/month |
+|  | Roofing |
+| --- | --- |
+| Revenue band | $1M to $10M |
+| Average ticket | $12,000 to $25,000 replacement |
+| Sales motion | Inspection, then in-home close |
+| Season to launch | Spring hail, fall pre-winter |
+| Must have | A closer who can run 3+ appointments a day; crews for 30+ extra roofs a quarter |
+| Owner on camera | Yes, the VSL is the owner |
+| Ad budget they can fund | $5,000+/month |
 
 **Not a fit:**
 
 - Under $1M revenue, or the owner is the only closer and still on the roof or in the attic. There is nobody to hand the engine to.
 - Storm chasers with no fixed metro. The giveaway needs a market that can see the winner.
-- Repair-only HVAC shops that do not sell system replacements. The ticket is too small for the math.
 - Anyone who will not put a person on the phone within five minutes of a lead. We can hire the setter, but the owner has to pay them.
 - Anyone who wants to frame a discount as an insurance deductible. See Compliance.
 
@@ -99,68 +98,68 @@ The first gate stops a launch with nobody on the phone. The second is the guaran
 
 What we do not do: run their crews, write their contracts, or hold their ad account. The ad budget is paid to Meta directly.
 
-## The launch play per trade
+## The launch play
 
-Same mechanics in every trade: lead with the biggest free thing so the price is anchored before the phone call, give many people second prize so the whole list has a reason to claim, and put a clock on both. Only the prize, the reason why and the season change.
+Lead with the biggest free thing so the price is anchored before the phone call, give many people second prize so the whole list has a reason to claim, and put a clock on both. The client's campaign is the Free Roof Giveaway.
 
-|  | Roofing | HVAC | Windows & doors |
-| --- | --- | --- | --- |
-| Campaign name | Free Roof Giveaway | Free System Giveaway | Free Windows Giveaway |
-| First prize | Asphalt roof replacement up to 30 squares, ARV $18,000 | Complete HVAC system replacement, ARV $12,000 | Up to 8 replacement windows installed, ARV $10,000 |
-| Hard cost to client | $8,000 to $12,000 | $5,000 to $7,000 | $4,000 to $6,000 |
-| Second prize | $2,500 off a replacement, or class-4 shingle upgrade free | $1,500 off a system, or 2 years of maintenance free | $1,500 off whole-home, or free triple-pane upgrade |
-| Reason why | Storm season / pre-winter / anniversary / new crew capacity | Pre-summer or pre-winter: "before the first 95-degree day" | Spring and fall install windows, energy-bill season |
-| Fear to answer on the page | "Will you disappear after the deposit?" Years in business, license, workmanship warranty | "Will I get upsold?" Flat-rate pricing, no-pressure diagnostic, Google rating | "How long until install?" Lead time stated, financing shown |
-| Entry qualifier | Homeowner, roof age over 10 years | Homeowner, system age over 10 years | Homeowner, 5+ windows |
-| Setter's booked step | Free roof inspection | $0 system check or tune-up | In-home measure and quote |
-| Seasonal re-run | Spring hail, fall pre-winter | April and September | March and September |
+|  | Roofing |
+| --- | --- |
+| Campaign name | Free Roof Giveaway |
+| First prize | Asphalt roof replacement up to 30 squares, ARV $18,000 |
+| Hard cost to client | $8,000 to $12,000 |
+| Second prize | $2,500 off a replacement, or class-4 shingle upgrade free |
+| Reason why | Storm season / pre-winter / anniversary / new crew capacity |
+| Fear to answer on the page | "Will you disappear after the deposit?" Years in business, license, workmanship warranty |
+| Entry qualifier | Homeowner, roof age over 10 years |
+| Setter's booked step | Free roof inspection |
+| Seasonal re-run | Spring hail, fall pre-winter |
 
-The thank-you page carries the referral loop in every trade: a copyable link, an extra entry per neighbor who enters, and the referrer wins too if their referral wins. Neighbors use the same roofer, HVAC company and window installer; the loop is strongest in these trades.
+The thank-you page carries the referral loop: a copyable link, an extra entry per neighbor who enters, and the referrer wins too if their referral wins. Neighbors use the same roofer, so the loop is strong for roofing.
 
 After the claim window closes, the campaign flips to the evergreen core offer and runs until the next season's giveaway.
 
 ## Pricing, terms and guarantee
 
-One price across all three trades: $3,000 a month, 90-day minimum, ad budget paid to Meta. One sold roof, system or window job at an average ticket covers a month. The higher-ticket install ($15,000 + $6,000/mo) from the first draft is parked as a later tier once case studies exist.
+One price: $3,000 a month, 90-day minimum, ad budget paid to Meta. One sold roof at an average ticket covers a month. The higher-ticket install ($15,000 + $6,000/mo) from the first draft is parked as a later tier once case studies exist.
 
 | Line | Amount | Notes |
 | --- | --- | --- |
 | Growth Partner retainer | $3,000 / month, 90-day minimum | Offer structure and scripts, editing, ad management, nurture automation, setter script and coaching, weekly scorecard, one giveaway launch |
-| Second-place pricing (giveaway) | $1,500 / month for months 1 to 3, then $3,000 | The Second-Place Stack: Competitor Analysis ($1,500, delivered within 7 days of booking), one-month Content Package ($2,500) and five scripted campaigns ($1,250) in month 1, plus the 50% price and the ROI guarantee below. $9,750 of value. Claim within 72 hours by booking the interview. Our cost per claimant is about 8 hours, most of it already systemized in the creative engine |
+| Second-place pricing (giveaway) | $1,500 / month for the first 90 days, then $3,000 | The Second-Place Stack: Competitor Analysis ($1,500, delivered within 7 days of booking), one-month Content Package ($2,500) and five scripted campaigns ($1,250) in month 1, plus the 50% price and the ROI guarantee below. $9,750 of value. Claim within 72 hours by booking the interview. Our cost per claimant is about 8 hours, most of it already systemized in the creative engine |
 | Grand prize | $0 for 90 days (value $10,000) | One company plus its referrer. Converts to $3,000/mo after day 90 |
 | Ad budget | From $150 / day, paid to Meta ($150 to $300 recommended) | Not ours, never passes through us |
-| Client giveaway prize | Client's hard cost, $4,000 to $12,000 by trade | Their marketing spend and their PR |
+| Client giveaway prize | Client's hard cost, $4,000 to $12,000 | Their marketing spend and their PR |
 | Setter wage | Client payroll | We script and coach; they employ |
 | Renewal after month 3 | $3,000 / month, month to month |  |
 
 **Guarantee.** Second-place winners get a guaranteed ROI: if they do everything on the commitment list (on camera within 14 days, ad spend funded from $150/day, follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. Attorney to word it; the conditions are the whole guarantee.
 
-**Reason why.** Five winter seats per trade, one per metro. Two roofers in the same metro cannot both be seated; a roofer and an HVAC company can.
+**Reason why.** Five winter seats a quarter, one per metro. Two roofers in the same metro cannot both be seated.
 
 **Anchor, said before the price.** A full-time CMO at $180,000, a setter, a media buyer and a creative person: $330,000 a year to build this by hiring. $3,000 a month is less than one job.
 
-## Unit economics per trade
+## Unit economics
 
-At conservative first-launch inputs, the giveaway returns between five and nine times its cost in gross profit in every trade. These are model assumptions, not measurements; the first pilot replaces them. Set rate, show rate and close rate are the numbers the setter and closer move.
+At conservative first-launch inputs, the giveaway returns between five and nine times its cost in gross profit for roofing. These are model assumptions, not measurements; the first pilot replaces them. Set rate, show rate and close rate are the numbers the setter and closer move.
 
-| Input (first launch, one metro) | Roofing | HVAC | Windows & doors |
-| --- | --- | --- | --- |
-| Giveaway leads | 1,200 | 1,500 | 1,000 |
-| Cost per lead | $12 | $9 | $14 |
-| Ad spend | $14,400 | $13,500 | $14,000 |
-| Prize hard cost | $10,000 | $6,000 | $5,000 |
-| Set rate (lead to appointment) | 25% | 30% | 25% |
-| Show rate | 65% | 70% | 70% |
-| Appointments run | 195 | 315 | 175 |
-| Close rate | 30% | 20% | 30% |
-| Jobs sold | 58 | 63 | 52 |
-| Average ticket | $14,000 | $11,000 | $12,000 |
-| Revenue | $819,000 | $693,000 | $630,000 |
-| Gross margin | 35% | 40% | 40% |
-| Gross profit after ads and prize | $262,000 | $258,000 | $233,000 |
-| Cost per sold job | $421 | $310 | $365 |
+| Input (first launch, one metro) | Roofing |
+| --- | --- |
+| Giveaway leads | 1,200 |
+| Cost per lead | $12 |
+| Ad spend | $14,400 |
+| Prize hard cost | $10,000 |
+| Set rate (lead to appointment) | 25% |
+| Show rate | 65% |
+| Appointments run | 195 |
+| Close rate | 30% |
+| Jobs sold | 58 |
+| Average ticket | $14,000 |
+| Revenue | $819,000 |
+| Gross margin | 35% |
+| Gross profit after ads and prize | $262,000 |
+| Cost per sold job | $421 |
 
-Ninety days of Growth Partner is $10,000 of value, $9,000 at standard pricing or $4,500 at second-place pricing. Against the first launch alone that is paid back more than 25 times in gross profit in each trade, before the evergreen campaign runs. One sold job covers a month in cash.
+Ninety days of Growth Partner is $10,000 of value, $9,000 at standard pricing or $4,500 at second-place pricing. Against the first launch alone that is paid back more than 25 times in gross profit, before the evergreen campaign runs. One sold job covers a month in cash.
 
 The number to watch is the set rate. At 10% instead of 25%, roofing drops to 23 jobs and the math still holds, but the second setter comes in month 2 instead of month 4. The calculator on the offer page runs the client's real inputs on the call.
 
@@ -168,10 +167,10 @@ The number to watch is the set rate. At 10% instead of 25%, roofing drops to 23 
 
 We sell Growth Partner with the same money model we install for clients. Our giveaway fills the list, the interview qualifies and anchors, the second prize gives everyone a reason to claim, and the winner becomes the case study that sells the next quarter. Nobody on a call has to be sold up.
 
-1. **Giveaway, 14 days, $200/day on Meta.** Ads are fun and winter-themed; the page is plain about the rules. Lowest-friction page: seven fields (name, company, trade, email, phone, revenue band), no gate, everyone is invited to apply. The winner's commitments sit below the prizes as information, not as a filter. Qualification happens on the call. Existing clients are excluded from the audience.
+1. **Giveaway, 14 days, $200/day on Meta.** Ads are fun and winter-themed; the page is plain about the rules. Lowest-friction page: six fields (name, company, email, phone, revenue band), no gate, everyone is invited to apply. The winner's commitments sit below the prizes as information, not as a filter. Qualification happens on the call. Existing clients are excluded from the audience.
 2. **Setter books every qualified applicant into a 20-minute interview within 2 business days.** Camron and Zoe run them. It is an interview, not a close: numbers, who's on camera, team, what happened with the last agency, why they want to win. Every interview is scored on the six criteria and the notes go in GHL. This is also the database we sell from later.
 3. **Winner chosen and announced Dec 4** from the scorecards, on video: one grand prize, and the referrer if there is one. The winner signs the commitments (ad spend, shoots in 14 days, weekly call, public case study).
-4. **Everyone else who interviewed and qualifies wins the Second-Place Stack: $5,250 of deliverables free plus half off, $9,750 of value. Publicly it is "second place", never "everyone wins". The Competitor Analysis lands within 7 days of booking whether or not they sign, which makes the claim call easy and puts a sales asset in their hands. The purpose of second place is to bring them into Growth Partner.** $1,500/mo for months 1 to 3, 72 hours to claim. Camron calls each one. The close is the claim.
+4. **Everyone else who interviewed and qualifies wins the Second-Place Stack: $5,250 of deliverables free plus half off, $9,750 of value. Publicly it is "second place", never "everyone wins". The Competitor Analysis lands within 7 days of booking whether or not they sign, which makes the claim call easy and puts a sales asset in their hands. The purpose of second place is to bring them into Growth Partner.** $1,500/mo for the first 90 days, 72 hours to claim. Camron calls each one. The close is the claim.
 5. **Document the 90 days live.** Weekly updates to every applicant, win or not. At day 90 the case study goes to every applicant who did not buy, and the giveaway runs again on the next season.
 6. **Evergreen between giveaways.** Growth Partner at $3,000/mo with the launch guarantee, plus retargeting and a newsletter to the applicant list. Test LinkedIn alongside Meta for the agency's own ads.
 
@@ -195,16 +194,15 @@ On-site time: two days at kickoff and one day the week of the launch. Everything
 
 Capacity rule: a seat opens when a client reaches month 2 and the setter is holding a 25% set rate without us on the call. If the set rate is under 25%, the seat stays occupied and the next sale is dated into the following quarter.
 
-## Compliance per trade
+## Compliance
 
-The giveaway is a sweepstakes and the second prize is a discount. Both have rules that differ by state and by trade, and the rules are written once with an attorney and reused. None of this is legal advice; the draft rules are in the funnel folder for review.
+The giveaway is a sweepstakes and the second prize is a discount. Both have rules that differ by state, and the rules are written once with an attorney and reused. None of this is legal advice; the draft rules are in the funnel folder for review.
 
 | Topic | Applies to | What we do |
 | --- | --- | --- |
-| Sweepstakes law | All trades, our giveaway too | No purchase necessary, free alternate method of entry, official rules on the page, odds statement, winner list. Register and bond in New York and Florida when the prize exceeds $5,000 (it does in every trade) |
-| Insurance deductibles | Roofing, some HVAC storm work | Never advertise paying, waiving or absorbing a deductible. Second prize is a discount on retail or a free upgrade. Texas and many states treat deductible-eating as a crime |
-| Rebates and financing claims | HVAC, windows | Utility and federal rebates are stated as "you may qualify," never as a guaranteed amount. Financing APR and terms shown with the lender's required disclosure |
-| Energy claims | HVAC, windows | No invented savings percentages. Use the manufacturer's rating or the client's own documented result |
+| Sweepstakes law | All, our giveaway too | No purchase necessary, free alternate method of entry, official rules on the page, odds statement, winner list. Register and bond in New York and Florida when the prize exceeds $5,000 (it does) |
+| Insurance deductibles | Roofing storm work | Never advertise paying, waiving or absorbing a deductible. Second prize is a discount on retail or a free upgrade. Texas and many states treat deductible-eating as a crime |
+| Financing claims | Roofing | Financing APR and terms shown with the lender's required disclosure. Warranty and storm-damage claims use the manufacturer's wording or the client's own documented result |
 | Referral entries | All | Extra entries for referrals are consideration in a few states. Rules cap them and the attorney confirms the state list |
 | TCPA consent | All | Entry form carries express written consent for calls and texts, consent is not a condition of entry, STOP honored in GHL |
 | Licensing | All | Winner must be a homeowner of record (client giveaways) or a licensed contractor (our giveaway). Verified before the prize is awarded |
@@ -217,12 +215,12 @@ Six numbers, every Monday, same order, with a target and a who. The owner learns
 | Input | Definition | Target (first 90 days) | Who moves it |
 | --- | --- | --- | --- |
 | Leads | Form entries from the campaign, deduplicated | 500 in the launch month; 150+/month evergreen | Media buyer, creative |
-| Cost per lead | Ad spend / leads | Roofing $15, HVAC $10, windows $16 or under | Media buyer, offer |
+| Cost per lead | Ad spend / leads | $15 or under | Media buyer, offer |
 | Speed to lead | Median minutes from entry to first call attempt | Under 5 during business hours, under 60 after hours | Setter |
 | Set rate | Appointments booked / leads contacted | 25% or higher | Setter, script |
 | Show rate | Appointments held / booked | 65% or higher | Setter (confirmation sequence) |
-| Close rate | Jobs sold / appointments held | Roofing 30%, HVAC 20%, windows 30% | Closer, offer, anchor |
-| Average ticket | Revenue / jobs sold | At or above the trade's baseline from the audit | Closer, upgrade second prize |
+| Close rate | Jobs sold / appointments held | 30% | Closer, offer, anchor |
+| Average ticket | Revenue / jobs sold | At or above the roofing baseline from the audit | Closer, upgrade second prize |
 
 Two outputs sit under the inputs: cost per sold job and gross profit after ads. They are reported but never discussed first.
 
@@ -234,7 +232,7 @@ Ready to sell means: a pilot running, the rules reviewed, the funnel live in GHL
 
 **Week 1, by Nov 19, 2026: decide and pilot**
 
-- [ ] Decide: one giveaway page for all three trades or one per trade; whether second place is capped per trade
+- [ ] Decide: whether second place is capped or open to every qualified applicant
 - [ ] Confirm pricing in this doc or change it here: $15,000 + $6,000 / month, renewal $4,000
 - [ ] Send the draft official rules and the deductible/rebate language to the attorney, both the 2URN and the client versions
 - [ ] Open the pilot's input audit: leads, cost per lead, set, show, close, ticket for the last 90 days
@@ -244,7 +242,7 @@ Ready to sell means: a pilot running, the rules reviewed, the funnel live in GHL
 - [ ] Paste the three funnel pages into GHL, create the form, fields, workflows and calendar per GHL-SETUP.md
 - [ ] Run the three-step test (entry, referral, claim) and delete the test contacts
 - [ ] Write the setter job post and interview scorecard; post for the pilot client
-- [ ] Build the pilot client's giveaway pages from the same kit with their prize and trade
+- [ ] Build the pilot client's giveaway pages from the same kit with their prize
 
 **Week 3, by Dec 3, 2026: shoot and launch the pilot**
 
@@ -261,4 +259,4 @@ Ready to sell means: a pilot running, the rules reviewed, the funnel live in GHL
 - [ ] Interviews run daily; scorecards in GHL; winner picked and announced Dec 4 on video
 - [ ] Second-place calls within 24 hours of the announcement; 72-hour claim window; case-study kickoff with the winner
 
-Open questions: confirm the kill line numbers; whether second place is capped (Zoe: everyone who qualifies) or limited to five seats per trade; whether to run one giveaway for all three trades or one page per trade with the same ladder.
+Open questions: confirm the kill line numbers; whether second place is capped (Zoe: everyone who qualifies) or limited to five seats a quarter.

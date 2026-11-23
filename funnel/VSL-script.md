@@ -2,7 +2,7 @@
 
 **On camera:** Camron. **Shoot:** Nov 17. **Edit:** Shabi. **Length:** 3:00 to 3:30. **Where:** top of the giveaway page; ✂ marks the 15/30/60-second ad cuts.
 **Tone, per Josh:** fun. This is a giveaway, not a webinar. Goofy is allowed in the open and the close. The qualification block in the middle is dead serious.
-**Audience:** owners of roofing, HVAC and window companies doing $1M+, heading into the slow season, burned by at least one agency, tired of the "are you a roofer doing a million a year" hook they see from every agency.
+**Audience:** owners of roofing companies doing $1M+, heading into the slow season, burned by at least one agency, tired of the "are you a roofer doing a million a year" hook they see from every agency.
 
 **Belief strategy.** They already believe leads matter. What's broken: solution belief ("agencies don't work, every ad looks the same"), identity belief ("I'm not a marketer, I don't want to be on camera"). The script agrees with the cynicism, reframes the hidden lock (nobody recognizes you, and nobody calls the leads), makes owner-on-camera the master key, and uses the qualification rules as the thing that makes the prize credible. Winning requires being the kind of operator who'd succeed anyway.
 
@@ -11,7 +11,7 @@
 ## 0:00 — Hook ✂ (fun)
 > It's winter. Your door-knockers quit. Your referrals dried up. And every agency on earth is in your inbox asking if you're a roofer doing a million a year.
 >
-> I'm Camron with 2URN Marketing. We're going to run one roofing, HVAC or window company's entire marketing for ninety days. Free. Through the slow season.
+> I'm Camron with 2URN Marketing. We're going to run one roofing company's entire marketing for ninety days. Free. Through the slow season.
 >
 > And second place wins big too. Stick around.
 
@@ -51,7 +51,7 @@
 >
 > Now second place, and second place is a stack. Free: a one-month Content Package. A forty-five minute interview with me, then ten finished ads and posts in your own words. Twenty-five hundred dollars. A Competitor Analysis: who you're up against, what they're running, and where the gaps are. Fifteen hundred. And five advertising campaigns, scripted for you, ten hooks and a full video script each, ready to shoot. Twelve fifty.
 >
-> That's five thousand two hundred fifty dollars in work, free, plus half off your first three months of Growth Partner. Fifteen hundred a month instead of three thousand. Nine thousand seven hundred fifty dollars of value, for second place.
+> That's five thousand two hundred fifty dollars in work, free, plus half off your first ninety days of Growth Partner. Fifteen hundred a month instead of three thousand. Nine thousand seven hundred fifty dollars of value, for second place.
 >
 > And the ROI guarantee: do everything on the list, and if Growth Partner hasn't paid for itself in closed jobs by day ninety, we keep working for free until it has. You've got seventy-two hours to claim it.
 >
@@ -87,7 +87,7 @@
 | Credibility | Client ads and a real pipeline on screen; the rules themselves |
 
 ## On-screen text for the rules block (also the "What the winner commits to" strip on the page)
-$1M+ last 12 months · Owner or rep on camera, no AI · Ad spend funded from $150/day · A team that can take appointments · Documented as a case study · Runs through the slow season · $10,000 value · Second-Place Stack: $5,250 in deliverables free + $4,500 off = $9,750 of value (Content Package, Competitor Analysis, 5 scripted campaigns, 50% off 3 months, ROI guarantee)
+$1M+ last 12 months · Owner or rep on camera, no AI · Ad spend funded from $150/day · A team that can take appointments · Documented as a case study · Runs through the slow season · $10,000 value · Second-Place Stack: $5,250 in deliverables free + $4,500 off = $9,750 of value (Content Package, Competitor Analysis, 5 scripted campaigns, 50% off 90 days, ROI guarantee)
 
 ## Do not say
 "Random," "drawing," "odds," "guaranteed results" (the ROI guarantee line in the Prizes section is the only guarantee wording, said once, exactly as written), any client revenue number we can't screenshot, anything about the 2URN list size.
