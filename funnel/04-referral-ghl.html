@@ -12,7 +12,7 @@
     /* GHL Inbound Webhook URL from the "Giveaway Entry" workflow trigger. FALLBACK ONLY: leave "" unless the form post fails, so the entry workflow cannot run twice for one entry.
        This is the SAME value as webhook on 01-giveaway-ghl.html. */
     webhook: "",
-    /* Winner announced date/time. ISO with timezone. Entries close at this time. The countdown, the SMS copy and the rules all use this. */
+    /* Winners picked date/time. ISO with timezone. Entries close at this time. The countdown, the SMS copy and the rules all use this. */
     announcementAt: "2026-12-05T19:00:00-06:00",
     /* Thank-you page path on this funnel. */
     thankYouPath: "/thank-you",
@@ -155,7 +155,7 @@ body { background:#fff; }
 
 <div class="band bar"><div class="in">
   <span class="wm"><b>2URN</b> MARKETING</span>
-  <span>Winner<span class="tail2"> announced</span>: <b id="bar-date">Dec 5, 2026</b><span class="tail"> · One grand prize · Second place · Third place</span></span>
+  <span>Winners<span class="tail2"> picked</span>: <b id="bar-date">Dec 5, 2026</b><span class="tail"> · One grand prize · Second place · Third place</span></span>
 </div></div>
 
 <div class="band hero"><div class="in">
@@ -193,7 +193,7 @@ body { background:#fff; }
         <label class="ff">Mobile phone<input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
         <div class="err full" id="err">Please fill in every field and use a real email and mobile number.</div>
         <button class="cta full" id="submit" type="submit">Enter to win</button>
-        <p class="micro full" id="micro">30 seconds. No purchase necessary.</p>
+        <p class="micro full" id="micro">30 seconds. No purchase necessary. Three places, all picked <span class="gw-md">Dec 5</span>.</p>
         <p class="refline full" id="refline"></p>
         <div class="trust full s2"><b>✓</b> No purchase necessary <b>✓</b> Every applicant gets a 20-minute call</div>
         <p class="consent full s2">By entering you agree to the <a href="/rules" style="color:var(--ink)">Official Rules</a> and to receive calls and texts from 2URN Marketing about this giveaway and our services, including by automated means. Consent is not a condition of entry: to enter without agreeing to calls and texts, use the free mail-in method in the Official Rules. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
@@ -239,7 +239,7 @@ body { background:#fff; }
     </div>
 
     <div class="count" id="count">
-      <span class="lbl">Winner announced in</span>
+      <span class="lbl">Winners picked in</span>
       <div class="cu"><b id="cd-d">0</b><span>days</span></div>
       <div class="cu"><b id="cd-h">00</b><span>hrs</span></div>
       <div class="cu"><b id="cd-m">00</b><span>min</span></div>
@@ -267,9 +267,9 @@ body { background:#fff; }
   <div class="steps">
     <div class="st"><div class="n">1</div><div><b>You apply</b><p>Fill out the form. Entries close <span id="close-date">Dec 5, 2026</span>.</p></div></div>
     <div class="st"><div class="n">2</div><div><b>You get a 20-minute call</b><p>We call within 2 business days. It is an interview, not a sales call.</p></div></div>
-    <div class="st"><div class="n">3</div><div><b>Our panel picks the grand prize winner</b><p>People choose, not chance. We judge interviewed applicants against the criteria in the Official Rules.</p></div></div>
-    <div class="st"><div class="n">4</div><div><b>Second place is drawn at random</b><p>Second-place winners are picked at random from eligible applicants. If you are drawn, you get the Second-Place Stack, included free: a One-Month Content Package, a Competitor Analysis, Five Advertising Campaigns, scripted, and a website if you need one, plus 50% off the 90-day program ($1,500/month instead of $3,000) with a revenue ROI guarantee. Claim within 72 hours by booking your 20-minute claim call. The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the 90-day program.</p></div></div>
-    <div class="st"><div class="n">5</div><div><b>Third place: free audit and website</b><p>A marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month.</p></div></div>
+    <div class="st"><div class="n">3</div><div><b>Our panel picks every winner on <span class="gw-long">December 5</span></b><p>People choose, not chance. Nobody wins before then. We judge interviewed applicants against the criteria in the Official Rules.</p></div></div>
+    <div class="st"><div class="n">4</div><div><b>Second place: the Second-Place Stack</b><p>If our panel picks you for second place, you get the Second-Place Stack, included free: a One-Month Content Package, a Competitor Analysis, Five Advertising Campaigns, scripted, and a website if you need one, plus 50% off the 90-day program ($1,500/month instead of $3,000) with a revenue ROI guarantee. Claim within 72 hours by booking your 20-minute claim call. The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the 90-day program.</p></div></div>
+    <div class="st"><div class="n">5</div><div><b>Third place: free audit and website</b><p>Our panel picks third place too. A marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month.</p></div></div>
   </div>
   <p style="color:var(--muted);margin-top:14px;max-width:70ch;font-size:.9rem">The guarantee: if you do these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has.</p>
 </div></div>
@@ -281,7 +281,7 @@ body { background:#fff; }
 </div></div>
 
 <div class="band foot"><div class="in">
-  NO PURCHASE NECESSARY. Open to owners or authorized officers of roofing companies operating in the United States, 18+. Void where prohibited. The grand prize winner is selected by Sponsor's panel based on the published criteria in the Official Rules; second-prize winners are selected in a random drawing from eligible entrants, and the odds of winning a second prize depend on the number of eligible entries. One (1) grand prize: the 2URN Growth Partner program free for 90 days (ARV $10,000). The winner funds their own advertising spend. An eligible entrant in a different market who referred the grand prize winner, through their referral link or through the referral form on the thank-you page before the winner entered, also receives the grand prize. Second prize is awarded to multiple entrants. Each second-prize winner who claims receives (the Second-Place Stack): a Competitor Analysis (ARV $1,500), a written report on the winner's current competitors, delivered within 7 days of booking the claim call whether or not the winner signs; and, included with the discounted Growth Partner engagement and delivered in its first month, a One-Month Content Package (ARV $2,500: a 45-minute interview with Camron, five (5) ad scripts and five (5) content scripts in the winner's words, a shot list, and editing of the winner's phone-shot footage into ten (10) finished pieces) and five (5) scripted advertising campaigns (ARV $1,250: each with ten (10) hooks and a full video script), and, for winners without a company website, a website buildout; plus 50% off the first 90 days of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then the standard $3,000 per month, with a revenue ROI guarantee: if the winner does these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, Sponsor continues working at no charge until it has. The winner funds their own advertising spend. Third prize, awarded to multiple entrants: a marketing audit and a website buildout at no build fee; the winner pays hosting and maintenance of $189 per month. Second and third prizes must be claimed within 72 hours of notification by booking a call, have no cash value and are non-transferable. Entries close <span id="foot-date">Dec 5, 2026 at 7:00 PM CT</span>. See <a href="/rules">Official Rules</a> for eligibility, alternate method of entry, judging criteria and prize details. Sponsor: 2URN Marketing. · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a>
+  NO PURCHASE NECESSARY. Open to owners or authorized officers of roofing companies operating in the United States, 18+. Void where prohibited. All winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. No prize is awarded before then. One (1) grand prize: the 2URN Growth Partner program free for 90 days (ARV $10,000). The winner funds their own advertising spend. An eligible entrant in a different market who referred the grand prize winner, through their referral link or through the referral form on the thank-you page before the winner entered, also receives the grand prize. Second prize is awarded to multiple entrants. Each second-prize winner who claims receives (the Second-Place Stack): a Competitor Analysis (ARV $1,500), a written report on the winner's current competitors, delivered within 7 days of booking the claim call whether or not the winner signs; and, included with the discounted Growth Partner engagement and delivered in its first month, a One-Month Content Package (ARV $2,500: a 45-minute interview with Camron, five (5) ad scripts and five (5) content scripts in the winner's words, a shot list, and editing of the winner's phone-shot footage into ten (10) finished pieces) and five (5) scripted advertising campaigns (ARV $1,250: each with ten (10) hooks and a full video script), and, for winners without a company website, a website buildout; plus 50% off the first 90 days of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then the standard $3,000 per month, with a revenue ROI guarantee: if the winner does these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, Sponsor continues working at no charge until it has. The winner funds their own advertising spend. Third prize, awarded to multiple entrants: a marketing audit and a website buildout at no build fee; the winner pays hosting and maintenance of $189 per month. Second and third prizes must be claimed within 72 hours of notification by booking a call, have no cash value and are non-transferable. Entries close <span id="foot-date">Dec 5, 2026 at 7:00 PM CT</span>. See <a href="/rules">Official Rules</a> for eligibility, alternate method of entry, judging criteria and prize details. Sponsor: 2URN Marketing. · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a>
 </div></div>
 
 </div>
@@ -320,6 +320,7 @@ window.gwScroll = function(id, blk){
   var fmtDate = announce.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
   var fmtTime = announce.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZoneName:'short'});
   ['bar-date','close-date'].forEach(function(id){var el=document.getElementById(id); if(el) el.textContent=fmtDate;});
+  try{[['gw-long',{month:'long',day:'numeric'}],['gw-md',{month:'short',day:'numeric'}]].forEach(function(p){var t=announce.toLocaleDateString('en-US',p[1]);Array.prototype.forEach.call(document.getElementsByClassName(p[0]),function(el){el.textContent=t;});});}catch(e){}
   var fd=document.getElementById('foot-date'); if(fd) fd.textContent=fmtDate+' at '+fmtTime;
 
   /* ----- sticky mobile CTA ----- */
@@ -333,7 +334,7 @@ window.gwScroll = function(id, blk){
     var box=document.getElementById('count');
     if (ms<=0){
       if (iv){ clearInterval(iv); iv=null; }
-      if (box) box.innerHTML='<span class="lbl">Entries are closed. The winner is being contacted.</span>';
+      if (box) box.innerHTML='<span class="lbl">Entries are closed. Winners are being contacted.</span>';
       var sb=document.getElementById('submit'); if (sb){ sb.disabled=true; sb.textContent='Entries closed'; }
       var ci=document.getElementById('closein'); if(ci) ci.textContent='Entries are closed.';
       return false;

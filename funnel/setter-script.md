@@ -8,16 +8,16 @@ The call has three jobs:
 The interview is an interview, not a sales call. Do not pitch on it.
 
 **How each prize is chosen. Say it this way and no other way.**
-- **Grand prize:** picked by 2URN's panel from interviewed applicants, against the published criteria. It is judged. People choose, not chance.
-- **Second place:** drawn at random from eligible applicants.
-- **Third place:** a free audit and a website buildout.
-- **Never promise anyone a prize.** Never say or hint that they will win. Never tell an applicant how many people win a tier. Say "second place" and "third place", not "everyone gets" or "multiple winners".
+- **Grand prize:** picked by 2URN's panel on Dec 5 from interviewed applicants, against the published criteria. It is judged. People choose, not chance.
+- **Second place:** picked by 2URN's panel on Dec 5 from applicants who completed the interview, on the same published criteria.
+- **Third place:** a free audit and a website buildout, picked by 2URN's panel on Dec 5.
+- **Never promise anyone a prize.** Nobody wins before Dec 5. Never offer, hint at or hand out the Stack, the half-off price, the audit or the free website before the Dec 5 notification, to anyone, for any reason. They are prizes, and our panel awards them on Dec 5. Never say or hint that they will win. Never tell an applicant how many people win a tier. Say "second place" and "third place", not "everyone gets" or "multiple winners".
 
 **Everyone who enters gets the call.** There is no disqualification on the form. There is **no revenue minimum**. The form asks revenue to prepare the call, and it never disqualifies anyone. Qualification happens here, on the setter call and the interview.
 
-**Not a fit for Growth Partner means one of two things:** they will not be on camera, or they cannot fund $200 a day in ad spend. That is the whole definition. Low revenue alone is never a reason. When a contact is not a fit, they are out of the grand prize and the second-place drawing, interview reminders stop, and they stay entered for third place. Do not set Do Not Disturb. Do not promise third place.
+**Not a fit for Growth Partner means one of two things:** they will not be on camera, or they cannot fund $200 a day in ad spend. That is the whole definition. Low revenue alone is never a reason. When a contact is not a fit, they are out of the grand prize and second place, interview reminders stop, and they stay entered for third place. Do not set Do Not Disturb. Do not promise third place.
 
-**Interview cutoff:** an interview counts for the grand prize and the second-place drawing only if it is held by the cutoff in the Official Rules (proposed Dec 5, 2026, 5:00 PM CT [CHECK: confirm cutoff with counsel]). An interview held after the cutoff does not count for either. Book every interview before it.
+**Interview cutoff:** an interview counts for the grand prize and second place only if it is held by the cutoff in the Official Rules (proposed Dec 5, 2026, 5:00 PM CT [CHECK: confirm cutoff with counsel]). An interview held after the cutoff does not count for either. Book every interview before it.
 
 Cadence: call within 2 business days of entry. Before the announcement: 3 attempts on day 1, 2 on day 2, 1 on day 3. After the announcement: second-place winners first, then third-place winners who have not booked: 3 attempts on day 1, 2 on day 2, 1 on day 3, all inside the 72-hour claim window. After the window the prize is gone. Any later call (weekly, up to 3 weeks) is about the standard program only and never mentions the prize as available.
 
@@ -37,7 +37,7 @@ Before dialing, read the lead note: company, self-reported revenue, referred-by.
 If busy: "Totally get it. When's better, later today or tomorrow morning?" Book the callback. Don't pitch a busy person.
 
 ### Set expectations
-> Quick note on how this works. The grand prize is judged. Our panel picks that winner from the people we interview, against published criteria. The interview is 20 minutes. It's not a sales call. We ask about your business and see if it fits. Winners are announced December fifth.
+> Quick note on how this works. Nobody wins on this call. Our panel picks every winner on December fifth. The interview is how you get judged for the grand prize and second place. It's 20 minutes. It's not a sales call. We ask about your business and see if it fits.
 
 Do not say anything about how many prizes there are or what anyone's chances are.
 
@@ -47,7 +47,7 @@ Do not say anything about how many prizes there are or what anyone's chances are
 Book on the Growth Partner Interview calendar while on the phone. Confirm number and email. Send the confirmation text before hanging up.
 
 Book before the interview cutoff (see the header notes). If the only slot the applicant can take is after the cutoff, say this before you book:
-> That slot is after the judging cutoff, so the interview won't count for the grand prize or the second-place drawing. Can we find an earlier time?
+> That slot is after the judging cutoff, so the interview won't count for the grand prize or second place. Can we find an earlier time?
 
 If no earlier time works, book it and add "after cutoff" to the opportunity note.
 
@@ -73,13 +73,13 @@ Then three more questions, context and color, not scored:
 
 ### Not a fit
 Only two things make a contact not a fit: they will not be on camera, or they cannot fund $200 a day in ad spend. Revenue never does.
-> I appreciate you being straight with me. The full Growth Partner program isn't the right fit right now, based on that. You're still entered, and winners are announced December fifth. Thanks for talking with me.
+> I appreciate you being straight with me. The full Growth Partner program isn't the right fit right now, based on that. You're still entered, and winners are picked December fifth. Thanks for talking with me.
 
-Then tag `not-a-fit`, set stage Not a Fit, and end the call. Do not promise third place. Do not set Do Not Disturb. The decision is made on the call, not by the form. Tagging stops interview reminders and removes them from the grand prize and the second-place drawing. They stay entered for third place.
+Then tag `not-a-fit`, set stage Not a Fit, and end the call. Do not promise third place. Do not set Do Not Disturb. The decision is made on the call, not by the form. Tagging stops interview reminders and removes them from the grand prize and second place. They stay entered for third place.
 
 ### Close the interview
 If they are a fit:
-> Thanks, that's what I needed. Our panel picks the grand prize winner on December fifth. You'll hear from us either way. If you know a roofer in another market that fits, your referral link is still live. If they win the grand prize, you win it too.
+> Thanks, that's what I needed. Our panel picks every winner on December fifth. If you know a roofer in another market that fits, your referral link is still live. If they win the grand prize, you win it too.
 
 ---
 
@@ -96,7 +96,7 @@ Delivery timing: say when each piece arrives. The Competitor Analysis within 7 d
 
 Say it in beats. Stop after each one and let them answer.
 
-> The grand prize went to one company, and you were drawn for second place. Second place gets you the Second-Place Stack, and it's included free with second place.
+> The grand prize went to one company, and our panel picked you for second place. Second place gets you the Second-Place Stack, and it's included free with second place.
 
 > One. A one-month Content Package. A forty-five minute interview with Camron, then we write five ad scripts and five content scripts in your words. You shoot them on your phone with our shot list, and we edit ten finished pieces. That's twenty-five hundred dollars.
 
@@ -155,7 +155,7 @@ Never invent a term, a minimum, a cancellation rule, a timeline or who owns the 
 ### If they ask about the full program
 > The full program is three thousand a month with a 90-day minimum. Book your free audit call first so you don't lose your prize, and we can talk about the program on that call too, if you want.
 
-Book the Growth Partner Interview calendar if they want it. Do not pitch the full program on a third-place call.
+If they want to talk about the full program, do not book the Growth Partner Interview calendar (workflow D would treat it as a giveaway interview). Note it in the opportunity and create a task for Camron: "Standard Growth Partner call: third-place winner, no prize terms". Do not pitch the full program on a third-place call.
 
 ---
 
@@ -168,7 +168,7 @@ A nominee is a roofer an entrant put forward on the thank-you page. They have gi
 - **No answer:** leave one voicemail that names the referrer, then stop. No text, no second call.
 - **A text only if the nominee asks for the link on the call.** Never before.
 - **If they say no:** tag `nominee-declined` and never contact them again.
-- A nomination is not an entry. It never changes judging or the drawing.
+- A nomination is not an entry. It never changes judging.
 
 ### Script
 > Hey, it's [Name] with 2URN Marketing. [Referrer first name] at [referrer company] entered our Growth Partner giveaway and put you forward. I'm only calling once. The grand prize is ninety days of Growth Partner free, a ten-thousand-dollar value. The winner funds their own ads, two hundred to a thousand dollars a day, paid to Meta. It takes thirty seconds to enter. Want me to text you the link?
@@ -196,9 +196,9 @@ Workflow A notifies Camron. It cannot text the referrer. If you text the referre
 - **"We tried ads, didn't work."** "Yeah, that's what most of the people on this list said. Almost every time we open the account it's no follow-up and a budget that never left learning phase. In the interview we'll look at which one it was for you."
 - **"Send me info."** "The page you entered on is the info. The interview is where we look at your business. Tuesday or Thursday?"
 - **"Too expensive."** "Could be. That's what the interview is for. If the numbers don't work at your ticket, we'll tell you not to do it."
-- **"I don't want to be on camera."** "Understood. For the full program it's required. Homeowners trust a real face, and we don't use AI avatars or stock footage. You're still entered, and winners are announced December fifth. I'd rather tell you now that the full program isn't the right fit." Then tag `not-a-fit` and set stage Not a Fit. Do not promise third place.
+- **"I don't want to be on camera."** "Understood. For the full program it's required. Homeowners trust a real face, and we don't use AI avatars or stock footage. You're still entered, and winners are picked December fifth. I'd rather tell you now that the full program isn't the right fit." Then tag `not-a-fit` and set stage Not a Fit. Do not promise third place.
 - **"We're busy enough."** "Then you're exactly who this is for in the slow season. When does your phone stop ringing, January?" Book for that conversation.
-- **"Are you sure I'll win?" / "Do I win something?"** "I can't promise anyone a prize. The grand prize is picked by our panel after the interviews, and second place is drawn at random. Winners are announced December fifth."
+- **"Are you sure I'll win?" / "Do I win something?"** "I can't promise anyone a prize. Our panel picks every winner on December fifth, after the interviews. Nobody wins before then."
 - **"Do I need to hit a revenue number?"** "No. There's no revenue minimum. We ask so we can prepare for the call."
 
 ## Close the call

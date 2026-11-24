@@ -1,7 +1,7 @@
-# 2URN Growth Partner Giveaway: VSL Script (v3, Nov 23 terms)
+# 2URN Growth Partner Giveaway: VSL Script (v4, Nov 23, evening: our panel picks all three places on December fifth)
 
 **On camera:** Camron. **Edit:** Shabi. **Length target:** about 4:00 (the page calls it a 4-minute video). **Where:** top of the giveaway page and the referral page; ✂ marks the 15/30/60-second ad cuts.
-**Shoot:** was set for Nov 17. If that cut exists it predates the Nov 23 terms (roofing only, December 5, three prizes, new commitments) and needs a reshoot or pickup lines. [DECIDE: reshoot date]
+**Shoot:** was set for Nov 17. If that cut exists it predates the Nov 23 terms (roofing only, December 5, three prizes, new commitments) and needs a reshoot or pickup lines. Any cut shot from v3 needs pickup lines for the changed sentences. [DECIDE: reshoot date]
 **Tone, per Josh:** fun. This is a giveaway, not a webinar. Goofy is allowed in the open and the close. The commitments block in the middle is dead serious.
 **Audience:** owners of roofing companies heading into the slow season, burned by at least one agency, tired of the "are you a roofer doing a million a year" hook they see from every agency. There is no revenue requirement to enter or to win, so nothing in this script gates on revenue.
 
@@ -48,15 +48,15 @@
 ## 1:49 | The prizes ✂
 > Apply. Thirty seconds. Then a twenty-minute interview. Not a sales call.
 >
-> December fifth, our panel picks the grand prize winner. Ninety days of Growth Partner, free. Ten thousand dollars of work.
+> December fifth, our panel picks every winner. Nobody wins before then. The grand prize: ninety days of Growth Partner, free. Ten thousand dollars of work.
 >
-> Second place is drawn at random, and second place is a stack, included free. A one-month Content Package: ten finished ads and posts in your own words. Twenty-five hundred dollars. A Competitor Analysis: who you're up against, what they run, where the gaps are. Fifteen hundred. Five advertising campaigns, scripted, ten hooks and a full video script each. Twelve fifty. And if you don't have a website, we build you one.
+> Second place is picked by our panel too, and second place is a stack, included free. A one-month Content Package: ten finished ads and posts in your own words. Twenty-five hundred dollars. A Competitor Analysis: who you're up against, what they run, where the gaps are. Fifteen hundred. Five advertising campaigns, scripted, ten hooks and a full video script each. Twelve fifty. And if you don't have a website, we build you one.
 >
 > That's five thousand two hundred fifty dollars in work, free, plus half off the ninety-day program. Fifteen hundred a month instead of three thousand. Nine thousand seven hundred fifty dollars of value. Before the website. The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the ninety-day program.
 >
 > And the program comes with the revenue ROI guarantee. Do these four things: content shot within fourteen days, ad spend funded from two hundred a day, the follow-up sequence live, a weekly scorecard call, and if Growth Partner hasn't paid for itself in closed jobs by day ninety, we keep working for free until it has. You've got seventy-two hours to claim.
 >
-> Third place: a marketing audit and a website built for your company. No build fee. Hosting and maintenance is one eighty-nine a month.
+> Third place, picked the same day: a marketing audit and a website built for your company. No build fee. Hosting and maintenance is one eighty-nine a month.
 >
 > One more thing. Refer a roofer in another market. If they win the grand prize, you win it too.
 
@@ -65,14 +65,14 @@
 >
 > Hit apply. Thirty seconds. If you don't apply, go make a snowman.
 >
-> Winners announced December fifth. See you in the interview.
+> Winners are picked December fifth. See you in the interview.
 
 ---
 
 ## Ad cuts
-- **15s:** Hook lines 1 and 2 trimmed to "It's winter. Your door-knockers quit. Your referrals dried up. One roofing company's entire marketing, ninety days. Free." + "Apply. Winners announced December fifth."
-- **30s:** Hook line 1 + "We're going to run one roofing company's entire marketing for ninety days. Free." + Prizes line 2 ("December fifth, our panel picks the grand prize winner. Ninety days of Growth Partner, free. Ten thousand dollars of work.") + "Hit apply. Winners announced December fifth."
-- **60s:** Hook (all three lines) + Before-you-click items 1 and 2 + Prizes line 2 + "Second place is drawn at random. Five thousand two hundred fifty dollars in work, free, plus half off the ninety-day program. Nine thousand seven hundred fifty dollars of value, before the website." + "Hit apply. Winners announced December fifth."
+- **15s:** Hook lines 1 and 2 trimmed to "It's winter. Your door-knockers quit. Your referrals dried up. One roofing company's entire marketing, ninety days. Free." + "Apply. Winners are picked December fifth."
+- **30s:** Hook line 1 + "We're going to run one roofing company's entire marketing for ninety days. Free." + Prizes line 2 ("December fifth, our panel picks every winner. Nobody wins before then. The grand prize: ninety days of Growth Partner, free. Ten thousand dollars of work.") + "Hit apply. Winners are picked December fifth."
+- **60s:** Hook (all three lines) + Before-you-click items 1 and 2 + Prizes line 2 + "Second place is picked by our panel too. Five thousand two hundred fifty dollars in work, free, plus half off the ninety-day program. Nine thousand seven hundred fifty dollars of value, before the website." + "Hit apply. Winners are picked December fifth."
 - **Hook variants to shoot:**
   1. "It's winter. Your door-knockers quit. We're running one roofing company's marketing free for 90 days."
   2. "No AI slop. If you won't put your face in your ads, you won't win the grand prize. If you will, it's free."
@@ -88,7 +88,7 @@
 | Solution | Owner on camera + follow-up automation (the mechanism) |
 | Product | Structure, script, shoot, edit, run, automate; $3,000/mo, 90-day minimum |
 | Commitment | Five items said out loud: $200 to $1,000 a day to Meta, content on camera, own case studies, public case study, testimonial |
-| Prizes | Grand prize judged by our panel after a 20-minute interview; second place drawn at random, the stack ($5,250 in work + $4,500 off = $9,750); third place audit + website, $189/mo hosting |
+| Prizes | Our panel picks all three places on December fifth, and nobody wins before then. Grand prize judged by our panel after a 20-minute interview; second place picked by our panel too, the stack ($5,250 in work + $4,500 off = $9,750); third place picked by our panel the same day, audit + website, $189/mo hosting |
 | Risk | Revenue ROI guarantee, said once, with its four conditions [CHECK: performance guarantee wording, and how "paid for itself in closed jobs" is measured] |
 | Credibility | Client ads and a real pipeline on screen; the commitments themselves |
 
@@ -100,9 +100,9 @@ Second place, the Second-Place Stack: $5,250 in deliverables, free, plus $4,500 
 Third place, Free Audit + Website Buildout: no build fee, hosting and maintenance $189 a month.
 
 ## Do not say
-- "Random" or "drawn" about anything except second place. Never about the grand prize: the grand prize is judged, people choose, not chance.
-- "I pick," "I'm picking" or "I announce" about the grand prize. Say "our panel picks" or "we pick."
-- "Odds," in any form.
+- "Random," "randomly," "drawn," "drawing," "odds," "raffle," "sweepstakes," "hybrid," "instant," "instantly," "on the spot" or "finalist" about any prize or any step. No prize is random or drawn: our panel picks all three places on December fifth, and nobody wins before then. People choose, not chance.
+- "Winners announced," "Winner announced" or "The winner is announced." Say "Winners are picked December fifth."
+- "I pick," "I'm picking" or "I announce" about any prize. Say "our panel picks" or "we pick."
 - "Guaranteed results." The revenue ROI guarantee in the Prizes section is the only guarantee wording, said once, in the "Do these four things" form. Never call its four conditions "the commitment list."
 - Anything that tells the viewer how many people win a tier: no "everyone wins," "everybody gets," "all applicants," "multiple winners." Say "second place" and "third place." The one exception is the apply-anyway line, "Every applicant gets a 20-minute call, win or not." It is about the call, never a prize. Never say or imply that people who miss a higher tier get a lower one.
 - Any revenue requirement or revenue gate. There is no minimum to enter or to win.

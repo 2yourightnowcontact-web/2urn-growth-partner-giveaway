@@ -61,6 +61,9 @@ body { background:#fff; }
 .mcta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px max(16px,env(safe-area-inset-left,0px)) max(10px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right,0px));background:rgba(11,11,12,.92);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.14)}
 .mcta button{width:100%;min-height:52px;background:var(--red);color:#fff;border:0;border-radius:12px;font:700 1.17rem var(--body);letter-spacing:-.01em;cursor:pointer}
 .mcta.hide{display:none!important}
+.nl-only{display:none}
+.cl.nolink .count,.cl.nolink .go,.cl.nolink .band.sec,.cl.nolink .mcta{display:none!important}
+.cl.nolink .nl-only{display:inline-flex;align-items:center;justify-content:center;max-width:420px}
 @media(max-width:760px){
   .two{grid-template-columns:1fr;gap:14px}
   .col{display:contents}
@@ -81,7 +84,7 @@ body { background:#fff; }
 <div class="band top"><div class="in">
   <span class="pill">Second place · Growth Partner Giveaway</span>
   <h1><span id="name">You</span> won the Second-Place Stack: <em>$9,750+ of value.</em></h1>
-  <p class="sub">The grand prize went to one company. You were drawn for second place: $5,250 in deliverables plus a website if you need one, free, plus $4,500 off Growth Partner. To claim it, book your 20-minute call within 72 hours of your notification.</p>
+  <p class="sub" id="sub">The grand prize went to one company. Our panel picked you for second place: $5,250 in deliverables plus a website if you need one, free, plus $4,500 off Growth Partner. To claim it, book your 20-minute call within 72 hours of your notification.</p>
   <div class="count" id="count">
     <span class="lbl">Time left to claim</span>
     <div class="cu"><b id="h">00</b><span>hrs</span></div>
@@ -89,6 +92,7 @@ body { background:#fff; }
     <div class="cu"><b id="s">00</b><span>sec</span></div>
   </div>
   <a class="btn go" href="#book">Book your call to claim it</a>
+  <a class="btn nl-only" id="nl-btn" href="/lead-engine">See the giveaway</a>
 </div></div>
 
 <div class="band sec"><div class="in">
@@ -164,13 +168,13 @@ body { background:#fff; }
   </div>
 </div></div>
 
-<div class="band foot"><div class="in">2URN Marketing · Second-prize winners are selected in a random drawing from eligible entrants. The Second-Place Stack has no cash value, is non-transferable and must be claimed by booking the 20-minute claim call within 72 hours of notification. It includes a Competitor Analysis (ARV $1,500), delivered within 7 days of booking the claim call whether or not you sign; and, delivered inside the discounted Growth Partner engagement and only if you sign the engagement agreement, a One-Month Content Package (ARV $2,500) and five scripted advertising campaigns (ARV $1,250), both in its first month, and, for winners without a company website, a website buildout. The second-place price ($1,500 per month for the first 90 days, then $3,000 per month) applies to the 2URN Growth Partner program only. The revenue ROI guarantee applies only if the guarantee's four conditions are met: content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live and a weekly scorecard call. If so and Growth Partner has not paid for itself in closed jobs by day 90, 2URN keeps working at no charge until it has. Ad spend is paid by you directly to Meta. <a href="/rules" style="color:var(--ink)">Official Rules</a></div></div>
+<div class="band foot"><div class="in">2URN Marketing · Second-prize winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. The Second-Place Stack has no cash value, is non-transferable and must be claimed by booking the 20-minute claim call within 72 hours of notification. It includes a Competitor Analysis (ARV $1,500), delivered within 7 days of booking the claim call whether or not you sign; and, delivered inside the discounted Growth Partner engagement and only if you sign the engagement agreement, a One-Month Content Package (ARV $2,500) and five scripted advertising campaigns (ARV $1,250), both in its first month, and, for winners without a company website, a website buildout. The second-place price ($1,500 per month for the first 90 days, then $3,000 per month) applies to the 2URN Growth Partner program only. The revenue ROI guarantee applies only if the guarantee's four conditions are met: content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live and a weekly scorecard call. If so and Growth Partner has not paid for itself in closed jobs by day 90, 2URN keeps working at no charge until it has. Ad spend is paid by you directly to Meta. <a href="/rules" style="color:var(--ink)">Official Rules</a></div></div>
 <div class="mcta" id="mcta"><button type="button" onclick="document.getElementById('book').scrollIntoView({behavior:(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth',block:'start'})">Book your call to claim it</button></div>
 </div>
 
 <script>
 (function(){
-  var C=window.GW_CLAIM||{}, until=null, first='', closed=false, iv=null;
+  var C=window.GW_CLAIM||{}, until=null, first='', closed=false, iv=null, hasLink=true;
   function cleanName(s){
     var raw=String(s==null?'':s);
     if(/[<>]/.test(raw)) return '';
@@ -187,7 +191,18 @@ body { background:#fff; }
     var d=new Date(s);
     return isNaN(d.getTime())?null:d;
   }
-  try{ var p=new URLSearchParams(location.search); first=cleanName(p.get('first')); until=parseUntil(p.get('until')); }catch(e){}
+  try{ var p=new URLSearchParams(location.search); hasLink=p.has('until'); first=cleanName(p.get('first')); until=parseUntil(p.get('until')); }catch(e){ hasLink=true; }
+  /* No winner link (no "until" parameter): never show "You won". Any failure here fails open to the winner view. */
+  if(!hasLink){
+    try{
+      var h1=document.querySelector('.top h1'), sb=document.getElementById('sub'), root=document.querySelector('.cl');
+      var em=document.createElement('em'); em.appendChild(document.createTextNode('second-place winners.'));
+      h1.textContent=''; h1.appendChild(document.createTextNode('This page is for ')); h1.appendChild(em);
+      sb.textContent='Our panel picks every winner when entries close, and nobody wins before then. If our panel picks you for second place, we send you a link to this page with your 72-hour claim window.';
+      root.classList.add('nolink');
+      return;
+    }catch(e){ hasLink=true; try{ document.querySelector('.cl').classList.remove('nolink'); }catch(e2){} }
+  }
   var url=String(C.bookingUrl||'');
   try{ var cal=document.getElementById('cal'); if(cal&&url) cal.src=url+(first?(url.indexOf('?')>-1?'&':'?')+'first_name='+encodeURIComponent(first):''); }
   catch(e){ try{ document.getElementById('cal').src=url; }catch(e2){} }

@@ -22,7 +22,7 @@ We work inside a contractor's business, not outside it. Agencies that only send 
 | **Marketing audit** | Your website, your Google Business Profile, your ads and your follow-up, with what to fix first `[DECIDE: confirm audit scope]`. | Free in the giveaway (third place); standard price `[DECIDE: standard audit price]` |
 | **Home Service Heroes** | Separate pay-per-lead brand run by the same team: exclusive roofing leads by ZIP/zone, sold per lead or as monthly recurring. Pay-per-lead rents demand; Growth Partner builds the asset. Sell both and let price sort the buyer. | Per lead / monthly |
 
-Current acquisition play (winter 2026): the **Growth Partner Giveaway**, three prizes: a judged grand prize (90 days of Growth Partner, free), a second place drawn at random (the Second-Place Stack), and a third place (a free audit and website). Full detail in `offer-doc/OFFER-DOC.md`.
+Current acquisition play (winter 2026): the **Growth Partner Giveaway**, three prizes: a grand prize (90 days of Growth Partner, free), a second place (the Second-Place Stack) and a third place (a free audit and website), all picked by our panel on Dec 5. Full detail in `offer-doc/OFFER-DOC.md`.
 
 ## Who we sell to
 
@@ -45,7 +45,7 @@ Weak fits (sales notes, not the `not-a-fit` tag): owner is the only closer, stor
 
 Plain, direct, a little blunt. Short sentences. Numbers said out loud. Agree with the skeptic before you pitch. Fun is allowed in hooks and closes (winter, Christmas, owner-on-the-roof bits); the qualification block is always dead serious.
 
-Never say: "guaranteed results," "everyone wins," "everybody gets," "all applicants," "multiple winners," or anything that tells a reader how many people win a tier; any client revenue number we cannot screenshot; anything about list size. Never describe the grand prize as random, a drawing or as having odds. Second place is drawn at random and we say so. The only guarantee wording is the revenue ROI guarantee. Never frame a discount as covering an insurance deductible. No em dashes or en dashes in customer-facing copy.
+Never say: "guaranteed results," "everyone wins," "everybody gets," "all applicants," "multiple winners," or anything that tells a reader how many people win a tier; any client revenue number we cannot screenshot; anything about list size. Never describe any prize as random, a drawing or as having odds. Our panel picks all three places on Dec 5, and nobody wins before then. The only guarantee wording is the revenue ROI guarantee. Never frame a discount as covering an insurance deductible. No em dashes or en dashes in customer-facing copy.
 
 ## Brand
 
@@ -87,12 +87,12 @@ Never say: "guaranteed results," "everyone wins," "everybody gets," "all applica
 
 ## Compliance habits
 
-The giveaway is a hybrid. The grand prize is a judged contest (winner chosen by 2URN's panel against six published criteria); second place is a random drawing from eligible applicants; third place goes to multiple entrants `[DECIDE: how third-prize winners are chosen and how many]`. NO PURCHASE NECESSARY and a free alternate entry stay on every page. Official rules go through an attorney, and the chance-based tier adds questions for counsel `[CHECK]`: the interview as a condition of the drawing, New York and Florida registration and bonding for prizes over $5,000 (normally before the promotion starts), the odds and prize-count statements, and changing rules after entries open. Legal text may say a prize is awarded to multiple entrants; customer-facing copy may not.
+All three prizes are picked by 2URN's panel on Dec 5, 2026, and nobody wins before then. There is no random drawing and no chance-based tier. The grand prize is chosen against six published criteria; second place is picked from the same ranked scorecard list `[DECIDE: how many second-place winners the panel names: a fixed number, a minimum score, or every applicant who meets the two minimum requirements]`; third place is picked from the remaining eligible entrants `[DECIDE: who the panel picks for third place, on what basis, and how many]`. NO PURCHASE NECESSARY and a free alternate entry stay on every page. Official rules go through an attorney, who has questions to settle `[CHECK]`: whether this is a judged contest in every state where it runs, how the rules state the number of second and third prizes or the standard the panel applies, whether New York and Florida registration and bonding for games of chance do not apply now that no tier is chance-based, whether any state's rules for skill contests require disclosures or filings for prizes of this value, and changing rules after entries open. Legal text may say a prize is awarded to multiple entrants; customer-facing copy may not.
 
-Nominated roofers have given no consent. They get one manual call from the setter, and a voicemail naming the referrer if there is no answer, then nothing. No automated texts, no automated emails, no auto-dialer. If they say no, they are tagged and never contacted again. A nomination is not an entry and never changes judging or the drawing. Once the nominated company enters itself, the nomination counts as a referral: if that company wins the grand prize, the nominator wins it too.
+Nominated roofers have given no consent. They get one manual call from the setter, and a voicemail naming the referrer if there is no answer, then nothing. No automated texts, no automated emails, no auto-dialer. If they say no, they are tagged and never contacted again. A nomination is not an entry and never changes judging. Once the nominated company enters itself, the nomination counts as a referral: if that company wins the grand prize, the nominator wins it too.
 
 We do not advise on insurance claims and never tie a discount to a deductible.
 
 ## Working with this repo
 
-Edit any file and open a pull request, or commit to `main` if you have access. Keep public copy consistent with the copy rules above: second place is "second place" and is drawn at random, the grand prize is never random, and no copy says how many people win a tier. `[DECIDE: ...]` marks a business decision only Camron can make, and `[CHECK: ...]` marks an item awaiting the attorney. Search for both before you finish any edit, and never replace one with a guess.
+Edit any file and open a pull request, or commit to `main` if you have access. Keep public copy consistent with the copy rules above: second place is "second place", our panel picks all three places on Dec 5, nobody wins before then, and no copy says how many people win a tier. `[DECIDE: ...]` marks a business decision only Camron can make, and `[CHECK: ...]` marks an item awaiting the attorney. Search for both before you finish any edit, and never replace one with a guess.

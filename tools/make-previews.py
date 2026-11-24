@@ -2,7 +2,8 @@
 """Build preview copies of the funnel pages that need query-string data to show their real state.
 
 A preview host (for example a Claude artifact) passes no query string, so the referral page would show
-its plain variant, the thank-you page its no-code state, and the claim pages no countdown. This script
+its plain variant, the thank-you page its no-code state, and the claim pages their no-link state ("This page is
+for ... winners", no countdown, no calendar). This script
 writes copies with sample parameters and a distinct <title>. The files in funnel/ are never changed.
 
 Usage:  python3 tools/make-previews.py OUTPUT_DIR

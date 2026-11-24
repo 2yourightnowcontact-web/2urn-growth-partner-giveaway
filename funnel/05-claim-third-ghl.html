@@ -61,6 +61,9 @@ body { background:#fff; }
 .mcta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px max(16px,env(safe-area-inset-left,0px)) max(10px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right,0px));background:rgba(11,11,12,.92);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.14)}
 .mcta button{width:100%;min-height:52px;background:var(--red);color:#fff;border:0;border-radius:12px;font:700 1.17rem var(--body);letter-spacing:-.01em;cursor:pointer}
 .mcta.hide{display:none!important}
+.nl-only{display:none}
+.cl.nolink .count,.cl.nolink .go,.cl.nolink .band.sec,.cl.nolink .mcta{display:none!important}
+.cl.nolink .nl-only{display:inline-flex;align-items:center;justify-content:center;max-width:420px}
 @media(max-width:760px){
   .two{grid-template-columns:1fr;gap:14px}
   .col{display:contents}
@@ -81,7 +84,7 @@ body { background:#fff; }
 <div class="band top"><div class="in">
   <span class="pill">Third place · Growth Partner Giveaway</span>
   <h1><span id="name">You</span> won third place: a marketing audit and <em>a website built for you.</em></h1>
-  <p class="sub">No build fee. Hosting and maintenance is $189 a month. To claim it, book your 20-minute call within 72 hours of your notification.</p>
+  <p class="sub" id="sub">Our panel picked you. No build fee. Hosting and maintenance is $189 a month. To claim it, book your 20-minute call within 72 hours of your notification.</p>
   <div class="count" id="count">
     <span class="lbl">Time left to claim</span>
     <div class="cu"><b id="h">00</b><span>hrs</span></div>
@@ -89,6 +92,7 @@ body { background:#fff; }
     <div class="cu"><b id="s">00</b><span>sec</span></div>
   </div>
   <a class="btn go" href="#book">Book your call to claim it</a>
+  <a class="btn nl-only" id="nl-btn" href="/lead-engine">See the giveaway</a>
 </div></div>
 
 <div class="band sec"><div class="in">
@@ -133,13 +137,13 @@ body { background:#fff; }
   </div>
 </div></div>
 
-<div class="band foot"><div class="in">2URN Marketing · The third prize has no cash value, is non-transferable and must be claimed by booking a call within 72 hours of notification. It includes a marketing audit and a website buildout at no build fee. The winner pays hosting and maintenance of $189 per month. Hosting and maintenance terms are in your agreement. <a href="/rules" style="color:var(--ink)">Official Rules</a></div></div>
+<div class="band foot"><div class="in">2URN Marketing · Third-prize winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. The third prize has no cash value, is non-transferable and must be claimed by booking a call within 72 hours of notification. It includes a marketing audit and a website buildout at no build fee. The winner pays hosting and maintenance of $189 per month. Hosting and maintenance terms are in your agreement. <a href="/rules" style="color:var(--ink)">Official Rules</a></div></div>
 <div class="mcta" id="mcta"><button type="button" onclick="document.getElementById('book').scrollIntoView({behavior:(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth',block:'start'})">Book your call to claim it</button></div>
 </div>
 
 <script>
 (function(){
-  var C=window.GW_CLAIM3||{}, until=null, first='', closed=false, iv=null;
+  var C=window.GW_CLAIM3||{}, until=null, first='', closed=false, iv=null, hasLink=true;
   function cleanName(s){
     var raw=String(s==null?'':s);
     if(/[<>]/.test(raw)) return '';
@@ -156,7 +160,18 @@ body { background:#fff; }
     var d=new Date(s);
     return isNaN(d.getTime())?null:d;
   }
-  try{ var p=new URLSearchParams(location.search); first=cleanName(p.get('first')); until=parseUntil(p.get('until')); }catch(e){}
+  try{ var p=new URLSearchParams(location.search); hasLink=p.has('until'); first=cleanName(p.get('first')); until=parseUntil(p.get('until')); }catch(e){ hasLink=true; }
+  /* No winner link (no "until" parameter): never show "You won". Any failure here fails open to the winner view. */
+  if(!hasLink){
+    try{
+      var h1=document.querySelector('.top h1'), sb=document.getElementById('sub'), root=document.querySelector('.cl');
+      var em=document.createElement('em'); em.appendChild(document.createTextNode('third-place winners.'));
+      h1.textContent=''; h1.appendChild(document.createTextNode('This page is for ')); h1.appendChild(em);
+      sb.textContent='Our panel picks every winner when entries close, and nobody wins before then. If our panel picks you for third place, we send you a link to this page with your 72-hour claim window.';
+      root.classList.add('nolink');
+      return;
+    }catch(e){ hasLink=true; try{ document.querySelector('.cl').classList.remove('nolink'); }catch(e2){} }
+  }
   var url=String(C.bookingUrl||'');
   try{ var cal=document.getElementById('cal'); if(cal&&url) cal.src=url+(first?(url.indexOf('?')>-1?'&':'?')+'first_name='+encodeURIComponent(first):''); }
   catch(e){ try{ document.getElementById('cal').src=url; }catch(e2){} }
