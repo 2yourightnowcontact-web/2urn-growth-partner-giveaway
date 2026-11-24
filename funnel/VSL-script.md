@@ -1,7 +1,7 @@
-# 2URN Growth Partner Giveaway: VSL Script (v4, Nov 23, evening: our panel picks all three places on December fifth)
+# 2URN Growth Partner Giveaway: VSL Script (v5, Nov 24: second place funds its ads from a hundred dollars a day; our panel picks all three places on December fifth)
 
 **On camera:** Camron. **Edit:** Shabi. **Length target:** about 4:00 (the page calls it a 4-minute video). **Where:** top of the giveaway page and the referral page; ✂ marks the 15/30/60-second ad cuts.
-**Shoot:** was set for Nov 17. If that cut exists it predates the Nov 23 terms (roofing only, December 5, three prizes, new commitments) and needs a reshoot or pickup lines. Any cut shot from v3 needs pickup lines for the changed sentences. [DECIDE: reshoot date]
+**Shoot:** was set for Nov 17. If that cut exists it predates the Nov 23 terms (roofing only, December 5, three prizes, new commitments) and needs a reshoot or pickup lines. Any cut shot from v3 or v4 needs pickup lines for the changed sentences. v5 adds one spoken line in the Prizes section. [DECIDE: reshoot date]
 **Tone, per Josh:** fun. This is a giveaway, not a webinar. Goofy is allowed in the open and the close. The commitments block in the middle is dead serious.
 **Audience:** owners of roofing companies heading into the slow season, burned by at least one agency, tired of the "are you a roofer doing a million a year" hook they see from every agency. There is no revenue requirement to enter or to win, so nothing in this script gates on revenue.
 
@@ -54,13 +54,15 @@
 >
 > That's five thousand two hundred fifty dollars in work, free, plus half off the ninety-day program. Fifteen hundred a month instead of three thousand. Nine thousand seven hundred fifty dollars of value. Before the website. The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the ninety-day program.
 >
+> Second place funds its own ads too. That starts at a hundred dollars a day, paid straight to Meta.
+>
 > And the program comes with the revenue ROI guarantee. Do these four things: content shot within fourteen days, ad spend funded from two hundred a day, the follow-up sequence live, a weekly scorecard call, and if Growth Partner hasn't paid for itself in closed jobs by day ninety, we keep working for free until it has. You've got seventy-two hours to claim.
 >
 > Third place, picked the same day: a marketing audit and a website built for your company. No build fee. Hosting and maintenance is one eighty-nine a month.
 >
 > One more thing. Refer a roofer in another market. If they win the grand prize, you win it too.
 
-## 3:34 | Close ✂ (fun again)
+## 3:41 | Close ✂ (fun again)
 > So. Fund the ads. Be on camera. Make your case studies. Let us document the process. Record the testimonial.
 >
 > Hit apply. Thirty seconds. If you don't apply, go make a snowman.
@@ -87,13 +89,13 @@
 | Problem | Lead costs tripled, same ads, six-hour callback, no recognition |
 | Solution | Owner on camera + follow-up automation (the mechanism) |
 | Product | Structure, script, shoot, edit, run, automate; $3,000/mo, 90-day minimum |
-| Commitment | Five items said out loud: $200 to $1,000 a day to Meta, content on camera, own case studies, public case study, testimonial |
-| Prizes | Our panel picks all three places on December fifth, and nobody wins before then. Grand prize judged by our panel after a 20-minute interview; second place picked by our panel too, the stack ($5,250 in work + $4,500 off = $9,750); third place picked by our panel the same day, audit + website, $189/mo hosting |
+| Commitment | Five items said out loud: $200 to $1,000 a day to Meta, content on camera, own case studies, public case study, testimonial (second place funds ads from $100 a day, said in the Prizes section) |
+| Prizes | Our panel picks all three places on December fifth, and nobody wins before then. Grand prize judged by our panel after a 20-minute interview; second place picked by our panel too, the stack ($5,250 in work + $4,500 off = $9,750), funds its ads from $100 a day; third place picked by our panel the same day, audit + website, $189/mo hosting |
 | Risk | Revenue ROI guarantee, said once, with its four conditions [CHECK: performance guarantee wording, and how "paid for itself in closed jobs" is measured] |
 | Credibility | Client ads and a real pipeline on screen; the commitments themselves |
 
 ## On-screen text for the commitments block (also the "What the winner commits to" strip on the page)
-Funds ad spend of $200 to $1,000 a day, paid to Meta · Produces content: owner or lead rep on camera, no AI avatars · Produces case studies for their own business · Lets 2URN build a public case study on the steps and the process · Records a testimonial for 2URN Marketing
+Funds ad spend of $200 to $1,000 a day, paid to Meta. Second place: from $100 a day · Produces content: owner or lead rep on camera, no AI avatars · Produces case studies for their own business · Lets 2URN build a public case study on the steps and the process · Records a testimonial for 2URN Marketing
 Then the prizes, one line each:
 Grand prize: 90 days of Growth Partner, free. $10,000 value.
 Second place, the Second-Place Stack: $5,250 in deliverables, free, plus $4,500 off: $9,750 of value, with a revenue ROI guarantee.
@@ -108,6 +110,7 @@ Third place, Free Audit + Website Buildout: no build fee, hosting and maintenanc
 - Any revenue requirement or revenue gate. There is no minimum to enter or to win.
 - Any client revenue number we can't screenshot.
 - Anything about the 2URN list size.
+- Any ad-spend number for second place other than "a hundred dollars a day". The grand prize and the standard program are "two hundred to a thousand dollars a day".
 - Any dollar value on the website. It is "free" and "before the website," nothing more.
 - Any discount framed as paying, waiving or covering an insurance deductible.
 - "Trades," "HVAC," "windows." Roofing only.

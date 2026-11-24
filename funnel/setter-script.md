@@ -15,7 +15,9 @@ The interview is an interview, not a sales call. Do not pitch on it.
 
 **Everyone who enters gets the call.** There is no disqualification on the form. There is **no revenue minimum**. The form asks revenue to prepare the call, and it never disqualifies anyone. Qualification happens here, on the setter call and the interview.
 
-**Not a fit for Growth Partner means one of two things:** they will not be on camera, or they cannot fund $200 a day in ad spend. That is the whole definition. Low revenue alone is never a reason. When a contact is not a fit, they are out of the grand prize and second place, interview reminders stop, and they stay entered for third place. Do not set Do Not Disturb. Do not promise third place.
+**Not a fit for Growth Partner means one of two things:** they will not be on camera, or they cannot fund $100 a day in ad spend. That is the whole definition. Low revenue alone is never a reason. When a contact is not a fit, they are out of the grand prize and second place, interview reminders stop, and they stay entered for third place. Do not set Do Not Disturb. Do not promise third place.
+
+**Ad budget has three bands.** Under $100 a day: not a fit. $100 to $199 a day: not `not-a-fit`; they stay in for second place and third place and cannot win the grand prize, which needs $200 a day; book, hold and score the interview as normal. $200 a day or more: in for every place. Write the band in the note. Never tell an applicant which place their band puts them in line for. Nobody wins before Dec 5.
 
 **Interview cutoff:** an interview counts for the grand prize and second place only if it is held by the cutoff in the Official Rules (proposed Dec 5, 2026, 5:00 PM CT [CHECK: confirm cutoff with counsel]). An interview held after the cutoff does not count for either. Book every interview before it.
 
@@ -60,7 +62,7 @@ If no earlier time works, book it and add "after cutoff" to the opportunity note
 One question per criterion, in this order:
 
 1. **On camera and producing content (criterion 1).** "Who would be on camera in the ads and the content? The owner or a lead rep?" Then: "We don't use AI avatars or stock footage. It has to be a real face homeowners can recognize. Are you comfortable with that, and will you shoot content on your phone?"
-2. **Ad budget (criterion 2).** "Ad spend runs $200 to $1,000 a day, paid by you directly to Meta. Can you fund at least $200 a day?"
+2. **Ad budget (criterion 2).** "Ad spend is paid by you directly to Meta. The full program runs $200 to $1,000 a day. What could you fund per day?" If the answer is under $200: "Could you fund at least $100 a day?" Note the band: under $100, $100 to $199, or $200 or more.
 3. **Case studies for their own business (criterion 3).** "We'll help you turn the results into case studies for your own company, your own jobs and your own numbers. Will you produce those with us?"
 4. **Public case study (criterion 4).** "We also document the steps and the process publicly, as a case study on how it was done. Are you good with 2URN telling that story?"
 5. **Testimonial for 2URN (criterion 5).** "If it goes well, will you record a testimonial for 2URN Marketing?"
@@ -72,7 +74,7 @@ Then three more questions, context and color, not scored:
 - **Why they want to win.** "Why do you want this, and why now?"
 
 ### Not a fit
-Only two things make a contact not a fit: they will not be on camera, or they cannot fund $200 a day in ad spend. Revenue never does.
+Only two things make a contact not a fit: they will not be on camera, or they cannot fund $100 a day in ad spend. Revenue never does.
 > I appreciate you being straight with me. The full Growth Partner program isn't the right fit right now, based on that. You're still entered, and winners are picked December fifth. Thanks for talking with me.
 
 Then tag `not-a-fit`, set stage Not a Fit, and end the call. Do not promise third place. Do not set Do Not Disturb. The decision is made on the call, not by the form. Tagging stops interview reminders and removes them from the grand prize and second place. They stay entered for third place.
@@ -110,15 +112,19 @@ Say it in beats. Stop after each one and let them answer.
 
 > The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the ninety-day program.
 
-> It comes with a revenue ROI guarantee. Do these four things: content shot within fourteen days, ad spend funded from two hundred dollars a day, the follow-up sequence live, and the weekly scorecard call. If Growth Partner hasn't paid for itself in closed jobs by day ninety, we keep working for free until it has.
+> You fund your own ad spend, from a hundred dollars a day, paid straight to Meta.
+
+> It comes with a revenue ROI guarantee. Do these four things: content shot within fourteen days, ad spend funded from two hundred dollars a day, the follow-up sequence live, and the weekly scorecard call. If Growth Partner hasn't paid for itself in closed jobs by day ninety, we keep working for free until it has. The guarantee applies at two hundred dollars a day or more.
 
 > There's a seventy-two-hour clock. The deadline is real. After seventy-two hours the Stack and the half-off price are gone. Claiming just means booking a twenty-minute claim call. On the call we go over what you get, when each piece arrives, and the Growth Partner agreement at fifteen hundred a month for the first ninety days.
 
-The guarantee is its four conditions and nothing else. Do not say "guaranteed results". Do not add to it or soften it.
+The guarantee is its four conditions and nothing else. Do not say "guaranteed results". Do not add to it or soften it. The one sentence that follows it is "The guarantee applies at two hundred dollars a day or more", which restates condition two.
 
 **Book the claim call now:** on the Growth Partner Interview calendar, while on the phone, inside the 72 hours. That booking is the claim, whether or not they already had their interview. It stops the reminders and starts the seven-day Competitor Analysis clock. Confirm number and email, send the confirmation text before hanging up, and update the stage.
 
-**If they say they can't be on camera or can't fund two hundred dollars a day:** do not use the Not a fit script, do not tag `not-a-fit`, and never tell a winner they might not be a fit. Say: "That's what the claim call is for. Booking it gets you the Competitor Analysis either way, and we'll go over the program on the call." Then book the claim call.
+**If they say they can't be on camera or can't fund a hundred dollars a day:** do not use the Not a fit script, do not tag `not-a-fit`, and never tell a winner they might not be a fit. Say: "That's what the claim call is for. Booking it gets you the Competitor Analysis either way, and we'll go over the program on the call." Then book the claim call.
+
+A winner who can fund a hundred dollars a day meets second place's minimum. Say: "A hundred a day works for second place. The guarantee applies at two hundred a day or more."
 
 **Not reached inside the 72 hours:** do not tag `not-a-fit`. Log the outcome and stop. Workflow B closes the window and tags `evergreen`. Any later call is about the standard program only and never mentions the prize.
 
@@ -126,7 +132,7 @@ The guarantee is its four conditions and nothing else. Do not say "guaranteed re
 > A Competitor Analysis free just for booking. Start Growth Partner at half price and the Content Package, the five scripted campaigns and a website if you need one are included.
 
 The longer version, if they ask for the price:
-> Standard is three thousand a month, ninety-day minimum. You fund your own ads, two hundred to a thousand dollars a day, paid directly to Meta. With second place you pay half for the first ninety days. The Competitor Analysis is yours when you book your claim call. The Content Package, the five scripted campaigns and a website if you don't have one are included free inside the program. We script your offers, you shoot them, we edit them, we run your ads, and we automate the follow-up.
+> Standard is three thousand a month, ninety-day minimum. With second place you pay half for the first ninety days. You fund your own ad spend, from a hundred dollars a day, paid straight to Meta. The Competitor Analysis is yours when you book your claim call. The Content Package, the five scripted campaigns and a website if you don't have one are included free inside the program. We script your offers, you shoot them, we edit them, we run your ads, and we automate the follow-up.
 
 ---
 
@@ -197,6 +203,7 @@ Workflow A notifies Camron. It cannot text the referrer. If you text the referre
 - **"Send me info."** "The page you entered on is the info. The interview is where we look at your business. Tuesday or Thursday?"
 - **"Too expensive."** "Could be. That's what the interview is for. If the numbers don't work at your ticket, we'll tell you not to do it."
 - **"I don't want to be on camera."** "Understood. For the full program it's required. Homeowners trust a real face, and we don't use AI avatars or stock footage. You're still entered, and winners are picked December fifth. I'd rather tell you now that the full program isn't the right fit." Then tag `not-a-fit` and set stage Not a Fit. Do not promise third place.
+- **"I can't do two hundred a day."** "That's fine. The grand prize needs two hundred a day. Second place needs a hundred a day. Could you fund a hundred a day?" If yes, note the band $100 to $199 and re-ask for the time; they are not `not-a-fit`. If no, use the Not a fit script.
 - **"We're busy enough."** "Then you're exactly who this is for in the slow season. When does your phone stop ringing, January?" Book for that conversation.
 - **"Are you sure I'll win?" / "Do I win something?"** "I can't promise anyone a prize. Our panel picks every winner on December fifth, after the interviews. Nobody wins before then."
 - **"Do I need to hit a revenue number?"** "No. There's no revenue minimum. We ask so we can prepare for the call."
@@ -205,4 +212,4 @@ Workflow A notifies Camron. It cannot text the referrer. If you text the referre
 > You're booked for [day/time]. You'll get a text and an email with the link. One favor: if you know a roofer in another market that fits, your referral link's still live. If they win the grand prize, you win it too. Talk soon.
 
 ## After the call
-Update stage. Paste one line in the note: result, who is on camera, ad budget yes/no, case studies and testimonial yes/no, team, next step.
+Update stage. Paste one line in the note: result, who is on camera, ad budget band (under $100, $100 to $199, or $200 or more), case studies and testimonial yes/no, team, next step.
