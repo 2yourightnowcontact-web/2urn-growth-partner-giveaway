@@ -1,0 +1,262 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book your 20-minute interview</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap">
+<script>
+  /* ===== 2URN GIVEAWAY: BOOKING PAGE CONFIG (page 06, path /interview) ===== */
+  window.GW_BOOK = {
+    /* Booking widget link of the Introduction Interview calendar. Leave "" for preview mode (no calendar, no embed script). */
+    bookingUrl: "",
+    /* Thank-you and referral page path on this funnel (02-thankyou-ghl.html). People go here after they book. */
+    thankYouPath: "/thank-you",
+    /* Landing page path on this funnel (01-giveaway-ghl.html). People with no entry are sent here. */
+    landingPath: "/lead-engine",
+    /* Winners picked date/time. Must match announcementAt in 01, 02 and 04. */
+    announcementAt: "2026-12-05T19:00:00-06:00"
+  };
+</script>
+<style>
+/* GHL full-bleed escape */
+html, body { width:100% !important; max-width:100% !important; margin:0 !important; padding:0 !important; overflow-x:hidden; }
+body { background:#fff; }
+.band { position:relative; width:100vw; left:50%; right:50%; margin-left:-50vw !important; margin-right:-50vw !important; max-width:none !important; }
+
+:root{ --ink:#0B0B0C; --ink-2:#16161A; --paper:#FFFFFF; --paper-2:#F7F6F3; --paper-3:#EFEDE8; --muted:#6E6E75; --muted-2:#93939B;
+  --line:rgba(11,11,12,.11); --line-soft:rgba(11,11,12,.06); --red:#FF2D2D; --red-deep:#D91B1B; --green:#12A45C; --green-deep:#0B7A43; --r:16px; --pad:clamp(20px,5vw,56px);
+  --body:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif; }
+.bk *{box-sizing:border-box}
+.bk{font-family:var(--body);color:var(--ink);line-height:1.55;font-size:16px;background:var(--paper);letter-spacing:-.011em;-webkit-font-smoothing:antialiased}
+.bk h1,.bk h2,.bk h3{font-family:var(--body);font-weight:900;letter-spacing:-.04em;line-height:1;margin:0;text-wrap:balance}
+.bk p{margin:0}
+.in{max-width:760px;margin:0 auto;padding-left:max(var(--pad),env(safe-area-inset-left,0px));padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
+
+/* top bar (part of the one dark band) */
+.bar{background:var(--ink);color:var(--muted-2);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.1)}
+.bar .in{display:flex;justify-content:space-between;align-items:center;gap:8px 16px;padding-block:14px;flex-wrap:wrap;max-width:1160px}
+.bar b{color:#fff}
+.bar .wm{font-size:16px;font-weight:500;letter-spacing:.06em;color:#fff}
+.bar .wm b{font-weight:900}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;padding-block:14px 20px}
+.hero h1{font-size:clamp(1.7rem,7.4vw,2.4rem);line-height:1.05}
+.hero h1 em{color:#fff;font-style:normal;background:var(--red);padding:.02em .16em;border-radius:8px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hero .sub{color:var(--muted-2);font-size:.95rem;margin-top:8px;max-width:56ch}
+.hero .sub .gw-long{color:#fff;font-weight:700}
+
+/* step strip */
+.flow{display:flex;gap:6px;list-style:none;margin:0 0 14px;padding:0;font-size:13px;font-weight:700;color:var(--muted-2)}
+.flow li{flex:1 1 0;min-width:0;display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 6px;border:1px solid rgba(255,255,255,.14);border-radius:999px;white-space:nowrap}
+.flow li span{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:11px;line-height:1}
+.flow li.done{color:#fff}
+.flow li.done span{background:var(--green-deep)}
+.flow li.now{color:#fff;border-color:var(--red)}
+.flow li.now span{background:var(--red)}
+.flow a{color:inherit;text-decoration:none}
+
+/* buttons */
+.btn{font-family:var(--body);font-weight:700;font-size:1rem;letter-spacing:-.01em;background:var(--ink);color:#fff;border:1.5px solid var(--ink);padding:12px 22px;min-height:48px;cursor:pointer;border-radius:var(--r);text-decoration:none;display:inline-flex;align-items:center;justify-content:center;text-align:center;transition:transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.red{background:var(--red);border-color:var(--red);min-height:52px;width:100%;font-size:1.17rem;font-weight:700}
+.btn.red:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.bk a:focus-visible,.bk button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.hero a:focus-visible{outline-color:#fff}
+
+/* calendar band */
+.cal-band{background:var(--paper-2);padding-block:12px 28px}
+.calcard{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.calwrap{position:relative;min-height:600px;background:#fff}
+.calwrap iframe{display:block;width:100%;border:0}
+.calwrap .calload{position:absolute;left:0;right:0;top:0;padding:120px 16px 0;text-align:center;color:var(--muted);font-weight:600;font-size:15px}
+.calwrap.ready{min-height:0}
+.calwrap.ready .calload,.calwrap.nocal .calload{display:none}
+.calwrap .calnone{display:none;padding:56px 20px;text-align:center;color:var(--muted);font-size:.95rem}
+.calwrap.nocal{min-height:0}
+.calwrap.nocal .calnone{display:block}
+.calwrap.nocal + .prev{display:block}
+.prev{display:none;padding:0 20px 24px;text-align:center;font-size:.95rem;font-weight:700}
+.prev a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;display:inline-flex;align-items:center;min-height:44px}
+.already{display:none;margin:0 0 12px;padding:12px 14px;border-radius:12px;background:#E9F7EF;color:var(--green-deep);font-weight:700;font-size:.95rem;text-align:center}
+.already.show{display:block}
+.already a{color:var(--green-deep);text-decoration:underline;text-underline-offset:2px;display:inline-flex;align-items:center;min-height:44px}
+.later{font-size:.9rem;color:var(--muted);margin-top:14px;text-align:center}
+.later a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
+.later+.later{margin-top:6px}
+
+/* states: one data-state on the root */
+.only-noentry{display:none}
+.bk[data-state="noentry"] .only-entered,.bk[data-state="closed"] .only-entered,.bk[data-state="closed"] .only-noentry{display:none!important}
+.bk[data-state="noentry"] .only-noentry{display:block}
+.bk[data-state="noentry"] a.only-noentry{display:inline-flex;margin-top:16px}
+.bk[data-state="noentry"] p.only-noentry{margin-top:10px}
+.bk[data-state="noentry"] .flow,.bk[data-state="closed"] .flow{display:none}
+.hero .fine{font-size:.85rem;color:var(--muted-2)}
+
+.foot{font-size:12px;color:var(--muted);padding-block:22px 40px;background:var(--paper);line-height:1.55}
+.foot a{color:var(--ink);text-decoration:underline}
+
+@media(max-width:520px){.bar .tail2{display:none}.bar{font-size:11px;letter-spacing:.08em}.bar .in{flex-wrap:nowrap;gap:10px;padding-block:12px}.bar .wm{font-size:15px;white-space:nowrap}.bar .in>span:last-child{white-space:nowrap}.cal-band .in{padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}}
+@media(max-width:360px){.bar .wm{font-size:13px;letter-spacing:.03em}.bar{letter-spacing:.04em}.bar .in{gap:6px}}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
+
+/* ===== shared iPhone layer (same on every funnel page) ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+:root{color-scheme:light}
+.bk{-webkit-tap-highlight-color:transparent}
+.bk :is(a,button){touch-action:manipulation}
+.mcta{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.bk h1{overflow-wrap:anywhere}
+.bk{min-height:100vh;min-height:100svh}
+@media(hover:none){.cta:hover,.btn:hover,.btn.red:hover{transform:none}}
+.cta:active,.btn:active,.mcta button:active{transform:scale(.99)}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* GoHighLevel wraps this code in a padded section, row and column (40px of white above the page). Remove that frame. */
+.c-section:has(.bk),.c-row:has(.bk),.c-column:has(.bk){padding:0!important;margin:0!important}
+</style>
+
+<div class="bk" id="bk" data-state="entered">
+
+<div class="band bar"><div class="in">
+  <span class="wm"><b>2URN</b> MARKETING</span>
+  <span>Winners<span class="tail2"> picked</span>: <b id="bar-date">Dec 5, 2026</b></span>
+</div></div>
+
+<div class="band hero"><div class="in">
+  <ol class="flow" aria-label="Your steps">
+    <li class="done"><span aria-hidden="true">&#10003;</span>Apply</li>
+    <li class="now" aria-current="step"><span>2</span>Book</li>
+    <li><span>3</span>Share</li>
+  </ol>
+  <h1 id="bk-h1"><span id="bk-name">You&rsquo;re</span> entered. <em>Now pick a time.</em></h1>
+  <p class="sub" id="bk-sub">This books your 20-minute interview. It is an interview, not a sales call. Our panel picks the grand prize and second place from the roofers we interview, on <span class="gw-long">December 5</span>.</p>
+  <a class="btn red only-noentry" id="bk-apply" href="/lead-engine">Apply to win</a>
+  <p class="fine only-noentry">Already applied? Use the booking link in our text.</p>
+</div></div>
+
+<div class="band cal-band only-entered"><div class="in">
+  <p class="already" id="bk-already">You&rsquo;re already booked. <a id="bk-already-link" href="/thank-you?booked=1">See your referral link</a></p>
+  <div class="calcard">
+    <div class="calwrap" id="bk-cal"><div class="calload">Loading open times&hellip;</div><div class="calnone">The calendar shows here once the booking link is set.</div></div>
+    <p class="prev"><a id="bk-cont" href="/thank-you?booked=1">Continue to the referral page</a></p>
+  </div>
+  <p class="later">Booked and still on this page? <a id="bk-done" href="/thank-you?booked=1">See your referral link</a></p>
+  <p class="later">Can&rsquo;t pick a time right now? <a id="bk-later" href="/thank-you">Get your referral link</a> and book later. We text you the booking link, once a day at most.</p>
+</div></div>
+
+<div class="band foot"><div class="in">NO PURCHASE NECESSARY. Open to owners or authorized officers of roofing companies operating in the United States, 18+. Void where prohibited. All winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. No prize is awarded before then. Second and third prizes must be claimed within 72 hours of notification, have no cash value and are non-transferable. See <a href="/rules">Official Rules</a> for eligibility, alternate method of entry, judging criteria and prize details. Sponsor: 2URN Marketing. &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></div></div>
+</div>
+
+<script>
+/* Same frame fix for browsers without :has(): walk up from the page root and zero the GoHighLevel section, row and column padding. */
+(function(){try{var e=document.querySelector('.bk');while(e&&e!==document.body){if(/(^|\s)c-(section|row|column)(\s|$)/.test(String(e.className||''))){e.style.setProperty('padding','0','important');e.style.setProperty('margin','0','important');}e=e.parentElement;}}catch(x){}})();
+/* ---- calendar embed: same code on 03, 05 and 06 ---- */
+function gwCalendar(o){
+  /* o: {wrap, url, id, title, prefill:{first_name,last_name,email,phone}, onBooked} */
+  var wrap=o.wrap, url=String(o.url||''), origin='';
+  try{ origin=new URL(url).origin; }catch(e){}
+  if(!wrap || !origin || !/\/widget\/booking\//.test(url)){ if(wrap) wrap.className+=' nocal'; return null; }
+  var q=[], p=o.prefill||{};
+  function add(k,v){ v=String(v||'').trim(); if(v) q.push(k+'='+encodeURIComponent(v)); }
+  add('first_name',p.first_name); add('last_name',p.last_name);
+  if(p.email && String(p.email).indexOf('+')<0) add('email',p.email);          /* the widget turns "+" into a space */
+  if(/^\+1\d{10}$/.test(String(p.phone||''))) add('phone',p.phone);
+  var f=document.createElement('iframe');
+  f.id=o.id||'gw-cal'; f.title=o.title||'Book your call';
+  f.setAttribute('allow','payment'); f.setAttribute('scrolling','no');
+  f.style.cssText='width:100%;border:none;overflow:hidden;';
+  f.src=url+(q.length?(url.indexOf('?')<0?'?':'&')+q.join('&'):'');             /* prefill rides on the iframe src, never on our page URL */
+  wrap.appendChild(f);
+  function shown(){ return f.style.visibility!=='hidden' && f.style.opacity!=='0' && parseInt(f.style.height||'0',10)>0; }
+  function ready(){ if((' '+wrap.className+' ').indexOf(' ready ')<0) wrap.className+=' ready'; }
+  try{ var mo=new MutationObserver(function(){ if(shown()){ ready(); mo.disconnect(); } }); mo.observe(f,{attributes:true,attributeFilter:['style']}); }catch(e){}
+  /* The iframe must be in the page before form_embed.js runs: it sizes the iframe, and hides it until the widget answers. */
+  var s=document.createElement('script'); s.src=origin+'/js/form_embed.js'; s.type='text/javascript';
+  (document.body||document.documentElement).appendChild(s);
+  /* Fallback: embed script blocked or late. Show the iframe ourselves, tall, with its own scrolling. */
+  setTimeout(function(){
+    if(shown()){ ready(); return; }
+    f.style.opacity='1'; f.style.visibility='visible'; f.style.pointerEvents='auto'; f.style.position='relative'; f.style.left='';
+    if(!parseInt(f.style.height||'0',10)) f.style.height='1100px';
+    f.setAttribute('scrolling','yes'); ready();
+  },8000);
+  /* The widget posts ["msgsndr-booking-complete",{fingerprint,calendarId}] to its parent once the appointment exists. */
+  var done=false;
+  window.addEventListener('message',function(ev){
+    if(done || ev.origin!==origin) return;
+    var d=ev.data;
+    if(!d || d[0]!=='msgsndr-booking-complete') return;
+    done=true; try{ if(o.onBooked) o.onBooked(d[1]||{}); }catch(e){}
+  });
+  return f;
+}
+
+(function(){
+  var C=window.GW_BOOK||{}, state='entered', code='', e={}, cal=null;
+  var $=function(id){return document.getElementById(id)};
+  /* A code is valid only if it matches /^[A-Z0-9]{4,12}$/ after uppercasing and stripping, the same rule 01, 02 and 04 apply. */
+  var okCode=function(s){ s=String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,''); return /^[A-Z0-9]{4,12}$/.test(s)?s:''; };
+  var tyPath=C.thankYouPath||'/thank-you';
+  function tyUrl(booked){ return tyPath+(code?'?c='+encodeURIComponent(code)+(booked?'&booked=1':''):(booked?'?booked=1':'')); }
+  try{
+    var urlCode=''; try{ urlCode=okCode(new URLSearchParams(location.search).get('c')); }catch(x){}
+    try{ e=JSON.parse(sessionStorage.getItem('gw_entry')||'{}')||{}; }catch(x){ e={}; }
+    var saved=okCode(e.code);
+    if(urlCode && saved && urlCode!==saved) e={};            /* the stored entry belongs to someone else: no prefill from it */
+    code=urlCode||saved;
+    /* Arrived from a text link (?c= only): remember the code so the next page can build the referral link. */
+    if(urlCode && urlCode!==saved){ e.code=urlCode; try{ sessionStorage.setItem('gw_entry',JSON.stringify(e)); }catch(x){} }
+
+    var announce=new Date(C.announcementAt);
+    if(!isNaN(announce.getTime()) && announce.getTime()<=Date.now()) state='closed';
+    else if(!code) state='noentry';
+
+    var first=String(e.first||'').slice(0,24);
+    if(first && state==='entered') $('bk-name').textContent=first+', you\u2019re';
+
+    var ap=$('bk-apply'); if(ap && C.landingPath) ap.href=C.landingPath;
+    ['bk-later','bk-cont','bk-done','bk-already-link'].forEach(function(id){
+      var a=$(id); if(!a) return;
+      a.href=tyUrl(id!=='bk-later');
+    });
+    try{ if(sessionStorage.getItem('gw_booked')==='1' && state==='entered') $('bk-already').className+=' show'; }catch(x){}
+
+    if(state==='noentry'){
+      var h=$('bk-h1'); h.textContent='Apply first. '; var em=document.createElement('em'); em.textContent='It takes 30 seconds.'; h.appendChild(em);
+      $('bk-sub').textContent='This page books the 20-minute interview for roofing companies that entered the giveaway.';
+    }
+    if(state==='closed'){
+      $('bk-h1').textContent='Entries are closed.';
+      $('bk-sub').textContent='Winners are being contacted.';
+    }
+    try{
+      if(!isNaN(announce.getTime())){
+        var t=announce.toLocaleDateString('en-US',{month:'long',day:'numeric'});
+        Array.prototype.forEach.call(document.getElementsByClassName('gw-long'),function(el){el.textContent=t;});
+        $('bar-date').textContent=announce.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+      }
+    }catch(x){}
+    $('bk').setAttribute('data-state',state);
+  }catch(err){
+    /* Fail open: the static markup is the entered state, so the calendar still loads. */
+    state='entered'; try{ $('bk').setAttribute('data-state','entered'); }catch(x){}
+  }finally{
+    if(state==='entered'){
+      try{
+        cal=gwCalendar({
+          wrap:$('bk-cal'), url:C.bookingUrl, id:'gw-interview-cal', title:'Book your 20-minute interview',
+          prefill:{first_name:e.first,last_name:e.last,email:e.email,phone:e.phone},
+          onBooked:function(){
+            try{ sessionStorage.setItem('gw_booked','1'); }catch(x){}
+            var seen=false;
+            try{ seen=sessionStorage.getItem('gw_sch')==='1'; sessionStorage.setItem('gw_sch','1'); }catch(x){}
+            try{ if(window.fbq && !seen) fbq('track','Schedule',{content_name:'Growth Partner Interview'}); }catch(x){}
+            setTimeout(function(){ location.replace(tyUrl(true)); },300);
+          }
+        });
+      }catch(x){}
+    }
+  }
+})();
+window.addEventListener('pageshow',function(){ try{ var a=document.getElementById('bk-already'); if(a && sessionStorage.getItem('gw_booked')==='1' && document.getElementById('bk').getAttribute('data-state')==='entered' && a.className.indexOf('show')<0) a.className+=' show'; }catch(x){} });
+</script>

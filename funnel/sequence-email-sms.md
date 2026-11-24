@@ -1,11 +1,11 @@
 # Giveaway Email + SMS Sequence
 
-Sender: Camron (email) / 2URN (SMS). All sends come from the GHL workflows (A "Giveaway Entry", B "Second Place", C "Grand Prize", G "Third Place", see GHL-SETUP.md). Merge fields used: `{{contact.first_name}}`, `{{contact.referral_link}}`, `{{contact.interview_link}}`, `{{contact.claim_link}}`, `{{contact.claim3_link}}`, `{{contact.claim_deadline}}`. They are GHL standard and custom fields (see GHL-SETUP.md). Entries close and winners are notified Dec 5, 2026, 7:00 PM CT; change every mention if GHL_CONFIG.announcementAt changes. The public announcement (video, banner, socials) is posted only after the grand prize winner has accepted and signed the publicity and case-study release.
+Sender: Camron (email) / 2URN (SMS). All sends come from the GHL workflows (A "Giveaway Entry", B "Second Place", C "Grand Prize", G "Third Place", see GHL-SETUP.md). Merge fields used: `{{contact.first_name}}`, `{{contact.referral_link}}`, `{{contact.interview_link}}`, `{{contact.claim_link}}`, `{{contact.claim3_link}}`, `{{contact.claim_deadline}}`. They are GHL standard and custom fields (see GHL-SETUP.md). `{{contact.interview_link}}` opens the booking page, `https://go.2urnmarketing.com/interview?c={{contact.referral_code}}` (the code only: no name, email or phone in the link). Entries close and winners are notified Dec 5, 2026, 7:00 PM CT; change every mention if GHL_CONFIG.announcementAt changes. The public announcement (video, banner, socials) is posted only after the grand prize winner has accepted and signed the publicity and case-study release.
 
 The program is 2URN Growth Partner: $3,000 per month, 90-day minimum, client funds ad spend ($200 to $1,000 a day, paid to Meta). There are three prizes.
 
 - **Grand prize** (one winner, plus the referrer): 90 days of Growth Partner, free ($10,000 value). Picked by our panel on Dec 5, judged after a 20-minute interview. People choose, not chance.
-- **Second place: the Second-Place Stack.** Picked by our panel on Dec 5, from applicants who completed the interview, on the same published criteria. Included free with second place (claimed by booking the 20-minute claim call on /claim within 72 hours of notification; nothing else is required to claim): a one-month Content Package ($2,500 value: a 45-minute interview with Camron; we write 5 ad scripts and 5 content scripts in their words; they shoot on a phone with our shot list; we edit 10 finished pieces), a Competitor Analysis ($1,500 value: who their current competitors are, what they are running, their offers, hooks, review counts and the gaps), five advertising campaigns scripted for them ($1,250 value: each with 10 hooks and a full video script, ready to shoot; not edited ads, not loaded audiences) and, if they do not have a website, a Website Buildout (free, no dollar value assigned). Plus 50% off the first 90 days of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then $3,000, with the revenue ROI guarantee. Second-place winners fund ad spend of $100 to $1,000 a day. Headline math, used everywhere: "$5,250 in deliverables, free, plus $4,500 off: $9,750 of value." With the website in the same sentence: "$5,250 in deliverables plus a website if you need one, free, plus $4,500 off". Never put a dollar figure on the website. Delivery: the Competitor Analysis within 7 days of booking the claim call (whether or not they sign); the Content Package, the five scripted campaigns and the Website Buildout inside the 90-day program, conditioned on signing the Growth Partner agreement [CHECK: signing deadline]. [DECIDE: website timeline, and whether hosting is included during the engagement or billed at $189/month]
+- **Second place: the Second-Place Stack.** Picked by our panel on Dec 5, from applicants who completed the interview, on the same published criteria. Included free with second place (claimed by booking the 20-minute claim call on /claim-second within 72 hours of notification; nothing else is required to claim): a one-month Content Package ($2,500 value: a 45-minute interview with Camron; we write 5 ad scripts and 5 content scripts in their words; they shoot on a phone with our shot list; we edit 10 finished pieces), a Competitor Analysis ($1,500 value: who their current competitors are, what they are running, their offers, hooks, review counts and the gaps), five advertising campaigns scripted for them ($1,250 value: each with 10 hooks and a full video script, ready to shoot; not edited ads, not loaded audiences) and, if they do not have a website, a Website Buildout (free, no dollar value assigned). Plus 50% off the first 90 days of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then $3,000, with the revenue ROI guarantee. Second-place winners fund ad spend of $100 to $1,000 a day. Headline math, used everywhere: "$5,250 in deliverables, free, plus $4,500 off: $9,750 of value." With the website in the same sentence: "$5,250 in deliverables plus a website if you need one, free, plus $4,500 off". Never put a dollar figure on the website. Delivery: the Competitor Analysis within 7 days of booking the claim call (whether or not they sign); the Content Package, the five scripted campaigns and the Website Buildout inside the 90-day program, conditioned on signing the Growth Partner agreement [CHECK: signing deadline]. [DECIDE: website timeline, and whether hosting is included during the engagement or billed at $189/month]
 - **Third place: Free Audit + Website Buildout.** Picked by our panel on Dec 5. A marketing audit and a website built for the company. No build fee. The winner pays hosting and maintenance only, $189 a month. 72 hours to claim by booking a 20-minute call. Every third-place email carries "Hosting and maintenance terms are in your agreement." Every third-place SMS puts the fee next to the build ("No build fee. Hosting and maintenance $189/mo") and links to /claim-third, which carries the terms line. [DECIDE: confirm audit scope] [DECIDE: hosting term, cancellation, site and domain ownership, build timeline, ARV]
 
 The guarantee, worded the same everywhere: "If you do these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has." A second-place client who funds $100 to $199 a day does not meet condition two, so any message that gives second place's ad spend next to the guarantee adds: "The guarantee applies at $200 a day or more." The four items are "the guarantee's four conditions". Never call them "the commitment list"; the five public items are "what the winner commits to". The public name is "revenue ROI guarantee". [CHECK: performance guarantee wording, and how "paid for itself in closed jobs" is measured; see official-rules-DRAFT.md]
@@ -13,14 +13,14 @@ The guarantee, worded the same everywhere: "If you do these four things (content
 Public wording:
 - No prize is ever described as drawn, random, picked by chance or as having odds. Our panel picks all three places on Dec 5.
 - Nobody wins before Dec 5. No message sent before the Dec 5 notification tells a reader they have won, will win or are in line for a prize.
-- Never tell a reader how many people win a tier. Say "second place", "second-place winners", "third place". Never "everyone wins", "everybody gets", "all applicants" or "multiple winners".
+- The counts are public: one grand prize, three second places, five third places. Still never say "everyone wins", "everybody gets", "all applicants" or that missing one place gets you another.
 - Nothing tells a reader that people who do not win a higher tier get a lower one.
 - Winner-facing copy never says "book your interview". It says "book your 20-minute call" or "book your claim call". The claim call is never called "not a sales call" and a winner is never told they might be judged not a fit. The pre-announcement interview is still "an interview, not a sales call".
-- The referral bonus is always stated as: a roofer in another market, and "if they win the grand prize, you win it too".
+- The referral bonus is always stated as: a roofer in another market, and "if they win the grand prize, you win it too". The one allowed follow-on, only if the message needs it: "You both get 90 days of Growth Partner free." Say "grand prize", never "first place".
 - Never offer extra entries.
 - No em dashes or en dashes. No exclamation marks.
 
-Who gets this: every entrant. There is no form-level disqualification and no revenue minimum. A contact tagged `not-a-fit` after the setter call or interview (not a fit for Growth Partner: will not be on camera, or cannot fund $100 a day in ad spend) stops getting the interview reminders and is out of the grand prize and second place, but stays eligible for third place and gets the third-place messages if they are tagged `third-place` (see GHL-SETUP.md, workflows E and G). A not-a-fit contact is not put on Do Not Disturb.
+Who gets this: every entrant. Most entrants book their interview on the booking page (`/interview`) right after the form, so every message with a booking line has a booked variant without it (workflow A If/Else on the tag `interview-booked`). There is no form-level disqualification and no revenue minimum. A contact tagged `not-a-fit` after the setter call or interview (not a fit for Growth Partner: will not be on camera, or cannot fund $100 a day in ad spend) stops getting the interview reminders and is out of the grand prize and second place, but stays eligible for third place and gets the third-place messages if they are tagged `third-place` (see GHL-SETUP.md, workflows E and G). A not-a-fit contact is not put on Do Not Disturb.
 
 Rules: one SMS a day at most per contact, counting workflow texts and setter texts together. The first SMS ends with "Reply STOP to opt out" (first send only; GHL appends after that). Keep every SMS as short as it can be, under 160 characters where possible, and keep "2URN:" as the prefix. Never offer extra entries.
 
@@ -28,19 +28,24 @@ Timing: the Day 1 to Day 5 sends go out relative to the entry date and carry no 
 
 ---
 
-## Immediately on entry
+## On entry (email at once, SMS 10 minutes later)
 
-**SMS**
-> 2URN: {{contact.first_name}}, you're entered to win 90 days of Growth Partner, free. Winners are picked Dec 5. Refer a roofer in another market. If they win the grand prize, you win it too: {{contact.referral_link}} Reply STOP to opt out
+Workflow A picks one SMS with an If/Else on the tag `interview-booked`, 10 minutes after entry, so a person still on the booking page has time to book.
+
+**SMS, booked** (tag `interview-booked`)
+> 2URN: {{contact.first_name}}, you're entered and your 20-min interview is booked. Refer a roofer in another market. If they win the grand prize, you win it too: {{contact.referral_link}} Reply STOP to opt out
+
+**SMS, not booked**
+> 2URN: {{contact.first_name}}, you're entered to win 90 days of Growth Partner, free. Pick your 20-min interview time, it takes a minute: {{contact.interview_link}} Reply STOP to opt out
 
 **Email.** Subject: You're entered. Here's what happens next.
 > {{contact.first_name}},
 >
-> You're entered. There are three prizes. The grand prize is 2URN Growth Partner free for 90 days, a $10,000 value. Second place is the Second-Place Stack: $5,250 in deliverables plus a website if you need one, free, plus $4,500 off your first 90 days of Growth Partner ($1,500 a month instead of $3,000). That's $9,750 of value, and the program comes with a revenue ROI guarantee: if you do these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. For second place you fund your own ad spend, $100 to $1,000 a day, paid to Meta. The guarantee applies at $200 a day or more. Third place is a marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month. Hosting and maintenance terms are in your agreement.
+> You're entered. There are three prizes. The grand prize (1 winner) is 2URN Growth Partner free for 90 days, a $10,000 value. Second place (3 winners) is the Second-Place Stack: $5,250 in deliverables plus a website if you need one, free, plus $4,500 off your first 90 days of Growth Partner ($1,500 a month instead of $3,000). That's $9,750 of value, and the program comes with a revenue ROI guarantee: if you do these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. For second place you fund your own ad spend, $100 to $1,000 a day, paid to Meta. The guarantee applies at $200 a day or more. Third place (5 winners) is a marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month. Hosting and maintenance terms are in your agreement.
 >
 > Here's what happens next:
 >
-> 1. We call within 2 business days to book your 20-minute interview. It's an interview, not a sales call. You can book it yourself now: {{contact.interview_link}}
+> 1. Your 20-minute interview. It's an interview, not a sales call. If you picked a time on the page, it's in your calendar email. If not, pick one here, or we'll call you to set it up: {{contact.interview_link}}
 > 2. Our panel picks every winner on Dec 5. People choose, not chance. Nobody wins before then. We judge against the published criteria in the Official Rules.
 > 3. Second place is the Second-Place Stack. If our panel picks you, you get 72 hours to claim.
 > 4. Third place: a free audit and a website buildout. No build fee. You pay hosting and maintenance only, $189 a month.
@@ -74,9 +79,14 @@ Skip if the contact already has an interview booked, or is tagged `not-a-fit`.
 > That's why Growth Partner has an automated back end. Every lead gets a fast text, a follow-up sequence and a reminder, whether your crew is on a roof or the office is closed.
 >
 > The grand prize winner gets the first 90 days free, and the program runs right through winter, when a lot of your competitors go quiet.
->
+
+*Variant, not booked (no tag `interview-booked`):*
 > Winners are picked Dec 5. Book your interview if you haven't: {{contact.interview_link}}
->
+
+*Variant, booked (tag `interview-booked`):*
+> Winners are picked Dec 5. Know a roofer in another market? If they win the grand prize, you win it too: {{contact.referral_link}}
+
+*Both variants end:*
 > Camron
 
 ## Day 2: a real face
@@ -140,9 +150,14 @@ Skip if the contact already has an interview booked, or is tagged `not-a-fit`.
 > Third place is a marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month. Hosting and maintenance terms are in your agreement.
 >
 > That makes winter a good time to start. You'd be running ads and follow-up while the rest of your market sits it out.
->
+
+*Variant, not booked (no tag `interview-booked`):*
 > Winners are picked Dec 5. Book your 20-minute interview if you haven't: {{contact.interview_link}}
->
+
+*Variant, booked (tag `interview-booked`):*
+> Winners are picked Dec 5. Know a roofer in another market? If they win the grand prize, you win it too: {{contact.referral_link}}
+
+*Both variants end:*
 > Camron
 
 ## Dec 4, 10:00 AM CT (pinned): the day before
@@ -154,10 +169,15 @@ Pinned to Dec 4, 10:00 AM CT, not relative to entry. Skip for a contact who ente
 
 **Email.** Subject: Tomorrow, 7pm CT
 > Entries close tomorrow, Dec 5, at 7pm CT, and winners are notified that night.
->
-> If you haven't booked your 20-minute interview, do it now. Our panel picks the grand prize and second place from interviewed applicants.
+
+*Variant, not booked (no tag `interview-booked`):*
+> If you haven't booked your 20-minute interview, do it now. Our panel picks the grand prize and second place from interviewed applicants. The last interview times are tomorrow before 5pm CT.
 > {{contact.interview_link}}
->
+
+*Variant, booked (tag `interview-booked`):*
+> Your 20-minute interview is booked. If you can't make it, rebook from your calendar email so it still happens before tomorrow, 5pm CT.
+
+*Both variants continue:*
 > If you know a roofing company in another market that could meet what the winner commits to (funds ad spend of $200 to $1,000 a day, puts the owner or a lead rep on camera, produces case studies for their own business, lets us build a public case study, records a testimonial for 2URN), send them your link. If they win the grand prize, you win it too.
 > {{contact.referral_link}}
 >
@@ -210,7 +230,7 @@ Set `claim_deadline` = now + 72h, write it into `claim_until_iso` (ISO 8601, see
 >
 > Camron
 
-Every second-place winner gets these messages. The claim is a 20-minute claim call booked on the Growth Partner Interview calendar AFTER the notification; an interview booked before the notification does not count. The reminders and the +72h email check for a booking made after the notification. The claim-call booking (not the workflow start) creates the task "Deliver Competitor Analysis within 7 days". The setter also calls winners who have not booked (see setter-script.md).
+Every second-place winner gets these messages. The claim is a 20-minute claim call booked on the Introduction Interview calendar (the same one as the interview) AFTER the notification; an interview booked before the notification does not count. The reminders and the +72h email check for a booking made after the notification. The claim-call booking (not the workflow start) creates the task "Deliver Competitor Analysis within 7 days". The setter also calls winners who have not booked (see setter-script.md).
 
 ### Claim window, +24h (no claim call booked since the notification)
 **SMS**
@@ -287,12 +307,12 @@ Add the tag `evergreen` at +72h. Do not quote a standard website price in this e
 **Referrer SMS (optional, manual).** Not sent by workflow A (a workflow cannot message a different contact). When a new entry has a non-empty `referred_by`, the setter may send this once from the REFERRER's own contact (find it by `referral_code` = the new entry's `referred_by`). The referrer consented to texts when they entered. It counts toward the one-SMS-a-day limit for the referrer.
 > 2URN: {{contact.first_name}}, the roofer you referred just entered. If they win the grand prize, you win it too.
 
-**Nominated roofers get no automated message of any kind.** A roofer put forward through the nomination form on the thank-you page has given no consent. They get no automated SMS and no automated email, no auto-dialer, and they are set to Do Not Disturb for SMS and email until they enter themselves (workflow F, then workflow A clears it). The only contact is one manual call by the setter, with one voicemail that names the referrer if there is no answer, then stop. See setter-script.md. A nomination counts as a referral once the nominated company enters: if they win the grand prize, the person who nominated them wins it too. Workflow F does not tag, move or silence a contact already tagged `giveaway-entrant` (no tag, no stage move, no Do Not Disturb, no call task: the form has already overwritten `nominated_by_code` / `nominated_by_name` on that contact, so workflow F adds the note "Nominated AFTER entry ... does not count for the referral bonus" and notifies Camron) and skips contacts tagged `nominee-declined`.
+**Nominated roofers get no automated message of any kind.** A roofer put forward through the nomination form on the thank-you page has given no consent. They get no automated SMS and no automated email, no auto-dialer, and they are set to Do Not Disturb for SMS and email until they enter themselves (workflow F, then workflow A clears it). The only contact is one manual call by the setter, with one voicemail that names the referrer if there is no answer, then stop. See setter-script.md. A nomination counts as a referral once the nominated company enters: if they win the grand prize, the person who nominated them wins it too. Workflow F does not tag, move or silence a contact already tagged `giveaway-entrant` (no tag, no stage move, no Do Not Disturb, no call task: workflow F's Create/Update Contact step has already overwritten `nominated_by_code` / `nominated_by_name` on that contact, so workflow F adds the note "Nominated AFTER entry ... does not count for the referral bonus" and notifies Camron) and skips contacts tagged `nominee-declined`.
 
 ---
 
 ## Setter call attempts (parallel to the above, see setter-script.md)
-Applicants who have not booked: call within 2 business days of entry. 3 attempts on day 1, 2 on day 2, 1 on day 3. Text once, after the last unanswered call of the day, and only if no workflow SMS went to that contact that day (one SMS a day at most, workflow and setter texts together). Never text nominees. After winners are notified, call second-place winners who have not booked a claim call first, then third-place winners who have not booked the Free Audit + Website Call: 3 attempts on day 1, 2 on day 2, 1 on day 3, all inside the 72-hour claim window. After the window the prize is gone: any later call (weekly, up to 3 weeks) is about the standard program only and never mentions the prize as available. Log outcome in the GHL opportunity stage.
+Applicants who did not book on the booking page: workflow A waits 30 minutes after entry, then creates the setter task "Call to book interview: entered, did not book" unless the contact has the tag `interview-booked`. The task is due within 1 hour (entries after 6 PM CT: 9 AM next day). 3 attempts on day 1, 2 on day 2, 1 on day 3. Text once, after the last unanswered call of the day, and only if no workflow SMS went to that contact that day (one SMS a day at most, workflow and setter texts together). Never text nominees. After winners are notified, call second-place winners who have not booked a claim call first, then third-place winners who have not booked the Free Audit + Website Call: 3 attempts on day 1, 2 on day 2, 1 on day 3, all inside the 72-hour claim window. After the window the prize is gone: any later call (weekly, up to 3 weeks) is about the standard program only and never mentions the prize as available. Log outcome in the GHL opportunity stage.
 
 Contacts tagged `not-a-fit` (applied only after the setter call or interview) get no interview calls. They get the third-place call only if our panel picks them for third place on Dec 5 (tag `third-place`).
 

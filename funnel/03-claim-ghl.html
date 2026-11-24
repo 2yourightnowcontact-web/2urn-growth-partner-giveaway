@@ -1,11 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Claim the Second-Place Stack</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap">
 <script>
   window.GW_CLAIM = {
-    /* GHL calendar widget for the 20-minute "Growth Partner Interview". Calendars → the calendar → Share → widget link. */
-    bookingUrl: "https://link.2urnmarketing.com/widget/booking/REPLACE_ME"
+    /* GHL booking widget link for the Introduction Interview calendar (the same calendar as the interview). Calendars > the calendar > Share > widget link. Leave "" for preview mode (shows a plain placeholder). */
+    bookingUrl: ""
   };
 </script>
 <style>
@@ -39,10 +39,19 @@ body { background:#fff; }
 .price{display:grid;grid-template-columns:1fr auto;gap:8px;padding:12px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
 .price:last-of-type{border-bottom:0}.price b{font-weight:900;letter-spacing:-.03em;font-size:1.2rem}
 .price .was{text-decoration:line-through;color:var(--muted)}.price .now{color:var(--ink)}
-.booking{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:16px;min-height:560px}
-.booking iframe{width:100%;height:640px;border:0;display:block}
+.booking{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);margin-top:16px;clip-path:inset(0 round var(--r))}
+.calwrap{position:relative;min-height:600px;background:#fff}
+.calwrap iframe{display:block;width:100%;border:0}
+.calwrap .calload{position:absolute;left:0;right:0;top:0;padding:120px 16px 0;text-align:center;color:var(--muted);font-weight:600;font-size:15px}
+.calwrap.ready{min-height:0}
+.calwrap.ready .calload,.calwrap.nocal .calload{display:none}
+.calwrap .calnone{display:none;padding:56px 20px;text-align:center;color:var(--muted);font-size:.95rem}
+.calwrap.nocal{min-height:0}
+.calwrap.nocal .calnone{display:block}
+.done{display:none;margin-top:16px;padding:14px 16px;border-radius:12px;background:#E9F7EF;color:var(--green-deep);font-weight:700;font-size:15px;line-height:1.4;text-align:center}
+.done.show{display:block}
 .btn{font-family:var(--body);font-weight:700;font-size:1.17rem;letter-spacing:-.01em;background:var(--red);color:#fff;border:0;min-height:52px;padding:16px 22px;cursor:pointer;border-radius:var(--r);text-decoration:none;display:block;text-align:center;margin-top:14px;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:background .2s,transform .2s}
-.btn:hover{background:var(--red-deep);transform:translateY(-1px)}
+@media(hover:hover){.btn:hover{background:var(--red-deep);transform:translateY(-1px)}}
 .expired{display:none;background:var(--paper);border:1px solid var(--line);border-left:2px solid var(--red-deep);border-radius:var(--r);padding:18px 20px;margin-top:16px}
 .expired.show{display:block}
 .expired p{color:var(--muted);margin-top:4px}
@@ -70,7 +79,6 @@ body { background:#fff; }
   .c-stack{order:1}.c-book{order:2}.c-price{order:3}.c-guar{order:4}.c-gp{order:5}
   .top h1{font-size:clamp(2rem,9vw,3rem)}.top .sub{font-size:1rem}
   .cu{min-width:60px;padding:8px 10px}.cu b{font-size:1.7rem}
-  .booking{min-height:0}.booking iframe{height:720px}
   .price>:last-child{text-align:right}
   .top .go{max-width:none}
   .mcta{display:block}
@@ -78,11 +86,27 @@ body { background:#fff; }
 }
 @media(max-width:380px){.count{gap:8px}.cu{min-width:56px;padding:8px}.cu b{font-size:1.5rem}.card h2{font-size:1.45rem}}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+/* ===== shared iPhone layer (same on every funnel page) ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+:root{color-scheme:light}
+.cl{-webkit-tap-highlight-color:transparent}
+.cl :is(a,button,input,select,label){touch-action:manipulation}
+.cl :is(input,select,textarea){-webkit-appearance:none;appearance:none;font-size:16px;border-radius:12px}
+.cl input[type=checkbox]{-webkit-appearance:checkbox;appearance:auto}
+.cl :is(input,select):-webkit-autofill{-webkit-box-shadow:0 0 0 40px #fff inset;-webkit-text-fill-color:var(--ink)}
+.mcta{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.cl h1{overflow-wrap:anywhere}
+.cl{min-height:100vh;min-height:100svh}
+@media(hover:none){.cta:hover,.btn:hover,.btn.red:hover{transform:none}}
+.cta:active,.btn:active,.mcta button:active{transform:scale(.99)}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* GoHighLevel wraps this code in a padded section, row and column (40px of white above the page). Remove that frame. */
+.c-section:has(.cl),.c-row:has(.cl),.c-column:has(.cl){padding:0!important;margin:0!important}
 </style>
 
 <div class="cl">
 <div class="band top"><div class="in">
-  <span class="pill">Second place · Growth Partner Giveaway</span>
+  <span class="pill">Second place &middot; Growth Partner Giveaway</span>
   <h1><span id="name">You</span> won the Second-Place Stack: <em>$9,750+ of value.</em></h1>
   <p class="sub" id="sub">The grand prize went to one company. Our panel picked you for second place: $5,250 in deliverables plus a website if you need one, free, plus $4,500 off Growth Partner. To claim it, book your 20-minute call within 72 hours of your notification.</p>
   <div class="count" id="count">
@@ -91,7 +115,7 @@ body { background:#fff; }
     <div class="cu"><b id="m">00</b><span>min</span></div>
     <div class="cu"><b id="s">00</b><span>sec</span></div>
   </div>
-  <a class="btn go" href="#book">Book your call to claim it</a>
+  <a class="btn go" href="#book" onclick="event.preventDefault();document.getElementById('book').scrollIntoView({behavior:(matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'),block:'start'})">Book your call to claim it</a>
   <a class="btn nl-only" id="nl-btn" href="/lead-engine">See the giveaway</a>
 </div></div>
 
@@ -150,7 +174,8 @@ body { background:#fff; }
       <div class="card hi c-book" id="book">
         <h2>Claim it: book your <em>20-minute claim call</em></h2>
         <p>Booking the 20-minute call claims second place. The Competitor Analysis is yours when you book, and your half-off price and the rest of the Stack come with the Growth Partner agreement. On the call we go over what you get, when each piece arrives, and the Growth Partner agreement at $1,500 a month for the first 90 days. The deadline is real. After 72 hours the Stack and the half-off price are gone.</p>
-        <div class="booking" id="booking"><iframe id="cal" title="Book your claim call" src="about:blank" loading="lazy"></iframe></div>
+        <div class="done" id="done" role="status">Your claim call is booked. Your claim is in.</div>
+        <div class="booking calwrap" id="booking"><div class="calload">Loading open times&hellip;</div><div class="calnone">The calendar shows here once the booking link is set.</div></div>
         <div class="expired" id="expired"><b>This claim window has closed.</b><p>The Second-Place Stack and the half-off price are gone. Growth Partner is still available at the standard $3,000 a month. Book a call and ask.</p><a class="btn" id="expired-btn" href="#">Book a call</a></div>
       </div>
       <div class="card c-gp">
@@ -168,17 +193,59 @@ body { background:#fff; }
   </div>
 </div></div>
 
-<div class="band foot"><div class="in">2URN Marketing · Second-prize winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. The Second-Place Stack has no cash value, is non-transferable and must be claimed by booking the 20-minute claim call within 72 hours of notification. It includes a Competitor Analysis (ARV $1,500), delivered within 7 days of booking the claim call whether or not you sign; and, delivered inside the discounted Growth Partner engagement and only if you sign the engagement agreement, a One-Month Content Package (ARV $2,500) and five scripted advertising campaigns (ARV $1,250), both in its first month, and, for winners without a company website, a website buildout. The second-place price ($1,500 per month for the first 90 days, then $3,000 per month) applies to the 2URN Growth Partner program only. The revenue ROI guarantee applies only if the guarantee's four conditions are met: content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live and a weekly scorecard call. If so and Growth Partner has not paid for itself in closed jobs by day 90, 2URN keeps working at no charge until it has. Ad spend is paid by you directly to Meta, $100 to $1,000 per day. <a href="/rules" style="color:var(--ink)">Official Rules</a></div></div>
+<div class="band foot"><div class="in">2URN Marketing &middot; Second-prize winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. The Second-Place Stack has no cash value, is non-transferable and must be claimed by booking the 20-minute claim call within 72 hours of notification. It includes a Competitor Analysis (ARV $1,500), delivered within 7 days of booking the claim call whether or not you sign; and, delivered inside the discounted Growth Partner engagement and only if you sign the engagement agreement, a One-Month Content Package (ARV $2,500) and five scripted advertising campaigns (ARV $1,250), both in its first month, and, for winners without a company website, a website buildout. The second-place price ($1,500 per month for the first 90 days, then $3,000 per month) applies to the 2URN Growth Partner program only. The revenue ROI guarantee applies only if the guarantee's four conditions are met: content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live and a weekly scorecard call. If so and Growth Partner has not paid for itself in closed jobs by day 90, 2URN keeps working at no charge until it has. Ad spend is paid by you directly to Meta, $100 to $1,000 per day. <a href="/rules" style="color:var(--ink)">Official Rules</a></div></div>
 <div class="mcta" id="mcta"><button type="button" onclick="document.getElementById('book').scrollIntoView({behavior:(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth',block:'start'})">Book your call to claim it</button></div>
 </div>
 
 <script>
+/* Same frame fix for browsers without :has(): walk up from the page root and zero the GoHighLevel section, row and column padding. */
+(function(){try{var e=document.querySelector('.cl');while(e&&e!==document.body){if(/(^|\s)c-(section|row|column)(\s|$)/.test(String(e.className||''))){e.style.setProperty('padding','0','important');e.style.setProperty('margin','0','important');}e=e.parentElement;}}catch(x){}})();
+/* ---- calendar embed: same code on 03, 05 and 06 ---- */
+function gwCalendar(o){
+  /* o: {wrap, url, id, title, prefill:{first_name,last_name,email,phone}, onBooked} */
+  var wrap=o.wrap, url=String(o.url||''), origin='';
+  try{ origin=new URL(url).origin; }catch(e){}
+  if(!wrap || !origin || !/\/widget\/booking\//.test(url)){ if(wrap) wrap.className+=' nocal'; return null; }
+  var q=[], p=o.prefill||{};
+  function add(k,v){ v=String(v||'').trim(); if(v) q.push(k+'='+encodeURIComponent(v)); }
+  add('first_name',p.first_name); add('last_name',p.last_name);
+  if(p.email && String(p.email).indexOf('+')<0) add('email',p.email);          /* the widget turns "+" into a space */
+  if(/^\+1\d{10}$/.test(String(p.phone||''))) add('phone',p.phone);
+  var f=document.createElement('iframe');
+  f.id=o.id||'gw-cal'; f.title=o.title||'Book your call';
+  f.setAttribute('allow','payment'); f.setAttribute('scrolling','no');
+  f.style.cssText='width:100%;border:none;overflow:hidden;';
+  f.src=url+(q.length?(url.indexOf('?')<0?'?':'&')+q.join('&'):'');             /* prefill rides on the iframe src, never on our page URL */
+  wrap.appendChild(f);
+  function shown(){ return f.style.visibility!=='hidden' && f.style.opacity!=='0' && parseInt(f.style.height||'0',10)>0; }
+  function ready(){ if((' '+wrap.className+' ').indexOf(' ready ')<0) wrap.className+=' ready'; }
+  try{ var mo=new MutationObserver(function(){ if(shown()){ ready(); mo.disconnect(); } }); mo.observe(f,{attributes:true,attributeFilter:['style']}); }catch(e){}
+  /* The iframe must be in the page before form_embed.js runs: it sizes the iframe, and hides it until the widget answers. */
+  var s=document.createElement('script'); s.src=origin+'/js/form_embed.js'; s.type='text/javascript';
+  (document.body||document.documentElement).appendChild(s);
+  /* Fallback: embed script blocked or late. Show the iframe ourselves, tall, with its own scrolling. */
+  setTimeout(function(){
+    if(shown()){ ready(); return; }
+    f.style.opacity='1'; f.style.visibility='visible'; f.style.pointerEvents='auto'; f.style.position='relative'; f.style.left='';
+    if(!parseInt(f.style.height||'0',10)) f.style.height='1100px';
+    f.setAttribute('scrolling','yes'); ready();
+  },8000);
+  /* The widget posts ["msgsndr-booking-complete",{fingerprint,calendarId}] to its parent once the appointment exists. */
+  var done=false;
+  window.addEventListener('message',function(ev){
+    if(done || ev.origin!==origin) return;
+    var d=ev.data;
+    if(!d || d[0]!=='msgsndr-booking-complete') return;
+    done=true; try{ if(o.onBooked) o.onBooked(d[1]||{}); }catch(e){}
+  });
+  return f;
+}
 (function(){
-  var C=window.GW_CLAIM||{}, until=null, first='', closed=false, iv=null, hasLink=true;
+  var C=window.GW_CLAIM||{}, until=null, first='', closed=false, booked=false, iv=null, hasLink=true;
   function cleanName(s){
     var raw=String(s==null?'':s);
     if(/[<>]/.test(raw)) return '';
-    return raw.replace(/[^A-Za-zÀ-ɏḀ-ỿ\s'’.\-]/g,'').replace(/\s+/g,' ').trim().slice(0,24).trim();
+    return raw.replace(/[^A-Za-z\u00C0-\u024F\u1E00-\u1EFF\s'\u2019.\-]/g,'').replace(/\s+/g,' ').trim().slice(0,24).trim();
   }
   /* GHL sends ?until=<ISO 8601> from claim_until_iso. Merge fields are not URL-encoded, so a "+" in the offset arrives as a space. */
   function parseUntil(raw){
@@ -204,12 +271,19 @@ body { background:#fff; }
     }catch(e){ hasLink=true; try{ document.querySelector('.cl').classList.remove('nolink'); }catch(e2){} }
   }
   var url=String(C.bookingUrl||'');
-  try{ var cal=document.getElementById('cal'); if(cal&&url) cal.src=url+(first?(url.indexOf('?')>-1?'&':'?')+'first_name='+encodeURIComponent(first):''); }
-  catch(e){ try{ document.getElementById('cal').src=url; }catch(e2){} }
+  /* The widget says the appointment exists: no navigation. Show the green line, stop the countdown, hide the sticky bar. */
+  function onBooked(){
+    booked=true;
+    try{ if(iv){ clearInterval(iv); iv=null; } }catch(e){}
+    try{ var dn=document.getElementById('done'); if(dn){ dn.className+=' show'; dn.scrollIntoView({behavior:(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth',block:'nearest'}); } }catch(e){}
+    try{ if(mc) mc.style.display='none'; if(go) go.style.display='none'; if(cnt) cnt.style.display='none'; }catch(e){}
+  }
+  try{ gwCalendar({wrap:document.getElementById('booking'),url:url,id:'gw-cal',title:'Book your claim call',prefill:{first_name:first},onBooked:onBooked}); }
+  catch(e){ try{ var bw=document.getElementById('booking'); if(bw&&url&&!bw.querySelector('iframe')){ bw.className+=' ready'; var bl=document.createElement('a'); bl.className='btn'; bl.href=url; bl.textContent='Book your call'; bw.parentNode.insertBefore(bl,bw.nextSibling); } }catch(e2){} }
   try{ var eb=document.getElementById('expired-btn'); if(eb&&url) eb.href=url; }catch(e){}
   try{ if(first) document.getElementById('name').textContent=first+', you'; }catch(e){}
   var mc=document.getElementById('mcta'), go=document.querySelector('.top .go'), cnt=document.getElementById('count');
-  try{var bk=document.getElementById('book');if(mc&&bk&&'IntersectionObserver' in window){var vis={};var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target.id||'go']=e.isIntersecting;});mc.classList.toggle('hide',!!(vis.book||vis.go));},{threshold:.15});io.observe(bk);if(go)io.observe(go);}}catch(e){}
+  try{var bk=document.getElementById('book'),bc=document.getElementById('booking');if(mc&&bk&&'IntersectionObserver' in window){var vis={};var upd=function(){mc.classList.toggle('hide',!!(vis.book||vis.go||vis.booking));};var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target.id||'go']=e.isIntersecting;});upd();},{threshold:.15});io.observe(bk);if(go)io.observe(go);if(bc){var io2=new IntersectionObserver(function(es){es.forEach(function(e){vis.booking=e.isIntersecting;});upd();},{threshold:0});io2.observe(bc);}}}catch(e){}
   if(!cnt) return;
   if(!until){ cnt.innerHTML='<span class="lbl">Claim within 72 hours of your notification.</span>'; return; }
   var pad=function(n){return (n<10?'0':'')+n};
@@ -222,7 +296,7 @@ body { background:#fff; }
     if(mc) mc.style.display='none';
   }
   function tick(){
-    if(closed) return;
+    if(closed||booked) return;
     var ms=until-new Date();
     if(ms<=0){ closeWindow(); return; }
     var s=Math.floor(ms/1000);

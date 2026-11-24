@@ -2,20 +2,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Win 90 Days of 2URN Growth Partner</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap">
 <script>
-  /* ═══════════ 2URN GIVEAWAY REFERRAL PAGE CONFIG: edit these, nothing else ═══════════ */
+  /* =========== 2URN GIVEAWAY REFERRAL PAGE CONFIG: edit these, nothing else =========== */
   window.GHL_CONFIG = {
-    /* GHL Form ID: Sites → Forms → "Growth Partner Giveaway Entry" → Integrate → copy the id. Leave "" for preview mode (sends nothing).
-       This is the SAME value as formId on 01-giveaway-ghl.html (both pages post to the same form). */
-    formId: "",
-    /* GHL Inbound Webhook URL from the "Giveaway Entry" workflow trigger. FALLBACK ONLY: leave "" unless the form post fails, so the entry workflow cannot run twice for one entry.
+    /* Inbound Webhook URL of workflow A "Giveaway Entry" (GoHighLevel: Automation, the workflow's trigger). Leave "" for preview mode (sends nothing).
        This is the SAME value as webhook on 01-giveaway-ghl.html. */
     webhook: "",
     /* Winners picked date/time. ISO with timezone. Entries close at this time. The countdown, the SMS copy and the rules all use this. */
     announcementAt: "2026-12-05T19:00:00-06:00",
-    /* Thank-you page path on this funnel. */
-    thankYouPath: "/thank-you",
+    /* Booking page path on this funnel (06-book-ghl.html). People go here right after they apply. */
+    bookPath: "/interview",
     /* Default ad attribution if no UTMs present. */
     defaultAd: "Giveaway Referral",
     /* Path of the main giveaway page. The "See the full giveaway page" link points here, with ?ref=CODE added when a valid code is present. */
@@ -91,6 +88,7 @@ body { background:#fff; }
 /* video */
 .video{background:#000;aspect-ratio:16/9;width:100%;max-width:100%;border:1px solid rgba(255,255,255,.14);border-radius:var(--r);overflow:hidden;display:grid;place-items:center;color:var(--muted-2);font-size:.85rem;text-align:center;padding:12px}
 .video iframe,.video video{width:100%;height:100%;border:0;display:block}
+.video:has(iframe),.video:has(video){padding:0}
 
 /* form card */
 .card{background:var(--paper);color:var(--ink);padding:clamp(16px,2vw,22px);border-radius:var(--r)}
@@ -100,14 +98,17 @@ body { background:#fff; }
 .f>.full{grid-column:1/-1}
 .micro{display:none;font-size:.8rem;color:var(--muted);margin:0}
 .gw label{font-size:13px;font-weight:600;letter-spacing:-.005em;color:var(--ink);display:grid;gap:6px;min-width:0}
-.gw input,.gw select{font:inherit;font-size:1rem;padding:10px 12px;min-height:48px;border:1.5px solid var(--line);background:#fff;color:var(--ink);width:100%;border-radius:12px;min-width:0}
+.gw input,.gw select{font:inherit;font-size:1rem;padding:10px 12px;min-height:48px;border:1.5px solid var(--line);background:#fff;color:var(--ink);width:100%;border-radius:12px;min-width:0;-webkit-appearance:none;appearance:none}
+.gw select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230B0B0C' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center;padding-right:38px}
 .gw input:focus,.gw select:focus{outline:2px solid var(--ink);outline-offset:1px;border-color:var(--ink)}
 .cta{font-family:var(--body);font-weight:700;font-size:1.17rem;letter-spacing:-.01em;background:var(--red);color:#fff;border:0;padding:15px 22px;cursor:pointer;width:100%;border-radius:var(--r);margin-top:4px;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:background .2s,transform .2s}
-.cta:hover{background:var(--red-deep);transform:translateY(-1px)}
+@media(hover:hover){.cta:hover{background:var(--red-deep);transform:translateY(-1px)}}
+.cta:active,.mcta button:active{background:var(--red-deep);transform:scale(.99)}
 .cta[disabled]{opacity:.6;cursor:wait;transform:none}
 .trust{display:flex;gap:4px 10px;align-items:center;font-size:.78rem;color:var(--muted);margin:0;flex-wrap:wrap}
 .trust b{color:var(--green-deep)}
 .consent{font-size:.7rem;color:var(--muted);line-height:1.4;margin:0}
+@media(max-width:979px){.consent{font-size:.75rem}}
 .refline{display:none;font-size:.8rem;font-weight:600;color:var(--muted);margin-top:8px}
 .refline.show{display:block}
 .err{display:none;color:var(--red-deep);font-size:.85rem;margin:0}
@@ -144,18 +145,38 @@ body { background:#fff; }
 .mcta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px max(16px,env(safe-area-inset-left,0px)) max(10px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right,0px));background:rgba(11,11,12,.92);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.14)}
 .mcta button{width:100%;min-height:52px;background:var(--red);color:#fff;border:0;border-radius:12px;font:700 1.17rem var(--body);letter-spacing:-.01em;cursor:pointer}
 .mcta.hide{display:none!important}
-@media(max-width:979px){.hero-grid{grid-template-columns:1fr}.hero .rc{max-width:560px}.hero .vsl{max-width:min(560px,calc(36vh*16/9))}.bar .tail{display:none}.hero h1{font-size:clamp(1.7rem,7.4vw,2.2rem)}.hero .sub{display:none}.hero .sub.nom{display:block;font-size:.92rem;margin-top:8px}.f label{order:3;grid-column:1/-1}.f .fa{order:1;grid-column:auto}.f .ff{order:2;grid-column:auto}.f>.full{order:5}.card.step1 .s2{display:none}.card.step1 .micro{display:block}.card input,.card select{font-size:16px}.cta{width:100%;min-height:52px}.mcta{display:block}.foot{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}.win-grid{grid-template-columns:1fr}.prizes{grid-template-columns:1fr}}
+@media(max-width:979px){.hero-grid{grid-template-columns:1fr}.hero .rc{max-width:560px}.hero .vsl{max-width:560px}.bar .tail{display:none}.hero h1{font-size:clamp(1.7rem,7.4vw,2.2rem)}.hero .sub{display:none}.hero .sub.nom{display:block;font-size:.92rem;margin-top:8px}.f label{order:3;grid-column:1/-1}.f .fa{order:1;grid-column:auto}.f .ff{order:2;grid-column:auto}.f>.full{order:5}.card.step1 .s2{display:none}.card.step1 .micro{display:block}.card input,.card select{font-size:16px}.cta{width:100%;min-height:52px}.mcta{display:block}.foot{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}.win-grid{grid-template-columns:1fr}.prizes{grid-template-columns:1fr}}
 @media(max-width:520px){.bar .tail2{display:none}.bar{font-size:11px;letter-spacing:.08em}.bar .in{flex-wrap:nowrap;gap:10px}.bar .wm{font-size:15px;white-space:nowrap}.bar .in>span:last-child{white-space:nowrap}.cu{min-width:60px;padding:8px 10px}.cu b{font-size:1.6rem}.st{grid-template-columns:40px 1fr;padding:16px}.bar .in{padding-block:12px}}
 .closein{font-size:.84rem;font-weight:700;color:var(--ink);margin:0}
 .closein b{color:var(--red-deep);font-variant-numeric:tabular-nums;white-space:nowrap}
 @media(prefers-reduced-motion:reduce){.cta{transition:none}}
+@media(max-width:979px) and (max-height:700px){.hero .vsl{max-width:calc(30vh*16/9);max-width:calc(30svh*16/9);margin-inline:auto}}
+@media(max-width:520px){.bar .in{padding-block:8px}.hero{padding-top:10px}.hero .top{margin-bottom:10px}.hero h1{font-size:clamp(1.5rem,6.6vw,1.9rem);line-height:1.04}.hero-grid{gap:12px}.card{padding:14px}.card-h{flex-wrap:nowrap}.card h2{font-size:1.2rem}.closein{font-size:.75rem;text-align:right;flex:none}.f{margin-top:8px}.micro{font-size:.74rem}}
+@media(max-width:360px){.bar .wm{font-size:13px;letter-spacing:.03em}.bar{letter-spacing:.04em}.bar .in{gap:6px}.f .fa,.f .ff{grid-column:1/-1}.card-h{flex-wrap:wrap}.closein{text-align:left}}
+@media(max-width:520px){.hero .sub.nom{font-size:.85rem;margin-top:6px;line-height:1.35}}
+@media(max-width:520px) and (max-height:600px){.hero .sub.nom{display:none}}
+#finalh{overflow-wrap:anywhere}
+/* ===== shared iPhone layer (same on every funnel page) ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+:root{color-scheme:light}
+.gw{-webkit-tap-highlight-color:transparent}
+.gw :is(a,button,input,select,label){touch-action:manipulation}
+.gw :is(input,select,textarea){-webkit-appearance:none;appearance:none;font-size:16px;border-radius:12px}
+.gw :is(input,select):-webkit-autofill{-webkit-box-shadow:0 0 0 40px #fff inset;-webkit-text-fill-color:var(--ink)}
+.mcta{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.gw h1{overflow-wrap:anywhere}
+@media(hover:none){.cta:hover,.btn:hover,.btn.red:hover{transform:none}}
+.cta:active,.btn:active,.mcta button:active{transform:scale(.99)}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* GoHighLevel wraps this code in a padded section, row and column (40px of white above the page). Remove that frame. */
+.c-section:has(.gw),.c-row:has(.gw),.c-column:has(.gw){padding:0!important;margin:0!important}
 </style>
 
 <div class="gw">
 
 <div class="band bar"><div class="in">
   <span class="wm"><b>2URN</b> MARKETING</span>
-  <span>Winners<span class="tail2"> picked</span>: <b id="bar-date">Dec 5, 2026</b><span class="tail"> · One grand prize · Second place · Third place</span></span>
+  <span>Winners<span class="tail2"> picked</span>: <b id="bar-date">Dec 5, 2026</b><span class="tail"> &middot; 1 grand prize &middot; 3 second places &middot; 5 third places</span></span>
 </div></div>
 
 <div class="band hero"><div class="in">
@@ -166,8 +187,12 @@ body { background:#fff; }
   <div class="hero-grid">
   <div class="vsl">
     <div class="video" id="video">
-      <!-- Paste the VSL embed here (GHL video element or Vimeo/YouTube iframe). -->
-      Camron's 4-minute video goes here (VSL-script.md)
+      <!-- Paste the VSL embed here. Keep it 16:9. Never autoplay with sound (iOS blocks it).
+        Vimeo: <iframe src="https://player.vimeo.com/video/ID?playsinline=1&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Camron's video"></iframe>
+        YouTube: <iframe src="https://www.youtube.com/embed/ID?playsinline=1&rel=0&modestbranding=1" allow="fullscreen; picture-in-picture" allowfullscreen title="Camron's video"></iframe>
+        Self-hosted: <video controls playsinline preload="metadata" poster="POSTER.jpg" src="VIDEO.mp4"></video>
+        Then delete the placeholder text below. -->
+      Camron's 2-minute video goes here (VSL-script.md)
     </div>
   </div>
   <div class="rc">
@@ -177,9 +202,9 @@ body { background:#fff; }
         <p class="closein" id="closein">Entries close in <b id="cd-mini">a few days</b></p>
       </div>
       <div class="f">
-        <label class="fa">First name<input id="first" name="first_name" autocomplete="given-name" required></label>
-        <label class="s2">Last name<input id="last" name="last_name" autocomplete="family-name" required></label>
-        <label class="s2">Company<input id="company" name="company" autocomplete="organization" required></label>
+        <label class="fa">First name<input id="first" name="first_name" autocomplete="given-name" autocapitalize="words" autocorrect="off" spellcheck="false" enterkeyhint="next" required></label>
+        <label class="s2">Last name<input id="last" name="last_name" autocomplete="family-name" autocapitalize="words" autocorrect="off" spellcheck="false" enterkeyhint="next" required></label>
+        <label class="s2">Company<input id="company" name="company" autocomplete="organization" autocapitalize="words" autocorrect="off" spellcheck="false" enterkeyhint="next" required></label>
         <label class="s2">Revenue, last 12 months
           <select id="revenue" name="revenue_12mo" required>
             <option value="">Choose</option>
@@ -189,13 +214,13 @@ body { background:#fff; }
             <option value="over_10m">Over $10M</option>
           </select>
         </label>
-        <label class="s2">Email<input id="email" name="email" type="email" autocomplete="email" inputmode="email" required></label>
+        <label class="s2">Email<input id="email" name="email" type="email" autocomplete="email" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" required></label>
         <label class="ff">Mobile phone<input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
         <div class="err full" id="err">Please fill in every field and use a real email and mobile number.</div>
         <button class="cta full" id="submit" type="submit">Enter to win</button>
         <p class="micro full" id="micro">30 seconds. No purchase necessary. Three places, all picked <span class="gw-md">Dec 5</span>.</p>
         <p class="refline full" id="refline"></p>
-        <div class="trust full s2"><b>✓</b> No purchase necessary <b>✓</b> Every applicant gets a 20-minute call</div>
+        <div class="trust full s2"><b>&#10003;</b> No purchase necessary <b>&#10003;</b> Next: book your 20-minute interview</div>
         <p class="consent full s2">By entering you agree to the <a href="/rules" style="color:var(--ink)">Official Rules</a> and to receive calls and texts from 2URN Marketing about this giveaway and our services, including by automated means. Consent is not a condition of entry: to enter without agreeing to calls and texts, use the free mail-in method in the Official Rules. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
       </div>
     </form>
@@ -208,9 +233,9 @@ body { background:#fff; }
   <div class="win-grid">
   <div class="prz">
     <div class="prizes" style="margin-top:0">
-      <div class="prize wide"><div class="k">Grand prize · 1 winner</div><div class="v">$10,000 <small>value</small></div><p>90 days of Growth Partner, free. <span id="refwin">Refer a roofer who wins and you win it too.</span></p></div>
+      <div class="prize wide"><div class="k">Grand prize &middot; 1 winner</div><div class="v">$10,000 <small>value</small></div><p>90 days of Growth Partner, free. <span id="refwin">Refer a roofer in another market who wins and you win it too.</span></p></div>
       <div class="prize wide stack">
-        <div class="k">Second place · the Second-Place Stack</div>
+        <div class="k">Second place &middot; 3 winners &middot; the Second-Place Stack</div>
         <p class="stk-i">Included free with second place:</p>
         <ul class="stk">
           <li><span>One-Month Content Package<em>45-minute interview with Camron, 10 scripts, 10 finished pieces.</em></span><b>$2,500</b></li>
@@ -222,7 +247,7 @@ body { background:#fff; }
         <p class="stk-p">50% off our 90-day marketing program, with a revenue ROI guarantee</p>
         <p class="stk-f">$5,250 in deliverables plus a website if you need one, free, plus $4,500 off: Growth Partner at $1,500/month instead of $3,000 for the first 90 days, then $3,000. The program comes with a revenue ROI guarantee. Claim within 72 hours by booking your 20-minute claim call. The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the 90-day program.</p>
       </div>
-      <div class="prize wide"><div class="k">Third place · Free Audit + Website Buildout</div><div class="v">Free <small>you pay hosting only</small></div><p>A marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month.</p></div>
+      <div class="prize wide"><div class="k">Third place &middot; 5 winners &middot; Free Audit + Website Buildout</div><div class="v">Free <small>you pay hosting only</small></div><p>A marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month.</p></div>
     </div>
   </div>
   <div class="side">
@@ -235,7 +260,7 @@ body { background:#fff; }
         <li>Lets 2URN build a public case study on the steps and the process.</li>
         <li>Records a testimonial for 2URN Marketing.</li>
       </ul>
-      <p>Not there yet? Apply anyway. Every applicant gets a 20-minute call, win or not.</p>
+      <p>Not there yet? Apply anyway. Every applicant gets a 20-minute interview, win or not.</p>
     </div>
 
     <div class="count" id="count">
@@ -249,7 +274,7 @@ body { background:#fff; }
   </div>
   </div>
 </div></div>
-<div class="mcta" id="mcta"><button type="button" id="mctab" onclick="gwScroll('entry','start')">Apply now · 30 seconds</button></div>
+<div class="mcta" id="mcta"><button type="button" id="mctab" onclick="var f=document.getElementById('first');gwScroll('entry','start');try{f.focus({preventScroll:true})}catch(e){f.focus()}">Apply now &middot; 30 seconds</button></div>
 
 <div class="band sec" style="background:var(--paper-2)"><div class="in">
   <h2>What the winner <em>actually gets</em></h2>
@@ -266,8 +291,8 @@ body { background:#fff; }
   <h2>How winners are <em>chosen</em></h2>
   <div class="steps">
     <div class="st"><div class="n">1</div><div><b>You apply</b><p>Fill out the form. Entries close <span id="close-date">Dec 5, 2026</span>.</p></div></div>
-    <div class="st"><div class="n">2</div><div><b>You get a 20-minute call</b><p>We call within 2 business days. It is an interview, not a sales call.</p></div></div>
-    <div class="st"><div class="n">3</div><div><b>Our panel picks every winner on <span class="gw-long">December 5</span></b><p>People choose, not chance. Nobody wins before then. We judge interviewed applicants against the criteria in the Official Rules.</p></div></div>
+    <div class="st"><div class="n">2</div><div><b>You book a 20-minute interview</b><p>Pick a time right after you apply. It is an interview, not a sales call.</p></div></div>
+    <div class="st"><div class="n">3</div><div><b>Our panel picks every winner on <span class="gw-long">December 5</span></b><p>People choose, not chance. Nobody wins before then. One grand prize, three second places and five third places. We judge interviewed applicants against the criteria in the Official Rules.</p></div></div>
     <div class="st"><div class="n">4</div><div><b>Second place: the Second-Place Stack</b><p>If our panel picks you for second place, you get the Second-Place Stack, included free: a One-Month Content Package, a Competitor Analysis, Five Advertising Campaigns, scripted, and a website if you need one, plus 50% off the 90-day program ($1,500/month instead of $3,000) with a revenue ROI guarantee. You fund your own ad spend, $100 to $1,000 a day, paid to Meta. The guarantee applies at $200 a day or more. Claim within 72 hours by booking your 20-minute claim call. The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the 90-day program.</p></div></div>
     <div class="st"><div class="n">5</div><div><b>Third place: free audit and website</b><p>Our panel picks third place too. A marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month.</p></div></div>
   </div>
@@ -276,17 +301,19 @@ body { background:#fff; }
 
 <div class="band sec final" style="background:var(--paper-2)"><div class="in">
   <h2 id="finalh"><em>Thirty seconds</em> to apply.</h2>
-  <button class="cta" id="finalb" type="button" onclick="document.getElementById('first').focus();gwScroll('entry','center')">Enter to win</button>
+  <button class="cta" id="finalb" type="button" onclick="var f=document.getElementById('first');gwScroll('entry','start');try{f.focus({preventScroll:true})}catch(e){f.focus()}">Enter to win</button>
   <p class="more"><a id="fulllink" href="/lead-engine">See the full giveaway page</a></p>
 </div></div>
 
 <div class="band foot"><div class="in">
-  NO PURCHASE NECESSARY. Open to owners or authorized officers of roofing companies operating in the United States, 18+. Void where prohibited. All winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. No prize is awarded before then. One (1) grand prize: the 2URN Growth Partner program free for 90 days (ARV $10,000). The winner funds their own advertising spend. An eligible entrant in a different market who referred the grand prize winner, through their referral link or through the referral form on the thank-you page before the winner entered, also receives the grand prize. Second prize is awarded to multiple entrants. Each second-prize winner who claims receives (the Second-Place Stack): a Competitor Analysis (ARV $1,500), a written report on the winner's current competitors, delivered within 7 days of booking the claim call whether or not the winner signs; and, included with the discounted Growth Partner engagement and delivered in its first month, a One-Month Content Package (ARV $2,500: a 45-minute interview with Camron, five (5) ad scripts and five (5) content scripts in the winner's words, a shot list, and editing of the winner's phone-shot footage into ten (10) finished pieces) and five (5) scripted advertising campaigns (ARV $1,250: each with ten (10) hooks and a full video script), and, for winners without a company website, a website buildout; plus 50% off the first 90 days of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then the standard $3,000 per month, with a revenue ROI guarantee: if the winner does these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, Sponsor continues working at no charge until it has. The second-prize winner funds their own advertising spend, $100 to $1,000 per day; the guarantee applies at $200 per day or more. Third prize, awarded to multiple entrants: a marketing audit and a website buildout at no build fee; the winner pays hosting and maintenance of $189 per month. Second and third prizes must be claimed within 72 hours of notification by booking a call, have no cash value and are non-transferable. Entries close <span id="foot-date">Dec 5, 2026 at 7:00 PM CT</span>. See <a href="/rules">Official Rules</a> for eligibility, alternate method of entry, judging criteria and prize details. Sponsor: 2URN Marketing. · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a>
+  NO PURCHASE NECESSARY. Open to owners or authorized officers of roofing companies operating in the United States, 18+. Void where prohibited. All winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. No prize is awarded before then. One (1) grand prize: the 2URN Growth Partner program free for 90 days (ARV $10,000). The winner funds their own advertising spend. An eligible entrant in a different market who referred the grand prize winner, through their referral link or through the referral form on the thank-you page before the winner entered, also receives the grand prize. Three (3) second prizes. Each second-prize winner who claims receives (the Second-Place Stack): a Competitor Analysis (ARV $1,500), a written report on the winner's current competitors, delivered within 7 days of booking the claim call whether or not the winner signs; and, included with the discounted Growth Partner engagement and delivered in its first month, a One-Month Content Package (ARV $2,500: a 45-minute interview with Camron, five (5) ad scripts and five (5) content scripts in the winner's words, a shot list, and editing of the winner's phone-shot footage into ten (10) finished pieces) and five (5) scripted advertising campaigns (ARV $1,250: each with ten (10) hooks and a full video script), and, for winners without a company website, a website buildout; plus 50% off the first 90 days of Growth Partner ($1,500 per month instead of $3,000, a $4,500 saving), then the standard $3,000 per month, with a revenue ROI guarantee: if the winner does these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, Sponsor continues working at no charge until it has. The second-prize winner funds their own advertising spend, $100 to $1,000 per day; the guarantee applies at $200 per day or more. Five (5) third prizes: a marketing audit and a website buildout at no build fee; the winner pays hosting and maintenance of $189 per month. Second and third prizes must be claimed within 72 hours of notification by booking a call, have no cash value and are non-transferable. Entries close <span id="foot-date">Dec 5, 2026 at 7:00 PM CT</span>. See <a href="/rules">Official Rules</a> for eligibility, alternate method of entry, judging criteria and prize details. Sponsor: 2URN Marketing. &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></div>
 
 </div>
 
 <script>
+/* Same frame fix for browsers without :has(): walk up from the page root and zero the GoHighLevel section, row and column padding. */
+(function(){try{var e=document.querySelector('.gw');while(e&&e!==document.body){if(/(^|\s)c-(section|row|column)(\s|$)/.test(String(e.className||''))){e.style.setProperty('padding','0','important');e.style.setProperty('margin','0','important');}e=e.parentElement;}}catch(x){}})();
 /* Link-parameter cleaners. Plain functions so they can be tested on their own. */
 function cleanRef(s){
   var r = String(s == null ? '' : s).toUpperCase().replace(/[^A-Z0-9]/g, '');
@@ -317,6 +344,7 @@ window.gwScroll = function(id, blk){
   var C = window.GHL_CONFIG;
   /* ----- dates ----- */
   var announce = new Date(C.announcementAt);
+  if (isNaN(announce.getTime())) announce = new Date('2026-12-05T19:00:00-06:00');
   var fmtDate = announce.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
   var fmtTime = announce.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZoneName:'short'});
   ['bar-date','close-date'].forEach(function(id){var el=document.getElementById(id); if(el) el.textContent=fmtDate;});
@@ -353,7 +381,7 @@ window.gwScroll = function(id, blk){
   try {
     var p = new URLSearchParams(location.search);
     var pieces=[p.get('utm_campaign'),p.get('utm_adset'),p.get('utm_content'),p.get('ad')].filter(Boolean);
-    if (pieces.length) ad = pieces.join(' · ');
+    if (pieces.length) ad = pieces.join(' \u00b7 ');
     ref = cleanRef(p.get('ref'));
     fromName = cleanName(p.get('from'));
     fromCo = fromName ? cleanCo(p.get('co')) : '';
@@ -389,7 +417,7 @@ window.gwScroll = function(id, blk){
         ws.classList.add('nom');
       }
       var formh = document.getElementById('formh'); if (formh) formh.textContent = 'Accept your nomination';
-      var mb = document.getElementById('mctab'); if (mb) mb.textContent = 'Accept your nomination · 30 seconds';
+      var mb = document.getElementById('mctab'); if (mb) mb.textContent = 'Accept \u00b7 30 seconds';
       var rw = document.getElementById('refwin'); if (rw) rw.textContent = 'The person who referred you wins it too.';
       var fb = document.getElementById('finalb'); if (fb) fb.textContent = 'Accept your nomination';
       var fh = document.getElementById('finalh');
@@ -414,14 +442,14 @@ window.gwScroll = function(id, blk){
     var linkName = [fromName, fromCo].filter(Boolean).join(', ');
     return [
       '=== GROWTH PARTNER GIVEAWAY ENTRY (REFERRAL PAGE) ===',
-      'Status: Entered. Book the 20-minute interview. Confirm on the call: on camera, daily ad budget (under $100, $100 to $199, or $200 or more), case studies, public case study, testimonial, team.',
+      'Status: Entered and sent to the booking page. If no interview is booked, call to book it. Confirm on the call: on camera, daily ad budget (under $100, $100 to $199, or $200 or more), case studies, public case study, testimonial, team.',
       'Submitted: '+new Date().toLocaleString('en-US'),
       'Ad: '+p.ad_attribution,
-      p.referred_by ? 'Referred by code: '+p.referred_by+(linkName ? ' · name from link (unverified): '+linkName : '') : 'Referred by: (none)',
+      p.referred_by ? 'Referred by code: '+p.referred_by+(linkName ? ' \u00b7 name from link (unverified): '+linkName : '') : 'Referred by: (none)',
       '',
       '--- Contact ---',
-      p.first_name+' '+p.last_name+' · '+p.company,
-      p.phone+' · '+p.email,
+      p.first_name+' '+p.last_name+' \u00b7 '+p.company,
+      p.phone+' \u00b7 '+p.email,
       '',
       '--- Self-reported (confirm on the call) ---',
       'Revenue, last 12 months: '+(LABEL.revenue_12mo[p.revenue_12mo]||p.revenue_12mo),
@@ -437,7 +465,8 @@ window.gwScroll = function(id, blk){
   try{ mq=window.matchMedia('(max-width:979px)'); }catch(e){}
   /* Narrow screens: step 1 asks for first name and mobile only, so the whole apply box fits on the first screen. Wide screens show all six fields. */
   function inStep1(){ return form.classList.contains('step1') && !!(mq && mq.matches); }
-  function syncBtn(){ if(btn.disabled) return; btn.textContent = inStep1() ? 'Start my application' : 'Enter to win'; }
+  var back=false;
+  function syncBtn(){ if(btn.disabled||back) return; btn.textContent = inStep1() ? 'Start my application' : 'Enter to win'; }
   syncBtn();
   try{ if(mq){ if(mq.addEventListener) mq.addEventListener('change',syncBtn); else if(mq.addListener) mq.addListener(syncBtn); } }catch(e){}
   form.addEventListener('submit', function(ev){
@@ -455,33 +484,48 @@ window.gwScroll = function(id, blk){
     var digits=p.phone.replace(/\D/g,'');
     var ok = p.first_name && p.last_name && p.company && p.revenue_12mo && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(p.email) && digits.length>=10;
     if(!ok){ err.classList.add('show'); return; }
-    err.classList.remove('show'); btn.disabled=true; btn.textContent='Entering…';
+    err.classList.remove('show'); btn.disabled=true; btn.textContent='Entering\u2026';
     p.referral_code = refCode(p.first_name,p.last_name,digits);
     /* a person cannot refer themself */
     if (p.referral_code === ref) p.referred_by = '';
     p.note = buildNote(p);
     p.lead_note = p.note;
+    p.phone_e164 = '+1'+digits.slice(-10);
+    p.revenue_label = LABEL.revenue_12mo[p.revenue_12mo] || p.revenue_12mo;
+    try { p.consent_text = (form.querySelector('.consent').textContent || '').replace(/\s+/g,' ').trim(); } catch(e){ p.consent_text = ''; }
+    p.page = location.origin + location.pathname;
+    p.submitted_at = new Date().toISOString();
+    p.source = 'growth-partner-giveaway';
 
     var jobs=[];
-    if (C.formId){
-      var fd=new FormData();
-      ['first_name','last_name','email','phone','company','revenue_12mo','ad_attribution','referred_by','referral_code','lead_source'].forEach(function(k){fd.append(k,p[k]||'')});
-      fd.append('lead_note',p.note); fd.append('formId',C.formId);
-      jobs.push(fetch('https://services.leadconnectorhq.com/forms/submit',{method:'POST',body:fd}).catch(function(){}));
-    }
     if (C.webhook){
-      jobs.push(fetch(C.webhook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)}).catch(function(){}));
+      jobs.push(fetch(C.webhook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p),keepalive:true}).catch(function(){}));
     }
-    try { sessionStorage.setItem('gw_entry', JSON.stringify({first:p.first_name, code:p.referral_code, company:p.company})); } catch(e){}
+    try { sessionStorage.setItem('gw_entry', JSON.stringify({first:p.first_name, last:p.last_name, email:p.email, phone:p.phone_e164, company:p.company, code:p.referral_code})); } catch(e){}
     try { if (window.fbq) fbq('track','Lead',{content_name:'Growth Partner Giveaway'}); } catch(e){}
 
-    var go=function(){ location.href = C.thankYouPath + '?c=' + encodeURIComponent(p.referral_code); };
+    /* Booking page address: the code plus the ad parameters this page was opened with, nothing else. */
+    var go=function(){
+      var qs = 'c=' + encodeURIComponent(p.referral_code);
+      try { new URLSearchParams(location.search).forEach(function(v,k){ if (/^utm_/i.test(k) || k==='fbclid' || k==='ad') qs += '&' + encodeURIComponent(k) + '=' + encodeURIComponent(v); }); } catch(e){}
+      location.href = (C.bookPath || '/interview') + '?' + qs;
+    };
     var t=setTimeout(go,2500);
     Promise.allSettled(jobs).finally(function(){ clearTimeout(t); go(); });
   });
-  /* Back from /thank-you restores this page from cache with the button still disabled. */
+  /* Back from /interview restores this page from cache with the button still disabled. */
   window.addEventListener('pageshow', function(e){
-    if (e && e.persisted && announce > new Date()) { btn.disabled = false; syncBtn(); }
+    if (e && e.persisted && announce > new Date()) {
+      btn.disabled = false; syncBtn();
+      /* Already entered: a second tap goes to the booking page, not a second entry. */
+      try {
+        var e2 = JSON.parse(sessionStorage.getItem('gw_entry') || 'null');
+        if (e2 && e2.code) {
+          back = true; btn.textContent = 'You\'re entered. Book your interview';
+          btn.onclick = function(ev){ ev.preventDefault(); location.href = (C.bookPath || '/interview') + '?c=' + encodeURIComponent(e2.code); };
+        }
+      } catch(x){}
+    }
   });
 })();
 </script>

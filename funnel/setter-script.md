@@ -1,7 +1,7 @@
 # Setter Script: Interview Calls, Results Calls and Nominee Calls
 
 The call has three jobs:
-- **(a) Before the announcement:** book the 20-minute Growth Partner Interview for every applicant, and run it if you are the interviewer.
+- **(a) Before the announcement:** book the 20-minute interview for every applicant who did not book it on the booking page, and run it if you are the interviewer. Applicants who booked themselves get no booking call.
 - **(b) After the announcement:** deliver the result (grand prize, second place or third place) and book the right call.
 - **(c) Call nominated roofers once.** A nominee is a roofer an entrant put forward on the thank-you page. See Part D.
 
@@ -11,9 +11,9 @@ The interview is an interview, not a sales call. Do not pitch on it.
 - **Grand prize:** picked by 2URN's panel on Dec 5 from interviewed applicants, against the published criteria. It is judged. People choose, not chance.
 - **Second place:** picked by 2URN's panel on Dec 5 from applicants who completed the interview, on the same published criteria.
 - **Third place:** a free audit and a website buildout, picked by 2URN's panel on Dec 5.
-- **Never promise anyone a prize.** Nobody wins before Dec 5. Never offer, hint at or hand out the Stack, the half-off price, the audit or the free website before the Dec 5 notification, to anyone, for any reason. They are prizes, and our panel awards them on Dec 5. Never say or hint that they will win. Never tell an applicant how many people win a tier. Say "second place" and "third place", not "everyone gets" or "multiple winners".
+- **Never promise anyone a prize.** Nobody wins before Dec 5. Never offer, hint at or hand out the Stack, the half-off price, the audit or the free website before the Dec 5 notification, to anyone, for any reason. They are prizes, and our panel awards them on Dec 5. Never say or hint that they will win. The counts are public: one grand prize, three second places, five third places. Still never say "everyone wins", "everybody gets", "all applicants" or that missing one place gets you another.
 
-**Everyone who enters gets the call.** There is no disqualification on the form. There is **no revenue minimum**. The form asks revenue to prepare the call, and it never disqualifies anyone. Qualification happens here, on the setter call and the interview.
+**Everyone who enters gets an interview.** Most book it themselves on the booking page right after the form. You call the ones who did not. There is no disqualification on the form. There is **no revenue minimum**. The form asks revenue to prepare the call, and it never disqualifies anyone. Qualification happens here, on the setter call and the interview.
 
 **Not a fit for Growth Partner means one of two things:** they will not be on camera, or they cannot fund $100 a day in ad spend. That is the whole definition. Low revenue alone is never a reason. When a contact is not a fit, they are out of the grand prize and second place, interview reminders stop, and they stay entered for third place. Do not set Do Not Disturb. Do not promise third place.
 
@@ -21,37 +21,42 @@ The interview is an interview, not a sales call. Do not pitch on it.
 
 **Interview cutoff:** an interview counts for the grand prize and second place only if it is held by the cutoff in the Official Rules (proposed Dec 5, 2026, 5:00 PM CT [CHECK: confirm cutoff with counsel]). An interview held after the cutoff does not count for either. Book every interview before it.
 
-Cadence: call within 2 business days of entry. Before the announcement: 3 attempts on day 1, 2 on day 2, 1 on day 3. After the announcement: second-place winners first, then third-place winners who have not booked: 3 attempts on day 1, 2 on day 2, 1 on day 3, all inside the 72-hour claim window. After the window the prize is gone. Any later call (weekly, up to 3 weeks) is about the standard program only and never mentions the prize as available.
+Cadence: your task appears 30 minutes after an entry that did not book, due within 1 hour (entries after 6 PM CT: 9 AM next day). Before the announcement: 3 attempts on day 1, 2 on day 2, 1 on day 3. After the announcement: second-place winners first, then third-place winners who have not booked: 3 attempts on day 1, 2 on day 2, 1 on day 3, all inside the 72-hour claim window. After the window the prize is gone. Any later call (weekly, up to 3 weeks) is about the standard program only and never mentions the prize as available.
 
 Texts: one SMS a day at most per contact, counting workflow texts and setter texts together. Text once, after the last unanswered call of the day, and only if no workflow SMS went to that contact that day. Entrants only, never nominees.
 
 Log outcome in the GHL opportunity stage: Entered / Attempted / Contacted / Interview Booked / Interviewed / Second Place Notified / Second Place Booked / Third Place Notified / Third Place Booked / Nominated / Not a Fit / Not Interested.
 
-Before dialing, read the lead note: company, self-reported revenue, referred-by. The form does not ask about camera, ad budget or team, so ask them on the call.
+Before dialing, read the lead note: company, self-reported revenue, referred-by. The form does not ask about camera, ad budget or team, so ask them on the call. Check the calendar first: if they booked since the task was made, close the task and do not call.
 
 ---
 
 ## Part A. Before the announcement: book the interview
 
 ### Open (10 seconds)
-> Hey {{first}}, it's [Name] with 2URN. You entered our Growth Partner giveaway. I'm calling every applicant to set up a 20-minute interview. Got a quick minute?
+> Hey {{first}}, it's [Name] with 2URN. You entered our Growth Partner giveaway, and I saw you didn't get to pick a time for your 20-minute interview. I can set it up right now. Got a quick minute?
+
+For a mail-in entry (task "Call to book interview: mail-in"), say instead:
+> Hey {{first}}, it's [Name] with 2URN. We got your mail-in entry for our Growth Partner giveaway. I'm calling to set up your 20-minute interview. Got a quick minute?
 
 If busy: "Totally get it. When's better, later today or tomorrow morning?" Book the callback. Don't pitch a busy person.
 
 ### Set expectations
 > Quick note on how this works. Nobody wins on this call. Our panel picks every winner on December fifth. The interview is how you get judged for the grand prize and second place. It's 20 minutes. It's not a sales call. We ask about your business and see if it fits.
 
-Do not say anything about how many prizes there are or what anyone's chances are.
+You may say how many prizes there are: one grand prize, three second places, five third places. Do not say anything about what anyone's chances are.
 
 ### Book
 > I've got [day] at [time] or [day] at [time]. Which one?
 
-Book on the Growth Partner Interview calendar while on the phone. Confirm number and email. Send the confirmation text before hanging up.
+Book on the Introduction Interview calendar while on the phone. Use the email and phone already on the contact so the booking attaches to it. Confirm number and email. The calendar emails the time. Send a confirmation text only if no other SMS went to them today.
 
 Book before the interview cutoff (see the header notes). If the only slot the applicant can take is after the cutoff, say this before you book:
 > That slot is after the judging cutoff, so the interview won't count for the grand prize or second place. Can we find an earlier time?
 
-If no earlier time works, book it and add "after cutoff" to the opportunity note.
+If no earlier time works, book it and add "after cutoff" to the opportunity note. The calendar shows no time after Dec 5, 4:40 PM CT. Do not book past it by hand.
+
+**Cancelled or no-show:** workflow D gives you a task "Interview cancelled: rebook" or "No-show: rebook". Same cadence, same open line, but say: "I saw your interview didn't happen. Want to grab a new time?"
 
 ---
 
@@ -120,7 +125,7 @@ Say it in beats. Stop after each one and let them answer.
 
 The guarantee is its four conditions and nothing else. Do not say "guaranteed results". Do not add to it or soften it. The one sentence that follows it is "The guarantee applies at two hundred dollars a day or more", which restates condition two.
 
-**Book the claim call now:** on the Growth Partner Interview calendar, while on the phone, inside the 72 hours. That booking is the claim, whether or not they already had their interview. It stops the reminders and starts the seven-day Competitor Analysis clock. Confirm number and email, send the confirmation text before hanging up, and update the stage.
+**Book the claim call now:** on the Introduction Interview calendar (the same one as the interview), while on the phone, inside the 72 hours. That booking is the claim, whether or not they already had their interview. It stops the reminders and starts the seven-day Competitor Analysis clock. Confirm number and email, send the confirmation text before hanging up, and update the stage.
 
 **If they say they can't be on camera or can't fund a hundred dollars a day:** do not use the Not a fit script, do not tag `not-a-fit`, and never tell a winner they might not be a fit. Say: "That's what the claim call is for. Booking it gets you the Competitor Analysis either way, and we'll go over the program on the call." Then book the claim call.
 
@@ -161,7 +166,7 @@ Never invent a term, a minimum, a cancellation rule, a timeline or who owns the 
 ### If they ask about the full program
 > The full program is three thousand a month with a 90-day minimum. Book your free audit call first so you don't lose your prize, and we can talk about the program on that call too, if you want.
 
-If they want to talk about the full program, do not book the Growth Partner Interview calendar (workflow D would treat it as a giveaway interview). Note it in the opportunity and create a task for Camron: "Standard Growth Partner call: third-place winner, no prize terms". Do not pitch the full program on a third-place call.
+If they want to talk about the full program, do not book the Introduction Interview calendar (workflow D would treat it as a giveaway interview). Note it in the opportunity and create a task for Camron: "Standard Growth Partner call: third-place winner, no prize terms". Do not pitch the full program on a third-place call.
 
 ---
 
@@ -185,7 +190,7 @@ The text is the **referrer's link**, with the referrer's code from `first_nomina
 
 `https://go.2urnmarketing.com/refer?ref=CODE`
 
-If they have questions: "It's for roofing company owners. Every applicant gets a 20-minute call, win or not. The entry page has the rules." Do not promise a prize.
+If they have questions: "It's for roofing company owners. Every applicant gets a 20-minute interview, win or not. You pick the time right after you enter. The entry page has the rules." Do not promise a prize.
 
 If they say no or ask not to be contacted: "No problem, you won't hear from us again." Tag `nominee-declined`. Never contact them again.
 
@@ -209,7 +214,7 @@ Workflow A notifies Camron. It cannot text the referrer. If you text the referre
 - **"Do I need to hit a revenue number?"** "No. There's no revenue minimum. We ask so we can prepare for the call."
 
 ## Close the call
-> You're booked for [day/time]. You'll get a text and an email with the link. One favor: if you know a roofer in another market that fits, your referral link's still live. If they win the grand prize, you win it too. Talk soon.
+> You're booked for [day/time]. You'll get an email with the time and the link. One favor: if you know a roofer in another market that fits, your referral link's still live. If they win the grand prize, you win it too. Talk soon.
 
 ## After the call
 Update stage. Paste one line in the note: result, who is on camera, ad budget band (under $100, $100 to $199, or $200 or more), case studies and testimonial yes/no, team, next step.
