@@ -88,10 +88,23 @@ body { background:#fff; }
 .only-noentry{display:none}
 .bk[data-state="noentry"] .only-entered,.bk[data-state="closed"] .only-entered,.bk[data-state="closed"] .only-noentry{display:none!important}
 .bk[data-state="noentry"] .only-noentry{display:block}
-.bk[data-state="noentry"] a.only-noentry{display:inline-flex;margin-top:16px}
-.bk[data-state="noentry"] p.only-noentry{margin-top:10px}
-.bk[data-state="noentry"] .flow,.bk[data-state="closed"] .flow{display:none}
-.hero .fine{font-size:.85rem;color:var(--muted-2)}
+.bk[data-state="closed"] .flow{display:none}
+.hero .fine{font-size:.9rem;color:var(--muted-2)}
+/* gate states (no entry yet, or entries closed): one dark screen, centred, nothing white below it */
+.bk[data-state="noentry"],.bk[data-state="closed"]{background:var(--ink);display:flex;flex-direction:column}
+.bk[data-state="noentry"] .hero,.bk[data-state="closed"] .hero{flex:1 0 auto;display:flex;align-items:center;padding-block:36px 56px}
+.bk[data-state="noentry"] .hero .in,.bk[data-state="closed"] .hero .in{width:100%;max-width:680px;text-align:center}
+.bk[data-state="noentry"] .hero h1,.bk[data-state="closed"] .hero h1{font-size:clamp(1.9rem,8vw,3.6rem)}
+.bk[data-state="noentry"] .hero h1 em{display:inline-block;margin-top:.12em}
+@media(min-width:375px){.bk[data-state="noentry"] .hero h1 em{white-space:nowrap}}
+.bk[data-state="noentry"] .hero .sub,.bk[data-state="closed"] .hero .sub{font-size:1.05rem;line-height:1.5;margin:16px auto 0;max-width:46ch}
+.bk[data-state="noentry"] .flow{max-width:420px;margin:0 auto 28px}
+.bk[data-state="noentry"] a.only-noentry{display:flex;max-width:420px;margin:28px auto 0}
+.bk[data-state="noentry"] p.only-noentry{margin-top:16px}
+.bk[data-state="noentry"] .foot,.bk[data-state="closed"] .foot{background:var(--ink);color:var(--muted-2);border-top:1px solid rgba(255,255,255,.1);padding-block:20px 28px}
+.bk[data-state="noentry"] .foot .in,.bk[data-state="closed"] .foot .in{max-width:1160px}
+.bk[data-state="noentry"] .foot a,.bk[data-state="closed"] .foot a{color:#fff}
+.bk[data-state="noentry"] .foot a:focus-visible,.bk[data-state="closed"] .foot a:focus-visible{outline-color:#fff}
 
 .foot{font-size:12px;color:var(--muted);padding-block:22px 40px;background:var(--paper);line-height:1.55}
 .foot a{color:var(--ink);text-decoration:underline}
@@ -131,7 +144,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   <h1 id="bk-h1"><span id="bk-name">You&rsquo;re</span> entered. <em>Now pick a time.</em></h1>
   <p class="sub" id="bk-sub">This books your 20-minute interview. It is an interview, not a sales call. Our panel picks the grand prize and second place from the roofers we interview, on <span class="gw-long">December 5</span>.</p>
   <a class="btn red only-noentry" id="bk-apply" href="/lead-engine">Apply to win</a>
-  <p class="fine only-noentry">Already applied? Use the booking link in our text.</p>
+  <p class="fine only-noentry">Already applied? Open the booking link we texted you.</p>
 </div></div>
 
 <div class="band cal-band only-entered"><div class="in">
@@ -223,7 +236,15 @@ function gwCalendar(o){
 
     if(state==='noentry'){
       var h=$('bk-h1'); h.textContent='Apply first. '; var em=document.createElement('em'); em.textContent='It takes 30 seconds.'; h.appendChild(em);
-      $('bk-sub').textContent='This page books the 20-minute interview for roofing companies that entered the giveaway.';
+      $('bk-sub').textContent='Interviews are for roofing companies that entered the giveaway. Apply, then pick your time.';
+      /* step strip: nothing is done yet, step 1 is the current one */
+      try{
+        var li=document.querySelectorAll('#bk .flow li');
+        if(li.length>1){
+          li[0].className='now'; li[0].setAttribute('aria-current','step'); li[0].querySelector('span').textContent='1';
+          li[1].className=''; li[1].removeAttribute('aria-current');
+        }
+      }catch(x){}
     }
     if(state==='closed'){
       $('bk-h1').textContent='Entries are closed.';
