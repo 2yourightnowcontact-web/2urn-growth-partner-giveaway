@@ -34,9 +34,9 @@ GoHighLevel rejects the step paths `book` and `claim` ("This URL contains a rese
 
 The flow: a person applies on `/lead-engine` (or `/refer`), goes straight to `/interview?c=CODE` to pick a time, and when the booking completes the booking page sends them to `/thank-you?c=CODE&booked=1`, which sells the referral. A "not now" link on `/interview` goes to `/thank-you?c=CODE`, where a "Pick a time" card brings them back. No calendar redirect is set anywhere: the booking page moves the person on itself.
 
-The Rules page `/rules` (and `/privacy`, `/terms`) is not one of the six steps. The pages link to those paths. Add a Rules step with a text element (attorney-approved rules as plain text) when the rules are approved.
+The Rules page `/rules` is not one of the six steps, and the pages link to that path: add a Rules step with a text element (attorney-approved rules as plain text) when the rules are approved. Privacy and Terms link to the main website's own pages (`https://2urnmarketing.com/privacy` and `https://2urnmarketing.com/terms`), which exist today, so they need no step.
 
-**Domain.** [DECIDE: the funnel's domain. go.2urnmarketing.com is not connected to the sub-account yet] Until it is, nothing depends on it: every path in a page is origin-relative, and `GW_TY.landingUrl` and `GW_TY.referUrl` stay "" (the page then builds the links from the address it is on). This sheet and the messages keep `https://go.2urnmarketing.com` as the working domain.
+**Domain.** [DECIDE: the funnel's address. Camron chose 2urnmarketing.com on Nov 24, but that domain and its www serve the main website from Framer, so a GoHighLevel funnel cannot answer there. The funnel needs its own subdomain, go.2urnmarketing.com in this kit: one DNS record at the registrar, then connect it in the sub-account] Until it is, nothing depends on it: every path in a page is origin-relative, and `GW_TY.landingUrl` and `GW_TY.referUrl` stay "" (the page then builds the links from the address it is on). This sheet and the messages keep `https://go.2urnmarketing.com` as the working domain.
 
 **Paste method, every page.** In the step: Blank Section, +, Code, Open Code Editor, paste, Save, then the page's Save. Set the section padding to 0 and the width to full. One Custom Code element per page.
 - Run `python3 tools/check-pages.py` before every paste (it fails on any non-ASCII byte, unbalanced tags or a script error).
@@ -271,7 +271,7 @@ Our panel picks all three places from the scorecards and the entrant list. Keep 
 - Delete all test contacts before launch.
 
 ## 8. Before shooting the VSL
-The VSL script is now v6 (`VSL-script.md`), the two-minute cut. Shoot v6. Before it airs, have every item of "Proof to have in hand before this airs" in `VSL-script.md` on file (four client results, each with its report and written OK). Replace the video placeholder (the `#video` div) with the GHL video embed in BOTH `01-giveaway-ghl.html` and `04-referral-ghl.html`. The video sits at the top of both pages, directly under the headline.
+The VSL script is now v7 (`VSL-script.md`), the full VSL: about nine and a half minutes, fifteen beats, with a two-minute cut and the ad cuts marked by line number. Shoot v7 (`python3 tools/vsl-count.py` recounts the words and times after any edit). Before it airs, have every item of "Proof to have in hand before this airs" in `VSL-script.md` on file (four client results, each with its report and written OK). Replace the video placeholder (the `#video` div) with the GHL video embed in BOTH `01-giveaway-ghl.html` and `04-referral-ghl.html`. The video sits at the top of both pages, directly under the headline.
 
 ## 9. Open decisions before launch
 These are the [DECIDE] items from the spec that touch the build. Leave the markers in place until Camron answers.
@@ -281,6 +281,6 @@ These are the [DECIDE] items from the spec that touch the build. Leave the marke
 - **Who runs the audit call**, and confirm the audit scope (website, Google Business Profile, ads and follow-up, with what to fix first). Needed for the "Free Audit + Website Call" calendar and the audit-prep task.
 - **Hosting terms:** hosting minimum term, cancellation, site and domain ownership, build timeline and ARV for the website. Customer pages say only "Hosting and maintenance terms are in your agreement."
 - **Website Buildout for second place:** ARV, timeline, and whether hosting is included during the engagement or billed at $189/month.
-- **Domain.** [DECIDE: the funnel's domain. go.2urnmarketing.com is not connected to the sub-account yet] The pages do not depend on it (section 1).
+- **Domain.** [DECIDE: the funnel's address. Camron chose 2urnmarketing.com on Nov 24, but that domain and its www serve the main website from Framer, so a GoHighLevel funnel cannot answer there. The funnel needs its own subdomain, go.2urnmarketing.com in this kit: one DNS record at the registrar, then connect it in the sub-account] The pages do not depend on it (section 1).
 - **Launch date.** [DECIDE: launch date. A launch on Nov 26 gives a 10-day run; keep Dec 5 with a shorter test or move the announcement.] The pinned sends in workflow A step 8b stay on Dec 4 and Dec 5.
 - **Signing deadline for second place.** [CHECK: signing deadline] for the engagement agreement that releases the Content Package, the five scripted campaigns and the website (workflow B step 5).
