@@ -4,6 +4,36 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap">
 <script>
+  /* ===== PREVIEW ROUTER (the same block on all six pages) =====
+     The funnel's own paths (/lead-engine, /interview, /thank-you, /refer, /claim-second, /claim-third) exist only once the
+     funnel is published on a domain. On a GoHighLevel preview link (/preview/PAGE_ID) they do not exist, so every hand-off
+     between pages would land on a missing page. map holds "path=previewPageId" pairs, comma separated; make-live.py writes
+     it from live-config.json. Leave "" here. On a published domain this block changes nothing. */
+  window.GW_PREVIEW = {
+    map: ""
+  };
+  window.gwPath = function(u){
+    try{
+      if(!/^\/preview\/[A-Za-z0-9_-]+\/?$/.test(location.pathname)) return u;
+      var s=String(u), abs=/^https?:\/\//i.test(s), x=new URL(s, location.href);
+      if(x.origin!==location.origin) return u;
+      var want=x.pathname.replace(/\/+$/,'')||'/', pairs=String((window.GW_PREVIEW||{}).map||'').split(','), i, kv;
+      for(i=0;i<pairs.length;i++){ kv=pairs[i].split('='); if(kv.length===2 && kv[0]===want && kv[1]) return (abs?x.origin:'')+'/preview/'+kv[1]+x.search+x.hash; }
+    }catch(e){}
+    return u;
+  };
+  /* Every link on the page, whether written in the markup or set by script, is mapped once the page has loaded, and again
+     the moment it is touched (tap, long-press, middle-click, keyboard focus), so "open in new tab" gets the right address too. */
+  (function(){
+    function fix(a){ try{ var h=a.getAttribute('href'), n=window.gwPath(h); if(n!==h) a.setAttribute('href',n); }catch(e){} }
+    function onEv(ev){ try{ var a=ev.target&&ev.target.closest?ev.target.closest('a[href]'):null; if(a) fix(a); }catch(e){} }
+    function all(){ try{ Array.prototype.forEach.call(document.querySelectorAll('a[href]'),fix); }catch(e){} }
+    ['click','auxclick','contextmenu','mousedown','touchstart','focusin'].forEach(function(t){
+      try{ document.addEventListener(t,onEv,{capture:true,passive:true}); }catch(e){ document.addEventListener(t,onEv,true); }
+    });
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',all); else all();
+    window.addEventListener('pageshow',all);
+  })();
   window.GW_TY = {
     /* Public URL of the giveaway landing page (01-giveaway-ghl.html). "" = this site: the page builds its own origin plus /lead-engine. */
     landingUrl: "",
@@ -218,17 +248,18 @@ function buildReferLink(base, code, first, company){
   var $=function(id){return document.getElementById(id)};
   var origin=''; try{ origin=location.origin||''; }catch(err){}
   var bookPath=C.bookPath||'/interview';
-  var landing=C.landingUrl||(origin+'/lead-engine');
+  var landing=C.landingUrl||window.gwPath(origin+'/lead-engine');
   /* A code is valid only if it matches /^[A-Z0-9]{4,12}$/ after uppercasing and stripping, the same rule 04 applies to ref. */
   var okCode=function(s){ s=String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,''); return /^[A-Z0-9]{4,12}$/.test(s)?s:''; };
   var booked=false;
   try{ var p=new URLSearchParams(location.search); code=okCode(p.get('c')); booked=p.get('booked')==='1'; }catch(err){}
-  try{ if(booked) sessionStorage.setItem('gw_booked','1'); else booked=sessionStorage.getItem('gw_booked')==='1'; }catch(err){}
   try{
     var e=JSON.parse(sessionStorage.getItem('gw_entry')||'{}')||{};
     first=String(e.first||'').slice(0,24); company=String(e.company||'');
     if(!code) code=okCode(e.code);
   }catch(err){}
+  /* The booked flag holds the code of the entrant who booked, so another entrant in the same tab does not inherit it. */
+  try{ if(booked) sessionStorage.setItem('gw_booked',code||'1'); else booked=sessionStorage.getItem('gw_booked')===(code||'1'); }catch(err){}
   var closed=false; try{ var ad=new Date(C.announcementAt); closed=!isNaN(ad.getTime()) && ad<=new Date(); }catch(err){}
   var show=function(id,on){ var el=$(id); if(el) el.style.display=on?'':'none'; };
 
@@ -274,7 +305,7 @@ function buildReferLink(base, code, first, company){
       show('ty-noref',true);
     } else {
       $('code').textContent=code;
-      var link=buildReferLink(C.referUrl||(origin+'/refer'), code, first, company);
+      var link=buildReferLink(C.referUrl||window.gwPath(origin+'/refer'), code, first, company);
       var inp=$('link'); inp.value=link;
       var msg='I entered the 2URN Growth Partner Giveaway for roofing companies and nominated you. One company gets 90 days of marketing free. If you win the grand prize, I win it too: '+link;
       $('sms').href='sms:?&body='+encodeURIComponent(msg);
@@ -306,7 +337,7 @@ function buildReferLink(base, code, first, company){
   /* ----- nominate a roofer ----- */
   var CAP=5, made=0;
   try{ made=parseInt(sessionStorage.getItem('gw_nom_count')||'0',10)||0; }catch(err){}
-  var nf=$('nom-form'), nerr=$('nom-err'), nbtn=$('nom-btn'), nok=$('nom-ok'), nmsg=$('nom-msg'), nagain=$('nom-again');
+  var nf=$('nom-form'), nerr=$('nom-err'), nbtn=$('nom-btn'), nok=$('nom-ok'), nmsg=$('nom-msg'), nagain=$('nom-again'), NERR_VALID=nerr.textContent;
   var nv=function(id){return ($(id).value||'').trim()};
   function showCap(){ nmsg.textContent='That is five nominations for this visit. Thank you.'; nagain.style.display='none'; nf.style.display='none'; nok.classList.add('show'); }
   function nomNote(n){
@@ -325,8 +356,8 @@ function buildReferLink(base, code, first, company){
     if(made>=CAP){ showCap(); return; }
     var n={ first_name:nv('n-first'), last_name:nv('n-last'), company:nv('n-company'), phone:nv('n-phone'), nominee_market:nv('n-market'),
       nominated_by_code:code, nominated_by_name:(first&&company)?(first+' \u00b7 '+company):(first||company), lead_source:'Giveaway Nomination' };
-    var digits=n.phone.replace(/\D/g,'');
-    if(!(n.first_name&&n.company&&digits.length>=10&&$('n-ok').checked)){ nerr.classList.add('show'); return; }
+    var digits=n.phone.replace(/\D/g,''); if(digits.length===11&&digits.charAt(0)==='1') digits=digits.slice(1);
+    if(!(n.first_name&&n.company&&digits.length===10&&$('n-ok').checked)){ nerr.textContent=NERR_VALID; nerr.classList.add('show'); return; }
     nerr.classList.remove('show'); nbtn.disabled=true; nbtn.textContent='Sending\u2026';
     n.phone_e164='+1'+digits.slice(-10);
     n.lead_note=nomNote(n);
@@ -334,7 +365,7 @@ function buildReferLink(base, code, first, company){
     if(C.nominateWebhook){
       var body={}; Object.keys(n).forEach(function(k){ body[k]=n[k]; });
       body.page=origin+location.pathname; body.submitted_at=new Date().toISOString(); body.source='growth-partner-giveaway-nomination';
-      jobs.push(fetch(C.nominateWebhook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),keepalive:true}).catch(function(){}));
+      jobs.push(fetch(C.nominateWebhook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),keepalive:true}).then(function(r){ if(!r.ok) throw new Error('http '+r.status); }));
     }
     var finished=false;
     var finish=function(){
@@ -346,8 +377,13 @@ function buildReferLink(base, code, first, company){
       nf.style.display='none'; nok.classList.add('show'); nbtn.disabled=false; nbtn.textContent='Nominate';
       try{ nok.focus(); }catch(err){}
     };
+    var fail=function(){
+      if(finished) return; finished=true; clearTimeout(t);
+      nerr.textContent='That didn\u2019t send. Check your signal and tap Nominate again.';
+      nerr.classList.add('show'); nbtn.disabled=false; nbtn.textContent='Nominate';
+    };
     var t=setTimeout(finish,4000);
-    Promise.all(jobs).then(finish,finish);
+    Promise.all(jobs).then(finish,fail);
   });
   nagain.addEventListener('click',function(){
     nf.reset(); nerr.classList.remove('show'); nok.classList.remove('show'); nf.style.display='';

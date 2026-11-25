@@ -4,6 +4,36 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap">
 <script>
+  /* ===== PREVIEW ROUTER (the same block on all six pages) =====
+     The funnel's own paths (/lead-engine, /interview, /thank-you, /refer, /claim-second, /claim-third) exist only once the
+     funnel is published on a domain. On a GoHighLevel preview link (/preview/PAGE_ID) they do not exist, so every hand-off
+     between pages would land on a missing page. map holds "path=previewPageId" pairs, comma separated; make-live.py writes
+     it from live-config.json. Leave "" here. On a published domain this block changes nothing. */
+  window.GW_PREVIEW = {
+    map: ""
+  };
+  window.gwPath = function(u){
+    try{
+      if(!/^\/preview\/[A-Za-z0-9_-]+\/?$/.test(location.pathname)) return u;
+      var s=String(u), abs=/^https?:\/\//i.test(s), x=new URL(s, location.href);
+      if(x.origin!==location.origin) return u;
+      var want=x.pathname.replace(/\/+$/,'')||'/', pairs=String((window.GW_PREVIEW||{}).map||'').split(','), i, kv;
+      for(i=0;i<pairs.length;i++){ kv=pairs[i].split('='); if(kv.length===2 && kv[0]===want && kv[1]) return (abs?x.origin:'')+'/preview/'+kv[1]+x.search+x.hash; }
+    }catch(e){}
+    return u;
+  };
+  /* Every link on the page, whether written in the markup or set by script, is mapped once the page has loaded, and again
+     the moment it is touched (tap, long-press, middle-click, keyboard focus), so "open in new tab" gets the right address too. */
+  (function(){
+    function fix(a){ try{ var h=a.getAttribute('href'), n=window.gwPath(h); if(n!==h) a.setAttribute('href',n); }catch(e){} }
+    function onEv(ev){ try{ var a=ev.target&&ev.target.closest?ev.target.closest('a[href]'):null; if(a) fix(a); }catch(e){} }
+    function all(){ try{ Array.prototype.forEach.call(document.querySelectorAll('a[href]'),fix); }catch(e){} }
+    ['click','auxclick','contextmenu','mousedown','touchstart','focusin'].forEach(function(t){
+      try{ document.addEventListener(t,onEv,{capture:true,passive:true}); }catch(e){ document.addEventListener(t,onEv,true); }
+    });
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',all); else all();
+    window.addEventListener('pageshow',all);
+  })();
   /* =========== 2URN GIVEAWAY REFERRAL PAGE CONFIG: edit these, nothing else =========== */
   window.GHL_CONFIG = {
     /* Inbound Webhook URL of workflow A "Giveaway Entry" (GoHighLevel: Automation, the workflow's trigger). Leave "" for preview mode (sends nothing).
@@ -469,11 +499,20 @@ window.gwScroll = function(id, blk){
   function syncBtn(){ if(btn.disabled||back) return; btn.textContent = inStep1() ? 'Start my application' : 'Enter to win'; }
   syncBtn();
   try{ if(mq){ if(mq.addEventListener) mq.addEventListener('change',syncBtn); else if(mq.addListener) mq.addListener(syncBtn); } }catch(e){}
+  /* Enter on a field that is not the last visible one moves focus to the next field instead of submitting. */
+  form.addEventListener('keydown', function(ev){
+    if (ev.key !== 'Enter' || ev.isComposing) return;
+    var t = ev.target; if (!t || t.tagName !== 'INPUT') return;
+    var els = Array.prototype.filter.call(form.querySelectorAll('input,select'), function(el){ return el.offsetParent !== null && !el.disabled && el.type !== 'hidden'; });
+    els.sort(function(a,b){ return (parseInt(getComputedStyle(a.closest('label')||a).order,10)||0) - (parseInt(getComputedStyle(b.closest('label')||b).order,10)||0); });
+    var i = els.indexOf(t);
+    if (i > -1 && i < els.length - 1){ ev.preventDefault(); try{ els[i+1].focus(); }catch(e){} }
+  });
   form.addEventListener('submit', function(ev){
     ev.preventDefault();
     var v=function(id){return (document.getElementById(id).value||'').trim()};
     if (inStep1()){
-      if (!v('first') || v('phone').replace(/\D/g,'').length<10){ err.textContent='Add your first name and a mobile number with area code.'; err.classList.add('show'); return; }
+      if (!v('first') || !/^1?\d{10}$/.test(v('phone').replace(/\D/g,''))){ err.textContent='Add your first name and a mobile number with area code.'; err.classList.add('show'); return; }
       err.classList.remove('show'); err.textContent=ERR_FULL;
       form.classList.remove('step1'); syncBtn();
       try{ document.getElementById('last').focus(); }catch(e){}
@@ -481,8 +520,8 @@ window.gwScroll = function(id, blk){
     }
     err.textContent=ERR_FULL;
     var p={ first_name:v('first'), last_name:v('last'), company:v('company'), revenue_12mo:v('revenue'), email:v('email'), phone:v('phone'), ad_attribution:ad, referred_by:ref, lead_source:'Giveaway Referral Page' };
-    var digits=p.phone.replace(/\D/g,'');
-    var ok = p.first_name && p.last_name && p.company && p.revenue_12mo && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(p.email) && digits.length>=10;
+    var digits=p.phone.replace(/\D/g,''); if(digits.length===11&&digits.charAt(0)==='1') digits=digits.slice(1);
+    var ok = p.first_name && p.last_name && p.company && p.revenue_12mo && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(p.email) && digits.length===10;
     if(!ok){ err.classList.add('show'); return; }
     err.classList.remove('show'); btn.disabled=true; btn.textContent='Entering\u2026';
     p.referral_code = refCode(p.first_name,p.last_name,digits);
@@ -499,8 +538,14 @@ window.gwScroll = function(id, blk){
 
     var jobs=[];
     if (C.webhook){
-      jobs.push(fetch(C.webhook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p),keepalive:true}).catch(function(){}));
+      /* Park the entry first, send it, retry once, and clear the parked copy only on a 2xx. The booking page sends a parked entry again. */
+      var body=JSON.stringify(p);
+      var send=function(){ return fetch(C.webhook,{method:'POST',headers:{'Content-Type':'application/json'},body:body,keepalive:true}).then(function(r){ if(!r.ok) throw new Error('http '+r.status); }); };
+      try { sessionStorage.setItem('gw_pending', JSON.stringify({u:C.webhook,b:body})); } catch(e){}
+      jobs.push(send().catch(function(){ return new Promise(function(res){ setTimeout(res,700); }).then(send); }).then(function(){ try { sessionStorage.removeItem('gw_pending'); } catch(e){} }).catch(function(){}));
     }
+    /* A different entrant in this tab starts clean: the booked flags belong to the earlier entrant's code. */
+    try { var prev=JSON.parse(sessionStorage.getItem('gw_entry')||'null'); if(!prev || prev.code!==p.referral_code){ sessionStorage.removeItem('gw_booked'); sessionStorage.removeItem('gw_sch'); } } catch(e){}
     try { sessionStorage.setItem('gw_entry', JSON.stringify({first:p.first_name, last:p.last_name, email:p.email, phone:p.phone_e164, company:p.company, code:p.referral_code})); } catch(e){}
     try { if (window.fbq) fbq('track','Lead',{content_name:'Growth Partner Giveaway'}); } catch(e){}
 
@@ -508,9 +553,9 @@ window.gwScroll = function(id, blk){
     var go=function(){
       var qs = 'c=' + encodeURIComponent(p.referral_code);
       try { new URLSearchParams(location.search).forEach(function(v,k){ if (/^utm_/i.test(k) || k==='fbclid' || k==='ad') qs += '&' + encodeURIComponent(k) + '=' + encodeURIComponent(v); }); } catch(e){}
-      location.href = (C.bookPath || '/interview') + '?' + qs;
+      location.href = window.gwPath((C.bookPath || '/interview') + '?' + qs);
     };
-    var t=setTimeout(go,2500);
+    var t=setTimeout(go,5000);
     Promise.allSettled(jobs).finally(function(){ clearTimeout(t); go(); });
   });
   /* Back from /interview restores this page from cache with the button still disabled. */
@@ -522,7 +567,7 @@ window.gwScroll = function(id, blk){
         var e2 = JSON.parse(sessionStorage.getItem('gw_entry') || 'null');
         if (e2 && e2.code) {
           back = true; btn.textContent = 'You\'re entered. Book your interview';
-          btn.onclick = function(ev){ ev.preventDefault(); location.href = (C.bookPath || '/interview') + '?c=' + encodeURIComponent(e2.code); };
+          btn.onclick = function(ev){ ev.preventDefault(); location.href = window.gwPath((C.bookPath || '/interview') + '?c=' + encodeURIComponent(e2.code)); };
         }
       } catch(x){}
     }

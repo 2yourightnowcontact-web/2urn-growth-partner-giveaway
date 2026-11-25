@@ -3,6 +3,36 @@
 <title>Claim your third-place prize</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap">
 <script>
+  /* ===== PREVIEW ROUTER (the same block on all six pages) =====
+     The funnel's own paths (/lead-engine, /interview, /thank-you, /refer, /claim-second, /claim-third) exist only once the
+     funnel is published on a domain. On a GoHighLevel preview link (/preview/PAGE_ID) they do not exist, so every hand-off
+     between pages would land on a missing page. map holds "path=previewPageId" pairs, comma separated; make-live.py writes
+     it from live-config.json. Leave "" here. On a published domain this block changes nothing. */
+  window.GW_PREVIEW = {
+    map: ""
+  };
+  window.gwPath = function(u){
+    try{
+      if(!/^\/preview\/[A-Za-z0-9_-]+\/?$/.test(location.pathname)) return u;
+      var s=String(u), abs=/^https?:\/\//i.test(s), x=new URL(s, location.href);
+      if(x.origin!==location.origin) return u;
+      var want=x.pathname.replace(/\/+$/,'')||'/', pairs=String((window.GW_PREVIEW||{}).map||'').split(','), i, kv;
+      for(i=0;i<pairs.length;i++){ kv=pairs[i].split('='); if(kv.length===2 && kv[0]===want && kv[1]) return (abs?x.origin:'')+'/preview/'+kv[1]+x.search+x.hash; }
+    }catch(e){}
+    return u;
+  };
+  /* Every link on the page, whether written in the markup or set by script, is mapped once the page has loaded, and again
+     the moment it is touched (tap, long-press, middle-click, keyboard focus), so "open in new tab" gets the right address too. */
+  (function(){
+    function fix(a){ try{ var h=a.getAttribute('href'), n=window.gwPath(h); if(n!==h) a.setAttribute('href',n); }catch(e){} }
+    function onEv(ev){ try{ var a=ev.target&&ev.target.closest?ev.target.closest('a[href]'):null; if(a) fix(a); }catch(e){} }
+    function all(){ try{ Array.prototype.forEach.call(document.querySelectorAll('a[href]'),fix); }catch(e){} }
+    ['click','auxclick','contextmenu','mousedown','touchstart','focusin'].forEach(function(t){
+      try{ document.addEventListener(t,onEv,{capture:true,passive:true}); }catch(e){ document.addEventListener(t,onEv,true); }
+    });
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',all); else all();
+    window.addEventListener('pageshow',all);
+  })();
   window.GW_CLAIM3 = {
     /* GHL booking widget link for the 20-minute "Free Audit + Website Call". Calendars > the calendar > Share > widget link. Leave "" for preview mode (shows a plain placeholder). */
     bookingUrl: ""

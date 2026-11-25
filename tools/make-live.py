@@ -9,6 +9,9 @@ git-ignored live-config.json at the repo root (copy tools/live-config.example.js
   interview_calendar   widget booking link of the Introduction Interview calendar -> page 06 (GW_BOOK.bookingUrl)
   claim_calendar       booking link for second-place claim calls                  -> page 03 (GW_CLAIM.bookingUrl)
   third_place_calendar booking link for third-place claim calls                   -> page 05 (GW_CLAIM3.bookingUrl)
+  preview_pages        "path=previewPageId" pairs, comma separated, one per funnel step  -> every page (GW_PREVIEW.map)
+                       e.g. "/lead-engine=ID,/interview=ID,/thank-you=ID,/refer=ID,/claim-second=ID,/claim-third=ID".
+                       It makes the hand-offs between pages work on GoHighLevel preview links, before the funnel has a domain.
 
 claim_calendar may be left "": the kit uses ONE calendar for interviews and second-place claims, so an empty claim_calendar
 uses interview_calendar. third_place_calendar is the separate Free Audit + Website Call calendar and has no fallback.
@@ -36,8 +39,10 @@ TARGETS = [
     ('04-referral-ghl.html', 'GHL_CONFIG', 'webhook', 'webhook'),
     ('03-claim-ghl.html', 'GW_CLAIM', 'bookingUrl', 'claim_calendar'),
     ('05-claim-third-ghl.html', 'GW_CLAIM3', 'bookingUrl', 'third_place_calendar'),
-]
-KEYS = ['webhook', 'nominate_webhook', 'interview_calendar', 'claim_calendar', 'third_place_calendar']
+] + [(name, 'GW_PREVIEW', 'map', 'preview_pages') for name in (
+    '01-giveaway-ghl.html', '02-thankyou-ghl.html', '03-claim-ghl.html',
+    '04-referral-ghl.html', '05-claim-third-ghl.html', '06-book-ghl.html')]
+KEYS = ['webhook', 'nominate_webhook', 'interview_calendar', 'claim_calendar', 'third_place_calendar', 'preview_pages']
 FALLBACK = {'claim_calendar': 'interview_calendar'}
 
 
@@ -120,20 +125,24 @@ def main(argv):
     for k in ('interview_calendar', 'claim_calendar', 'third_place_calendar'):
         if val[k] and not (val[k].startswith('https://') and '/widget/booking/' in val[k]):
             fail(f'config key {k} must be an https:// widget link containing /widget/booking/ (value not shown)')
+    if val['preview_pages'] and not re.fullmatch(r'(/[a-z0-9-]+=[A-Za-z0-9_-]+)(,/[a-z0-9-]+=[A-Za-z0-9_-]+)*', val['preview_pages']):
+        fail('config key preview_pages must look like "/path=ID,/path=ID" (value not shown)')
     os.makedirs(out, exist_ok=True)
-    sizes = {}
-    for name, obj, key, ck in TARGETS:
-        path = os.path.join(src, name)
-        if not os.path.isfile(path):
-            fail(f'{name} is missing from {src}')
-        with open(path, encoding='utf-8') as fh:
-            page = fh.read()
-        page = set_config_value(page, obj, key, val[ck], name)
+    sizes, pages = {}, {}
+    for name, obj, key, ck in TARGETS:        # a page can take more than one value: each one is written into the same copy
+        if name not in pages:
+            path = os.path.join(src, name)
+            if not os.path.isfile(path):
+                fail(f'{name} is missing from {src}')
+            with open(path, encoding='utf-8') as fh:
+                pages[name] = fh.read()
+        pages[name] = set_config_value(pages[name], obj, key, val[ck], name)
+    for name, page in pages.items():
         with open(os.path.join(out, name), 'w', encoding='utf-8', newline='') as fh:
             fh.write(page)
         sizes[name] = len(page.encode('utf-8'))
     # report: per file, size and what is still empty (names only, never values)
-    print(f'wrote {len(TARGETS)} pages to {out}')
+    print(f'wrote {len(pages)} pages to {out}')
     for name, obj, key, ck in TARGETS:
         note = f'still empty: {ck}' if not val[ck] else 'values set'
         print(f'  {name}: {sizes[name]} bytes, {obj}.{key} <- {ck}: {note}')
