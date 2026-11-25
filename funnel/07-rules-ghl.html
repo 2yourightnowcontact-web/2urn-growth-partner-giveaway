@@ -1,0 +1,322 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Official Rules</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap">
+<script>
+  /* ===== PREVIEW ROUTER (the same block on all six pages) =====
+     The funnel's own paths (/lead-engine, /interview, /entered, /refer, /claim-second, /claim-third) exist only once the
+     funnel is published on a domain. On a GoHighLevel preview link (/preview/PAGE_ID) they do not exist, so every hand-off
+     between pages would land on a missing page. map holds "path=previewPageId" pairs, comma separated; make-live.py writes
+     it from live-config.json. Leave "" here. On a published domain this block changes nothing. */
+  window.GW_PREVIEW = {
+    map: ""
+  };
+  window.gwPath = function(u){
+    try{
+      if(!/^\/preview\/[A-Za-z0-9_-]+\/?$/.test(location.pathname)) return u;
+      var s=String(u), abs=/^https?:\/\//i.test(s), x=new URL(s, location.href);
+      if(x.origin!==location.origin) return u;
+      var want=x.pathname.replace(/\/+$/,'')||'/', pairs=String((window.GW_PREVIEW||{}).map||'').split(','), i, kv;
+      for(i=0;i<pairs.length;i++){ kv=pairs[i].split('='); if(kv.length===2 && kv[0]===want && kv[1]) return (abs?x.origin:'')+'/preview/'+kv[1]+x.search+x.hash; }
+    }catch(e){}
+    return u;
+  };
+  /* Every link on the page, whether written in the markup or set by script, is mapped once the page has loaded, and again
+     the moment it is touched (tap, long-press, middle-click, keyboard focus), so "open in new tab" gets the right address too. */
+  (function(){
+    function fix(a){ try{ var h=a.getAttribute('href'), n=window.gwPath(h); if(n!==h) a.setAttribute('href',n); }catch(e){} }
+    function onEv(ev){ try{ var a=ev.target&&ev.target.closest?ev.target.closest('a[href]'):null; if(a) fix(a); }catch(e){} }
+    function all(){ try{ Array.prototype.forEach.call(document.querySelectorAll('a[href]'),fix); }catch(e){} }
+    ['click','auxclick','contextmenu','mousedown','touchstart','focusin'].forEach(function(t){
+      try{ document.addEventListener(t,onEv,{capture:true,passive:true}); }catch(e){ document.addEventListener(t,onEv,true); }
+    });
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',all); else all();
+    window.addEventListener('pageshow',all);
+  })();
+</script>
+<style>
+/* GHL full-bleed escape */
+html, body { width:100% !important; max-width:100% !important; margin:0 !important; padding:0 !important; overflow-x:hidden; }
+body { background:#fff; }
+.band { position:relative; width:100vw; left:50%; right:50%; margin-left:-50vw !important; margin-right:-50vw !important; max-width:none !important; }
+
+:root{ --ink:#0B0B0C; --ink-2:#16161A; --paper:#FFFFFF; --paper-2:#F7F6F3; --paper-3:#EFEDE8; --muted:#6E6E75; --muted-2:#93939B;
+  --line:rgba(11,11,12,.11); --line-soft:rgba(11,11,12,.06); --red:#FF2D2D; --red-deep:#D91B1B; --green:#12A45C; --green-deep:#0B7A43; --r:16px; --pad:clamp(20px,5vw,56px);
+  --body:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif; }
+
+.rl *{box-sizing:border-box}
+.rl{font-family:var(--body);color:var(--ink);line-height:1.6;font-size:17px;background:var(--paper);letter-spacing:-.011em;-webkit-font-smoothing:antialiased}
+.rl h1,.rl h2,.rl h3{font-family:var(--body);font-weight:900;letter-spacing:-.04em;line-height:1.1;margin:0;text-wrap:balance}
+.rl p{margin:0}
+.rl [id]{scroll-margin-top:16px}
+.in{max-width:760px;margin:0 auto;padding-left:max(var(--pad),env(safe-area-inset-left,0px));padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
+
+/* top bar (part of the one dark band) */
+.bar{background:var(--ink);color:var(--muted-2);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.1)}
+.bar .in{display:flex;justify-content:space-between;align-items:center;gap:8px 16px;padding-block:14px;flex-wrap:wrap;max-width:1160px}
+.bar b{color:#fff}
+.bar .wm{font-size:16px;font-weight:500;letter-spacing:.06em;color:#fff}
+.bar .wm b{font-weight:900}
+
+
+/* hero */
+.hero{background:var(--ink);color:#fff;padding-block:30px 34px}
+.hero h1{font-size:clamp(2.1rem,10vw,3.2rem);line-height:1.04}
+.hero .sub{color:#C9C9CF;font-size:1.05rem;line-height:1.5;margin-top:12px;max-width:56ch}
+.hero .back{display:inline-flex;align-items:center;min-height:44px;margin-top:10px;color:#fff;font-weight:700;font-size:1rem;text-decoration:underline;text-underline-offset:3px}
+.hero a:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.rl a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* review panel (draft notice, comes out before publishing) */
+.rev{background:#FFF4C2;border:2px solid #D9B300;border-radius:var(--r);padding:20px 18px 22px;margin-top:28px;color:var(--ink);overflow-wrap:anywhere}
+.rev h2{font-size:1.35rem;line-height:1.15}
+.rev .meta{font-size:.95rem;margin-top:8px;line-height:1.5}
+.rev h3{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;line-height:1.2;margin:22px 0 8px}
+.rev ul{margin:0;padding-left:20px}
+.rev li{font-size:.97rem;line-height:1.5;margin:0 0 9px;max-width:70ch}
+.rev li a{display:inline-block;margin-left:4px;padding:4px 2px;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+.rev .end{font-weight:700;margin-top:20px;font-size:1rem;line-height:1.5}
+
+/* inline open markers */
+.mk{background:#FFE36B;color:var(--ink);font-weight:700;font-size:.88em;line-height:1.5;letter-spacing:0;padding:.08em .32em;border-radius:5px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.mk:target{outline:3px solid var(--ink);outline-offset:1px}
+
+/* contents */
+.toc{margin-top:32px}
+.toc h2{font-size:1.1rem;letter-spacing:-.02em}
+.toc ol{margin:10px 0 0;padding-left:26px}
+.toc li{margin:0}
+.toc a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+/* the rules */
+.notice{border:2px solid var(--ink);border-radius:var(--r);padding:16px 18px;margin-top:32px;font-weight:700;font-size:.95rem;line-height:1.5}
+.sec{margin-top:40px;padding-top:24px;border-top:2px solid var(--ink)}
+.sec h2{font-size:clamp(1.4rem,5.6vw,1.8rem);margin-bottom:16px}
+.sec h2 .num{color:var(--muted)}
+.sec p,.sec li{max-width:70ch;overflow-wrap:anywhere}
+.sec p+p{margin-top:14px}
+.sec ol{margin:14px 0 0;padding-left:24px}
+.sec ol+p{margin-top:14px}
+.sec li{margin-top:12px}
+.sec li:first-child{margin-top:0}
+.tw{margin:16px 0;overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.97rem;line-height:1.5}
+.tbl th,.tbl td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.tbl th{background:var(--paper-2);font-weight:800}
+.tbl .c1{width:38px}
+.tbl .c3{width:66px}
+.tail-pad{height:8px}
+
+.foot{font-size:12px;color:var(--muted);padding-block:22px 40px;background:var(--paper);line-height:1.55}
+.foot a{color:var(--ink);text-decoration:underline}
+
+@media(max-width:520px){.bar .tail2{display:none}.bar{font-size:11px;letter-spacing:.08em}.bar .in{flex-wrap:nowrap;gap:10px;padding-block:12px}.bar .wm{font-size:15px;white-space:nowrap}.bar .in>span:last-child{white-space:nowrap}}
+@media(max-width:360px){.bar .wm{font-size:13px;letter-spacing:.03em}.bar{letter-spacing:.04em}.bar .in{gap:6px}}
+
+/* ===== shared iPhone layer (same on every funnel page) ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+:root{color-scheme:light}
+.rl{-webkit-tap-highlight-color:transparent}
+.rl :is(a,button){touch-action:manipulation}
+.mcta{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.rl h1{overflow-wrap:anywhere}
+.rl{min-height:100vh;min-height:100svh}
+@media(hover:none){.cta:hover,.btn:hover,.btn.red:hover{transform:none}}
+.cta:active,.btn:active,.mcta button:active{transform:scale(.99)}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* GoHighLevel wraps this code in a padded section, row and column (40px of white above the page). Remove that frame. */
+.c-section:has(.rl),.c-row:has(.rl),.c-column:has(.rl){padding:0!important;margin:0!important}
+</style>
+
+<div class="rl" id="rl">
+
+<div class="band bar"><div class="in">
+  <span class="wm"><b>2URN</b> MARKETING</span>
+  <span>Official Rules</span>
+</div></div>
+
+<div class="band hero"><div class="in">
+  <h1>Official Rules</h1>
+  <p class="sub">2URN Growth Partner Giveaway. No purchase necessary.</p>
+  <a class="back" href="/lead-engine">Back to the giveaway</a>
+</div></div>
+
+<div class="in">
+
+<div class="rev" id="rl-review">
+  <h2>DRAFT: attorney review required. Not published and not in effect.</h2>
+  <p class="meta">This is a working draft for counsel to mark up. It is not legal advice, and no entrant is bound by it. Do not publish it before counsel has reviewed it. Markers that say &ldquo;question (a)&rdquo; to &ldquo;(d)&rdquo; refer to the counsel questions listed in this panel (<a href="#rl-questions">see list</a>). Planned address: https://2urnagency.com/rules. Giveaway page: https://2urnagency.com/lead-engine. Every open item is highlighted in yellow in the rules below.</p>
+  <h3>You decide</h3>
+  <ul>
+<li>Section 5: whether the website buildout gets a dollar value (ARV). <a href="#mk-5-7">marker 1</a> <a href="#mk-5-9">marker 2</a> <a href="#mk-5-22">marker 3</a></li>
+<li>Section 5: the website build timeline, and whether hosting is included during the engagement or billed at $189 per month. <a href="#mk-5-8">Go to marker</a></li>
+<li>Section 5: whether the revenue ROI guarantee covers second-place clients who fund $100 to $199 a day, or only those who fund $200 a day or more. <a href="#mk-5-12">Go to marker</a></li>
+<li>Sections 5, 6 and 7: on what basis the panel picks the five third-place winners. <a href="#mk-5-17">marker 1</a> <a href="#mk-6-4">marker 2</a> <a href="#mk-7-2">marker 3</a></li>
+<li>Section 5: the third prize hosting term, cancellation, site and domain ownership, and build timeline. <a href="#mk-5-18">Go to marker</a></li>
+<li>Section 5: the third prize audit scope. <a href="#mk-5-19">Go to marker</a></li>
+<li>Section 5: the third prize ARV, which also sets the aggregate ARV. <a href="#mk-5-23">marker 1</a> <a href="#mk-5-24">marker 2</a> <a href="#mk-5-18">marker 3</a></li>
+<li>Section 7: whether a second prize not claimed in 72 hours passes to the next applicant on the ranked list, or lapses. <a href="#mk-7-7">Go to marker</a></li>
+<li>Section 7: whether an alternate is chosen when a third-prize winner does not claim. <a href="#mk-7-8">Go to marker</a></li>
+  </ul>
+  <h3>Fill in</h3>
+  <ul>
+<li>Section 1: the legal entity name and address of Sponsor. <a href="#mk-1-1">Go to marker</a></li>
+<li>Section 3: the promotion start date and time, in CT. <a href="#mk-3-1">Go to marker</a></li>
+<li>Section 4: the mailing address for mail-in entry cards. <a href="#mk-4-4">Go to marker</a></li>
+<li>Section 4: the date mail-in entries must be postmarked by. <a href="#mk-4-5">Go to marker</a></li>
+<li>Section 4: the date mail-in entries must be received by. <a href="#mk-4-6">Go to marker</a></li>
+<li>Section 7: the mailing address for winners-list requests. <a href="#mk-7-9">Go to marker</a></li>
+<li>Section 7: the date winners-list requests are due. <a href="#mk-7-10">Go to marker</a></li>
+<li>Section 10: the privacy policy URL (the footer of this page links Privacy to https://2urnmarketing.com/privacy, so confirm that is the one). <a href="#mk-10-1">Go to marker</a></li>
+<li>Section 5: confirm the bracketed 30 days the grand prize winner has to begin. <a href="#mk-5-3">Go to marker</a></li>
+<li>Section 6: confirm the bracketed 3 panel members. <a href="#mk-6-1">Go to marker</a></li>
+<li>Section 7: confirm the bracketed 5 days the grand prize winner has to respond. <a href="#mk-7-3">Go to marker</a></li>
+  </ul>
+  <h3>Attorney confirms</h3>
+  <ul>
+<li>Section 2: which states to exclude where business-to-business or skill-contest rules differ. <a href="#mk-2-1">Go to marker</a></li>
+<li>Section 3: the interview cutoff time for the grand and second prizes, and whether it is fair to late entrants. <a href="#mk-3-2">Go to marker</a></li>
+<li>Section 4: that showing the booking page between the entry form and the thank-you page does not make booking look like a condition of entry. <a href="#mk-4-2">Go to marker</a></li>
+<li>Section 4: that one manual call to a nominated company with no prior consent is permitted (TCPA, telemarketing and do-not-call rules), what the call must disclose, how a "no" is handled, and whether the referral bonus may extend to a nomination. <a href="#mk-4-3">Go to marker</a></li>
+<li>Section 4: that the mail-in method meets any free alternate method of entry requirement. <a href="#mk-4-7">Go to marker</a></li>
+<li>Section 5: the grand prize ARV, stated as $10,000 while 90 days at $3,000 a month is $9,000. <a href="#mk-5-1">Go to marker</a></li>
+<li>Section 5: that the winner's ad spend ($18,000 or more) is disclosed clearly enough for the prize to be called free and valued at $10,000. <a href="#mk-5-2">Go to marker</a></li>
+<li>Section 5: the definition of "different market" for the referral bonus. <a href="#mk-5-4">Go to marker</a></li>
+<li>Section 5: the $20,000 total ARV for the grand prize and referral bonus, and any registration or tax figures. <a href="#mk-5-5">marker 1</a> <a href="#mk-5-21">marker 2</a></li>
+<li>Section 5: who owns and may use the second-prize interview and finished pieces. <a href="#mk-5-6">Go to marker</a></li>
+<li>Section 5: that conditioning most of the second prize on a paid engagement is disclosed clearly enough, and whether it may be called free. <a href="#mk-5-10">Go to marker</a></li>
+<li>Section 5: the revenue ROI guarantee wording, disclosure, state advertising and warranty rules, and how "paid for itself" is measured. <a href="#mk-5-11">Go to marker</a></li>
+<li>Section 5: that a second prize from $100 per day, with a guarantee that needs $200 per day, is disclosed clearly enough. <a href="#mk-5-13">Go to marker</a></li>
+<li>Section 5: the deadline for a second-prize winner to sign the engagement agreement. <a href="#mk-5-14">Go to marker</a></li>
+<li>Section 5: how state contest, prize and advertising rules treat a second prize that is mostly a discount on a paid engagement. <a href="#mk-5-15">Go to marker</a></li>
+<li>Section 5: that requiring the claim call, which includes the paid agreement, is not consideration, and whether consideration matters in any state. <a href="#mk-5-16">Go to marker</a></li>
+<li>Section 5: whether a third prize that costs $189 per month may be called a prize or free, how the fee is disclosed, and whether it is consideration. <a href="#mk-5-20">Go to marker</a></li>
+<li>Section 5: how ARV is stated, and whether New York and Florida registration and bonding apply to the second prize. <a href="#mk-5-25">Go to marker</a></li>
+<li>Section 6: the judging weights, which are a proposal to confirm with counsel and Camron. <a href="#mk-6-2">Go to marker</a></li>
+<li>Section 6: that minimum requirements 1 and 2 may apply to the second prize, with a lower ad-budget minimum than the grand prize. <a href="#mk-6-3">Go to marker</a></li>
+<li>Section 7: that stating the prize numbers this way is sufficient (question (b)). <a href="#mk-7-1">Go to marker</a></li>
+<li>Section 7: that notice by phone, text and email, including automated text, fits the consent given at entry. <a href="#mk-7-4">Go to marker</a></li>
+<li>Section 7: that awarding a forfeited grand prize to an alternate after December 5 fits the statement that all winners are selected that day. <a href="#mk-7-5">Go to marker</a></li>
+<li>Section 7: the alternate-winner rules for the second prize, including any time limit and state notice. <a href="#mk-7-6">Go to marker</a></li>
+<li>Section 7: the winners-list requirements for the second and third prize tiers. <a href="#mk-7-11">Go to marker</a></li>
+<li>Section 8: the consent language and release for second and third prize winners, and the FTC endorsement and results disclosures. <a href="#mk-8-1">Go to marker</a></li>
+<li>Section 9: the 1099 reporting threshold. <a href="#mk-9-1">Go to marker</a></li>
+<li>Section 9: any right to change these rules, and how entrants are notified (question (d)). <a href="#mk-9-2">Go to marker</a></li>
+<li>Section 10: texting consent language, data retention, and the notice owed to a nominated company on the manual call. <a href="#mk-10-2">Go to marker</a></li>
+  </ul>
+  <h3 id="rl-questions">Counsel questions that must be answered before publishing</h3>
+  <ul>
+<li>(a) All three prizes are picked by the panel: confirm this is a judged contest in every state where it runs, and note that a tier with no published criteria, or one where every qualifying entrant wins, may not count as judged. Sections 5, 6 and 7.</li>
+<li>(b) Confirm that stating the prize numbers (1 grand, 3 second, 5 third) this way is sufficient, and decide on what basis the panel picks the five third-place winners. <a href="#mk-7-1">Go to marker</a></li>
+<li>(c) Confirm that New York and Florida registration and bonding for games of chance do not apply now that no tier is chance-based, and whether any state&rsquo;s skill-contest rules need disclosures or filings at these prize values. <a href="#mk-5-25">Go to marker</a></li>
+<li>(d) Whether the rules may change after entries open, and how entrants must be told. <a href="#mk-9-2">Go to marker</a></li>
+  </ul>
+  <p class="end">These rules must not be published until counsel has answered (a) to (d) and every item above is settled. Then this panel and the yellow markers come out and the page can be published at /rules.</p>
+</div>
+
+<nav class="toc" aria-label="Contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#sec-1">Sponsor</a></li>
+    <li><a href="#sec-2">Eligibility</a></li>
+    <li><a href="#sec-3">Promotion period</a></li>
+    <li><a href="#sec-4">How to enter</a></li>
+    <li><a href="#sec-5">Prizes</a></li>
+    <li><a href="#sec-6">Judging criteria (grand prize and second prize)</a></li>
+    <li><a href="#sec-7">Selection and notification</a></li>
+    <li><a href="#sec-8">Publicity and case study</a></li>
+    <li><a href="#sec-9">General conditions</a></li>
+    <li><a href="#sec-10">Privacy</a></li>
+  </ol>
+</nav>
+
+<p class="notice"><strong>NO PURCHASE NECESSARY TO ENTER OR WIN. A PURCHASE WILL NOT INCREASE YOUR CHANCES. ALL WINNERS ARE SELECTED BY SPONSOR'S PANEL ON DECEMBER 5, 2026, AS DESCRIBED IN SECTIONS 6 AND 7. THIS IS NOT A RANDOM DRAWING.</strong></p>
+
+<div class="sec"><h2 id="sec-1"><span class="num">1.</span> Sponsor</h2>
+<p>2URN Marketing, <span class="mk" id="mk-1-1">NEEDS: legal entity name and address: CHECK</span>.</p>
+</div>
+
+<div class="sec"><h2 id="sec-2"><span class="num">2.</span> Eligibility</h2>
+<p>Open to individuals 18 or older who are the owner or an authorized officer of a roofing company that is licensed (where licensure is required) and operating in the United States at the time of entry. There is no revenue minimum to enter or to win. The entry form asks for a revenue range; the answer is self-reported, is used to prepare for the interview call, and is not an eligibility requirement. Employees of Sponsor, its agencies and immediate family members are not eligible. One entry per business. Void where prohibited. <span class="mk" id="mk-2-1">ATTORNEY TO CONFIRM: exclude any states where business-to-business contest or skill-contest rules differ; see question (c) above.</span></p>
+</div>
+
+<div class="sec"><h2 id="sec-3"><span class="num">3.</span> Promotion period</h2>
+<p>Begins <span class="mk" id="mk-3-1">NEEDS: START DATE, TIME CT</span> and ends December 5, 2026 at 7:00 PM CT ("Entry Close"). Sponsor's clock is official. Interview calls take place during the promotion period. <span class="mk" id="mk-3-2">ATTORNEY TO CONFIRM: every winner is selected by the panel at Entry Close. State the cutoff for the interviews that count for the grand prize and the second prize, for example "interviews completed by December 5, 2026 at 5:00 PM CT." An applicant interviewed after the cutoff is not considered for the grand prize or the second prize, and remains eligible for third prize. Confirm this is fair to late entrants.</span></p>
+</div>
+
+<div class="sec"><h2 id="sec-4"><span class="num">4.</span> How to enter</h2>
+<p><strong>Online:</strong> complete the entry form at <a href="https://2urnagency.com/lead-engine">https://2urnagency.com/lead-engine</a>. All required fields must be completed. The form asks for name, company, email, mobile phone and a revenue range. On-camera plan, ad budget and team capacity are confirmed on the call and at interview, not on the form.</p>
+<p><strong>Interview:</strong> every applicant is offered a 20-minute interview call. The interview is part of judging for the grand prize and the second prize. It is not a sales call and no purchase is discussed as a condition of selection. Applicants who do not complete an interview by the cutoff in Section 3 cannot be selected for the grand prize or the second prize. After submitting the entry form, an applicant may pick an interview time on the booking page. The entry is complete when the form is submitted, whether or not a time is booked. <span class="mk" id="mk-4-2">ATTORNEY TO CONFIRM: confirm that showing the booking page between the entry form and the thank-you page does not make booking look like a condition of entry.</span></p>
+<p><strong>Referral:</strong> each entrant receives a unique referral link that leads to a referral page. A referral does not add an entry and does not change how an applicant is judged. See Section 5 for the referral bonus. Referred companies must independently meet Section 2 and complete the entry form. Duplicate, fraudulent or ineligible referred entries are void.</p>
+<p><strong>Nomination:</strong> an entrant may give Sponsor the name and phone number of another roofing company. A nomination is not an entry. The nominated company must complete the entry form itself to enter, and a nomination does not change judging. Sponsor contacts a nominated company by one manual phone call, placed by a person. If there is no answer, Sponsor leaves one voicemail that names the nominating entrant and makes no further contact. Sponsor sends one manual text with the entry link only if the nominated company asks for it on that call, and sends no automated messages (no automated text, no automated email, no auto-dialed call) unless and until the nominated company enters. A nomination earns the nominating entrant no entry and no reward, except the referral bonus in Section 5 if the nominated company enters itself and wins the grand prize. <span class="mk" id="mk-4-3">ATTORNEY TO CONFIRM: calling a nominated third party who has given no consent. Confirm this is permitted under the TCPA and state telemarketing and do-not-call rules (including business-to-business and registry rules), what the call script must disclose, how Sponsor handles a "no" (the draft practice is to record it and never contact the company again), whether the nominating entrant must represent that the nominated company agreed to the call, and whether extending the Section 5 referral bonus to a nomination is permitted.</span></p>
+<p><strong>Alternate method of entry (free, no internet):</strong> mail a 3x5 card with name, business name, city/state, phone and email to <span class="mk" id="mk-4-4">NEEDS: mailing address</span>. One entry per envelope, postmarked by <span class="mk" id="mk-4-5">NEEDS: postmark date</span>, received by <span class="mk" id="mk-4-6">NEEDS: received-by date</span>. Mail-in applicants are interviewed and judged on the same terms as online applicants. <span class="mk" id="mk-4-7">ATTORNEY TO CONFIRM: confirm the mail-in method satisfies any free alternate method of entry requirement.</span></p>
+</div>
+
+<div class="sec"><h2 id="sec-5"><span class="num">5.</span> Prizes</h2>
+<p><strong>Grand prize (1), judged:</strong> the 2URN "Growth Partner" program for 90 days, free. Growth Partner is a managed marketing engagement in which Sponsor structures and scripts the winner's offers, edits the winner's videos, manages the winner's advertising, and builds automated lead nurture. The winner shoots the videos. Approximate retail value (ARV): $10,000 (90 days of Growth Partner). <span class="mk" id="mk-5-1">ATTORNEY TO CONFIRM: ARV stated as $10,000; 90 days at $3,000 a month is $9,000. State what the additional $1,000 represents or use $9,000.</span> <strong>The winner funds their own advertising spend:</strong> $200 to $1,000 per day, paid by the winner directly to the ad platform, which is approximately $18,000 to $90,000 over 90 days ($18,000 at $200 per day and $90,000 at $1,000 per day). The winner is also responsible for their own software subscriptions, staff payroll, and any travel. <span class="mk" id="mk-5-2">ATTORNEY TO CONFIRM: disclose the ad spend clearly as a winner cost, and confirm that a prize requiring the winner to spend $18,000 or more may be described as "free" and may be valued at $10,000.</span> The winner must begin within <span class="mk" id="mk-5-3">PROPOSED: 30</span> days of acceptance. The grand prize winner's 90 days will be documented as a case study (see Section 8). The grand prize winner is not required to buy anything: after day 90 the winner may continue at $3,000 a month. No obligation.</p>
+<p><strong>Referral bonus:</strong> if the grand prize winner entered through another eligible entrant's referral link, or was nominated by another eligible entrant through the nomination form before entering, that entrant (the "referrer") also receives the grand prize on the same terms, provided the referrer independently meets Section 2 and the referrer and winner operate in different markets <span class="mk" id="mk-5-4">ATTORNEY TO CONFIRM: define "different market"</span>. Sponsor identifies the referrer from the winner's own entry record: the referral code the winner entered with or, if there is none, the referral code of the entrant who nominated the winner. A referral or nomination has no effect on judging. <span class="mk" id="mk-5-5">ATTORNEY TO CONFIRM: this raises total ARV for these two awards to $20,000; confirm any registration or tax figures.</span></p>
+<p><strong>Second prize (3), the "Second-Place Stack", selected by Sponsor's panel:</strong> three second-prize winners are selected by the panel as described in Sections 6 and 7. A second-prize winner who claims (see Claim terms below) receives the following, on the delivery conditions stated after this list:</p>
+<ol>
+<li><strong>Competitor Analysis (ARV $1,500):</strong> a written report on the winner's current competitors, what they are running, their offers, hooks and review counts, and the gaps.</li>
+<li><strong>One-Month Content Package (ARV $2,500):</strong> a 45-minute interview with a Sponsor representative (Camron); five (5) ad scripts and five (5) content scripts written by Sponsor from that interview, in the winner's own words; a shot list; and editing by Sponsor of the winner's phone-shot footage into ten (10) finished pieces for the winner's brand. The winner shoots the footage on a phone. <span class="mk" id="mk-5-6">ATTORNEY TO CONFIRM: who owns and may use the interview and finished pieces.</span></li>
+<li><strong>Five (5) scripted advertising campaigns (ARV $1,250):</strong> five campaigns written for the winner, each with ten (10) hooks and a full video script, ready to shoot. For roofing: Retail Pricing, Quote Beating, Storm Damage Insurance, Post-Storm Urgency and General Inspection. The campaigns are scripts only: Sponsor does not edit the ads or load audiences as part of this prize.</li>
+<li><strong>Website Buildout, for winners who do not have a company website:</strong> Sponsor builds the website at no build fee. No dollar value is assigned yet <span class="mk" id="mk-5-7">NEEDS A DECISION: website ARV</span>. The website is built during the Growth Partner engagement <span class="mk" id="mk-5-8">NEEDS A DECISION: build timeline, and whether hosting is included during the engagement or billed at $189 per month</span>.</li>
+<li><strong>50% off the first 90 days of Growth Partner (a $4,500 saving):</strong> $1,500 per month instead of $3,000, then the standard $3,000 per month, with a 90-day minimum.</li>
+</ol>
+<p>Second-prize ARV is $9,750 per winner ($5,250 in deliverables plus a $4,500 discount), $29,250 in total for the three second prizes (3 x $9,750), plus the website buildout for a winner who needs one <span class="mk" id="mk-5-9">NEEDS A DECISION: website ARV</span>. <strong>Delivery split:</strong> the Competitor Analysis is delivered within 7 days of booking the claim call, whether or not the winner signs an engagement agreement. The Content Package and the five scripted campaigns are delivered in month 1 of the winner's Growth Partner engagement and are conditioned on the winner signing the engagement agreement. The website buildout is built during the engagement and is conditioned on the winner signing the engagement agreement. <span class="mk" id="mk-5-10">ATTORNEY TO CONFIRM: counsel to confirm that conditioning most of the second prize on a paid engagement is disclosed clearly enough, and whether the second prize may be described as "free".</span></p>
+<p>The second-prize winner pays advertising spend directly to the ad platform, $100 to $1,000 per day, approximately $9,000 to $90,000 over 90 days ($9,000 at $100 per day and $90,000 at $1,000 per day). <strong>Revenue ROI guarantee <span class="mk" id="mk-5-11">ATTORNEY TO CONFIRM: attorney, this is a performance guarantee on a paid engagement; confirm wording, disclosure, state advertising and warranty rules, and whether "paid for itself in closed jobs" needs a defined measurement</span>:</strong> If you do these four things (content shot within 14 days, ad spend funded from $200/day, the follow-up sequence live, weekly scorecard call) and Growth Partner has not paid for itself in closed jobs by day 90, we keep working for free until it has. The guarantee applies to the second-prize 90-day program, and the four items in the parentheses are the guarantee's four conditions. They are stated on the claim page and in the follow-up sequence. A second-prize winner who funds less than $200 per day does not meet the guarantee's ad-spend condition, and the guarantee applies once the winner funds $200 per day or more. <span class="mk" id="mk-5-12">NEEDS A DECISION: whether the revenue ROI guarantee covers second-place clients who fund $100 to $199 a day, or only those who fund $200 a day or more</span> <span class="mk" id="mk-5-13">ATTORNEY TO CONFIRM: confirm that a second prize available from $100 per day, with a guarantee that requires $200 per day, is disclosed clearly enough.</span></p>
+<p><strong>Claim terms:</strong> the second prize has no cash value, is non-transferable, cannot be combined with other offers, and must be claimed within 72 hours of notification by booking the 20-minute claim call on the claim page. Booking the claim call is the claim; nothing else is required to claim. On the claim call Sponsor goes over what the winner receives, when each item is delivered, and the Growth Partner engagement agreement at $1,500 per month for the first 90 days. The Competitor Analysis is delivered within 7 days of that booking whether or not the winner signs. Delivery of the Content Package, the five scripted campaigns and the website buildout is conditioned on the winner signing the engagement agreement <span class="mk" id="mk-5-14">ATTORNEY TO CONFIRM: signing deadline</span>. <span class="mk" id="mk-5-15">ATTORNEY TO CONFIRM: because most of the second prize is a discount on a paid engagement, confirm treatment under state contest, prize and advertising rules.</span> <span class="mk" id="mk-5-16">ATTORNEY TO CONFIRM: the claim call includes the paid engagement agreement; confirm that requiring this call to claim a prize is not consideration, and whether consideration matters for a judged contest in any state where it runs (see question (a)).</span></p>
+<p><strong>Third prize (5), selected by Sponsor's panel:</strong> five third-prize winners receive a marketing audit and a website buildout for the winner's company at no build fee. The winner pays hosting and maintenance of $189 per month. The third prize must be claimed within 72 hours of notification by booking a call on the third-prize claim page. The third prize has no cash value and is non-transferable. <span class="mk" id="mk-5-17">NEEDS A DECISION: on what basis the panel picks the five third-place winners</span> <span class="mk" id="mk-5-18">NEEDS A DECISION: hosting term, cancellation, site and domain ownership, build timeline, ARV.</span> <span class="mk" id="mk-5-19">NEEDS A DECISION: confirm audit scope.</span> <span class="mk" id="mk-5-20">ATTORNEY TO CONFIRM: the third prize carries a recurring fee. Confirm whether a prize that costs the winner $189 per month may be called a "prize" or "free", how the fee, its term and its cancellation must be disclosed, and whether that fee is consideration.</span></p>
+<p><strong>Approximate retail value (ARV).</strong> Grand prize and referral bonus: $10,000 each, $20,000 in total <span class="mk" id="mk-5-21">ATTORNEY TO CONFIRM: confirm</span>. Second prize: $9,750 per winner, $29,250 in total for the three second prizes (3 x $9,750), plus the website buildout for a winner who needs one <span class="mk" id="mk-5-22">NEEDS A DECISION: website ARV</span>. Third prize: <span class="mk" id="mk-5-23">NEEDS A DECISION: ARV to be set</span>. Aggregate ARV = $20,000 + $29,250 + the website values + (5 x the third-prize ARV <span class="mk" id="mk-5-24">NEEDS A DECISION: ARV to be set</span>). <span class="mk" id="mk-5-25">ATTORNEY TO CONFIRM: counsel to confirm how ARV is stated in the Official Rules. Question (c) asks whether the New York and Florida registration and bonding thresholds for games of chance apply now that no tier is chance-based: each second prize has an ARV above $5,000, and the aggregate for second prize is $29,250 (3 x $9,750), before any website value. Only the $1,500 Competitor Analysis is delivered unconditionally. See question (c).</span></p>
+</div>
+
+<div class="sec"><h2 id="sec-6"><span class="num">6.</span> Judging criteria (grand prize and second prize)</h2>
+<p>A panel of <span class="mk" id="mk-6-1">PROPOSED: 3</span> Sponsor representatives scores each interviewed applicant on the six criteria below, 0 to 100 total, to select the <strong>grand prize winner and the three second-prize winners</strong>. Sponsor applies these criteria as published to every judged applicant, and keeps the scorecards. <span class="mk" id="mk-6-2">ATTORNEY TO CONFIRM: weights are a proposal. Confirm with counsel and Camron before publishing.</span></p>
+<div class="tw"><table class="tbl"><colgroup><col class="c1"><col><col class="c3"></colgroup>
+<thead><tr><th>#</th><th>Criterion</th><th>Weight</th></tr></thead><tbody>
+<tr><td>1</td><td>Content: the owner or a lead rep will appear on camera and produce content. No AI avatars, no stock footage (minimum requirement)</td><td>25</td></tr>
+<tr><td>2</td><td>Ad budget: able to fund advertising spend of at least $200 per day for the grand prize, or at least $100 per day for the second prize, up to $1,000 per day (minimum requirement)</td><td>20</td></tr>
+<tr><td>3</td><td>Case studies: will produce case studies for their own business</td><td>10</td></tr>
+<tr><td>4</td><td>Public case study: agrees to let Sponsor document the steps and the process publicly</td><td>15</td></tr>
+<tr><td>5</td><td>Testimonial: agrees to record a testimonial for 2URN Marketing</td><td>10</td></tr>
+<tr><td>6</td><td>Capacity and commitment: has a team that can handle more appointments and commits to running the program through the slow season</td><td>20</td></tr>
+</tbody></table></div>
+<p>Total: 100.</p>
+<p>Tie-break: the higher score on criterion 1, then a majority vote of the panel.</p>
+<p><strong>Minimum requirements:</strong> criteria 1 and 2 are minimum requirements. They apply to the grand prize and to the second prize. The ad-budget minimum is $200 per day for the grand prize and $100 per day for the second prize. An applicant who meets criterion 1 and can fund at least $100 but less than $200 per day is eligible for the second prize and the third prize, and is not eligible for the grand prize. An applicant who does not meet criterion 1, or cannot fund $100 per day, is not eligible for the grand prize or the second prize, and remains eligible for the third prize. <span class="mk" id="mk-6-3">ATTORNEY TO CONFIRM: confirm that applying minimum requirements 1 and 2 to the second prize is permitted, and that a lower ad-budget minimum for the second prize than for the grand prize is permitted; this ties to question (a).</span></p>
+<p>Third prize: <span class="mk" id="mk-6-4">NEEDS A DECISION: on what basis the panel picks the five third-place winners</span></p>
+</div>
+
+<div class="sec"><h2 id="sec-7"><span class="num">7.</span> Selection and notification</h2>
+<p>All winners are selected on December 5, 2026. No prize is awarded before that date.</p>
+<p><strong>Grand prize.</strong> The grand prize winner is selected by the panel from interviewed applicants who meet minimum requirements 1 and 2 at the grand-prize level, based on the Section 6 scores, on December 5, 2026. The number of applicants does not change the criteria.</p>
+<p><strong>Second prize.</strong> The three second-prize winners are the three highest-scoring applicants on the same ranked scorecard list, selected by the panel on December 5, 2026: applicants who completed the interview by the cutoff in Section 3 and meet minimum requirements 1 and 2 of Section 6 at the second-prize level ($100 per day), after removing the grand prize winner and any referrer who shares the grand prize. Ties are broken as Section 6 states. <span class="mk" id="mk-7-1">ATTORNEY TO CONFIRM, question (b): confirm that stating the numbers this way is sufficient.</span> Sponsor keeps a dated record of the names, the scores, the panel members and the time.</p>
+<p><strong>Third prize.</strong> Five third-prize winners are selected by the panel on December 5, 2026 from the remaining eligible entrants. <span class="mk" id="mk-7-2">NEEDS A DECISION: on what basis the panel picks the five third-place winners</span></p>
+<p><strong>Notification and claim deadlines.</strong> Winners are notified by phone, text and email at Entry Close, December 5, 2026 at 7:00 PM CT. The grand prize winner must respond within <span class="mk" id="mk-7-3">PROPOSED: 5</span> days and may be required to sign an affidavit of eligibility, liability release and (where lawful) publicity and case-study release, and to verify business licensure. Sponsor does not publicly announce any winner until the grand prize winner has accepted the prize and signed the publicity and case-study release. Second-prize and third-prize winners have 72 hours from notification to claim, by booking the call described in Section 5. <span class="mk" id="mk-7-4">ATTORNEY TO CONFIRM: confirm that notification by phone, text and email, including automated text, is consistent with the consent given at entry; see Section 10.</span></p>
+<p><strong>Forfeiture and alternates.</strong> A grand prize winner who does not respond in time forfeits the prize, and the prize may be awarded to the next highest scoring applicant on the ranked scorecard list the panel recorded on December 5, 2026. <span class="mk" id="mk-7-5">ATTORNEY TO CONFIRM: confirm that awarding a forfeited prize to an alternate after December 5, 2026, taken from the December 5 ranking, is consistent with the statement that all winners are selected on December 5, 2026, or state an exception for alternates.</span> A second-prize winner who does not claim in time forfeits the prize. <span class="mk" id="mk-7-6">ATTORNEY TO CONFIRM: counsel to confirm alternate-winner rules for second prize, including any time limit and any state notice requirement.</span> <span class="mk" id="mk-7-7">NEEDS A DECISION: whether a second prize not claimed in 72 hours passes to the next applicant on the ranked list, or lapses</span>. A third-prize winner who does not claim in time forfeits the prize <span class="mk" id="mk-7-8">NEEDS A DECISION: whether an alternate is chosen</span>.</p>
+<p><strong>Winners list:</strong> for the grand prize winner's business name and the names of the second-prize and third-prize winners, send a self-addressed stamped envelope to <span class="mk" id="mk-7-9">NEEDS: mailing address</span> by <span class="mk" id="mk-7-10">NEEDS: request deadline date</span>. <span class="mk" id="mk-7-11">ATTORNEY TO CONFIRM: confirm winners-list requirements for the second-prize and third-prize tiers, including any state requirement to publish or provide the list.</span></p>
+</div>
+
+<div class="sec"><h2 id="sec-8"><span class="num">8.</span> Publicity and case study</h2>
+<p>Except where prohibited, acceptance of the grand prize constitutes consent to Sponsor documenting the 90-day program as a public case study, including filming, results, revenue and lead data the winner chooses to share, and using the winner's name, business name, likeness and voice in marketing without further compensation. The grand prize winner also agrees to produce case studies for their own business and to record a testimonial for Sponsor. Each applicant agrees to the publicity terms at entry. <span class="mk" id="mk-8-1">ATTORNEY TO CONFIRM: confirm the consent language for second-prize and third-prize winners, and whether it must be a separate signed release. Confirm testimonial and endorsement disclosure rules (including the FTC Endorsement Guides), including whether the winner must disclose that the testimonial was a condition of a free prize, and the results disclosure rules for the case study.</span></p>
+</div>
+
+<div class="sec"><h2 id="sec-9"><span class="num">9.</span> General conditions</h2>
+<p>Sponsor may disqualify any entrant tampering with the entry process, giving false information, or failing to meet Section 2. Sponsor is not responsible for lost, late or misdirected entries or technical failures. Judging decisions are final. Prizes are awarded as-is. Taxes are the winner's responsibility; Sponsor will issue a 1099 for the grand prize and for any second-prize or third-prize deliverables at or above the reporting threshold <span class="mk" id="mk-9-1">ATTORNEY TO CONFIRM</span>. Sponsor may substitute a prize of equal or greater value if the program becomes unavailable. <span class="mk" id="mk-9-2">ATTORNEY TO CONFIRM, question (d): any right to change these rules, and how entrants are notified.</span></p>
+</div>
+
+<div class="sec"><h2 id="sec-10"><span class="num">10.</span> Privacy</h2>
+<p>Information collected is used per Sponsor's privacy policy at <span class="mk" id="mk-10-1">NEEDS: privacy policy URL</span> and to administer the promotion and contact applicants about Sponsor's services, as consented to on the entry form. An applicant who does not meet the Section 6 minimum requirements for the second prize is not eligible for the grand prize or the second prize, but remains eligible for the third prize and is contacted about it only if the panel selects that applicant for the third prize on December 5, 2026. <strong>Nominee data:</strong> the name, company and phone number of a nominated company are used for one manual phone call and to record the outcome. They are not added to Sponsor's marketing lists, and no automated message is sent, unless the nominated company enters itself. <span class="mk" id="mk-10-2">ATTORNEY TO CONFIRM: texting consent language (TCPA) and data retention for scorecards, the selection record and nominee data. Add the nominee point: confirm that a manual call to a nominated company with no prior consent, and holding the nominee's data, is permitted, and what notice the nominated company must receive on the call.</span></p>
+</div>
+
+<div class="tail-pad"></div>
+</div>
+
+<div class="band foot"><div class="in">Sponsor: 2URN Marketing. &middot; <a href="https://2urnmarketing.com/privacy">Privacy</a> &middot; <a href="https://2urnmarketing.com/terms">Terms</a></div></div>
+</div>
+
+<script>
+/* Same frame fix for browsers without :has(): walk up from the page root and zero the GoHighLevel section, row and column padding. */
+(function(){try{var e=document.querySelector('.rl');while(e&&e!==document.body){if(/(^|\s)c-(section|row|column)(\s|$)/.test(String(e.className||''))){e.style.setProperty('padding','0','important');e.style.setProperty('margin','0','important');}e=e.parentElement;}}catch(x){}})();
+</script>

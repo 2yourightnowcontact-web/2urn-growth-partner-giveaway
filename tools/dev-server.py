@@ -4,7 +4,7 @@
   /lead-engine   01-giveaway-ghl.html      /interview     06-book-ghl.html
   /entered     02-thankyou-ghl.html      /refer         04-referral-ghl.html
   /claim-second  03-claim-ghl.html         /claim-third   05-claim-third-ghl.html
-  /rules  /privacy  /terms                 one-line stubs (the real pages are separate GoHighLevel pages)
+  /rules         07-rules-ghl.html (review draft)   /privacy  /terms   one-line stubs
 
 The file names (/01-giveaway-ghl.html ...) keep working too. Each paste file is served as text/html; charset=utf-8
 inside a minimal <!doctype html><html><head><meta charset="utf-8"></head><body> shell, which is roughly what
@@ -28,9 +28,9 @@ ROUTES = {
     '/refer': '04-referral-ghl.html',
     '/claim-second': '03-claim-ghl.html',
     '/claim-third': '05-claim-third-ghl.html',
+    '/rules': '07-rules-ghl.html',
 }
 STUBS = {
-    '/rules': 'Official Rules (stub: the real page is a separate GoHighLevel page).',
     '/privacy': 'Privacy Policy (stub: the real page is a separate GoHighLevel page).',
     '/terms': 'Terms of Service (stub: the real page is a separate GoHighLevel page).',
 }

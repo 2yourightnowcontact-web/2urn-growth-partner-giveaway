@@ -1,12 +1,12 @@
-# 2URN Growth Partner Giveaway: VSL Script (v8, Nov 25: the five-minute VSL)
+# 2URN Growth Partner Giveaway: VSL Script (v8, Nov 25: the five-minute VSL, date-free)
 
-**Runtime:** about 5:12 at 150 words a minute. 779 spoken words (the ">" lines only).
+**Runtime:** about 5:10 at 150 words a minute. 775 spoken words (the ">" lines only).
 **On camera:** Camron, alone, on his phone. Selfie style, two locations: location one is a desk or office (beats 1, 4 to 9, 11 to 13), location two is the truck cab or the driveway with a coat on (beats 2, 3 and 10). Phone on a tripod or a steady hand at eye height, an arm's length away, a window or soft light in front of him, never behind. Eye line on the lens, not the screen. One take per beat, thirteen takes, each one under a minute and a half; beat 8 (the offer) is the longest and is shot as two takes split before 8.6 (the Second-Place Stack); a teleprompter app on the same phone is fine, scrolled at about 150 words a minute. Shoot beat 1 last, once the voice is warm. Plan on about ninety minutes for the whole shoot, including resets, a coat change and a second take of any beat that stumbles. Shoot date: [DECIDE: reshoot date]
 **Edit:** Shabi. Jump cuts on the breath, captions burned in, a one-second chapter card at the top of every beat after the hook, client ads and simple text cards where SHOW says so. The picture changes at least every ten seconds: Camron, a card, a client ad, back to Camron. Nothing a phone editor can't make.
-**Where it runs:** the video at the top of `/lead-engine` (01) and `/refer` (04). The two-minute cut below runs where five minutes won't fit, plus the 15, 30 and 60-second ad cuts.
+**Where it runs:** the video at the top of `/lead-engine` (01) and `/refer` (04). The two-minute cut below runs where five minutes won't fit, plus the 15, 30 and 60-second ad cuts. The video names no date and no season-specific limit, so it can run on any future giveaway; the dates live on the page.
 
 ## The idea in one breath
-A roofing owner spends every winter chasing the next job: door knockers to manage, leads shared with four other roofers, and a phone nobody answers in five minutes. In ninety days we turn his own sixty-second door pitch into ads with his face on them, run in his ad account, with his own people calling every lead in five minutes, and hand him an engine his team runs, a name his town sees every day, and his week back. It's three thousand a month; one roofing company gets it free, three get the Second-Place Stack, five get third place, and our panel picks all of them on December fifth.
+A roofing owner spends every winter chasing the next job: door knockers to manage, leads shared with four other roofers, and a phone nobody answers in five minutes. In ninety days we turn his own sixty-second door pitch into ads with his face on them, run in his ad account, with his own people calling every lead in five minutes, and hand him an engine his team runs, a name his town sees every day, and his week back. It's three thousand a month; one roofing company gets it free, three get the Second-Place Stack, five get third place, and our panel picks all of them after the interviews close.
 
 ## Shoot card
 | # | Beat | Time | Words | Starts with | On screen |
@@ -20,10 +20,10 @@ A roofing owner spends every winter chasing the next job: door knockers to manag
 | 7 | Day ninety | 2:14-2:36 | 55 | "On day ninety, you don't..." | Checklist of what's built; beat 2 cards crossed out; Camron at the desk, no card on the last line |
 | 8 | The offer | 2:36-3:38 | 155 | "Hiring a CMO, a setter..." | Anchor cards to "About $330,000 a year", price card, 1 / 3 / 5 card, the Stack with values and totals, third-place card |
 | 9 | The guarantee | 3:38-3:56 | 45 | "Second place has a guarantee." | Four check boxes, then the remedy word for word. Small print: second-place program, ad spend from $200 a day |
-| 10 | Why we are doing this, and the limit | 3:56-4:06 | 26 | "Why do this? Winter is..." | "Winter: the slow season" / "1 roofing company per market. 5 seats this winter." |
-| 11 | What you put in | 4:06-4:31 | 62 | "What you put in: you or..." | The terms as text, one per line, as they are said |
-| 12 | What happens after you apply | 4:31-4:45 | 36 | "Six fields to apply. Then..." | Four-step timeline: apply, book, Dec 5, 72 hours to claim |
-| 13 | The close | 4:45-5:12 | 66 | "You don't need a people-heavy..." | Camron closer. End card: Apply button, "Winners are picked Dec 5" |
+| 10 | Why we are doing this, and the limit | 3:56-4:04 | 21 | "Why do this? We want one roofing..." | "One company, documented start to finish" / "1 roofing company per market. 5 seats a quarter." |
+| 11 | What you put in | 4:04-4:29 | 62 | "What you put in: you or..." | The terms as text, one per line, as they are said |
+| 12 | What happens after you apply | 4:29-4:44 | 37 | "Six fields to apply. Then..." | Four-step timeline: apply, book, our panel picks (date on the apply page), 72 hours to claim |
+| 13 | The close | 4:44-5:10 | 66 | "You don't need a people-heavy..." | Camron closer. End card: Apply button, "Winners are picked on the date on the apply page" |
 
 ## The script
 Spoken numbers are written the way they are said. Each ">" line is one breath. Lines are numbered beat.line (4.3 = beat 4, third spoken line); the cuts below use these numbers. Every beat after the hook opens with its chapter card: a plain title, no numbers.
@@ -176,17 +176,15 @@ Spoken numbers are written the way they are said. Each ">" line is one breath. L
 
 **SHOW** Chapter card: "The guarantee". Camron closer to the lens, no music. Four check boxes tick one at a time on 9.2: "Content shot within 14 days" / "Ads funded" / "Follow-up live" / "Weekly scorecard call". On 9.3 and 9.4 the remedy as text, word for word as spoken. Small print the whole beat: "Second-place program, ad spend from $200 a day".
 
-### 10. Why we are doing this, and the limit (3:56-4:06)
+### 10. Why we are doing this, and the limit (3:56-4:04)
 **SAY**
-> Why do this? Winter is the slow season.
+> Why do this? We want one roofing company documented, start to finish.
 >
-> We want one roofing company documented, start to finish.
->
-> One roofing company per market. Five seats this winter.
+> One roofing company per market. Five seats a quarter.
 
-**SHOW** Chapter card: "Why we're doing this". Camron at location two. Text: "Winter: the slow season" / "One company, documented start to finish" / "1 roofing company per market. 5 seats this winter."
+**SHOW** Chapter card: "Why we're doing this". Camron at location two. Text: "One company, documented start to finish" / "1 roofing company per market. 5 seats a quarter."
 
-### 11. What you put in (4:06-4:31)
+### 11. What you put in (4:04-4:29)
 **SAY**
 > What you put in: you or a lead rep on camera.
 >
@@ -202,19 +200,19 @@ Spoken numbers are written the way they are said. Each ">" line is one breath. L
 
 **SHOW** Chapter card: "What you put in". Each term as a line of text as it is said: "On camera: you or a lead rep. A real face." / "Your marketing budget, paid straight to Meta" / "Starts around $100 a day, up to $1,000" / "Case studies + a testimonial" / "Your office or a setter you hire. Their pay: on you" / "No revenue requirement".
 
-### 12. What happens after you apply (4:31-4:45)
+### 12. What happens after you apply (4:29-4:44)
 **SAY**
 > Six fields to apply. Then a twenty-minute interview.
 >
 > It's an interview, not a sales call.
 >
-> Our panel picks every winner on December fifth. Nobody wins before then.
+> Our panel picks every winner after the interviews close. Nobody wins before then.
 >
 > Second and third place have seventy-two hours to claim.
 
-**SHOW** Chapter card: "After you apply". A four-step timeline builds as each step is said: "1 Apply: 30 seconds, 6 fields" / "2 Book a 20-minute interview" / "3 Dec 5: our panel picks every winner" / "4 72 hours to claim (2nd and 3rd place)".
+**SHOW** Chapter card: "After you apply". A four-step timeline builds as each step is said: "1 Apply: 30 seconds, 6 fields" / "2 Book a 20-minute interview" / "3 Our panel picks every winner (date on the apply page)" / "4 72 hours to claim (2nd and 3rd place)".
 
-### 13. The close (4:45-5:12)
+### 13. The close (4:44-5:10)
 **SAY**
 > You don't need a people-heavy business to build the next ten-million-dollar roofing company.
 >
@@ -226,7 +224,7 @@ Spoken numbers are written the way they are said. Each ">" line is one breath. L
 >
 > While your competitors sit on autopilot, hit apply.
 
-**SHOW** Chapter card: "Your town". Camron only, a step closer to the lens. Text on 13.2: "Plant your flag." On 13.3: "Be the brand people remember when the roof is leaking." End card from 13.4: the Apply button, "Winners are picked Dec 5."
+**SHOW** Chapter card: "Your town". Camron only, a step closer to the lens. Text on 13.2: "Plant your flag." On 13.3: "Be the brand people remember when the roof is leaking." End card from 13.4: the Apply button, "Winners are picked on the date on the apply page."
 
 ## Proof to have in hand before this airs
 - [ ] David Bradbury: 17 roofing projects in 19 days. The CRM or job report that shows it, his ad file, and his written OK to be named and shown. [CHECK]
@@ -239,20 +237,20 @@ Spoken numbers are written the way they are said. Each ">" line is one breath. L
 - [ ] The hiring anchor in 8.1, "about three hundred thirty thousand dollars a year": the salary math behind it, a full-time CMO at $180,000 plus a setter, a media buyer and a creative person, adding up to about $330,000. [CHECK: Camron confirms the four salaries]
 - [ ] The guarantee in beat 9, said word for word as written there: four conditions (content shot within 14 days, ads funded, the follow-up sequence live, the weekly scorecard call) and one remedy (we keep working for free until Growth Partner has paid for itself in closed jobs). It covers the second-place 90-day program at $200 a day or more. The $200-a-day condition is now shown on screen as small print ("Second-place program, ad spend from $200 a day") and is not spoken. [CHECK: attorney, performance guarantee wording, and how "paid for itself in closed jobs" is measured]
 - [ ] 8.3: the grand prize is said without a dollar value. [CHECK: official rules ARV, $10,000 versus $9,000, before a value is added back]
-- [ ] 10.3, "One roofing company per market. Five seats this winter." The offer doc says five winter seats a quarter, one per metro. [CHECK: Camron confirms the seat count for this winter]
+- [ ] 10.2, "One roofing company per market. Five seats a quarter." The offer doc says five seats a quarter, one per metro. [CHECK: Camron confirms the seat count per quarter]
 
 ## The two-minute cut
-For anywhere a five-minute video will not fit (a second page placement, a retargeting slot, a text-message link). Hook, flaw, door pitch, results, the price, the three prizes (with what is unconditional and what comes inside the program), what you put in, close. 329 words, about 2:12. Ends on the Apply end card ("Winners are picked Dec 5"); "Results from these clients. Yours will differ." stays on screen under 1.1, 1.2, 5.1, 5.2 and 5.4.
+For anywhere a five-minute video will not fit (a second page placement, a retargeting slot, a text-message link). Hook, flaw, door pitch, results, the price, the three prizes (with what is unconditional and what comes inside the program), what you put in, close. 330 words, about 2:12. Ends on the Apply end card ("Winners are picked on the date on the apply page"); "Results from these clients. Yours will differ." stays on screen under 1.1, 1.2, 5.1, 5.2 and 5.4.
 - 1.1 to 1.3, 3.1 to 3.3, 4.2 to 4.6, 4.7, 5.1, 5.2, 5.4, 8.2, 8.3, 8.6, 8.8, 8.11, 8.12, 11.1, 11.2, 11.3, 11.4, 11.6, 12.3, 13.1, 13.2, 13.3, 13.4, 13.5.
 
 ## Ad cuts
-Built from the numbered lines above. Every cut ends on the Apply end card ("Winners are picked Dec 5"). The line "Results from these clients. Yours will differ." is on screen under every result line in every cut (1.1 and 1.2 included).
+Built from the numbered lines above. Every cut ends on the Apply end card ("Winners are picked on the date on the apply page"). The line "Results from these clients. Yours will differ." is on screen under every result line in every cut (1.1 and 1.2 included).
 - **15 seconds (30 words):** 1.1, 1.2, 3.3, 8.3.
 - **30 seconds (77 words):** 1.1 to 1.3, 3.1 to 3.3, 4.2 to 4.5, 13.5.
-- **60 seconds (134 words):** 1.1 to 1.3, 3.1 to 3.3, 4.2 to 4.7, 5.4, 8.3, 12.3, 13.5.
+- **60 seconds (135 words):** 1.1 to 1.3, 3.1 to 3.3, 4.2 to 4.7, 5.4, 8.3, 12.3, 13.5.
 
 ## Hook variants to shoot
-1. "It's winter. Your best ad is still the sixty seconds you say at the door." (the slow-season open; test it as the primary hook)
+1. "Your best ad is still the sixty seconds you say at the door." (the door-pitch open; test it as the primary hook)
 2. "Any AI can make a graphic that says low price. It can't make a homeowner trust your face."
 3. "Your competitors all paid someone to make the same graphic. It says low price."
 4. "Your competitors are running the same low-price graphic. David Bradbury ran a video of himself and sold seventeen roofing projects in nineteen days."
@@ -269,16 +267,17 @@ Built from the numbered lines above. Every cut ends on the Apply end card ("Winn
 ## Offer audit
 - **Dream outcome:** 7.1 to 7.4 (an engine his team runs, his face out in his town, fewer people to manage, less overhead, his week on the business, not on chasing the next job); 13.1 and 13.2.
 - **Perceived likelihood:** beat 5 (four named results with their ads, three of them spoken as results), 3.4 and 3.5 (the real reason past spend failed), 6.6 (a call in five minutes, his own people scripted and coached), 6.7 (the weekly scorecard).
-- **Time delay:** 6.1 and 7.1 (ninety days), 6.3 (content shot in the first fourteen days), 12.3 (winners picked December fifth), 12.4 (seventy-two hours to claim).
+- **Time delay:** 6.1 and 7.1 (ninety days), 6.3 (content shot in the first fourteen days), 12.3 (winners picked after the interviews close), 12.4 (seventy-two hours to claim).
 - **Effort and sacrifice:** 4.2 to 4.5 (his own pitch, on his phone), 6.3 (he shoots, on his phone), 11.1 (he or a lead rep on camera), 6.4 and 6.5 (we edit, build and run; texts and emails run on their own), 6.9 ("You shoot. We build. Your team answers the phone."), 11.6 (no revenue requirement), 12.1 (six fields), 12.2 (an interview, not a sales call).
 - **The stack:** 8.1 (the about-$330,000 hiring anchor), 8.2 (the price), 8.3 to 8.5 (grand prize, and what happens on day ninety-one), 8.6 to 8.10 (the Second-Place Stack, $5,250 of work, half off, $9,750 of value), 8.11 (what is unconditional and what comes inside the program), 8.12 (third place).
 - **The guarantee:** beat 9 only, 9.1 to 9.4, four conditions and one remedy.
-- **Scarcity:** 10.3 (one roofing company per market, five seats this winter), 12.3 (December fifth), 12.4 (seventy-two hours to claim).
-- **Reason why:** 10.1 and 10.2 (winter is the slow season, we want one company documented start to finish).
+- **Scarcity:** 10.2 (one roofing company per market, five seats a quarter), 12.3 (winners picked after the interviews close), 12.4 (seventy-two hours to claim).
+- **Reason why:** 10.1 (we want one company documented start to finish).
 
 ## Do not say
-- "Random," "randomly," "drawn," "drawing," "draw" (as picking a winner), "odds," "raffle," "sweepstakes," "hybrid," "instant," "instantly," "on the spot" or "finalist" about any prize or any step. Our panel picks every winner on December fifth, and nobody wins before then. In v8 there is no exception: v7's "Is it a drawing?" question is cut, so the word is not said at all.
-- "Winners announced," "Winner announced" or "The winner is announced." Say "Winners are picked December fifth."
+- No dates, and nothing that says what season it is now ("this winter", "it's winter", "this quarter"), in speech or on screen. "Picture January" and "Every winter" in beat 2 are allowed: they ask the viewer to picture the slow season, which is true every year. The video is reused for every giveaway; the landing page carries the dates (Camron, Nov 25).
+- "Random," "randomly," "drawn," "drawing," "draw" (as picking a winner), "odds," "raffle," "sweepstakes," "hybrid," "instant," "instantly," "on the spot" or "finalist" about any prize or any step. Our panel picks every winner after the interviews close, and nobody wins before then. In v8 there is no exception: v7's "Is it a drawing?" question is cut, so the word is not said at all.
+- "Winners announced," "Winner announced" or "The winner is announced." Say "Winners are picked after the interviews close."
 - "I pick" or "I announce" about any prize. Say "our panel picks" or "we pick."
 - "Guaranteed," "guaranteed results," or any promise that the viewer will get these results, or any promised number of jobs, leads or dollars. The word "guarantee" appears only in beat 9, in its exact form: the four conditions and "we keep working for free until it has." Nowhere else in the script, the SHOW notes or the cuts.
 - The counts are public: one grand prize, three second places, five third places. Still never say "everyone wins", "everybody gets", "all applicants" or that missing one place gets you another.
@@ -295,9 +294,10 @@ Built from the numbered lines above. Every cut ends on the Apply end card ("Winn
 - Any phrase that grades applicants or the kind of company that applies.
 
 ## What changed from v7
-- The length, on Camron's Nov 25 note: "THE VSL NEEDS TO BE AROUND 5 MINUTES IF POSSIBLE". v7 ran about 9:26 (1,414 words, fifteen beats); v8 runs about five minutes (779 words, 5:12), thirteen beats, still Camron alone on his phone, same complete structure: hook, problem, flaw, fix, proof, process, offer, guarantee, reason why, what you put in, what happens next, close. Reshoot all of it; nothing shot from v7 carries over except the word-for-word lines.
+- The length, on Camron's Nov 25 note: "THE VSL NEEDS TO BE AROUND 5 MINUTES IF POSSIBLE". v7 ran about 9:26 (1,414 words, fifteen beats); v8 runs about five minutes (775 words, 5:10), thirteen beats, still Camron alone on his phone, same complete structure: hook, problem, flaw, fix, proof, process, offer, guarantee, reason why, what you put in, what happens next, close. Reshoot all of it; nothing shot from v7 carries over except the word-for-word lines.
 - Merged or gone: the promise beat is one line now (1.4, "Stay to the end"); the Tuesday-in-January beat is folded into beat 2; "One call that night" is cut so "Nobody called them" stands alone; day ninety and the old beat 8 are one beat; the questions beat, "Two roads", the referral line in the close and "who this is not for" are cut. v7 ran about 1,414 spoken words; the cuts are lines, not facts.
 - Kept on purpose: the process beat (beat 6, nine lines: he shoots, 2URN scripts, edits, builds and runs the ads in his ad account, his own setter or office calls every lead in five minutes, a weekly scorecard, it all lives in his accounts); the full offer (anchor, $3,000 a month, all three prizes, the Stack at $5,250, half off, $9,750, what is unconditional); and all 21 of Camron's word-for-word lines, in order (the ad cuts are built from them).
 - The guarantee shrank to four lines (45 words) and its "$200 a day" figure moved from the spoken line to on-screen small print: "Second-place program, ad spend from $200 a day". Ad spend is still said once, as the range in 11.3.
-- Review pass (Nov 25): 1.4 says up front that one company gets the program free; 6.1 introduces the ninety days; "Picture January" replaces "It's January" because the video airs in late November; 8.11 says the rest of the Stack comes "once you sign"; 8.12 says "marketing audit".
+- Review pass (Nov 25): 1.4 says up front that one company gets the program free; 6.1 introduces the ninety days; "Picture January" replaces "It's January" so it works whenever it airs; 8.11 says the rest of the Stack comes "once you sign"; 8.12 says "marketing audit".
+- Date-free pass (Nov 25), on Camron's note "make sure the VSL doesn't mention the DEC5th timeline and we can use it indefinitely in all future giveaways": 12.3 now says "Our panel picks every winner after the interviews close" and the end cards and timeline card say the date is on the page; "Winter is the slow season" and "this winter" came out, so beat 10 is two lines (the seats line is now 10.2, "Five seats a quarter"). "Picture January" and "Every winter" stay: they describe a picture that is true every year.
 - v7's full nine-minute script is in git history at commit a9c4a58.
