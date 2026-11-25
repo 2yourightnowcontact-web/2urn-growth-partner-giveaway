@@ -32,11 +32,18 @@ Timing: the Day 1 to Day 5 sends go out relative to the entry date and carry no 
 
 Workflow A picks one SMS with an If/Else on the tag `interview-booked`, 10 minutes after entry, so a person still on the booking page has time to book.
 
+**SMS rules added Nov 25 (after a compliance, timing and build review).** They apply to every SMS in the entry sequence below (entry, +1 day, Day 2, Day 3, Day 4):
+- No first name in any text. Workflow A matches an existing contact by phone or email, so the stored first name can be stale or empty, and a wrong name reads as a wrong-number text.
+- The links are written out with the referral code (`{{contact.referral_code}}`), so the `referral_link` and `interview_link` fields are not needed for these texts.
+- Texts go out only 10:00 AM to 6:45 PM Central, Monday to Saturday (8 AM Pacific to 7:45 PM Eastern; no Sunday texts). A text due outside that window waits for it. Alaska and Hawaii numbers are not texted automatically; Camron gets a notification instead.
+- No text to a mail-in entrant, to a contact with no consent text or no referral code, or after entries close. From Dec 4 only the two pinned texts go out.
+- The texts are built in their own workflow, `Giveaway A3: Entry texts (SMS)`, triggered by the tag `giveaway-entrant` being added, so the intake workflow A is not touched. A reply from the contact ends the sequence for them.
+
 **SMS, booked** (tag `interview-booked`)
-> 2URN: {{contact.first_name}}, you're entered and your 20-min interview is booked. Refer a roofer in another market. If they win the grand prize, you win it too: {{contact.referral_link}} Reply STOP to opt out
+> 2URN: You're entered and your 20-min interview is booked. Refer a roofer in another market. If they win the grand prize, you win it too: https://2urnagency.com/refer?ref={{contact.referral_code}} Reply STOP to opt out
 
 **SMS, not booked**
-> 2URN: {{contact.first_name}}, you're entered to win 90 days of Growth Partner, free. Pick your 20-min interview time, it takes a minute: {{contact.interview_link}} Reply STOP to opt out
+> 2URN: You're entered in the Growth Partner giveaway. Pick your 20-min interview time: https://2urnagency.com/interview?c={{contact.referral_code}} Reply STOP to opt out
 
 **Email.** Subject: You're entered. Here's what happens next.
 > {{contact.first_name}},
@@ -59,7 +66,7 @@ Workflow A picks one SMS with an If/Else on the tag `interview-booked`, 10 minut
 ## Entry +1 day, morning: Book your interview
 
 **SMS** (Day 1 has no other SMS, so this keeps us at one a day)
-> 2URN: {{contact.first_name}}, book your 20-min interview for the Growth Partner giveaway. It's an interview, not a sales call: {{contact.interview_link}}
+> 2URN: Book your 20-min interview for the Growth Partner giveaway. It's an interview, not a sales call: https://2urnagency.com/interview?c={{contact.referral_code}}
 
 Skip if the contact already has an interview booked, or is tagged `not-a-fit`.
 
@@ -126,7 +133,7 @@ Skip if the contact already has an interview booked, or is tagged `not-a-fit`.
 > Camron
 
 **SMS (only if no interview booked, and not tagged `not-a-fit`)**
-> 2URN: {{contact.first_name}}, you haven't booked your interview yet. 20 minutes, not a sales call: {{contact.interview_link}}
+> 2URN: You haven't booked your Growth Partner interview yet. 20 minutes, not a sales call: https://2urnagency.com/interview?c={{contact.referral_code}}
 
 ## Day 4: the slow season
 
