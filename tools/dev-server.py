@@ -2,7 +2,7 @@
 """A tiny local server for testing the funnel with its real paths.
 
   /lead-engine   01-giveaway-ghl.html      /interview     06-book-ghl.html
-  /thank-you     02-thankyou-ghl.html      /refer         04-referral-ghl.html
+  /entered     02-thankyou-ghl.html      /refer         04-referral-ghl.html
   /claim-second  03-claim-ghl.html         /claim-third   05-claim-third-ghl.html
   /rules  /privacy  /terms                 one-line stubs (the real pages are separate GoHighLevel pages)
 
@@ -24,7 +24,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROUTES = {
     '/lead-engine': '01-giveaway-ghl.html',
     '/interview': '06-book-ghl.html',
-    '/thank-you': '02-thankyou-ghl.html',
+    '/entered': '02-thankyou-ghl.html',
     '/refer': '04-referral-ghl.html',
     '/claim-second': '03-claim-ghl.html',
     '/claim-third': '05-claim-third-ghl.html',

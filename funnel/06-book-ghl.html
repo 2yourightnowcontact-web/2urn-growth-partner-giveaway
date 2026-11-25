@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap">
 <script>
   /* ===== PREVIEW ROUTER (the same block on all six pages) =====
-     The funnel's own paths (/lead-engine, /interview, /thank-you, /refer, /claim-second, /claim-third) exist only once the
+     The funnel's own paths (/lead-engine, /interview, /entered, /refer, /claim-second, /claim-third) exist only once the
      funnel is published on a domain. On a GoHighLevel preview link (/preview/PAGE_ID) they do not exist, so every hand-off
      between pages would land on a missing page. map holds "path=previewPageId" pairs, comma separated; make-live.py writes
      it from live-config.json. Leave "" here. On a published domain this block changes nothing. */
@@ -39,7 +39,7 @@
     /* Booking widget link of the Introduction Interview calendar. Leave "" for preview mode (no calendar, no embed script). */
     bookingUrl: "",
     /* Thank-you and referral page path on this funnel (02-thankyou-ghl.html). People go here after they book. */
-    thankYouPath: "/thank-you",
+    thankYouPath: "/entered",
     /* Landing page path on this funnel (01-giveaway-ghl.html). People with no entry are sent here. */
     landingPath: "/lead-engine",
     /* Winners picked date/time. Must match announcementAt in 01, 02 and 04. */
@@ -178,13 +178,13 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 </div></div>
 
 <div class="band cal-band only-entered"><div class="in">
-  <p class="already" id="bk-already">You&rsquo;re already booked. <a id="bk-already-link" href="/thank-you?booked=1">See your referral link</a></p>
+  <p class="already" id="bk-already">You&rsquo;re already booked. <a id="bk-already-link" href="/entered?booked=1">See your referral link</a></p>
   <div class="calcard">
     <div class="calwrap" id="bk-cal"><div class="calload">Loading open times&hellip;</div><div class="calnone">The calendar shows here once the booking link is set.</div></div>
-    <p class="prev"><a id="bk-cont" href="/thank-you?booked=1">Continue to the referral page</a></p>
+    <p class="prev"><a id="bk-cont" href="/entered?booked=1">Continue to the referral page</a></p>
   </div>
-  <p class="later">Booked and still on this page? <a id="bk-done" href="/thank-you?booked=1">See your referral link</a></p>
-  <p class="later">Can&rsquo;t pick a time right now? <a id="bk-later" href="/thank-you">Get your referral link</a> and book later. We text you the booking link, once a day at most.</p>
+  <p class="later">Booked and still on this page? <a id="bk-done" href="/entered?booked=1">See your referral link</a></p>
+  <p class="later">Can&rsquo;t pick a time right now? <a id="bk-later" href="/entered">Get your referral link</a> and book later. We text you the booking link, once a day at most.</p>
 </div></div>
 
 <div class="band foot"><div class="in">NO PURCHASE NECESSARY. Open to owners or authorized officers of roofing companies operating in the United States, 18+. Void where prohibited. All winners are selected by Sponsor's panel at the close of entries, as described in the Official Rules. No prize is awarded before then. Second and third prizes must be claimed within 72 hours of notification, have no cash value and are non-transferable. See <a href="/rules">Official Rules</a> for eligibility, alternate method of entry, judging criteria and prize details. Sponsor: 2URN Marketing. &middot; <a href="https://2urnmarketing.com/privacy">Privacy</a> &middot; <a href="https://2urnmarketing.com/terms">Terms</a></div></div>
@@ -239,7 +239,7 @@ function gwCalendar(o){
   var $=function(id){return document.getElementById(id)};
   /* A code is valid only if it matches /^[A-Z0-9]{4,12}$/ after uppercasing and stripping, the same rule 01, 02 and 04 apply. */
   var okCode=function(s){ s=String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,''); return /^[A-Z0-9]{4,12}$/.test(s)?s:''; };
-  var tyPath=C.thankYouPath||'/thank-you';
+  var tyPath=C.thankYouPath||'/entered';
   function tyUrl(booked){ return tyPath+(code?'?c='+encodeURIComponent(code)+(booked?'&booked=1':''):(booked?'?booked=1':'')); }
   try{
     var urlCode=''; try{ urlCode=okCode(new URLSearchParams(location.search).get('c')); }catch(x){}

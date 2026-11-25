@@ -188,7 +188,7 @@ If yes: the nominee is on SMS Do Not Disturb (workflow F). In GHL, turn SMS Do N
 
 The text is the **referrer's link**, with the referrer's code from `first_nominated_by_code`, so the referral is matched to the first person who nominated them:
 
-`https://go.2urnmarketing.com/refer?ref=CODE`
+`https://2urnagency.com/refer?ref=CODE`
 
 If they have questions: "It's for roofing company owners. Every applicant gets a 20-minute interview, win or not. You pick the time right after you enter. The entry page has the rules." Do not promise a prize.
 

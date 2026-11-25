@@ -10,7 +10,7 @@ git-ignored live-config.json at the repo root (copy tools/live-config.example.js
   claim_calendar       booking link for second-place claim calls                  -> page 03 (GW_CLAIM.bookingUrl)
   third_place_calendar booking link for third-place claim calls                   -> page 05 (GW_CLAIM3.bookingUrl)
   preview_pages        "path=previewPageId" pairs, comma separated, one per funnel step  -> every page (GW_PREVIEW.map)
-                       e.g. "/lead-engine=ID,/interview=ID,/thank-you=ID,/refer=ID,/claim-second=ID,/claim-third=ID".
+                       e.g. "/lead-engine=ID,/interview=ID,/entered=ID,/refer=ID,/claim-second=ID,/claim-third=ID".
                        It makes the hand-offs between pages work on GoHighLevel preview links, before the funnel has a domain.
 
 claim_calendar may be left "": the kit uses ONE calendar for interviews and second-place claims, so an empty claim_calendar
