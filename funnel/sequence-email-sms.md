@@ -22,7 +22,7 @@ Public wording:
 
 Who gets this: every entrant. Most entrants book their interview on the booking page (`/interview`) right after the form, so every message with a booking line has a booked variant without it (workflow A If/Else on the tag `interview-booked`). There is no form-level disqualification and no revenue minimum. A contact tagged `not-a-fit` after the setter call or interview (not a fit for Growth Partner: will not be on camera, or cannot fund $100 a day in ad spend) stops getting the interview reminders and is out of the grand prize and second place, but stays eligible for third place and gets the third-place messages if they are tagged `third-place` (see GHL-SETUP.md, workflows E and G). A not-a-fit contact is not put on Do Not Disturb.
 
-Rules: one SMS a day at most per contact, counting workflow texts and setter texts together. The first SMS ends with "Reply STOP to opt out" (first send only; GHL appends after that). Keep every SMS as short as it can be, under 160 characters where possible, and keep "2URN:" as the prefix. Never offer extra entries.
+Rules: one SMS a day at most per contact, counting workflow texts and setter texts together. The first SMS carries no opt-out line of our own: GoHighLevel adds one itself to a contact's first text ("Say STOP if you want us to leave you alone."), seen in the Nov 25 live test. Keep every SMS as short as it can be, under 160 characters where possible, and keep "2URN:" as the prefix. Never offer extra entries.
 
 Timing: the Day 1 to Day 5 sends go out relative to the entry date and carry no countdowns; they say "Winners are picked Dec 11." Two sends are pinned to dates: the day-before message (Dec 10, 10:00 AM CT) and the announcement-morning message (Dec 11, 10:00 AM CT). A contact who entered that same day skips the pinned send. If a relative SMS and a pinned SMS fall on the same day, send only the pinned one: so anyone entering on or after Dec 9 gets the entry message and the pinned sends still ahead of them, and no "Book your interview" SMS (the entry email and the Dec 10 email both carry the interview link). A pinned send is skipped only for a contact who entered on or after that day. Nothing from this sequence goes out after Dec 11, 7:00 PM CT, when entries close.
 
@@ -42,10 +42,10 @@ Workflow A picks one SMS with an If/Else on the tag `interview-booked`, 5 minute
 - Nov 25, 2026: win date moved from Dec 5 to Dec 11 (Camron).
 
 **SMS, booked** (tag `interview-booked`)
-> 2URN: You're entered and your 20-min interview is booked. Refer a roofer in another market. If they win the grand prize, you win it too: https://2urnagency.com/refer?ref={{contact.referral_code}} Reply STOP to opt out
+> 2URN: You're entered and your 20-min interview is booked. Refer a roofer in another market. If they win the grand prize, you win it too: https://2urnagency.com/refer?ref={{contact.referral_code}}
 
 **SMS, not booked**
-> 2URN: You're entered in the Growth Partner giveaway. Pick your 20-min interview time: https://2urnagency.com/interview?c={{contact.referral_code}} Reply STOP to opt out
+> 2URN: You're entered in the Growth Partner giveaway. Pick your 20-min interview time: https://2urnagency.com/interview?c={{contact.referral_code}}
 
 **Email.** Subject: You're entered. Here's what happens next.
 > {{contact.first_name}},
