@@ -8,18 +8,18 @@ The call has three jobs:
 The interview is an interview, not a sales call. Do not pitch on it.
 
 **How each prize is chosen. Say it this way and no other way.**
-- **Grand prize:** picked by 2URN's panel on Dec 5 from interviewed applicants, against the published criteria. It is judged. People choose, not chance.
-- **Second place:** picked by 2URN's panel on Dec 5 from applicants who completed the interview, on the same published criteria.
-- **Third place:** a free audit and a website buildout, picked by 2URN's panel on Dec 5.
-- **Never promise anyone a prize.** Nobody wins before Dec 5. Never offer, hint at or hand out the Stack, the half-off price, the audit or the free website before the Dec 5 notification, to anyone, for any reason. They are prizes, and our panel awards them on Dec 5. Never say or hint that they will win. The counts are public: one grand prize, three second places, five third places. Still never say "everyone wins", "everybody gets", "all applicants" or that missing one place gets you another.
+- **Grand prize:** picked by 2URN's panel on Dec 11 from interviewed applicants, against the published criteria. It is judged. People choose, not chance.
+- **Second place:** picked by 2URN's panel on Dec 11 from applicants who completed the interview, on the same published criteria.
+- **Third place:** a free audit and a website buildout, picked by 2URN's panel on Dec 11.
+- **Never promise anyone a prize.** Nobody wins before Dec 11. Never offer, hint at or hand out the Stack, the half-off price, the audit or the free website before the Dec 11 notification, to anyone, for any reason. They are prizes, and our panel awards them on Dec 11. Never say or hint that they will win. The counts are public: one grand prize, three second places, five third places. Still never say "everyone wins", "everybody gets", "all applicants" or that missing one place gets you another.
 
 **Everyone who enters gets an interview.** Most book it themselves on the booking page right after the form. You call the ones who did not. There is no disqualification on the form. There is **no revenue minimum**. The form asks revenue to prepare the call, and it never disqualifies anyone. Qualification happens here, on the setter call and the interview.
 
 **Not a fit for Growth Partner means one of two things:** they will not be on camera, or they cannot fund $100 a day in ad spend. That is the whole definition. Low revenue alone is never a reason. When a contact is not a fit, they are out of the grand prize and second place, interview reminders stop, and they stay entered for third place. Do not set Do Not Disturb. Do not promise third place.
 
-**Ad budget has three bands.** Under $100 a day: not a fit. $100 to $199 a day: not `not-a-fit`; they stay in for second place and third place and cannot win the grand prize, which needs $200 a day; book, hold and score the interview as normal. $200 a day or more: in for every place. Write the band in the note. Never tell an applicant which place their band puts them in line for. Nobody wins before Dec 5.
+**Ad budget has three bands.** Under $100 a day: not a fit. $100 to $199 a day: not `not-a-fit`; they stay in for second place and third place and cannot win the grand prize, which needs $200 a day; book, hold and score the interview as normal. $200 a day or more: in for every place. Write the band in the note. Never tell an applicant which place their band puts them in line for. Nobody wins before Dec 11.
 
-**Interview cutoff:** an interview counts for the grand prize and second place only if it is held by the cutoff in the Official Rules (proposed Dec 5, 2026, 5:00 PM CT [CHECK: confirm cutoff with counsel]). An interview held after the cutoff does not count for either. Book every interview before it.
+**Interview cutoff:** an interview counts for the grand prize and second place only if it is held by the cutoff in the Official Rules (proposed Dec 11, 2026, 5:00 PM CT [CHECK: confirm cutoff with counsel]). An interview held after the cutoff does not count for either. Book every interview before it.
 
 Cadence: your task appears 30 minutes after an entry that did not book, due within 1 hour (entries after 6 PM CT: 9 AM next day). Before the announcement: 3 attempts on day 1, 2 on day 2, 1 on day 3. After the announcement: second-place winners first, then third-place winners who have not booked: 3 attempts on day 1, 2 on day 2, 1 on day 3, all inside the 72-hour claim window. After the window the prize is gone. Any later call (weekly, up to 3 weeks) is about the standard program only and never mentions the prize as available.
 
@@ -42,7 +42,7 @@ For a mail-in entry (task "Call to book interview: mail-in"), say instead:
 If busy: "Totally get it. When's better, later today or tomorrow morning?" Book the callback. Don't pitch a busy person.
 
 ### Set expectations
-> Quick note on how this works. Nobody wins on this call. Our panel picks every winner on December fifth. The interview is how you get judged for the grand prize and second place. It's 20 minutes. It's not a sales call. We ask about your business and see if it fits.
+> Quick note on how this works. Nobody wins on this call. Our panel picks every winner on December eleventh. The interview is how you get judged for the grand prize and second place. It's 20 minutes. It's not a sales call. We ask about your business and see if it fits.
 
 You may say how many prizes there are: one grand prize, three second places, five third places. Do not say anything about what anyone's chances are.
 
@@ -54,7 +54,7 @@ Book on the Introduction Interview calendar while on the phone. Use the email an
 Book before the interview cutoff (see the header notes). If the only slot the applicant can take is after the cutoff, say this before you book:
 > That slot is after the judging cutoff, so the interview won't count for the grand prize or second place. Can we find an earlier time?
 
-If no earlier time works, book it and add "after cutoff" to the opportunity note. The calendar shows no time after Dec 5, 4:40 PM CT. Do not book past it by hand.
+If no earlier time works, book it and add "after cutoff" to the opportunity note. The calendar shows no time after Dec 11, 4:40 PM CT. Do not book past it by hand.
 
 **Cancelled or no-show:** workflow D gives you a task "Interview cancelled: rebook" or "No-show: rebook". Same cadence, same open line, but say: "I saw your interview didn't happen. Want to grab a new time?"
 
@@ -80,13 +80,13 @@ Then three more questions, context and color, not scored:
 
 ### Not a fit
 Only two things make a contact not a fit: they will not be on camera, or they cannot fund $100 a day in ad spend. Revenue never does.
-> I appreciate you being straight with me. The full Growth Partner program isn't the right fit right now, based on that. You're still entered, and winners are picked December fifth. Thanks for talking with me.
+> I appreciate you being straight with me. The full Growth Partner program isn't the right fit right now, based on that. You're still entered, and winners are picked December eleventh. Thanks for talking with me.
 
 Then tag `not-a-fit`, set stage Not a Fit, and end the call. Do not promise third place. Do not set Do Not Disturb. The decision is made on the call, not by the form. Tagging stops interview reminders and removes them from the grand prize and second place. They stay entered for third place.
 
 ### Close the interview
 If they are a fit:
-> Thanks, that's what I needed. Our panel picks every winner on December fifth. If you know a roofer in another market that fits, your referral link is still live. If they win the grand prize, you win it too.
+> Thanks, that's what I needed. Our panel picks every winner on December eleventh. If you know a roofer in another market that fits, your referral link is still live. If they win the grand prize, you win it too.
 
 ---
 
@@ -207,10 +207,10 @@ Workflow A notifies Camron. It cannot text the referrer. If you text the referre
 - **"We tried ads, didn't work."** "Yeah, that's what most of the people on this list said. Almost every time we open the account it's no follow-up and a budget that never left learning phase. In the interview we'll look at which one it was for you."
 - **"Send me info."** "The page you entered on is the info. The interview is where we look at your business. Tuesday or Thursday?"
 - **"Too expensive."** "Could be. That's what the interview is for. If the numbers don't work at your ticket, we'll tell you not to do it."
-- **"I don't want to be on camera."** "Understood. For the full program it's required. Homeowners trust a real face, and we don't use AI avatars or stock footage. You're still entered, and winners are picked December fifth. I'd rather tell you now that the full program isn't the right fit." Then tag `not-a-fit` and set stage Not a Fit. Do not promise third place.
+- **"I don't want to be on camera."** "Understood. For the full program it's required. Homeowners trust a real face, and we don't use AI avatars or stock footage. You're still entered, and winners are picked December eleventh. I'd rather tell you now that the full program isn't the right fit." Then tag `not-a-fit` and set stage Not a Fit. Do not promise third place.
 - **"I can't do two hundred a day."** "That's fine. The grand prize needs two hundred a day. Second place needs a hundred a day. Could you fund a hundred a day?" If yes, note the band $100 to $199 and re-ask for the time; they are not `not-a-fit`. If no, use the Not a fit script.
 - **"We're busy enough."** "Then you're exactly who this is for in the slow season. When does your phone stop ringing, January?" Book for that conversation.
-- **"Are you sure I'll win?" / "Do I win something?"** "I can't promise anyone a prize. Our panel picks every winner on December fifth, after the interviews. Nobody wins before then."
+- **"Are you sure I'll win?" / "Do I win something?"** "I can't promise anyone a prize. Our panel picks every winner on December eleventh, after the interviews. Nobody wins before then."
 - **"Do I need to hit a revenue number?"** "No. There's no revenue minimum. We ask so we can prepare for the call."
 
 ## Close the call
