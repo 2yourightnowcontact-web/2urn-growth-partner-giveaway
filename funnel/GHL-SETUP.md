@@ -272,7 +272,7 @@ Our panel picks all three places from the scorecards and the entrant list. Keep 
 - Delete all test contacts before launch.
 
 ## 8. Before shooting the VSL
-The VSL script is now v7 (`VSL-script.md`), the full VSL: about nine and a half minutes, fifteen beats, with a two-minute cut and the ad cuts marked by line number. Shoot v7 (`python3 tools/vsl-count.py` recounts the words and times after any edit). Before it airs, have every item of "Proof to have in hand before this airs" in `VSL-script.md` on file (four client results, each with its report and written OK). Replace the video placeholder (the `#video` div) with the GHL video embed in BOTH `01-giveaway-ghl.html` and `04-referral-ghl.html`. The video sits at the top of both pages, directly under the headline.
+The VSL script is now v8 (`VSL-script.md`), the five-minute VSL: about 5:12, thirteen beats, with a two-minute cut and the ad cuts marked by line number. Shoot v8 (`python3 tools/vsl-count.py` recounts the words and times after any edit). Before it airs, have every item of "Proof to have in hand before this airs" in `VSL-script.md` on file (four client results, each with its report and written OK). Replace the video placeholder (the `#video` div) with the GHL video embed in BOTH `01-giveaway-ghl.html` and `04-referral-ghl.html`. The video sits at the top of both pages, directly under the headline.
 
 ## 9. Open decisions before launch
 These are the [DECIDE] items from the spec that touch the build. Leave the markers in place until Camron answers.

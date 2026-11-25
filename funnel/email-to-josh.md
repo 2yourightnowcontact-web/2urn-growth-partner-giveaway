@@ -6,7 +6,7 @@ Josh,
 The offer moved since we talked, so here is the current version. Four questions for you at the bottom. The rules are the part I most need you to read.
 
 **What's attached**
-1. VSL script, v7: the full VSL, about nine and a half minutes in fifteen beats. One person, one phone: the problem, the fix, four client results, the ninety days step by step, the offer and the Second-Place Stack, the guarantee, what you put in, what happens after you apply, and the close. A two-minute cut and 15/30/60 ad cuts are marked by line number, plus hook variants.
+1. VSL script, v8: the five-minute VSL, about 5:12 in thirteen beats. One person, one phone: the problem, the fix, four client results, the ninety days step by step, the offer and the Second-Place Stack, the guarantee, what you put in, what happens after you apply, and the close. A two-minute cut and 15/30/60 ad cuts are marked by line number, plus hook variants.
 2. Official rules draft. All three prizes are now picked by our panel on Dec 5: no drawing, and nobody wins before then. It has NO PURCHASE NECESSARY and a free mail-in entry. Every spot I am unsure about is marked [CHECK]. Merge it with whatever you are drafting and tell me where it's wrong.
 3. Landing page (HTML, open it in a browser). Headline, VSL and the apply form on the first screen, no scrolling (on a phone the form opens with two fields), then the three prize cards. No gate.
 4. Referral page (HTML). What a referred owner lands on: "[Name] nominated you", their referrer's code carried in from the link and shown on the page, the same six-field form. Without a valid code in the link it is a plain entry page.
