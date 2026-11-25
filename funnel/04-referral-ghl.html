@@ -105,7 +105,21 @@ body { background:#fff; }
 .stk li b{font-weight:900;letter-spacing:-.03em;white-space:nowrap}
 .prize.stack .v{font-size:clamp(2.8rem,6vw,3.8rem);margin:16px 0 4px}
 .prize p.stk-p{color:#fff;font-size:1.05rem;font-weight:700}
-.prize p.stk-f{margin-top:6px}
+.prize p.stk-f{margin-top:12px}
+.stk-h{font-size:clamp(1.45rem,5.2vw,2.1rem);font-weight:900;letter-spacing:-.04em;line-height:1.1;color:#fff;margin:10px 0 2px;text-wrap:balance}
+.stk-h em{font-style:normal;background:var(--red);color:#fff;padding:.02em .16em;border-radius:8px}
+.stk li b{display:inline-flex;align-items:center;gap:8px}
+.stk li b s{font-weight:600;color:var(--muted-2);text-decoration-thickness:2px}
+.stk li b i{font-style:normal;background:var(--red);color:#fff;font-size:.76rem;font-weight:900;letter-spacing:.08em;line-height:1;padding:5px 9px;border-radius:999px}
+.stk-half{margin-top:16px;padding:16px 18px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16)}
+.stk-half .hk{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2)}
+.stk-half .ht{font-size:clamp(1.15rem,4.2vw,1.4rem);font-weight:900;letter-spacing:-.03em;line-height:1.15;color:#fff;margin-top:4px;text-wrap:balance}
+.stk-half .hp{margin-top:8px;font-size:1rem;font-weight:700;color:#fff;line-height:1.3}
+.stk-half .hp s{color:var(--muted-2);font-weight:600;text-decoration-thickness:2px}
+.stk-half .hp b{font-size:1.5rem;font-weight:900;letter-spacing:-.03em}
+.prize .stk-half p{margin-top:8px}
+.stk-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.2);color:#fff;font-weight:700}
+.stk-total b{font-size:clamp(2.2rem,7vw,3rem);font-weight:900;letter-spacing:-.04em;line-height:1}
 
 /* countdown */
 .count{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap;align-items:flex-end}
@@ -266,16 +280,22 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
       <div class="prize wide"><div class="k">Grand prize &middot; 1 winner</div><div class="v">$10,000 <small>value</small></div><p>90 days of Growth Partner, free. <span id="refwin">Refer a roofer in another market who wins and you win it too.</span></p></div>
       <div class="prize wide stack">
         <div class="k">Second place &middot; 3 winners &middot; the Second-Place Stack</div>
-        <p class="stk-i">Included free with second place:</p>
+        <div class="stk-h">$5,250 of work, <em>free.</em> Plus half off the program.</div>
+        <p class="stk-i">Yours at no charge with second place:</p>
         <ul class="stk">
-          <li><span>One-Month Content Package<em>45-minute interview with Camron, 10 scripts, 10 finished pieces.</em></span><b>$2,500</b></li>
-          <li><span>Competitor Analysis<em>Who you're up against, what they run, and the gaps. In 7 days.</em></span><b>$1,500</b></li>
-          <li><span>Five Advertising Campaigns, scripted<em>10 hooks and a full video script each. Ready to shoot.</em></span><b>$1,250</b></li>
-          <li><span>Website Buildout<em>If you don't have one, we build it for you.</em></span><b>Free</b></li>
+          <li><span>One-Month Content Package<em>45-minute interview with Camron, 10 scripts, 10 finished pieces.</em></span><b><s>$2,500</s><i>FREE</i></b></li>
+          <li><span>Competitor Analysis<em>Who you're up against, what they run, and the gaps. In 7 days.</em></span><b><s>$1,500</s><i>FREE</i></b></li>
+          <li><span>Five Advertising Campaigns, scripted<em>10 hooks and a full video script each. Ready to shoot.</em></span><b><s>$1,250</s><i>FREE</i></b></li>
+          <li><span>Website Buildout<em>If you don't have one, we build it for you.</em></span><b><i>FREE</i></b></li>
         </ul>
-        <div class="v">$9,750<small>+ of value</small></div>
-        <p class="stk-p">50% off our 90-day marketing program, with a revenue ROI guarantee</p>
-        <p class="stk-f">$5,250 in deliverables plus a website if you need one, free, plus $4,500 off: Growth Partner at $1,500/month instead of $3,000 for the first 90 days, then $3,000. The program comes with a revenue ROI guarantee. Claim within 72 hours by booking your 20-minute claim call. The Competitor Analysis is yours when you book your claim call. The rest is delivered inside the 90-day program.</p>
+        <div class="stk-half">
+          <div class="hk">Plus</div>
+          <div class="ht">50% off your done-for-you 90-day marketing program</div>
+          <div class="hp"><s>$3,000</s> <b>$1,500</b> a month for the first 90 days. $4,500 off.</div>
+          <p>Growth Partner: we script, edit, build and run your marketing. You shoot on your phone. It comes with a revenue ROI guarantee. After the first 90 days it is $3,000 a month.</p>
+        </div>
+        <div class="stk-total"><span>Total value</span><b>$9,750+</b></div>
+        <p class="stk-f">How you get it: claim within 72 hours by booking your 20-minute claim call. The Competitor Analysis is yours when you book that call. The content package, the campaigns and the website are delivered free inside the 90-day program.</p>
       </div>
       <div class="prize wide"><div class="k">Third place &middot; 5 winners &middot; Free Audit + Website Buildout</div><div class="v">Free <small>you pay hosting only</small></div><p>A marketing audit and a website built for your company. No build fee. Hosting and maintenance is $189 a month.</p></div>
     </div>

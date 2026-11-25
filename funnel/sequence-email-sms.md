@@ -30,13 +30,14 @@ Timing: the Day 1 to Day 5 sends go out relative to the entry date and carry no 
 
 ## On entry (email at once, SMS 10 minutes later)
 
-Workflow A picks one SMS with an If/Else on the tag `interview-booked`, 10 minutes after entry, so a person still on the booking page has time to book.
+Workflow A picks one SMS with an If/Else on the tag `interview-booked`, 5 minutes after entry (Camron, Nov 25), so a person still on the booking page has time to book.
 
 **SMS rules added Nov 25 (after a compliance, timing and build review).** They apply to every SMS in the entry sequence below (entry, +1 day, Day 2, Day 3, Day 4):
 - No first name in any text. Workflow A matches an existing contact by phone or email, so the stored first name can be stale or empty, and a wrong name reads as a wrong-number text.
 - The links are written out with the referral code (`{{contact.referral_code}}`), so the `referral_link` and `interview_link` fields are not needed for these texts.
 - Texts go out only 10:00 AM to 6:45 PM Central, Monday to Saturday (8 AM Pacific to 7:45 PM Eastern; no Sunday texts). A text due outside that window waits for it. Alaska and Hawaii numbers are not texted automatically; Camron gets a notification instead.
 - No text to a mail-in entrant, to a contact with no consent text or no referral code, or after entries close. From Dec 4 only the two pinned texts go out.
+- Reworded Nov 25 on Camron's notes: the entry text goes 5 minutes after entry (was 10); the next-day text says the grand prize and second place are picked only from roofers who do the interview; the Day 2 text is the "digital door knocking" idea with the booking link (it goes to everyone, so the booking line is a question); the Day 3 text says a one-on-one interview is required to be considered for the grand prize or second place. Camron's notes said "added to the drawing"; the texts say "our panel picks" instead, because the giveaway is judged and the kit never calls it a drawing.
 - The texts are built in their own workflow, `Giveaway A3: Entry texts (SMS)`, triggered by the tag `giveaway-entrant` being added, so the intake workflow A is not touched. A reply from the contact ends the sequence for them.
 
 **SMS, booked** (tag `interview-booked`)
@@ -66,7 +67,7 @@ Workflow A picks one SMS with an If/Else on the tag `interview-booked`, 10 minut
 ## Entry +1 day, morning: Book your interview
 
 **SMS** (Day 1 has no other SMS, so this keeps us at one a day)
-> 2URN: Book your 20-min interview for the Growth Partner giveaway. It's an interview, not a sales call: https://2urnagency.com/interview?c={{contact.referral_code}}
+> 2URN: You're entered, but you haven't booked your 20-min interview yet. Our panel picks the grand prize and second place only from roofers who do it. It's not a sales call. Book: https://2urnagency.com/interview?c={{contact.referral_code}}
 
 Skip if the contact already has an interview booked, or is tagged `not-a-fit`.
 
@@ -99,7 +100,7 @@ Skip if the contact already has an interview booked, or is tagged `not-a-fit`.
 ## Day 2: a real face
 
 **SMS**
-> 2URN: Homeowners hire faces they recognize. That's why the owner or a lead rep is on camera in every Growth Partner ad. No AI, no stock footage. Winners are picked Dec 5.
+> 2URN: Digital door knocking. We can put your face, or your best rep's, at thousands of local doors a day, on homeowners' phones. Rain or snow. Real video, no AI. Not booked yet? Your interview: https://2urnagency.com/interview?c={{contact.referral_code}}
 
 **Email.** Subject: Why we won't put an AI avatar in your ad
 > Short one.
@@ -133,7 +134,7 @@ Skip if the contact already has an interview booked, or is tagged `not-a-fit`.
 > Camron
 
 **SMS (only if no interview booked, and not tagged `not-a-fit`)**
-> 2URN: You haven't booked your Growth Partner interview yet. 20 minutes, not a sales call: https://2urnagency.com/interview?c={{contact.referral_code}}
+> 2URN: To be considered for the grand prize or second place, you have to meet with us one on one. A 20-min interview, a few questions about your business, not a sales call. Winners are picked Dec 5. Book: https://2urnagency.com/interview?c={{contact.referral_code}}
 
 ## Day 4: the slow season
 
